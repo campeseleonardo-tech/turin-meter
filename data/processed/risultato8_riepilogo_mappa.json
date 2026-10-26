@@ -376,7 +376,7 @@
     "docs/en/METHODS.md",
     "data/processed/risultato8_traffico_tp_v2.json"
   ],
-  "generato": "2026-10-26T13:20:20+00:00",
+  "generato": "2026-10-26T14:06:29+00:00",
   "avviso": [
     "Traffico stimato, sensori 5T misurati, orari GTT programmati",
     "Traffico stimato con un modello tarato su 22 sensori: errore tipico ±28%. Trasporto pubblico = fermate con almeno 4 passaggi all'ora entro 300 m o metro entro 600 m."

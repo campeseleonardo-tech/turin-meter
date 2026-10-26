@@ -8,6 +8,8 @@ config_locale.json
 *.sqlite-wal
 *.sqlite-shm
 *.zip
+# riassunto dei passaggi GPS (13 MB): serve al contatore e ai controlli del repository pubblico
+!data/storico_riassunti/passaggi_2026-10.zip
 *.part
 data/raw/
 data/storico_backup*.sqlite
