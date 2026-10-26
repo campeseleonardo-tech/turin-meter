@@ -547,7 +547,7 @@
     "scripts/84_risultato6_parcheggi.py",
     "data/processed/risultato6_v2/mappa_r6.json"
   ],
-  "generato": "2026-10-26T14:06:29+00:00",
+  "generato": "2026-10-26T15:37:33+00:00",
   "avviso": [
     "Riempimento dei parcheggi misurato dai sensori 5T su pochi giorni; auto e posti che mancano calcolati su dati veri, non misurati."
   ],

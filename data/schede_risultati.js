@@ -533,7 +533,7 @@ window.SCHEDE_RISULTATI = [
    "scripts/27_risultato4_regolarita.py",
    "scripts/70_risultato9_attesa.py"
   ],
-  "generato": "2026-10-26T14:06:29+00:00",
+  "generato": "2026-10-26T15:37:33+00:00",
   "avviso": [
    "Pochi giorni di dati",
    "Arrivi misurati con il GPS dei mezzi GTT raccolto dal progetto, 2026-10-10 - 2026-10-22: il GPS c'è per il 80% dei passaggi programmati delle corse viste (prima si usava il feed GTT, che sottostima i ritardi: confronto nella scheda). Giorni non tutti interi e solo linee urbane viste dal GPS: vedi i limiti."
@@ -2323,7 +2323,7 @@ window.SCHEDE_RISULTATI = [
    "scripts/84_risultato6_parcheggi.py",
    "data/processed/risultato6_v2/mappa_r6.json"
   ],
-  "generato": "2026-10-26T14:06:29+00:00",
+  "generato": "2026-10-26T15:37:33+00:00",
   "avviso": [
    "Riempimento dei parcheggi misurato dai sensori 5T su pochi giorni; auto e posti che mancano calcolati su dati veri, non misurati."
   ],
@@ -8830,7 +8830,7 @@ window.SCHEDE_RISULTATI = [
    "docs/en/METHODS.md",
    "data/processed/risultato8_traffico_tp_v2.json"
   ],
-  "generato": "2026-10-26T14:06:29+00:00",
+  "generato": "2026-10-26T15:37:33+00:00",
   "avviso": [
    "Traffico stimato, sensori 5T misurati, orari GTT programmati",
    "Traffico stimato con un modello tarato su 22 sensori: errore tipico ±28%. Trasporto pubblico = fermate con almeno 4 passaggi all'ora entro 300 m o metro entro 600 m."
@@ -18735,7 +18735,7 @@ window.SCHEDE_RISULTATI = [
    "docs/en/METHODS.md",
    "data/processed/case_fragilita_servizi.json"
   ],
-  "generato": "2026-10-26T14:06:29+00:00",
+  "generato": "2026-10-26T15:37:33+00:00",
   "avviso": [
    "Differenza fra zone, non effetto causale."
   ],

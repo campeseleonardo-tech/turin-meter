@@ -63,6 +63,26 @@ def scrivi_frasi_de(frasi):
     print(f"tedesco: {len(uniche)} frasi delle schede senza traduzione (restano in inglese): data/ref/frasi_de_mancanti.txt")
 
 
+TIMBRI = ("generato", "stato")   # data e ora della generazione: cambiano a ogni lancio anche se i numeri no
+
+
+def tieni_timbri(s, percorso):
+    """Se la scheda e' uguale a quella gia' scritta a meno dei timbri (a qualunque livello), ritorna quella vecchia:
+    niente modifiche (e conflitti di merge) solo per l'orario. Altrimenti ritorna s."""
+    try:
+        vecchio = json.loads(percorso.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return s
+
+    def senza(x):
+        if isinstance(x, dict):
+            return {k: senza(v) for k, v in x.items() if k not in TIMBRI}
+        if isinstance(x, list):
+            return [senza(v) for v in x]
+        return x
+    return vecchio if senza(vecchio) == senza(json.loads(json.dumps(s, ensure_ascii=False))) else s
+
+
 def main():
     schede = []
     mancanti_de = []
@@ -87,6 +107,7 @@ def main():
             s.pop("_n_su", None)
             print(f"{nome}: forma - «{s['forma']['titolo']}», numero grande {s['forma']['numero']['valore']} {s['forma']['numero']['unita']}")
             controlla_forma(nome, s["forma"])
+            s = tieni_timbri(s, comune.PROC / file)
             (comune.PROC / file).write_text(json.dumps(s, ensure_ascii=False, indent=2), encoding="utf-8")
         s["_nome"] = file
         schede.append(s)

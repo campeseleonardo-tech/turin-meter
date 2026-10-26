@@ -21,6 +21,7 @@ Poi, a mano: GitHub -> Releases -> Draft a new release -> tag dati-AAAA-MM -> tr
 """
 import argparse
 import hashlib
+import re
 import sys
 import tempfile
 import zipfile
@@ -33,6 +34,8 @@ import comuni  # noqa: E402
 RADICE = comuni.RADICE
 MAX_ZIP = int(1.9 * 1024 ** 3)       # GitHub: file di una Release fino a 2 GB
 BLOCCO = 1024 * 1024
+# PDF e pagine salvate non sono dati aperti (rapporti di GTT, report IMQ): si citano, non si ridistribuiscono (decisione di Leo 26/10)
+NON_DATI_APERTI = re.compile(r"\.(pdf|html?)$", re.I)
 
 
 def gruppo_di(rel):
@@ -120,8 +123,11 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
 
     righe = inv.inventario(data, inv.carica_codice(RADICE, Path(inv.__file__).name))
-    release = [(r["rel"], r["peso"]) for r in righe if r["posto"] == "Release" and (data / r["rel"]).is_file()]
+    release = [(r["rel"], r["peso"]) for r in righe if r["posto"] == "Release" and (data / r["rel"]).is_file() and not NON_DATI_APERTI.search(r["rel"])]
     c("ci sono file per la Release", len(release) > 0, bloccante=True)
+    tolti = [r["rel"] for r in righe if r["posto"] == "Release" and NON_DATI_APERTI.search(r["rel"])]
+    print(f"PDF e pagine salvate tolti dalla Release: {len(tolti)}" + (f" ({', '.join(tolti)})" if tolti else ""))
+    c("nessun PDF o pagina salvata nella Release", not any(NON_DATI_APERTI.search(r) for r, _p in release))
     esclusi = {p: sum(1 for r in righe if r["posto"] == p) for p in ("git", "riassunto", "fonte", "fuori")}
     print(f"Release: {len(release)} file, {sum(p for _r, p in release) / 1e6:.0f} MB non compressi. Non inclusi: {esclusi}")
     c("nessun file «fonte» (IMQ, OMI) nella Release", not any(r["posto"] == "fonte" and (r["rel"], r["peso"]) in release for r in righe))

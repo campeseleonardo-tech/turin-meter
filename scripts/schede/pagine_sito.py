@@ -81,7 +81,7 @@ def testa(chiave):
         righe.append('<link rel="icon" href="assets/icona-32.png" sizes="32x32" type="image/png">')
         return "\n".join(righe)
     url = SITO_URL + ("" if chiave == "index" else file)
-    img = SITO_URL + "assets/anteprima-it.png"
+    img = SITO_URL + "assets/anteprima-en.png"   # anteprima social in inglese (decisione di Leo, 26/10/2026): LinkedIn la mostra a tutti
     righe += [
         f'<meta name="description" content="{a(desc[0])}">',
         '<meta name="theme-color" content="#0b2559">',
@@ -90,18 +90,18 @@ def testa(chiave):
         f'<link rel="canonical" href="{url}">',
         '<meta property="og:type" content="website">',
         f'<meta property="og:site_name" content="{a(NOME_SITO)}">',
-        f'<meta property="og:locale" content="{LOCALE["it"]}">',
-        f'<meta property="og:locale:alternate" content="{LOCALE["en"]}">',
+        f'<meta property="og:locale" content="{LOCALE["en"]}">',
+        f'<meta property="og:locale:alternate" content="{LOCALE["it"]}">',
         f'<meta property="og:locale:alternate" content="{LOCALE["de"]}">',
-        f'<meta property="og:title" content="{a(titolo[0])}">',
-        f'<meta property="og:description" content="{a(desc[0])}">',
+        f'<meta property="og:title" content="{a(titolo[1])}">',
+        f'<meta property="og:description" content="{a(desc[1])}">',
         f'<meta property="og:url" content="{url}">',
         f'<meta property="og:image" content="{img}">',
         '<meta property="og:image:width" content="1200">',
         '<meta property="og:image:height" content="630">',
         '<meta name="twitter:card" content="summary_large_image">',
-        f'<meta name="twitter:title" content="{a(titolo[0])}">',
-        f'<meta name="twitter:description" content="{a(desc[0])}">',
+        f'<meta name="twitter:title" content="{a(titolo[1])}">',
+        f'<meta name="twitter:description" content="{a(desc[1])}">',
         f'<meta name="twitter:image" content="{img}">',
     ]
     return "\n".join(righe)

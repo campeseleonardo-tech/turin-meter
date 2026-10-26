@@ -531,7 +531,7 @@
     "scripts/27_risultato4_regolarita.py",
     "scripts/70_risultato9_attesa.py"
   ],
-  "generato": "2026-10-26T14:06:29+00:00",
+  "generato": "2026-10-26T15:37:33+00:00",
   "avviso": [
     "Pochi giorni di dati",
     "Arrivi misurati con il GPS dei mezzi GTT raccolto dal progetto, 2026-10-10 - 2026-10-22: il GPS c'è per il 80% dei passaggi programmati delle corse viste (prima si usava il feed GTT, che sottostima i ritardi: confronto nella scheda). Giorni non tutti interi e solo linee urbane viste dal GPS: vedi i limiti."
