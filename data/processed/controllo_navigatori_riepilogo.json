@@ -1,0 +1,21 @@
+{
+ "percorsi": 20,
+ "dentro_la_forbice": 0,
+ "mediana_errore_assoluto_pct": 23.5,
+ "mediana_errore_con_segno_pct": -23.5,
+ "forma": "classi",
+ "forma_per_regola": "forbice",
+ "scarto_sistematico": true,
+ "nota": "la stima aperta e' piu' veloce del navigatore in tutti i percorsi: l'auto reale e' piu' lenta di come la stimiamo, quindi il vantaggio dei mezzi pubblici e' probabilmente sottostimato; per questo i numeri sono una forbice fra la stima aperta e la stessa stima corretta col fattore del controllo",
+ "navigatori": [
+  "TomTom (Routing API, interrogato da programma solo per questo controllo)"
+ ],
+ "partenza": "martedì, fra le 7:45 e le 8:15",
+ "date_lettura": [
+  "2026-10-25",
+  "2026-10-25"
+ ],
+ "regola": "mediana errore assoluto fino al 20% e almeno 12 percorsi dentro la forbice: numero; fino al 35%: forbice; oltre: classi",
+ "controllo": "tempo di guida previsto dai navigatori (senza i 5 minuti di parcheggio)",
+ "calcolato": "2026-10-25"
+}

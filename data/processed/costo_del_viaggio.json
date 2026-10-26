@@ -1,0 +1,1141 @@
+{
+ "titolo": "Quanto costa muoversi",
+ "consultato": "2026-10-24",
+ "regole": {
+  "giorni_mese": 20,
+  "ore_sosta_commissione": 2,
+  "ore_sosta_lavoro": 8,
+  "viaggi_abbonamento": 40,
+  "fasce_km": [
+   [
+    0.0,
+    3.0
+   ],
+   [
+    3.0,
+    6.0
+   ],
+   [
+    6.0,
+    10.0
+   ],
+   [
+    10.0,
+    null
+   ]
+  ],
+  "auto": "media delle due auto di riferimento (Golf VIII 115 CV a benzina e a gasolio)",
+  "sosta": "tariffa ordinaria (ZTL centrale non nel calcolo)",
+  "prova": false
+ },
+ "prezzi": {
+  "benzina_self_eur_l": 2.004,
+  "gasolio_self_eur_l": 2.249,
+  "consumo_urbano_benzina": 7.2,
+  "consumo_urbano_gasolio": 6.2,
+  "aci_benzina_eur_km": 0.5568,
+  "aci_gasolio_eur_km": 0.5047,
+  "biglietto_urbano": 2.0,
+  "abbonamento_mensile": 38.0,
+  "sosta_ordinaria_ora": 1.7,
+  "sosta_ztl_ora": 2.8
+ },
+ "riepilogo": {
+  "punti": 12,
+  "interscambi": 5,
+  "coppie_torino": 506,
+  "differenza_mese_sente_mediana": 269.29,
+  "differenza_mese_pieno_mediana": 366.03,
+  "auto_mese_sente_mediana": 307.29,
+  "auto_mese_pieno_mediana": 404.03,
+  "mezzi_mese": 38.0,
+  "minuti_in_piu_mediana": 19.0,
+  "commissione_auto_sente_mediana": 5.16,
+  "commissione_auto_piena_mediana": 10.0,
+  "commissione_mezzi": 4.0,
+  "parcheggio_lavoro_giorno": 13.6,
+  "carburante_giorno_mediana": 1.76,
+  "km_mediano_punti": 6.2,
+  "soglia_km_senza_sosta": 6.7,
+  "mese": {
+   "sosta_pagata": {
+    "sente": 307.29,
+    "pieno": 404.03,
+    "carburante": 35.29,
+    "sosta": 272.0
+   },
+   "parcheggio_gratis": {
+    "sente": 35.29,
+    "pieno": 132.03
+   },
+   "mezzi": {
+    "biglietti": 80.0,
+    "mensile": 38.0,
+    "annuale_su_12": 25.83,
+    "agevolati": [
+     {
+      "id": "under26_mensile",
+      "nome": "Under 26, abbonamento mensile",
+      "eur_mese": 25.0,
+      "annuale": false,
+      "eur_anno": null
+     },
+     {
+      "id": "under26_annuale_ordinario",
+      "nome": "Under 26, annuale ordinario",
+      "eur_mese": 21.5,
+      "annuale": true,
+      "eur_anno": 258.0
+     },
+     {
+      "id": "under26_annuale_a",
+      "nome": "Under 26, annuale agevolato, ISEE fino a 12.000 euro",
+      "eur_mese": 13.17,
+      "annuale": true,
+      "eur_anno": 158.0
+     },
+     {
+      "id": "under26_annuale_b",
+      "nome": "Under 26, annuale agevolato, ISEE da 12.000 a 20.000 euro",
+      "eur_mese": 14.83,
+      "annuale": true,
+      "eur_anno": 178.0
+     },
+     {
+      "id": "under26_annuale_c",
+      "nome": "Under 26, annuale agevolato, ISEE da 20.000 a 50.000 euro",
+      "eur_mese": 17.33,
+      "annuale": true,
+      "eur_anno": 208.0
+     },
+     {
+      "id": "over65_mensile",
+      "nome": "Over 65, abbonamento mensile",
+      "eur_mese": 20.0,
+      "annuale": false,
+      "eur_anno": null
+     },
+     {
+      "id": "over65_annuale_a",
+      "nome": "Over 65, annuale, ISEE fino a 7.000 euro",
+      "eur_mese": 0.25,
+      "annuale": true,
+      "eur_anno": 0.0
+     },
+     {
+      "id": "over65_annuale_b",
+      "nome": "Over 65, annuale, ISEE da 7.000 a 12.000 euro",
+      "eur_mese": 9.83,
+      "annuale": true,
+      "eur_anno": 118.0
+     },
+     {
+      "id": "over65_annuale_c",
+      "nome": "Over 65, annuale, ISEE da 12.000 a 20.000 euro",
+      "eur_mese": 12.92,
+      "annuale": true,
+      "eur_anno": 155.0
+     },
+     {
+      "id": "over65_annuale_d",
+      "nome": "Over 65, annuale, ISEE da 20.000 a 50.000 euro",
+      "eur_mese": 15.67,
+      "annuale": true,
+      "eur_anno": 188.0
+     }
+    ]
+   }
+  }
+ },
+ "punti": [
+  {
+   "nome": "SANTA RITA",
+   "tipo": "punto_prioritario",
+   "lat": 45.04595,
+   "lon": 7.64249,
+   "mancano": 450,
+   "dist_centro_km": 4.4,
+   "libero_min": 7.2,
+   "fattore_basso": 2.02,
+   "auto_favorevole_min": 13.7,
+   "auto_stima_min": 19.6,
+   "tp_orario_min": 36.0,
+   "tp_min": 38.7,
+   "rapporto_alto": 2.82,
+   "rapporto_basso": 1.97,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 24.1,
+   "pareggio_alto_min": 30.0,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "non_conviene",
+    "15": "conviene"
+   },
+   "km": 5.2,
+   "commissione": {
+    "auto_sente": 4.874617525798414,
+    "auto_piena": 8.916965324415164,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 301.49235051596827,
+    "auto_piena": 382.33930648830324,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 29.492350515968287,
+    "auto_piena": 110.33930648830328,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 19.1,
+   "risparmio_mese_sente": 263.49235051596827,
+   "risparmio_mese_pieno": 344.33930648830324
+  },
+  {
+   "nome": "METRO MASSAUA",
+   "tipo": "punto_prioritario",
+   "lat": 45.07458,
+   "lon": 7.62063,
+   "mancano": 350,
+   "dist_centro_km": 5.1,
+   "libero_min": 8.4,
+   "fattore_basso": 1.81,
+   "auto_favorevole_min": 15.1,
+   "auto_stima_min": 20.3,
+   "tp_orario_min": 25.0,
+   "tp_min": 27.3,
+   "rapporto_alto": 1.81,
+   "rapporto_basso": 1.34,
+   "classe": "conviene",
+   "classe_testo": "il bus conviene",
+   "pareggio_basso_min": 12.0,
+   "pareggio_alto_min": 17.2,
+   "classi_sensibilita": {
+    "5": "conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 5.91,
+   "commissione": {
+    "auto_sente": 5.077433648982165,
+    "auto_piena": 9.67575836685594,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 305.5486729796433,
+    "auto_piena": 397.5151673371188,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 33.54867297964331,
+    "auto_piena": 125.5151673371188,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 7.0,
+   "risparmio_mese_sente": 267.5486729796433,
+   "risparmio_mese_pieno": 359.5151673371188
+  },
+  {
+   "nome": "PONTE CAVALIERI TEMPLARI",
+   "tipo": "punto_prioritario",
+   "lat": 45.00053,
+   "lon": 7.67394,
+   "mancano": 350,
+   "dist_centro_km": 7.9,
+   "libero_min": 11.0,
+   "fattore_basso": 1.66,
+   "auto_favorevole_min": 18.2,
+   "auto_stima_min": 23.1,
+   "tp_orario_min": 51.0,
+   "tp_min": 54.2,
+   "rapporto_alto": 2.98,
+   "rapporto_basso": 2.35,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 36.1,
+   "pareggio_alto_min": 41.0,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "non_conviene",
+    "15": "non_conviene"
+   },
+   "km": 8.79,
+   "commissione": {
+    "auto_sente": 5.892572557945095,
+    "auto_piena": 12.725425834286314,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 321.85145115890185,
+    "auto_piena": 458.5085166857263,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 49.85145115890191,
+    "auto_piena": 186.50851668572628,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 31.1,
+   "risparmio_mese_sente": 283.85145115890185,
+   "risparmio_mese_pieno": 420.5085166857263
+  },
+  {
+   "nome": "REGINA MARGHERITA",
+   "tipo": "punto_prioritario",
+   "lat": 45.08861,
+   "lon": 7.65237,
+   "mancano": 350,
+   "dist_centro_km": 3.3,
+   "libero_min": 5.5,
+   "fattore_basso": 2.35,
+   "auto_favorevole_min": 11.6,
+   "auto_stima_min": 18.0,
+   "tp_orario_min": 31.0,
+   "tp_min": 33.5,
+   "rapporto_alto": 2.89,
+   "rapporto_basso": 1.86,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 20.5,
+   "pareggio_alto_min": 26.9,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 4.22,
+   "commissione": {
+    "auto_sente": 4.597785436033362,
+    "auto_piena": 7.881257411549926,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 295.95570872066725,
+    "auto_piena": 361.62514823099855,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 23.955708720667246,
+    "auto_piena": 89.6251482309985,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 15.5,
+   "risparmio_mese_sente": 257.95570872066725,
+   "risparmio_mese_pieno": 323.62514823099855
+  },
+  {
+   "nome": "PASINI",
+   "tipo": "punto_prioritario",
+   "lat": 45.07543,
+   "lon": 7.72985,
+   "mancano": 250,
+   "dist_centro_km": 3.5,
+   "libero_min": 5.9,
+   "fattore_basso": 2.12,
+   "auto_favorevole_min": 12.1,
+   "auto_stima_min": 17.5,
+   "tp_orario_min": 28.0,
+   "tp_min": 30.4,
+   "rapporto_alto": 2.51,
+   "rapporto_basso": 1.74,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 17.9,
+   "pareggio_alto_min": 23.3,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 4.4,
+   "commissione": {
+    "auto_sente": 4.649215138060475,
+    "auto_piena": 8.07367061549239,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 296.9843027612095,
+    "auto_piena": 365.4734123098478,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 24.98430276120949,
+    "auto_piena": 93.4734123098478,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 12.9,
+   "risparmio_mese_sente": 258.9843027612095,
+   "risparmio_mese_pieno": 327.4734123098478
+  },
+  {
+   "nome": "LEONARDO DA VINCI",
+   "tipo": "punto_prioritario",
+   "lat": 45.05219,
+   "lon": 7.58706,
+   "mancano": 200,
+   "dist_centro_km": 8.0,
+   "libero_min": 12.4,
+   "fattore_basso": 1.98,
+   "auto_favorevole_min": 19.9,
+   "auto_stima_min": 29.7,
+   "tp_orario_min": 59.0,
+   "tp_min": 62.5,
+   "rapporto_alto": 3.14,
+   "rapporto_basso": 2.1,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 37.8,
+   "pareggio_alto_min": 47.6,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "non_conviene",
+    "15": "non_conviene"
+   },
+   "km": 9.68,
+   "commissione": {
+    "auto_sente": 6.1461692484317805,
+    "auto_piena": 13.674203482269284,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 326.9233849686356,
+    "auto_piena": 477.48406964538566,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 54.92338496863561,
+    "auto_piena": 205.4840696453857,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 32.8,
+   "risparmio_mese_sente": 288.9233849686356,
+   "risparmio_mese_pieno": 439.48406964538566
+  },
+  {
+   "nome": "DROSSO CAP",
+   "tipo": "punto_prioritario",
+   "lat": 45.01715,
+   "lon": 7.62913,
+   "mancano": 200,
+   "dist_centro_km": 7.5,
+   "libero_min": 10.3,
+   "fattore_basso": 1.97,
+   "auto_favorevole_min": 17.4,
+   "auto_stima_min": 25.4,
+   "tp_orario_min": 43.0,
+   "tp_min": 45.9,
+   "rapporto_alto": 2.64,
+   "rapporto_basso": 1.81,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 25.5,
+   "pareggio_alto_min": 33.5,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "non_conviene",
+    "15": "conviene"
+   },
+   "km": 7.79,
+   "commissione": {
+    "auto_sente": 5.611260459622816,
+    "auto_piena": 11.672956929888763,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 316.2252091924563,
+    "auto_piena": 437.4591385977752,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 44.22520919245631,
+    "auto_piena": 165.45913859777522,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 20.5,
+   "risparmio_mese_sente": 278.2252091924563,
+   "risparmio_mese_pieno": 399.4591385977752
+  },
+  {
+   "nome": "STURA LAZIO",
+   "tipo": "punto_prioritario",
+   "lat": 45.10009,
+   "lon": 7.72541,
+   "mancano": 200,
+   "dist_centro_km": 4.5,
+   "libero_min": 7.8,
+   "fattore_basso": 2.11,
+   "auto_favorevole_min": 14.3,
+   "auto_stima_min": 21.4,
+   "tp_orario_min": 37.0,
+   "tp_min": 39.7,
+   "rapporto_alto": 2.78,
+   "rapporto_basso": 1.86,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 23.3,
+   "pareggio_alto_min": 30.4,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "non_conviene",
+    "15": "conviene"
+   },
+   "km": 6.53,
+   "commissione": {
+    "auto_sente": 5.251624644064908,
+    "auto_piena": 10.32745662954717,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 309.03249288129814,
+    "auto_piena": 410.5491325909434,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 37.03249288129817,
+    "auto_piena": 138.54913259094337,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 18.3,
+   "risparmio_mese_sente": 271.03249288129814,
+   "risparmio_mese_pieno": 372.5491325909434
+  },
+  {
+   "nome": "MARSÈ",
+   "tipo": "punto_prioritario",
+   "lat": 44.99058,
+   "lon": 7.71955,
+   "mancano": 150,
+   "dist_centro_km": 9.3,
+   "libero_min": 15.1,
+   "fattore_basso": 1.62,
+   "auto_favorevole_min": 23.2,
+   "auto_stima_min": 29.5,
+   "tp_orario_min": 61.0,
+   "tp_min": 64.5,
+   "rapporto_alto": 2.78,
+   "rapporto_basso": 2.19,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 40.0,
+   "pareggio_alto_min": 46.3,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "non_conviene",
+    "15": "non_conviene"
+   },
+   "km": 13.3,
+   "commissione": {
+    "auto_sente": 7.172255091394055,
+    "auto_piena": 17.513083677614276,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 347.44510182788105,
+    "auto_piena": 554.2616735522856,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 75.44510182788107,
+    "auto_piena": 282.2616735522855,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 35.0,
+   "risparmio_mese_sente": 309.44510182788105,
+   "risparmio_mese_pieno": 516.2616735522856
+  },
+  {
+   "nome": "DERNA EST",
+   "tipo": "punto_prioritario",
+   "lat": 45.10253,
+   "lon": 7.69808,
+   "mancano": 100,
+   "dist_centro_km": 3.6,
+   "libero_min": 7.3,
+   "fattore_basso": 2.09,
+   "auto_favorevole_min": 13.8,
+   "auto_stima_min": 20.3,
+   "tp_orario_min": 34.0,
+   "tp_min": 36.6,
+   "rapporto_alto": 2.65,
+   "rapporto_basso": 1.8,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 21.3,
+   "pareggio_alto_min": 27.8,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 5.68,
+   "commissione": {
+    "auto_sente": 5.012282562946452,
+    "auto_piena": 9.432009546420346,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 304.24565125892906,
+    "auto_piena": 392.6401909284069,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 32.245651258929044,
+    "auto_piena": 120.64019092840691,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 16.3,
+   "risparmio_mese_sente": 266.24565125892906,
+   "risparmio_mese_pieno": 354.6401909284069
+  },
+  {
+   "nome": "FERRARA",
+   "tipo": "punto_prioritario",
+   "lat": 45.02825,
+   "lon": 7.60173,
+   "mancano": 80,
+   "dist_centro_km": 8.1,
+   "libero_min": 12.4,
+   "fattore_basso": 2.0,
+   "auto_favorevole_min": 19.9,
+   "auto_stima_min": 29.8,
+   "tp_orario_min": 49.0,
+   "tp_min": 52.1,
+   "rapporto_alto": 2.62,
+   "rapporto_basso": 1.75,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 27.3,
+   "pareggio_alto_min": 37.2,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 9.51,
+   "commissione": {
+    "auto_sente": 6.098518418789817,
+    "auto_piena": 13.495928119190316,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 325.9703683757964,
+    "auto_piena": 473.91856238380626,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 53.970368375796355,
+    "auto_piena": 201.91856238380632,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 22.3,
+   "risparmio_mese_sente": 287.9703683757964,
+   "risparmio_mese_pieno": 435.91856238380626
+  },
+  {
+   "nome": "ZARA",
+   "tipo": "punto_prioritario",
+   "lat": 45.03956,
+   "lon": 7.68183,
+   "mancano": 60,
+   "dist_centro_km": 3.5,
+   "libero_min": 5.8,
+   "fattore_basso": 2.04,
+   "auto_favorevole_min": 11.9,
+   "auto_stima_min": 16.7,
+   "tp_orario_min": 33.0,
+   "tp_min": 35.6,
+   "rapporto_alto": 2.99,
+   "rapporto_basso": 2.13,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 23.9,
+   "pareggio_alto_min": 28.7,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "non_conviene",
+    "15": "conviene"
+   },
+   "km": 4.26,
+   "commissione": {
+    "auto_sente": 4.608552643352863,
+    "auto_piena": 7.92154060931696,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 296.17105286705726,
+    "auto_piena": 362.43081218633915,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 24.17105286705726,
+    "auto_piena": 90.43081218633921,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 18.9,
+   "risparmio_mese_sente": 258.17105286705726,
+   "risparmio_mese_pieno": 324.43081218633915
+  }
+ ],
+ "interscambi": [
+  {
+   "nome": "STURA",
+   "tipo": "interscambio",
+   "lat": 45.12058,
+   "lon": 7.71156,
+   "posti": 589,
+   "stato": "pieno",
+   "riempimento_giorno": 0.9152,
+   "descrizione": "sempre quasi pieno: 80% di notte, 91% di giorno",
+   "auto_passaggio_txt": 7600,
+   "libero_min": 10.3,
+   "fattore_basso": 2.16,
+   "auto_favorevole_min": 17.3,
+   "auto_stima_min": 27.2,
+   "tp_orario_min": 39.0,
+   "tp_min": 41.8,
+   "rapporto_alto": 2.42,
+   "rapporto_basso": 1.54,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 19.6,
+   "pareggio_alto_min": 29.5,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 7.98,
+   "commissione": {
+    "auto_sente": 5.664700209002765,
+    "auto_piena": 11.872890295060854,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 317.2940041800553,
+    "auto_piena": 441.45780590121706,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 45.29400418005532,
+    "auto_piena": 169.45780590121709,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 14.6,
+   "risparmio_mese_sente": 279.2940041800553,
+   "risparmio_mese_pieno": 403.45780590121706
+  },
+  {
+   "nome": "VENCHI UNICA",
+   "tipo": "interscambio",
+   "lat": 45.0741,
+   "lon": 7.61576,
+   "posti": 437,
+   "stato": "a_meta",
+   "riempimento_giorno": 0.5519,
+   "descrizione": "sempre intorno al 55%",
+   "auto_passaggio_txt": 7100,
+   "libero_min": 9.2,
+   "fattore_basso": 1.89,
+   "auto_favorevole_min": 16.0,
+   "auto_stima_min": 22.3,
+   "tp_orario_min": 28.0,
+   "tp_min": 30.4,
+   "rapporto_alto": 1.9,
+   "rapporto_basso": 1.36,
+   "classe": "conviene",
+   "classe_testo": "il bus conviene",
+   "pareggio_basso_min": 13.1,
+   "pareggio_alto_min": 19.4,
+   "classi_sensibilita": {
+    "5": "conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 6.36,
+   "commissione": {
+    "auto_sente": 5.205524041188545,
+    "auto_piena": 10.154981107553205,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 308.1104808237709,
+    "auto_piena": 407.09962215106407,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 36.1104808237709,
+    "auto_piena": 135.09962215106407,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 8.1,
+   "risparmio_mese_sente": 270.1104808237709,
+   "risparmio_mese_pieno": 369.09962215106407
+  },
+  {
+   "nome": "CAIO MARIO",
+   "tipo": "interscambio",
+   "lat": 45.02863,
+   "lon": 7.64029,
+   "posti": 418,
+   "stato": "libero",
+   "riempimento_giorno": 0.0099,
+   "descrizione": "il valore non cambia (1%): forse il contatore è fermo",
+   "auto_passaggio_txt": 3900,
+   "libero_min": 9.2,
+   "fattore_basso": 2.0,
+   "auto_favorevole_min": 16.0,
+   "auto_stima_min": 23.4,
+   "tp_orario_min": 38.0,
+   "tp_min": 40.8,
+   "rapporto_alto": 2.55,
+   "rapporto_basso": 1.74,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 22.4,
+   "pareggio_alto_min": 29.8,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 6.66,
+   "commissione": {
+    "auto_sente": 5.288449189543476,
+    "auto_piena": 10.46522777151336,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 309.7689837908695,
+    "auto_piena": 413.30455543026716,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 37.76898379086952,
+    "auto_piena": 141.30455543026721,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 17.4,
+   "risparmio_mese_sente": 271.7689837908695,
+   "risparmio_mese_pieno": 375.30455543026716
+  },
+  {
+   "nome": "FERMI",
+   "tipo": "interscambio",
+   "lat": 45.07646,
+   "lon": 7.59106,
+   "posti": 300,
+   "stato": "non_misurato",
+   "riempimento_giorno": null,
+   "descrizione": null,
+   "auto_passaggio_txt": 1000,
+   "libero_min": 11.4,
+   "fattore_basso": 1.88,
+   "auto_favorevole_min": 18.6,
+   "auto_stima_min": 26.4,
+   "tp_orario_min": 31.0,
+   "tp_min": 33.5,
+   "rapporto_alto": 1.8,
+   "rapporto_basso": 1.27,
+   "classe": "conviene",
+   "classe_testo": "il bus conviene",
+   "pareggio_basso_min": 12.1,
+   "pareggio_alto_min": 19.9,
+   "classi_sensibilita": {
+    "5": "conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 8.45,
+   "commissione": {
+    "auto_sente": 5.797248878550295,
+    "auto_piena": 12.368792724604509,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 319.9449775710059,
+    "auto_piena": 451.3758544920901,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 47.944977571005914,
+    "auto_piena": 179.37585449209018,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 7.1,
+   "risparmio_mese_sente": 281.9449775710059,
+   "risparmio_mese_pieno": 413.3758544920901
+  },
+  {
+   "nome": "SOFIA",
+   "tipo": "interscambio",
+   "lat": 45.09557,
+   "lon": 7.71692,
+   "posti": 272,
+   "stato": "libero",
+   "riempimento_giorno": 0.3049,
+   "descrizione": "è più pieno di notte che di giorno: 52% di notte, 31% di giorno",
+   "auto_passaggio_txt": 3100,
+   "libero_min": 7.0,
+   "fattore_basso": 2.16,
+   "auto_favorevole_min": 13.3,
+   "auto_stima_min": 20.0,
+   "tp_orario_min": 33.0,
+   "tp_min": 35.6,
+   "rapporto_alto": 2.68,
+   "rapporto_basso": 1.78,
+   "classe": "non_conviene",
+   "classe_testo": "il bus non conviene",
+   "pareggio_basso_min": 20.6,
+   "pareggio_alto_min": 27.3,
+   "classi_sensibilita": {
+    "5": "non_conviene",
+    "10": "conviene",
+    "15": "conviene"
+   },
+   "km": 5.73,
+   "commissione": {
+    "auto_sente": 5.025082537599198,
+    "auto_piena": 9.47989790735269,
+    "mezzi": 4.0
+   },
+   "lavoro_mese": {
+    "auto_sente": 304.50165075198396,
+    "auto_piena": 393.59795814705376,
+    "mezzi": 38.0
+   },
+   "lavoro_mese_senza_sosta": {
+    "auto_sente": 32.50165075198397,
+    "auto_piena": 121.5979581470538,
+    "mezzi": 38.0
+   },
+   "per_auto": {
+    "benzina": {
+     "sente_km": 0.14428800000000003,
+     "pieno_km": 0.5568
+    },
+    "gasolio": {
+     "sente_km": 0.139438,
+     "pieno_km": 0.5047
+    }
+   },
+   "minuti_in_piu_coi_mezzi": 15.6,
+   "risparmio_mese_sente": 266.50165075198396,
+   "risparmio_mese_pieno": 355.59795814705376
+  }
+ ],
+ "fasce_distanza": [
+  {
+   "da_km": 0.0,
+   "a_km": 3.0,
+   "coppie": 52,
+   "auto": 25500,
+   "km_mediano": 2.5,
+   "auto_sente_mese": 14.3,
+   "auto_piena_mese": 53.49,
+   "mezzi_mese": 38.0
+  },
+  {
+   "da_km": 3.0,
+   "a_km": 6.0,
+   "coppie": 191,
+   "auto": 47593,
+   "km_mediano": 4.4,
+   "auto_sente_mese": 25.08,
+   "auto_piena_mese": 93.82,
+   "mezzi_mese": 38.0
+  },
+  {
+   "da_km": 6.0,
+   "a_km": 10.0,
+   "coppie": 207,
+   "auto": 25228,
+   "km_mediano": 7.7,
+   "auto_sente_mese": 43.92,
+   "auto_piena_mese": 164.31,
+   "mezzi_mese": 38.0
+  },
+  {
+   "da_km": 10.0,
+   "a_km": null,
+   "coppie": 56,
+   "auto": 4870,
+   "km_mediano": 11.4,
+   "auto_sente_mese": 64.45,
+   "auto_piena_mese": 241.13,
+   "mezzi_mese": 38.0
+  }
+ ],
+ "controlli": [
+  "OK     prezzi dei carburanti fra 1 e 3 euro al litro — benzina 2.004, gasolio 2.249",
+  "OK     tutti i luoghi hanno una lunghezza",
+  "OK     coppie Torino-Torino con le zone sul grafo — 0 fuori",
+  "OK     chilometri fra 1 e 80 — da 1.5 a 14.2",
+  "OK     nessun costo negativo o nullo",
+  "OK     l'auto che si sente costa meno dell'auto piena",
+  "OK     coppie nelle fasce = coppie con chilometri — 506 coppie",
+  "OK     coppie Torino-Torino in ogni fascia — 52, 191, 207, 56",
+  "AVVISO cintura: tariffe a zone non assegnate alle zone dell'indagine — la cintura resta fuori; la scheda usa Torino e i punti del R6",
+  "OK     la sosta pagata pesa piu' del carburante (caso principale)"
+ ]
+}

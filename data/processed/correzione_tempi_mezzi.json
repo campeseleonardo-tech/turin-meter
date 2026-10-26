@@ -1,0 +1,64 @@
+{
+ "generato": "2026-10-25 18:08",
+ "formula": "tempo corretto = tempo da orario + attesa in piu' + ritardo per minuto x quota a bordo x tempo da orario",
+ "regole": {
+  "coppie_campione": 200,
+  "seme": 20261025,
+  "min_minuti_corsa": 5.0,
+  "min_corse_fascia": 200,
+  "attesa": "script 70, feriale, linee frequenti, media di stima bassa e alta, una volta per viaggio; i cambi non si contano",
+  "ritardo": "GPS (script 27), corse feriali: (ritardo all'ultima fermata vista - ritardo alla prima) / minuti programmati, mediana per fascia",
+  "quota": "r5py DetailedItineraries alle 8, mediana su 200 coppie (prime del campione fisso di 200, per tempo); la stessa per tutte le fasce"
+ },
+ "giorni_gps": [
+  "20261012",
+  "20261013",
+  "20261015",
+  "20261016",
+  "20261020",
+  "20261021",
+  "20261022"
+ ],
+ "quota_a_bordo": {
+  "coppie_campione": 200,
+  "coppie_usate": 150,
+  "senza_percorso_o_scartate": 50,
+  "mediana": 0.5662,
+  "p25": 0.4087,
+  "p75": 0.6527
+ },
+ "per_fascia": {
+  "punta_mattina": {
+   "attesa_in_piu_min": 1.48,
+   "corse": 6692,
+   "ritardo_per_minuto": 0.0595,
+   "p25": -0.0324,
+   "p75": 0.1511,
+   "quota_a_bordo": 0.5662
+  },
+  "giorno": {
+   "attesa_in_piu_min": 1.58,
+   "corse": 18287,
+   "ritardo_per_minuto": 0.0386,
+   "p25": -0.0453,
+   "p75": 0.1215,
+   "quota_a_bordo": 0.5662
+  },
+  "punta_sera": {
+   "attesa_in_piu_min": 2.05,
+   "corse": 7959,
+   "ritardo_per_minuto": 0.0488,
+   "p25": -0.0362,
+   "p75": 0.1361,
+   "quota_a_bordo": 0.5662
+  },
+  "sera": {
+   "attesa_in_piu_min": 1.74,
+   "corse": 7435,
+   "ritardo_per_minuto": 0.0339,
+   "p25": -0.0562,
+   "p75": 0.1372,
+   "quota_a_bordo": 0.5662
+  }
+ }
+}

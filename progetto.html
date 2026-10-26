@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--SITO:TESTA-->
+<title data-en="Case study — Turin Meter" data-de="Fallstudie — Turin Meter">Il progetto — Turin Meter</title>
+<meta name="description" content="Perché questo progetto, come funziona e quanto ci si può fidare dei dati: la tesi del 2020 era la promessa, questo progetto è la verifica sui dati veri di Torino.">
+<meta name="theme-color" content="#0b2559">
+<link rel="icon" href="assets/icona-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/icona-180.png">
+<link rel="canonical" href="https://campeseleonardo-tech.github.io/turin-meter/progetto.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Turin Meter">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="Il progetto — Turin Meter">
+<meta property="og:description" content="Perché questo progetto, come funziona e quanto ci si può fidare dei dati: la tesi del 2020 era la promessa, questo progetto è la verifica sui dati veri di Torino.">
+<meta property="og:url" content="https://campeseleonardo-tech.github.io/turin-meter/progetto.html">
+<meta property="og:image" content="https://campeseleonardo-tech.github.io/turin-meter/assets/anteprima-it.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Il progetto — Turin Meter">
+<meta name="twitter:description" content="Perché questo progetto, come funziona e quanto ci si può fidare dei dati: la tesi del 2020 era la promessa, questo progetto è la verifica sui dati veri di Torino.">
+<meta name="twitter:image" content="https://campeseleonardo-tech.github.io/turin-meter/assets/anteprima-it.png">
+<!--/SITO:TESTA-->
+<link rel="stylesheet" href="assets/stile.css">
+<link rel="stylesheet" href="assets/progetto.css">
+</head>
+<body>
+<!--SITO:BARRA-->
+<header class="barra-alta"><div class="dentro">
+  <a class="marchio" href="index.html"><img src="assets/logo.svg" alt="" width="34" height="34">Turin Meter</a>
+  <nav aria-label="Pagine del sito" data-en-label="Site pages" data-de-label="Seiten der Website"><a href="index.html" data-en="Home" data-de="Start">Home</a><a href="mappa_torino.html" data-en="Map" data-de="Karte">Mappa</a><a href="progetto.html" aria-current="page" data-en="Case study" data-de="Fallstudie">Il progetto</a></nav>
+  <div class="lingua" role="group" aria-label="Lingua" data-en-label="Language" data-de-label="Sprache"><button type="button" data-l="it" aria-pressed="true" title="Italiano">IT</button><button type="button" data-l="en" aria-pressed="false" title="English">EN</button><button type="button" data-l="de" aria-pressed="false" title="Deutsch">DE</button></div>
+</div></header>
+<!--/SITO:BARRA-->
+<main>
+<div class="intro-pag">
+  <h1 data-en="Case study" data-de="Fallstudie">Il progetto</h1>
+</div>
+
+<div class="scena" id="scena"></div>
+</main>
+<!--SITO:PIEDE-->
+<footer class="piede"><div class="dentro">
+  <div>
+    <h2 data-en="About me" data-de="Über mich">Chi sono</h2>
+    <p>Leonardo Campese</p>
+    <p><a href="https://www.linkedin.com/in/leocampese/">LinkedIn</a> · <a href="mailto:campese.leonardo@gmail.com">campese.leonardo@gmail.com</a> · <a href="https://github.com/campeseleonardo-tech/turin-meter">GitHub</a></p>
+    <p class="piccolo"><a href="https://github.com/campeseleonardo-tech/turin-meter/blob/main/DATA_LICENSES.md" data-en="Sources and licences" data-de="Quellen und Lizenzen">Fonti e licenze</a></p>
+  </div>
+  <div>
+    <p class="piccolo avvertenza" data-en="Independent personal project: not affiliated with or endorsed by GTT, 5T, the City of Turin or any other organisation mentioned." data-de="Unabhängiges privates Projekt: nicht verbunden mit oder unterstützt von GTT, 5T, der Stadt Turin oder anderen genannten Organisationen.">Progetto personale e indipendente: non è affiliato né approvato da GTT, 5T, Città di Torino o dagli altri enti citati.</p>
+    <p class="piccolo" id="datiAggiornati">Dati dal … al …</p>
+    <p class="piccolo" data-en="Code under the MIT licence; data keep the licence of their source." data-de="Code unter MIT-Lizenz; die Daten behalten die Lizenz ihrer Quelle.">Codice con licenza MIT; i dati hanno la licenza della loro fonte.</p>
+  </div>
+</div></footer>
+<!--/SITO:PIEDE-->
+<script src="data/schede_risultati.js"></script>
+<script src="data/progetto.js" onerror="window.PROGETTO=null"></script>
+<script src="assets/sito.js"></script>
+<script>Sito.avvia();</script>
+<script src="assets/progetto.js"></script>
+<script>
+Progetto.monta(document.getElementById("scena"));
+Sito.dataAggiornamento();
+</script>
+</body>
+</html>

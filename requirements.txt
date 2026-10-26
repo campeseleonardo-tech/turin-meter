@@ -1,0 +1,16 @@
+# Librerie Python usate dagli script (Python 3.13-3.14, NON Anaconda).
+# Le versioni esatte installate sul PC vanno scritte qui con: python -m pip show <nome>  (vedi PIANO_CORREZIONI_GENERALI.md)
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.6
+shapely==2.2.0
+geopandas==1.2.0     # script 18, 93, 94, 100 (con r5py)
+r5py==1.1.7          # tempi coi mezzi pubblici (script 18, 93, 94, 99, 100): serve Java 21 o piu'
+pillow==13.0.0       # anteprime e immagini del README (scripts/prova_pagine.py)
+psutil==7.2.2        # facoltativo: memoria usata (script 39)
+pyproj==3.8.0
+osmium==4.3.1
+pypdf==6.20.0        # solo per il rapporto di sostenibilita' (script 30)
+networkx==3.7        # facoltativo: verifiche dei percorsi (script 42 --verifica, 85)
+matplotlib==3.11.2   # facoltativo: grafico dello script 44
+playwright==1.64.0     # solo per scripts/prova_pagine.py dove non ci sono Edge/Chrome (es. cloud, Linux)

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--SITO:TESTA-->
+<title data-en="Turin Meter — How Turin moves: measured, calculated, analysed." data-de="Turin Meter — Wie sich Turin bewegt: gemessen, berechnet, analysiert.">Turin Meter — Come si muove Torino: misurato, calcolato, analizzato.</title>
+<meta name="description" content="Ritardi di bus e tram, auto contro mezzi pubblici, fragilità e servizi, parcheggi di scambio: dati aperti di Torino, raccolti ogni minuto.">
+<meta name="theme-color" content="#0b2559">
+<link rel="icon" href="assets/icona-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/icona-180.png">
+<link rel="canonical" href="https://campeseleonardo-tech.github.io/turin-meter/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Turin Meter">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="Turin Meter — Come si muove Torino: misurato, calcolato, analizzato.">
+<meta property="og:description" content="Ritardi di bus e tram, auto contro mezzi pubblici, fragilità e servizi, parcheggi di scambio: dati aperti di Torino, raccolti ogni minuto.">
+<meta property="og:url" content="https://campeseleonardo-tech.github.io/turin-meter/">
+<meta property="og:image" content="https://campeseleonardo-tech.github.io/turin-meter/assets/anteprima-it.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Turin Meter — Come si muove Torino: misurato, calcolato, analizzato.">
+<meta name="twitter:description" content="Ritardi di bus e tram, auto contro mezzi pubblici, fragilità e servizi, parcheggi di scambio: dati aperti di Torino, raccolti ogni minuto.">
+<meta name="twitter:image" content="https://campeseleonardo-tech.github.io/turin-meter/assets/anteprima-it.png">
+<!--/SITO:TESTA-->
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<!--SITO:BARRA-->
+<header class="barra-alta"><div class="dentro">
+  <a class="marchio" href="index.html"><img src="assets/logo.svg" alt="" width="34" height="34">Turin Meter</a>
+  <nav aria-label="Pagine del sito" data-en-label="Site pages" data-de-label="Seiten der Website"><a href="index.html" aria-current="page" data-en="Home" data-de="Start">Home</a><a href="mappa_torino.html" data-en="Map" data-de="Karte">Mappa</a><a href="progetto.html" data-en="Case study" data-de="Fallstudie">Il progetto</a></nav>
+  <div class="lingua" role="group" aria-label="Lingua" data-en-label="Language" data-de-label="Sprache"><button type="button" data-l="it" aria-pressed="true" title="Italiano">IT</button><button type="button" data-l="en" aria-pressed="false" title="English">EN</button><button type="button" data-l="de" aria-pressed="false" title="Deutsch">DE</button></div>
+</div></header>
+<!--/SITO:BARRA-->
+<section class="eroe" id="eroe" aria-labelledby="titoloHome">
+  <canvas id="cMezzi" aria-hidden="true"></canvas>
+  <div class="dentro">
+    <h1 id="titoloHome">Turin Meter</h1>
+    <p class="sotto" data-en="How Turin moves: measured, calculated, analysed." data-de="Wie sich Turin bewegt: gemessen, berechnet, analysiert.">Come si muove Torino: misurato, calcolato, analizzato.</p>
+    <p class="contatore" id="contatore" hidden></p>
+    <p class="didascalia-eroe"><span class="orologio" id="orologio" aria-hidden="true">07:30</span>
+      <span data-en="A typical weekday morning: every dot is a real bus or tram (GPS)." data-de="Ein typischer Werktagmorgen: Jeder Punkt ist ein echter Bus oder eine echte Straßenbahn (GPS).">Un mattino feriale tipico: ogni puntino è un bus o un tram veri (GPS).</span></p>
+  </div>
+</section>
+<main>
+
+<section class="in-numeri" id="inNumeri" aria-labelledby="hNumeri" hidden>
+  <h2 class="gruppo-titolo" id="hNumeri" data-en="In numbers" data-de="In Zahlen">In numeri</h2>
+  <div class="numeri-riga" id="numeriRiga"></div>
+</section>
+
+<div id="risultati"><div id="riquadri"></div></div>
+
+<section class="cosa-farei" aria-labelledby="hFarei">
+  <h2 class="gruppo-titolo" id="hFarei" data-en="Three decisions for Turin" data-de="Drei Entscheidungen für Turin">Tre decisioni per Torino</h2>
+  <ol class="farei" id="fareiLista"></ol>
+  <p class="link-progetto"><a class="btn" href="progetto.html" data-en="Read the case study →" data-de="Fallstudie lesen →">Leggi il progetto →</a></p>
+</section>
+<dialog id="finestra" aria-labelledby="finTitolo">
+  <div class="fin-testa">
+    <div>
+      <div id="finMeta" class="fin-meta"></div>
+      <h2 id="finTitolo"></h2>
+    </div>
+    <button class="fin-chiudi" id="finChiudi" aria-label="Chiudi" data-en-label="Close" data-de-label="Schließen">×</button>
+  </div>
+  <div class="fin-corpo" id="finCorpo"></div>
+</dialog>
+</main>
+<!--SITO:PIEDE-->
+<footer class="piede"><div class="dentro">
+  <div>
+    <h2 data-en="About me" data-de="Über mich">Chi sono</h2>
+    <p>Leonardo Campese</p>
+    <p><a href="https://www.linkedin.com/in/leocampese/">LinkedIn</a> · <a href="mailto:campese.leonardo@gmail.com">campese.leonardo@gmail.com</a> · <a href="https://github.com/campeseleonardo-tech/turin-meter">GitHub</a></p>
+    <p class="piccolo"><a href="https://github.com/campeseleonardo-tech/turin-meter/blob/main/DATA_LICENSES.md" data-en="Sources and licences" data-de="Quellen und Lizenzen">Fonti e licenze</a></p>
+  </div>
+  <div>
+    <p class="piccolo avvertenza" data-en="Independent personal project: not affiliated with or endorsed by GTT, 5T, the City of Turin or any other organisation mentioned." data-de="Unabhängiges privates Projekt: nicht verbunden mit oder unterstützt von GTT, 5T, der Stadt Turin oder anderen genannten Organisationen.">Progetto personale e indipendente: non è affiliato né approvato da GTT, 5T, Città di Torino o dagli altri enti citati.</p>
+    <p class="piccolo" id="datiAggiornati">Dati dal … al …</p>
+    <p class="piccolo" data-en="Code under the MIT licence; data keep the licence of their source." data-de="Code unter MIT-Lizenz; die Daten behalten die Lizenz ihrer Quelle.">Codice con licenza MIT; i dati hanno la licenza della loro fonte.</p>
+  </div>
+</div></footer>
+<!--/SITO:PIEDE-->
+
+<script src="data/schede_risultati.js"></script>
+<script src="data/home_mezzi.js" onerror="window.HOME_MEZZI=null"></script>
+<script src="data/progetto.js" onerror="window.PROGETTO=null"></script>
+<script src="assets/sito.js"></script>
+<script>Sito.avvia();</script>
+<script src="assets/mezzi.js"></script>
+<script src="assets/gara.js"></script>
+<script src="assets/area.js"></script>
+<script src="assets/animazioni.js"></script>
+<script src="assets/schede.js"></script>
+<script>
+"use strict";
+const esc = Sito.esc, formattaNumero = Sito.formattaNumero, T = Sito.T;
+const schede = (Array.isArray(window.SCHEDE_RISULTATI) ? window.SCHEDE_RISULTATI : []).filter(s => s && s.forma && s.forma.numero)
+  .sort((a, b) => (parseFloat(a.numero_pubblico != null ? a.numero_pubblico : a.risultato) || 99) - (parseFloat(b.numero_pubblico != null ? b.numero_pubblico : b.risultato) || 99));
+const forma = Sito.forma;
+const forbice = v => { const m = /^(\d+)\s*[–-]\s*(\d+)$/.exec(String(v)); return m ? ` data-forbice="${m[1]},${m[2]}"` : ""; };
+/* un riquadro: il link usa l'id interno (#rN), che non cambia mai; il numero scritto è quello in pagina */
+function riquadro(s){
+  const f = forma(s), n = f.numero, num = typeof n.valore === "number";
+  const suff = n.unita === "%" ? "%" : "";
+  return `<a class="riquadro" href="#p${esc(s.numero_pubblico != null ? s.numero_pubblico : s.risultato)}">
+    ${f.anima && window.Anima ? `<div class="anteprima">${Anima.html(f.anima, {compatto: true})}</div>` : ""}
+    <div class="num">${esc(Sito.etichetta(s.numero_pubblico != null ? s.numero_pubblico : s.risultato))}</div>
+    <h3>${esc(f.titolo_breve || f.titolo)}</h3>
+    <div class="grande"><span class="val"${num ? ` data-valore="${n.valore}"` : forbice(n.valore)}>${formattaNumero(n.valore)}${suff}</span>
+      <span class="txt">${n.unita && n.unita !== "%" ? esc(n.unita) + " " : ""}${esc(n.breve || n.testo)}</span></div>
+  </a>`;
+}
+/* «In numeri»: cinque numeri da data/progetto.js (in_numeri); senza il file la sezione resta nascosta */
+function inNumeri(){
+  const N = window.PROGETTO && window.PROGETTO.in_numeri, sez = document.getElementById("inNumeri");
+  if(!N){ sez.hidden = true; return; }
+  const milioni = N.passaggi ? "~" + formattaNumero(Math.round(N.passaggi / 1e5) / 10) + " " + T("milioni", "million", "Mio.") : "";
+  const voci = [
+    {testo: milioni, t: T("passaggi alle fermate misurati col GPS", "stop departures measured by GPS", "per GPS gemessene Abfahrten an Haltestellen")},
+    {valore: N.sensori, t: T("sensori del traffico", "traffic sensors", "Verkehrssensoren")},
+    {valore: N.sezioni, t: T("sezioni di censimento", "census sections", "Zählsprengel")},
+    {testo: "~" + formattaNumero(N.fonti), t: T("fonti di dati aperti", "open data sources", "offene Datenquellen")},
+    {valore: N.settimane, t: T("settimane di lavoro", "weeks of work", "Arbeitswochen")}
+  ];
+  document.getElementById("numeriRiga").innerHTML = voci.filter(v => v.valore != null || v.testo).map(v =>
+    `<div class="num-box"><div class="val"${v.valore != null ? ` data-valore="${v.valore}"` : ""}>${v.valore != null ? formattaNumero(v.valore) : esc(v.testo)}</div><div class="txt">${esc(v.t)}</div></div>`).join("");
+  sez.hidden = false;
+  Sito.osserva(sez);
+}
+/* «Tre decisioni per Torino»: le stesse frasi della pagina del progetto, coi numeri da data/progetto.js; senza il file la sezione resta nascosta */
+function cosaFarei(){
+  const P = window.PROGETTO, sez = document.getElementById("fareiLista").parentNode;
+  if(!P || !P.raccomandazioni){ sez.hidden = true; return; }
+  document.getElementById("fareiLista").innerHTML = Sito.raccomandazioni(P.raccomandazioni).map(r => `<li>${esc(r)}</li>`).join("");
+  sez.hidden = false;
+}
+function disegna(){
+  inNumeri();
+  cosaFarei();
+  document.getElementById("riquadri").innerHTML = schede.length
+    ? Sito.perGruppi(schede, riquadro, "riquadri")
+    : `<p class="vuoto">${T("I risultati non sono ancora disponibili.", "The results are not available yet.", "Die Ergebnisse sind noch nicht verfügbar.")}</p>`;
+  Sito.osserva(document.getElementById("riquadri"));
+}
+disegna();
+window.addEventListener("lingua", disegna);
+Schede.monta(Array.isArray(window.SCHEDE_RISULTATI) ? window.SCHEDE_RISULTATI : []);
+Sito.dataAggiornamento();
+</script>
+</body>
+</html>

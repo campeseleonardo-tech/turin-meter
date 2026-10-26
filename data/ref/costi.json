@@ -1,0 +1,146 @@
+{
+ "consultato": "2026-10-24",
+ "nota": "Valori raccolti a mano dal web il 24/10/2026 (giro L14, E10). Si rifanno a mano quando cambiano i prezzi. Il file e' l'unica fonte dello script 103: nessun prezzo e' scritto altrove.",
+ "carburante": {
+  "benzina_self_eur_l": 2.004,
+  "gasolio_self_eur_l": 2.249,
+  "impianti": 107,
+  "fonte": "Osservatorio prezzi carburanti del Ministero delle imprese e del made in Italy (prezzi comunicati dai gestori)",
+  "indirizzo": "https://carburanti.mise.gov.it/ospzSearch/zona (interrogazione di zona: cerchio di 5 km attorno a Piazza Castello, 45.0703 N 7.6869 E)",
+  "data": "24/10/2026, prezzi inseriti dagli impianti fra il 20 e il 24/10/2026",
+  "metodo": "media dei prezzi self di 107 impianti entro 5 km da Piazza Castello (116 impianti trovati; il servizio non da' il comune, quindi il cerchio sostituisce «impianti della Citta' di Torino»); minimo-massimo benzina 1,979-2,159, gasolio 2,190-2,499",
+  "limite_regola": "La regola chiedeva la media delle ultime 4 settimane: il sito e i file CSV con lo storico (mimit.gov.it) non rispondono da questo PC, l'interrogazione di zona da' solo il prezzo del giorno. Per il periodo restano le medie nazionali del Ministero (self) riportate da Teleborsa: benzina 2,043 (6/10), 2,036 (12/10), 2,035 (13/10), 2,029 (19/10), 2,027 (20/10), 2,026 (21/10); gasolio 2,244, 2,252, 2,252, 2,257, 2,258, 2,259: prezzi stabili entro 0,02 euro in due settimane",
+  "indirizzo_medie_nazionali": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/economia/carburanti-mimit-prezzo-medio-self-benzina-a-2026-eurolitro-gasolio-a-2259-43_2026-10-21_TLB.html?lang=it"
+ },
+ "auto": {
+  "benzina": {
+   "modello": "Volkswagen Golf VIII 1.5 TSI 115 CV",
+   "costo_pieno_eur_km": 0.5568,
+   "id_aci": 30778,
+   "consumo_urbano_l_100km": 7.2,
+   "consumo_misto_wltp_l_100km": 5.4,
+   "fonte_consumo": "scheda tecnica WLTP, fase a bassa velocita' (la piu' vicina all'uso urbano), Golf 1.5 TSI 115 CV manuale",
+   "indirizzo_consumo": "https://autotijd.be/en/consumption/volkswagen/golf/15l-tsi-115-hp-manual-4163"
+  },
+  "gasolio": {
+   "modello": "Volkswagen Golf VIII 2.0 TDI 115 CV",
+   "costo_pieno_eur_km": 0.5047,
+   "id_aci": 30779,
+   "consumo_urbano_l_100km": 6.2,
+   "consumo_misto_wltp_l_100km": 4.3,
+   "fonte_consumo": "scheda tecnica WLTP, fase a bassa velocita', Golf Life 2.0 TDI 85 kW (115 CV) 2024-2025",
+   "indirizzo_consumo": "https://www.km77.com/coches/volkswagen/golf/2024/5-puertas/estandar/golf-life-20-tdi-85-kw-115-cv/datos"
+  },
+  "motivo_scelta": "stessa auto (Golf VIII, 115 CV) con i due carburanti: confronto alla pari",
+  "costo_pieno": {
+   "fonte": "Tabelle nazionali dei costi chilometrici di esercizio di autovetture e motocicli elaborate dall'ACI, Gazzetta Ufficiale Serie generale n. 297 del 23/12/2025, Supplemento ordinario n. 40 (in vigore dal 1/1/2026)",
+   "indirizzo": "https://www.gazzettaufficiale.it/eli/gu/2025/12/23/297/so/40/sg/pdf",
+   "percorrenza_annua_km": 15000,
+   "cosa_comprende": "carburante, manutenzione, assicurazione, pneumatici, ammortamento (IVA inclusa; metodo ACI, aci.it/fileadmin/documenti/servizi_online/Costi_chilometrici/Metodologia_web.pdf)",
+   "data": "consultato il 24/10/2026"
+  }
+ },
+ "gtt": {
+  "biglietto_urbano_eur": 2.0,
+  "biglietto_urbano_digitale_eur": 1.9,
+  "validita_biglietto_min": 100,
+  "giornaliero_eur": 4.5,
+  "giornaliero_digitale_eur": 3.7,
+  "carnet_6_eur": 11.8,
+  "abbonamento_mensile_urbano_eur": 38.0,
+  "abbonamento_annuale_urbano_eur": 310.0,
+  "abbonamento_settimanale_urbano_eur": 12.0,
+  "fonte": "GTT, pagine ufficiali «Biglietti e carnet» e «Abbonamenti» (Formula U, rete urbana di Torino)",
+  "indirizzi": [
+   "https://www.gtt.to.it/cms/biglietti-abbonamenti/biglietti/biglietti-carnet",
+   "https://www.gtt.to.it/cms/biglietti-abbonamenti/287-abbonamenti-to"
+  ],
+  "data": "consultato il 24/10/2026 (le pagine non riportano la data dei prezzi)",
+  "cintura": "tariffe del sistema integrato per zone non assegnate alle zone dell'indagine: la cintura resta fuori (AVVISO)",
+  "agevolati": {
+   "nota": "Tariffe agevolate della rete urbana di Torino (Formula U), solo dalle pagine ufficiali GTT. Le pagine non riportano la data delle tariffe (la pagina Under 26 cita la campagna 2024-2025): vanno riconfermate sul sito. Le fasce ISEE richiedono certificato ISEE valido e residenza a Torino (Under 26: o domicilio con contratto registrato o residenza universitaria riconosciuta dal Comune).",
+   "data": "consultato il 24/10/2026",
+   "indirizzi": [
+    "https://www.gtt.to.it/cms/biglietti-abbonamenti/7326-abbonamenti-under-26",
+    "https://www.gtt.to.it/cms/biglietti-abbonamenti/7327-abbonamenti-over-65"
+   ],
+   "voci": [
+    {
+     "id": "under26_mensile",
+     "nome": "Under 26, abbonamento mensile",
+     "eur_mese": 25.0,
+     "condizioni": "tutti i giovani sotto i 26 anni"
+    },
+    {
+     "id": "under26_annuale_ordinario",
+     "nome": "Under 26, annuale ordinario",
+     "eur_anno": 258.0,
+     "condizioni": "tutti i giovani sotto i 26 anni"
+    },
+    {
+     "id": "under26_annuale_a",
+     "nome": "Under 26, annuale agevolato, ISEE fino a 12.000 euro",
+     "eur_anno": 158.0,
+     "condizioni": "ISEE fino a 12.000"
+    },
+    {
+     "id": "under26_annuale_b",
+     "nome": "Under 26, annuale agevolato, ISEE da 12.000 a 20.000 euro",
+     "eur_anno": 178.0,
+     "condizioni": "ISEE da 12.000,01 a 20.000"
+    },
+    {
+     "id": "under26_annuale_c",
+     "nome": "Under 26, annuale agevolato, ISEE da 20.000 a 50.000 euro",
+     "eur_anno": 208.0,
+     "condizioni": "ISEE da 20.000,01 a 50.000"
+    },
+    {
+     "id": "over65_mensile",
+     "nome": "Over 65, abbonamento mensile",
+     "eur_mese": 20.0,
+     "condizioni": "residenti a Torino con ISEE sotto 50.000, non in vendita online"
+    },
+    {
+     "id": "over65_annuale_a",
+     "nome": "Over 65, annuale, ISEE fino a 7.000 euro",
+     "eur_anno": 0.0,
+     "spese_pratica_eur": 3.0,
+     "condizioni": "gratuito, più 3 euro di spese di pratica"
+    },
+    {
+     "id": "over65_annuale_b",
+     "nome": "Over 65, annuale, ISEE da 7.000 a 12.000 euro",
+     "eur_anno": 118.0,
+     "condizioni": "ISEE da 7.000,01 a 12.000"
+    },
+    {
+     "id": "over65_annuale_c",
+     "nome": "Over 65, annuale, ISEE da 12.000 a 20.000 euro",
+     "eur_anno": 155.0,
+     "condizioni": "ISEE da 12.000,01 a 20.000"
+    },
+    {
+     "id": "over65_annuale_d",
+     "nome": "Over 65, annuale, ISEE da 20.000 a 50.000 euro",
+     "eur_anno": 188.0,
+     "condizioni": "ISEE da 20.000,01 a 50.000"
+    }
+   ]
+  }
+ },
+ "sosta": {
+  "tariffe_eur_ora": {
+   "ztl_centrale": 2.8,
+   "ordinaria": 1.7,
+   "ridotta": 1.5,
+   "smart": 1.2
+  },
+  "orario": "dal lunedi' al sabato, 8:00-19:30 (attorno ad alcuni ospedali fino alle 18:30)",
+  "fonte": "GTT, pagina «Sosta strisce blu»",
+  "indirizzo": "https://www.gtt.to.it/cms/parcheggi/sosta",
+  "data": "consultato il 24/10/2026 (la pagina non riporta la data delle tariffe)",
+  "non_trovato": "durata massima della sosta e biglietto giornaliero per zona non sono sulla pagina: la giornata di lavoro e' contata come 8 ore alla tariffa oraria",
+  "scelta": "per il centro si usa la tariffa ordinaria (1,70 euro l'ora): Piazza Castello sta nella ZTL centrale, dove chi entra ha bisogno del permesso e la tariffa e' 2,80; la ZTL non e' nel calcolo"
+ }
+}

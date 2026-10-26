@@ -1,0 +1,1450 @@
+{
+  "risultato": "10",
+  "titolo": "Case, servizi e fragilità",
+  "tag": "STIMATO / CENSIMENTO",
+  "stato": "Fatto",
+  "in_breve": "Le case costano di più dove ci sono più servizi? E dove la fragilità sociale è alta e i servizi sono pochi?",
+  "domanda": "Chi vive dove i servizi sono pochi e le difficoltà sociali sono alte?",
+  "numero_chiave": {
+    "valore": 79598,
+    "unita": "",
+    "testo": "residenti in sezioni con fragilità alta e pochi servizi (9,5% dei residenti)"
+  },
+  "racconto": "",
+  "risposta": [],
+  "grafici": [],
+  "metodo": [],
+  "limiti": [],
+  "parametri": [],
+  "mappa": {
+    "id": "vulnerabilita",
+    "vista": "doppio",
+    "nota": "Vista «Doppio svantaggio» nel tema Fragilità sociale."
+  },
+  "fonti": [
+    "docs/en/METHODS.md",
+    "data/processed/case_fragilita_servizi.json"
+  ],
+  "generato": "2026-10-26T13:20:20+00:00",
+  "avviso": [
+    "Differenza fra zone, non effetto causale."
+  ],
+  "in_english": [],
+  "scenari": [
+    {
+      "nome": "Oggi",
+      "numeri": [
+        {
+          "label": "Residenti in sezioni con fragilità alta e pochi servizi",
+          "prima": null,
+          "dopo": 79598,
+          "unita": "residenti"
+        },
+        {
+          "label": "Quota dei residenti di Torino",
+          "prima": null,
+          "dopo": 9.5,
+          "unita": "%"
+        },
+        {
+          "label": "Zone in doppio svantaggio",
+          "prima": null,
+          "dopo": 5,
+          "unita": "zone"
+        },
+        {
+          "label": "Correlazione prezzo-servizi (Spearman)",
+          "prima": null,
+          "dopo": 0.614,
+          "unita": ""
+        }
+      ],
+      "nota": "Zone OMI di Torino; le sezioni si sommano nella zona, pesate per abitanti."
+    }
+  ],
+  "forma": {
+    "tipo_dato": "Tipo di dato: calcolato da dati veri, con gli abitanti del censimento 2021.",
+    "titolo": "Circa 1 torinese su 10 vive in una zona con più difficoltà sociali e pochi servizi",
+    "domanda": "Chi vive dove i servizi sono pochi e le difficoltà sociali sono alte?",
+    "numero": {
+      "valore": 79598,
+      "unita": "",
+      "testo": "residenti in zone con più difficoltà sociali e servizi bassi: il 9,5% dei residenti delle zone abitate. È 1,7 volte quanto ci si aspetterebbe per caso.",
+      "breve": "residenti con pochi servizi e più difficoltà"
+    },
+    "principale": {
+      "tipo": "dispersione",
+      "titolo": "Fragilità sociale e servizi a piedi, una zona OMI per punto (46 zone)",
+      "xlabel": "indice di fragilità sociale, 0-100",
+      "ylabel": "punteggio «Tutti i servizi» a piedi, 0-100",
+      "passo_x": 10,
+      "passo_y": 20,
+      "xnome": "fragilità",
+      "ynome": "servizi",
+      "punti": [
+        [
+          31.7,
+          82.2,
+          1093,
+          "Roma"
+        ],
+        [
+          24.6,
+          79.2,
+          10989,
+          "Carlo Emanuele Ii"
+        ],
+        [
+          31.5,
+          77.4,
+          2584,
+          "Solferino"
+        ],
+        [
+          29.0,
+          73.9,
+          4598,
+          "Vinzaglio"
+        ],
+        [
+          27.6,
+          80.9,
+          11934,
+          "Garibaldi"
+        ],
+        [
+          36.9,
+          87.3,
+          2369,
+          "Castello"
+        ],
+        [
+          32.0,
+          79.0,
+          4397,
+          "Rocca"
+        ],
+        [
+          33.3,
+          67.7,
+          7157,
+          "San Salvario"
+        ],
+        [
+          31.7,
+          59.9,
+          5486,
+          "Valentino"
+        ],
+        [
+          34.2,
+          23.5,
+          7729,
+          "Michelotti"
+        ],
+        [
+          35.5,
+          35.0,
+          7445,
+          "Crimea"
+        ],
+        [
+          39.1,
+          69.0,
+          894,
+          "Duca D Aosta"
+        ],
+        [
+          44.3,
+          61.5,
+          13406,
+          "Porta Palazzo - Maria Ausiliatrice"
+        ],
+        [
+          34.0,
+          73.7,
+          18276,
+          "Vanchiglia - Borgo Rossini"
+        ],
+        [
+          54.3,
+          51.8,
+          20157,
+          "Aurora"
+        ],
+        [
+          31.7,
+          62.3,
+          22925,
+          "Dante"
+        ],
+        [
+          42.8,
+          29.8,
+          16461,
+          "Vanchiglietta"
+        ],
+        [
+          37.3,
+          70.5,
+          10462,
+          "Campidoglio - Martinetto"
+        ],
+        [
+          27.4,
+          73.3,
+          11167,
+          "Adriano - Bernini - Rivoli"
+        ],
+        [
+          36.1,
+          72.5,
+          18643,
+          "Cenisia"
+        ],
+        [
+          38.7,
+          64.1,
+          29291,
+          "San Paolo"
+        ],
+        [
+          28.9,
+          66.5,
+          5190,
+          "San Secondo"
+        ],
+        [
+          35.3,
+          59.6,
+          7970,
+          "Galileo Ferraris"
+        ],
+        [
+          28.9,
+          63.8,
+          15343,
+          "De Gasperi"
+        ],
+        [
+          34.1,
+          72.8,
+          1405,
+          "Politecnico"
+        ],
+        [
+          30.2,
+          81.0,
+          14491,
+          "Duchessa Jolanda"
+        ],
+        [
+          41.3,
+          64.6,
+          22334,
+          "San Donato"
+        ],
+        [
+          56.5,
+          46.7,
+          71762,
+          "Madonna Di Campagna"
+        ],
+        [
+          47.8,
+          44.5,
+          4322,
+          "Spina 4 - Docks Dora"
+        ],
+        [
+          58.5,
+          9.5,
+          10584,
+          "Barca - Bertolla"
+        ],
+        [
+          44.3,
+          37.8,
+          26802,
+          "Nizza Millefonti"
+        ],
+        [
+          49.8,
+          52.8,
+          46558,
+          "Filadelfia - Traiano"
+        ],
+        [
+          40.9,
+          62.4,
+          56890,
+          "Santa Rita"
+        ],
+        [
+          54.5,
+          43.9,
+          40047,
+          "Mirafiori Nord"
+        ],
+        [
+          62.1,
+          57.6,
+          48588,
+          "Barriera Di Milano"
+        ],
+        [
+          64.9,
+          33.4,
+          28202,
+          "Rebaudengo - Regio Parco"
+        ],
+        [
+          63.1,
+          15.4,
+          25756,
+          "Corona Nord"
+        ],
+        [
+          65.9,
+          21.3,
+          31262,
+          "Lucento - Vallette"
+        ],
+        [
+          40.2,
+          55.5,
+          31541,
+          "Parella"
+        ],
+        [
+          47.6,
+          39.5,
+          32025,
+          "Aeronautica - Lesna"
+        ],
+        [
+          40.3,
+          55.8,
+          36080,
+          "Pozzo Strada"
+        ],
+        [
+          63.0,
+          25.6,
+          33481,
+          "Mirafiori Sud"
+        ],
+        [
+          36.9,
+          40.2,
+          11318,
+          "Spina 3 - Eurotorino"
+        ],
+        [
+          48.1,
+          5.7,
+          9568,
+          "Collinare Villa Della Regina"
+        ],
+        [
+          45.3,
+          4.6,
+          3563,
+          "Collinare Superga"
+        ],
+        [
+          40.7,
+          6.0,
+          5865,
+          "Collinare Cavoretto"
+        ]
+      ],
+      "retta": {
+        "a": 107.82,
+        "b": -1.323,
+        "label": "tendenza"
+      },
+      "nota": "Ogni punto è una zona, grande quanto i suoi abitanti. La linea è la tendenza: più la fragilità è alta, meno servizi. Il legame regge anche a parità di distanza dal centro: correlazione −0,48 (da −0,66 a −0,23)."
+    },
+    "punti": [
+      "Succede 1,7 volte più spesso di quanto ci si aspetterebbe per caso.",
+      "A 15 minuti a piedi quasi tutti hanno i 5 servizi di base (~99%); a 5 minuti solo ~68%.",
+      "Le zone più colpite: Mirafiori Sud, Lucento - Vallette, Rebaudengo - Regio Parco, Corona Nord, Barca - Bertolla. Ci abitano ~129 mila persone."
+    ],
+    "altri": [
+      {
+        "tipo": "barre",
+        "titolo": "Residenti delle sezioni di Torino per condizione",
+        "unita": "residenti",
+        "nota": "Sezioni abitate di Torino, senza le zone quasi disabitate. Fragilità alta = indice sopra 57,7 su 100 (il 20% più alto); servizi bassi = punteggio fino a 34,4 su 100 (il 20% più basso).",
+        "voci": [
+          {
+            "label": "fragilità alta e servizi bassi",
+            "valore": 79598,
+            "tono": "rosso",
+            "testo": "79.598 (216 sezioni)"
+          },
+          {
+            "label": "solo fragilità alta",
+            "valore": 142406,
+            "tono": "arancio",
+            "testo": "142.406 (483 sezioni)"
+          },
+          {
+            "label": "solo servizi bassi",
+            "valore": 100600,
+            "tono": "blu",
+            "testo": "100.600 (489 sezioni)"
+          },
+          {
+            "label": "nessuna delle due",
+            "valore": 517053,
+            "tono": "verde",
+            "testo": "517.053 (2.332 sezioni)"
+          }
+        ]
+      },
+      {
+        "tipo": "pila100",
+        "titolo": "Servizi a 5, 10 e 15 minuti a piedi",
+        "unita": "%",
+        "nota": "Ogni barra è un tempo a piedi: 100% dei residenti delle zone abitate (almeno 1.000 abitanti per km²).",
+        "righe": [
+          {
+            "label": "5 minuti",
+            "voci": [
+              {
+                "label": "tutti e 5 i servizi",
+                "valore": 68.3,
+                "tono": "verde"
+              },
+              {
+                "label": "4 servizi",
+                "valore": 22.2,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 o meno",
+                "valore": 9.5,
+                "tono": "rosso"
+              }
+            ]
+          },
+          {
+            "label": "10 minuti",
+            "voci": [
+              {
+                "label": "tutti e 5 i servizi",
+                "valore": 96.8,
+                "tono": "verde"
+              },
+              {
+                "label": "4 servizi",
+                "valore": 2.4,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 o meno",
+                "valore": 0.8,
+                "tono": "rosso"
+              }
+            ]
+          },
+          {
+            "label": "15 minuti",
+            "voci": [
+              {
+                "label": "tutti e 5 i servizi",
+                "valore": 99.2,
+                "tono": "verde"
+              },
+              {
+                "label": "4 servizi",
+                "valore": 0.6,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 o meno",
+                "valore": 0.2,
+                "tono": "rosso"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "calcolo": [
+      "Unità: le 46 zone OMI di Torino con almeno 500 abitanti. Le sezioni si sommano nella zona, pesate per abitanti.",
+      "Servizi: punteggio «Tutti i servizi» a piedi in 15 minuti. Fragilità: indice del censimento 2021 (lavoro, istruzione, case, anziani).",
+      "Tendenza: retta dei minimi quadrati. Il legame fra fragilità e servizi si controlla a parità di distanza dal centro.",
+      "Doppio svantaggio = fragilità nel 20% più alto e servizi nel 20% più basso. Soglie fissate prima dei numeri, per sezioni: 57,7 e 34,4; per zone: 49,8 e 33,4.",
+      "Legami a parità di distanza dal centro: correlazione parziale sui ranghi, con intervallo al 95% per ricampionamento. Regge solo se l'intervallo non contiene lo zero."
+    ],
+    "criteri": [
+      [
+        "Zone",
+        "46 zone OMI di Torino, almeno 500 abitanti"
+      ],
+      [
+        "Fragilità alta",
+        "indice sopra 57,7 su 100"
+      ],
+      [
+        "Servizi bassi",
+        "punteggio fino a 34,4 su 100"
+      ],
+      [
+        "Legami a parità di distanza",
+        "correlazione parziale sui ranghi, intervallo al 95%; distanza dal centro della zona a Piazza Castello"
+      ]
+    ],
+    "limiti": [
+      "L'indice di fragilità non è il reddito e non è un indice ufficiale ISTAT: misura lavoro, istruzione, affollamento e anziani.",
+      "Si conta se un servizio c'è, non quanto è grande.",
+      "Le zone OMI sono grandi: dentro una zona i servizi e la fragilità cambiano molto."
+    ],
+    "mappa": {
+      "id": "vulnerabilita",
+      "nota": "Vista «Doppio svantaggio» nel tema Fragilità sociale.",
+      "vista": "doppio"
+    },
+    "fonti": [
+      "Agenzia delle Entrate (quotazioni OMI)",
+      "ISTAT (censimento 2021)",
+      "Comune di Torino (servizi)",
+      "OpenStreetMap",
+      "GTT (orari ufficiali)"
+    ],
+    "titolo_breve": "Fragilità e servizi",
+    "anima": {
+      "tipo": "omini",
+      "totale": 10,
+      "colorati": 1,
+      "didascalia": "Circa 1 torinese su 10 vive dove l'indice di fragilità sociale è alto e i servizi sono pochi (9,5% dei residenti delle zone abitate)."
+    }
+  },
+  "forma_en": {
+    "tipo_dato": "Type of data: calculated from real data, with the residents of the 2021 census.",
+    "titolo": "About 1 Turin resident in 10 lives in an area with more social difficulties and few services",
+    "domanda": "Who lives where services are few and social difficulties are high?",
+    "numero": {
+      "valore": 79598,
+      "unita": "",
+      "testo": "residents in zones with more social difficulty and few services: 9.5% of residents of inhabited zones. That is 1.7 times what you would expect by chance.",
+      "breve": "residents with few services and more difficulties"
+    },
+    "principale": {
+      "tipo": "dispersione",
+      "titolo": "Social fragility and services on foot, one OMI zone per dot (46 zones)",
+      "xlabel": "social fragility index, 0-100",
+      "ylabel": "“All services” score on foot, 0-100",
+      "passo_x": 10,
+      "passo_y": 20,
+      "xnome": "fragilità",
+      "ynome": "servizi",
+      "punti": [
+        [
+          31.7,
+          82.2,
+          1093,
+          "Roma"
+        ],
+        [
+          24.6,
+          79.2,
+          10989,
+          "Carlo Emanuele Ii"
+        ],
+        [
+          31.5,
+          77.4,
+          2584,
+          "Solferino"
+        ],
+        [
+          29.0,
+          73.9,
+          4598,
+          "Vinzaglio"
+        ],
+        [
+          27.6,
+          80.9,
+          11934,
+          "Garibaldi"
+        ],
+        [
+          36.9,
+          87.3,
+          2369,
+          "Castello"
+        ],
+        [
+          32.0,
+          79.0,
+          4397,
+          "Rocca"
+        ],
+        [
+          33.3,
+          67.7,
+          7157,
+          "San Salvario"
+        ],
+        [
+          31.7,
+          59.9,
+          5486,
+          "Valentino"
+        ],
+        [
+          34.2,
+          23.5,
+          7729,
+          "Michelotti"
+        ],
+        [
+          35.5,
+          35.0,
+          7445,
+          "Crimea"
+        ],
+        [
+          39.1,
+          69.0,
+          894,
+          "Duca D Aosta"
+        ],
+        [
+          44.3,
+          61.5,
+          13406,
+          "Porta Palazzo - Maria Ausiliatrice"
+        ],
+        [
+          34.0,
+          73.7,
+          18276,
+          "Vanchiglia - Borgo Rossini"
+        ],
+        [
+          54.3,
+          51.8,
+          20157,
+          "Aurora"
+        ],
+        [
+          31.7,
+          62.3,
+          22925,
+          "Dante"
+        ],
+        [
+          42.8,
+          29.8,
+          16461,
+          "Vanchiglietta"
+        ],
+        [
+          37.3,
+          70.5,
+          10462,
+          "Campidoglio - Martinetto"
+        ],
+        [
+          27.4,
+          73.3,
+          11167,
+          "Adriano - Bernini - Rivoli"
+        ],
+        [
+          36.1,
+          72.5,
+          18643,
+          "Cenisia"
+        ],
+        [
+          38.7,
+          64.1,
+          29291,
+          "San Paolo"
+        ],
+        [
+          28.9,
+          66.5,
+          5190,
+          "San Secondo"
+        ],
+        [
+          35.3,
+          59.6,
+          7970,
+          "Galileo Ferraris"
+        ],
+        [
+          28.9,
+          63.8,
+          15343,
+          "De Gasperi"
+        ],
+        [
+          34.1,
+          72.8,
+          1405,
+          "Politecnico"
+        ],
+        [
+          30.2,
+          81.0,
+          14491,
+          "Duchessa Jolanda"
+        ],
+        [
+          41.3,
+          64.6,
+          22334,
+          "San Donato"
+        ],
+        [
+          56.5,
+          46.7,
+          71762,
+          "Madonna Di Campagna"
+        ],
+        [
+          47.8,
+          44.5,
+          4322,
+          "Spina 4 - Docks Dora"
+        ],
+        [
+          58.5,
+          9.5,
+          10584,
+          "Barca - Bertolla"
+        ],
+        [
+          44.3,
+          37.8,
+          26802,
+          "Nizza Millefonti"
+        ],
+        [
+          49.8,
+          52.8,
+          46558,
+          "Filadelfia - Traiano"
+        ],
+        [
+          40.9,
+          62.4,
+          56890,
+          "Santa Rita"
+        ],
+        [
+          54.5,
+          43.9,
+          40047,
+          "Mirafiori Nord"
+        ],
+        [
+          62.1,
+          57.6,
+          48588,
+          "Barriera Di Milano"
+        ],
+        [
+          64.9,
+          33.4,
+          28202,
+          "Rebaudengo - Regio Parco"
+        ],
+        [
+          63.1,
+          15.4,
+          25756,
+          "Corona Nord"
+        ],
+        [
+          65.9,
+          21.3,
+          31262,
+          "Lucento - Vallette"
+        ],
+        [
+          40.2,
+          55.5,
+          31541,
+          "Parella"
+        ],
+        [
+          47.6,
+          39.5,
+          32025,
+          "Aeronautica - Lesna"
+        ],
+        [
+          40.3,
+          55.8,
+          36080,
+          "Pozzo Strada"
+        ],
+        [
+          63.0,
+          25.6,
+          33481,
+          "Mirafiori Sud"
+        ],
+        [
+          36.9,
+          40.2,
+          11318,
+          "Spina 3 - Eurotorino"
+        ],
+        [
+          48.1,
+          5.7,
+          9568,
+          "Collinare Villa Della Regina"
+        ],
+        [
+          45.3,
+          4.6,
+          3563,
+          "Collinare Superga"
+        ],
+        [
+          40.7,
+          6.0,
+          5865,
+          "Collinare Cavoretto"
+        ]
+      ],
+      "retta": {
+        "a": 107.82,
+        "b": -1.323,
+        "label": "trend"
+      },
+      "nota": "Each dot is a zone, sized by its residents. The line is the trend: the higher the fragility, the fewer the services. The link holds even at equal distance from the centre: correlation −0.48 (from −0.66 to −0.23)."
+    },
+    "punti": [
+      "It happens 1.7 times more often than you would expect by chance.",
+      "Within 15 minutes on foot almost everyone has the 5 basic services (~99%); within 5 minutes only ~68%.",
+      "The most affected zones: Mirafiori Sud, Lucento - Vallette, Rebaudengo - Regio Parco, Corona Nord, Barca - Bertolla. About 129 thousand people live there."
+    ],
+    "altri": [
+      {
+        "tipo": "barre",
+        "titolo": "Residents of Turin's census sections by condition",
+        "unita": "residents",
+        "nota": "Inhabited sections of Turin, without the almost uninhabited areas. High fragility = index above 57.7 out of 100 (the highest 20%); low services = score up to 34.4 out of 100 (the lowest 20%).",
+        "voci": [
+          {
+            "label": "high fragility and low services",
+            "valore": 79598,
+            "tono": "rosso",
+            "testo": "79,598 (216 sections)"
+          },
+          {
+            "label": "high fragility only",
+            "valore": 142406,
+            "tono": "arancio",
+            "testo": "142,406 (483 sections)"
+          },
+          {
+            "label": "low services only",
+            "valore": 100600,
+            "tono": "blu",
+            "testo": "100,600 (489 sections)"
+          },
+          {
+            "label": "neither",
+            "valore": 517053,
+            "tono": "verde",
+            "testo": "517,053 (2,332 sections)"
+          }
+        ]
+      },
+      {
+        "tipo": "pila100",
+        "titolo": "Services within 5, 10 and 15 minutes on foot",
+        "unita": "%",
+        "nota": "Each bar is a walking time: 100% of residents of inhabited areas (at least 1,000 inhabitants per km²).",
+        "righe": [
+          {
+            "label": "5 minutes",
+            "voci": [
+              {
+                "label": "all 5 services",
+                "valore": 68.3,
+                "tono": "verde"
+              },
+              {
+                "label": "4 services",
+                "valore": 22.2,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 or fewer",
+                "valore": 9.5,
+                "tono": "rosso"
+              }
+            ]
+          },
+          {
+            "label": "10 minutes",
+            "voci": [
+              {
+                "label": "all 5 services",
+                "valore": 96.8,
+                "tono": "verde"
+              },
+              {
+                "label": "4 services",
+                "valore": 2.4,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 or fewer",
+                "valore": 0.8,
+                "tono": "rosso"
+              }
+            ]
+          },
+          {
+            "label": "15 minutes",
+            "voci": [
+              {
+                "label": "all 5 services",
+                "valore": 99.2,
+                "tono": "verde"
+              },
+              {
+                "label": "4 services",
+                "valore": 0.6,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 or fewer",
+                "valore": 0.2,
+                "tono": "rosso"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "calcolo": [
+      "Unit: the 46 OMI zones of Turin with at least 500 inhabitants. Sections are added up within the zone, weighted by inhabitants.",
+      "Services: “All services” score within a 15-minute walk. Fragility: 2021 census index (work, education, housing, older people).",
+      "Trend: least-squares line. The link between fragility and services is checked at equal distance from the centre.",
+      "Double disadvantage = fragility in the highest 20% and services in the lowest 20%. Thresholds fixed before the numbers, for sections: 57.7 and 34.4; for zones: 49.8 and 33.4.",
+      "Links at equal distance from the centre: partial rank correlation, with a 95% interval by resampling. It holds only if the interval does not contain zero."
+    ],
+    "criteri": [
+      [
+        "Zones",
+        "46 OMI zones of Turin, at least 500 inhabitants"
+      ],
+      [
+        "High fragility",
+        "index above 57.7 out of 100"
+      ],
+      [
+        "Low services",
+        "score up to 34.4 out of 100"
+      ],
+      [
+        "Links at equal distance",
+        "partial rank correlation, 95% interval; distance from the centre of the zone to Piazza Castello"
+      ]
+    ],
+    "limiti": [
+      "The fragility index is not income and not an official ISTAT index: it measures work, education, crowding and older people.",
+      "The count shows whether a service exists, not how big it is.",
+      "OMI zones are large: within a zone, services and fragility vary a lot."
+    ],
+    "mappa": {
+      "id": "vulnerabilita",
+      "nota": "Vista «Doppio svantaggio» nel tema Fragilità sociale.",
+      "vista": "doppio"
+    },
+    "fonti": [
+      "Revenue Agency (OMI price quotes)",
+      "ISTAT (2021 census)",
+      "City of Turin (services)",
+      "OpenStreetMap",
+      "GTT (official timetables)"
+    ],
+    "titolo_breve": "Fragility and services",
+    "anima": {
+      "tipo": "omini",
+      "totale": 10,
+      "colorati": 1,
+      "didascalia": "About 1 Turin resident in 10 lives where the social fragility index is high and services are few (9.5% of residents of inhabited areas)."
+    }
+  },
+  "forma_de": {
+    "tipo_dato": "Datenart: berechnet aus echten Daten, mit den Einwohnern des Zensus 2021.",
+    "titolo": "Etwa 1 von 10 Einwohnern Turins lebt in einer Zone mit mehr sozialen Schwierigkeiten und wenigen Einrichtungen",
+    "domanda": "Wer lebt dort, wo es wenige Einrichtungen und große soziale Schwierigkeiten gibt?",
+    "numero": {
+      "valore": 79598,
+      "unita": "",
+      "testo": "Einwohner in Zonen mit mehr sozialen Schwierigkeiten und wenigen Einrichtungen: 9,5% der Einwohner der bewohnten Gebiete. Das ist 1,7-mal so viel, wie man zufällig erwarten würde.",
+      "breve": "Einwohner mit wenigen Einrichtungen und mehr Schwierigkeiten"
+    },
+    "principale": {
+      "tipo": "dispersione",
+      "titolo": "Soziale Benachteiligung und fußläufig erreichbare Einrichtungen, eine OMI-Zone pro Punkt (46 Zonen)",
+      "xlabel": "Index der sozialen Benachteiligung, 0-100",
+      "ylabel": "Wert „Alle Einrichtungen“ zu Fuß, 0-100",
+      "passo_x": 10,
+      "passo_y": 20,
+      "xnome": "fragilità",
+      "ynome": "servizi",
+      "punti": [
+        [
+          31.7,
+          82.2,
+          1093,
+          "Roma"
+        ],
+        [
+          24.6,
+          79.2,
+          10989,
+          "Carlo Emanuele Ii"
+        ],
+        [
+          31.5,
+          77.4,
+          2584,
+          "Solferino"
+        ],
+        [
+          29.0,
+          73.9,
+          4598,
+          "Vinzaglio"
+        ],
+        [
+          27.6,
+          80.9,
+          11934,
+          "Garibaldi"
+        ],
+        [
+          36.9,
+          87.3,
+          2369,
+          "Castello"
+        ],
+        [
+          32.0,
+          79.0,
+          4397,
+          "Rocca"
+        ],
+        [
+          33.3,
+          67.7,
+          7157,
+          "San Salvario"
+        ],
+        [
+          31.7,
+          59.9,
+          5486,
+          "Valentino"
+        ],
+        [
+          34.2,
+          23.5,
+          7729,
+          "Michelotti"
+        ],
+        [
+          35.5,
+          35.0,
+          7445,
+          "Crimea"
+        ],
+        [
+          39.1,
+          69.0,
+          894,
+          "Duca D Aosta"
+        ],
+        [
+          44.3,
+          61.5,
+          13406,
+          "Porta Palazzo - Maria Ausiliatrice"
+        ],
+        [
+          34.0,
+          73.7,
+          18276,
+          "Vanchiglia - Borgo Rossini"
+        ],
+        [
+          54.3,
+          51.8,
+          20157,
+          "Aurora"
+        ],
+        [
+          31.7,
+          62.3,
+          22925,
+          "Dante"
+        ],
+        [
+          42.8,
+          29.8,
+          16461,
+          "Vanchiglietta"
+        ],
+        [
+          37.3,
+          70.5,
+          10462,
+          "Campidoglio - Martinetto"
+        ],
+        [
+          27.4,
+          73.3,
+          11167,
+          "Adriano - Bernini - Rivoli"
+        ],
+        [
+          36.1,
+          72.5,
+          18643,
+          "Cenisia"
+        ],
+        [
+          38.7,
+          64.1,
+          29291,
+          "San Paolo"
+        ],
+        [
+          28.9,
+          66.5,
+          5190,
+          "San Secondo"
+        ],
+        [
+          35.3,
+          59.6,
+          7970,
+          "Galileo Ferraris"
+        ],
+        [
+          28.9,
+          63.8,
+          15343,
+          "De Gasperi"
+        ],
+        [
+          34.1,
+          72.8,
+          1405,
+          "Politecnico"
+        ],
+        [
+          30.2,
+          81.0,
+          14491,
+          "Duchessa Jolanda"
+        ],
+        [
+          41.3,
+          64.6,
+          22334,
+          "San Donato"
+        ],
+        [
+          56.5,
+          46.7,
+          71762,
+          "Madonna Di Campagna"
+        ],
+        [
+          47.8,
+          44.5,
+          4322,
+          "Spina 4 - Docks Dora"
+        ],
+        [
+          58.5,
+          9.5,
+          10584,
+          "Barca - Bertolla"
+        ],
+        [
+          44.3,
+          37.8,
+          26802,
+          "Nizza Millefonti"
+        ],
+        [
+          49.8,
+          52.8,
+          46558,
+          "Filadelfia - Traiano"
+        ],
+        [
+          40.9,
+          62.4,
+          56890,
+          "Santa Rita"
+        ],
+        [
+          54.5,
+          43.9,
+          40047,
+          "Mirafiori Nord"
+        ],
+        [
+          62.1,
+          57.6,
+          48588,
+          "Barriera Di Milano"
+        ],
+        [
+          64.9,
+          33.4,
+          28202,
+          "Rebaudengo - Regio Parco"
+        ],
+        [
+          63.1,
+          15.4,
+          25756,
+          "Corona Nord"
+        ],
+        [
+          65.9,
+          21.3,
+          31262,
+          "Lucento - Vallette"
+        ],
+        [
+          40.2,
+          55.5,
+          31541,
+          "Parella"
+        ],
+        [
+          47.6,
+          39.5,
+          32025,
+          "Aeronautica - Lesna"
+        ],
+        [
+          40.3,
+          55.8,
+          36080,
+          "Pozzo Strada"
+        ],
+        [
+          63.0,
+          25.6,
+          33481,
+          "Mirafiori Sud"
+        ],
+        [
+          36.9,
+          40.2,
+          11318,
+          "Spina 3 - Eurotorino"
+        ],
+        [
+          48.1,
+          5.7,
+          9568,
+          "Collinare Villa Della Regina"
+        ],
+        [
+          45.3,
+          4.6,
+          3563,
+          "Collinare Superga"
+        ],
+        [
+          40.7,
+          6.0,
+          5865,
+          "Collinare Cavoretto"
+        ]
+      ],
+      "retta": {
+        "a": 107.82,
+        "b": -1.323,
+        "label": "Trend"
+      },
+      "nota": "Jeder Punkt ist eine Zone, so groß wie ihre Einwohnerzahl. Die Linie ist der Trend: Je höher die Benachteiligung, desto weniger Einrichtungen. Der Zusammenhang besteht auch bei gleichem Abstand zum Zentrum: Korrelation −0,48 (von −0,66 bis −0,23)."
+    },
+    "punti": [
+      "Das kommt 1,7-mal so oft vor, wie man zufällig erwarten würde.",
+      "In 15 Minuten zu Fuß erreichen fast alle die 5 Basiseinrichtungen (~99%); in 5 Minuten nur ~68%.",
+      "Die am stärksten betroffenen Zonen: Mirafiori Sud, Lucento - Vallette, Rebaudengo - Regio Parco, Corona Nord, Barca - Bertolla. Dort wohnen ~129 Tausend Menschen."
+    ],
+    "altri": [
+      {
+        "tipo": "barre",
+        "titolo": "Einwohner der Turiner Zählsprengel nach Lage",
+        "unita": "Einwohner",
+        "nota": "Bewohnte Zählsprengel von Turin, ohne die fast unbewohnten Gebiete. Hohe Benachteiligung = Index über 57,7 von 100 (die obersten 20%); wenige Einrichtungen = Wert bis 34,4 von 100 (die untersten 20%).",
+        "voci": [
+          {
+            "label": "hohe Benachteiligung und wenige Einrichtungen",
+            "valore": 79598,
+            "tono": "rosso",
+            "testo": "79.598 (216 Zählsprengel)"
+          },
+          {
+            "label": "nur hohe Benachteiligung",
+            "valore": 142406,
+            "tono": "arancio",
+            "testo": "142.406 (483 Zählsprengel)"
+          },
+          {
+            "label": "nur wenige Einrichtungen",
+            "valore": 100600,
+            "tono": "blu",
+            "testo": "100.600 (489 Zählsprengel)"
+          },
+          {
+            "label": "keines von beiden",
+            "valore": 517053,
+            "tono": "verde",
+            "testo": "517.053 (2.332 Zählsprengel)"
+          }
+        ]
+      },
+      {
+        "tipo": "pila100",
+        "titolo": "Einrichtungen in 5, 10 und 15 Minuten zu Fuß",
+        "unita": "%",
+        "nota": "Jeder Balken ist eine Gehzeit: 100% der Einwohner der bewohnten Gebiete (mindestens 1.000 Einwohner pro km²).",
+        "righe": [
+          {
+            "label": "5 Minuten",
+            "voci": [
+              {
+                "label": "alle 5 Einrichtungen",
+                "valore": 68.3,
+                "tono": "verde"
+              },
+              {
+                "label": "4 Einrichtungen",
+                "valore": 22.2,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 oder weniger",
+                "valore": 9.5,
+                "tono": "rosso"
+              }
+            ]
+          },
+          {
+            "label": "10 Minuten",
+            "voci": [
+              {
+                "label": "alle 5 Einrichtungen",
+                "valore": 96.8,
+                "tono": "verde"
+              },
+              {
+                "label": "4 Einrichtungen",
+                "valore": 2.4,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 oder weniger",
+                "valore": 0.8,
+                "tono": "rosso"
+              }
+            ]
+          },
+          {
+            "label": "15 Minuten",
+            "voci": [
+              {
+                "label": "alle 5 Einrichtungen",
+                "valore": 99.2,
+                "tono": "verde"
+              },
+              {
+                "label": "4 Einrichtungen",
+                "valore": 0.6,
+                "tono": "giallo"
+              },
+              {
+                "label": "3 oder weniger",
+                "valore": 0.2,
+                "tono": "rosso"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "calcolo": [
+      "Einheit: die 46 OMI-Zonen von Turin mit mindestens 500 Einwohnern. Die Zählsprengel werden in der Zone nach Einwohnern gewichtet addiert.",
+      "Einrichtungen: Wert „Alle Einrichtungen“ innerhalb von 15 Minuten zu Fuß. Benachteiligung: Index aus dem Zensus 2021 (Arbeit, Bildung, Wohnen, ältere Menschen).",
+      "Trend: Ausgleichsgerade nach der Methode der kleinsten Quadrate. Der Zusammenhang zwischen Benachteiligung und Einrichtungen wird bei gleichem Abstand zum Zentrum geprüft.",
+      "Doppelte Benachteiligung = Benachteiligung in den obersten 20% und Einrichtungen in den untersten 20%. Schwellen vor den Zahlen festgelegt, für Zählsprengel: 57,7 und 34,4; für Zonen: 49,8 und 33,4.",
+      "Zusammenhänge bei gleichem Abstand zum Zentrum: partielle Rangkorrelation, mit 95%-Intervall durch Resampling. Ein Zusammenhang gilt nur, wenn das Intervall die Null nicht enthält."
+    ],
+    "criteri": [
+      [
+        "Zonen",
+        "46 OMI-Zonen von Turin, mindestens 500 Einwohner"
+      ],
+      [
+        "Hohe Benachteiligung",
+        "Index über 57,7 von 100"
+      ],
+      [
+        "Wenige Einrichtungen",
+        "Wert bis 34,4 von 100"
+      ],
+      [
+        "Zusammenhänge bei gleichem Abstand",
+        "partielle Rangkorrelation, 95%-Intervall; Abstand des Zonenzentrums zur Piazza Castello"
+      ]
+    ],
+    "limiti": [
+      "Der Index der Benachteiligung ist weder das Einkommen noch ein offizieller ISTAT-Index: Er misst Arbeit, Bildung, Wohnungsbelegung und ältere Menschen.",
+      "Gezählt wird, ob es eine Einrichtung gibt, nicht wie groß sie ist.",
+      "Die OMI-Zonen sind groß: Innerhalb einer Zone ändern sich Einrichtungen und Benachteiligung stark."
+    ],
+    "mappa": {
+      "id": "vulnerabilita",
+      "nota": "Vista «Doppio svantaggio» nel tema Fragilità sociale.",
+      "vista": "doppio"
+    },
+    "fonti": [
+      "Finanzverwaltung Agenzia delle Entrate (OMI-Preise)",
+      "ISTAT (Zensus 2021)",
+      "Stadt Turin (Einrichtungen)",
+      "OpenStreetMap",
+      "GTT (offizielle Fahrpläne)"
+    ],
+    "titolo_breve": "Benachteiligung und Einrichtungen",
+    "anima": {
+      "tipo": "omini",
+      "totale": 10,
+      "colorati": 1,
+      "didascalia": "Etwa 1 von 10 Einwohnern Turins lebt dort, wo der Index der sozialen Benachteiligung hoch und die Einrichtungen wenige sind (9,5% der Einwohner der bewohnten Gebiete)."
+    }
+  },
+  "numero_pubblico": 3,
+  "gruppo": "vetrina"
+}

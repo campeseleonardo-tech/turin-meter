@@ -1,0 +1,13 @@
+# Turin Meter: file che git non salva
+__pycache__/
+*.pyc
+logs/
+immagini/
+config_locale.json
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.zip
+*.part
+data/raw/
+data/storico_backup*.sqlite

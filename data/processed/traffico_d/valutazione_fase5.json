@@ -1,0 +1,119 @@
+{
+ "variante_finale": "v4",
+ "classe_esito": "C-DEBOLE",
+ "errore_mediano": 0.2832,
+ "ic90": [
+  0.2416,
+  0.3795
+ ],
+ "rho_loo": 0.639,
+ "rho_grezzo": 0.64,
+ "n": 22,
+ "k": 0.9796,
+ "migliore_di_A": true,
+ "incerto": true,
+ "varianti": {
+  "v0": {
+   "n": 20,
+   "errore_mediano": 0.38362276900485115,
+   "ic90": [
+    0.25544819229348176,
+    0.4983973174046813
+   ],
+   "errore_p90": 0.644500529732109,
+   "errore_peggiore": 1.7724820296157013,
+   "rho_loo": 0.6045112781954888,
+   "rho_grezzo": 0.6255639097744361,
+   "k_totale": 0.9532046976766081,
+   "migliore_di_A": false
+  },
+  "v4": {
+   "n": 22,
+   "errore_mediano": 0.28316901305956954,
+   "ic90": [
+    0.24160626806782126,
+    0.3794806184078561
+   ],
+   "errore_p90": 0.62133940312759,
+   "errore_peggiore": 1.8033570401095866,
+   "rho_loo": 0.6386222473178995,
+   "rho_grezzo": 0.639751552795031,
+   "k_totale": 0.9796445691732807,
+   "migliore_di_A": true
+  },
+  "abl1": {
+   "n": 20,
+   "errore_mediano": 0.4047785719783323,
+   "ic90": [
+    0.26863759803480963,
+    0.5445927685422755
+   ],
+   "errore_p90": 0.6295976004922241,
+   "errore_peggiore": 1.9100718308643476,
+   "rho_loo": 0.5774436090225564,
+   "rho_grezzo": 0.6120300751879699,
+   "k_totale": 0.9954506062487263,
+   "migliore_di_A": false
+  },
+  "abl2": {
+   "n": 20,
+   "errore_mediano": 0.2987694673319153,
+   "ic90": [
+    0.24123315574636445,
+    0.38518309474478146
+   ],
+   "errore_p90": 0.6584845329204354,
+   "errore_peggiore": 1.7053378487494666,
+   "rho_loo": 0.6150375939849624,
+   "rho_grezzo": 0.637593984962406,
+   "k_totale": 0.9468561013264885,
+   "migliore_di_A": true
+  },
+  "abl3": {
+   "n": 20,
+   "errore_mediano": 0.2903996178574618,
+   "ic90": [
+    0.26212771279382524,
+    0.4804989926110702
+   ],
+   "errore_p90": 0.6273159527695671,
+   "errore_peggiore": 1.92446710922038,
+   "rho_loo": 0.5864661654135338,
+   "rho_grezzo": 0.5939849624060151,
+   "k_totale": 1.0130121118311388,
+   "migliore_di_A": true
+  }
+ },
+ "tempi_percorsi": [
+  {
+   "percorso": "Piazza Castello -> Collegno (piazza)",
+   "flusso_libero": 13.1,
+   "v4_punta": 13.8
+  },
+  {
+   "percorso": "Piazza Castello -> Venaria Reale",
+   "flusso_libero": 12.8,
+   "v4_punta": 14.0
+  },
+  {
+   "percorso": "Piazza Castello -> Settimo Torinese",
+   "flusso_libero": 14.7,
+   "v4_punta": 15.3
+  },
+  {
+   "percorso": "Piazza Castello -> Moncalieri",
+   "flusso_libero": 11.4,
+   "v4_punta": 11.9
+  },
+  {
+   "percorso": "Piazza Castello -> Orbassano",
+   "flusso_libero": 18.0,
+   "v4_punta": 20.1
+  },
+  {
+   "percorso": "Piazza Castello -> Rivoli",
+   "flusso_libero": Infinity,
+   "v4_punta": Infinity
+  }
+ ]
+}

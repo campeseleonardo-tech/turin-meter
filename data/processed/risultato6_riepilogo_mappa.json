@@ -1,0 +1,6677 @@
+{
+  "risultato": "6",
+  "titolo": "Parcheggi per lasciare l'auto",
+  "tag": "STIMATO / MISURATO (dati scarsi)",
+  "stato": "Aggiornato al 26/10/2026",
+  "in_breve": "Dove lasciare l'auto prima di entrare in città e proseguire con i mezzi pubblici: come funzionano gli interscambi che ci sono, e dove mancano posti per le auto che entrano ogni mattina.",
+  "domanda": "Dove mancano posti per lasciare l'auto prima di entrare in città, vicino a una fermata importante, per le auto che ogni mattina entrano a Torino?",
+  "numero_chiave": {
+    "valore": 179,
+    "unita": "fermate",
+    "testo": "su 274 fermate importanti fuori dal centro non hanno abbastanza posti adatti entro 400 m a piedi per le auto in entrata che passano accanto"
+  },
+  "risposta": [
+    "Gli interscambi che ci sono: nei giorni misurati Stura: sempre quasi pieno: 80% di notte, 91% di giorno; Caio Mario: il valore non cambia (1%): forse il contatore è fermo; Sofia: è più pieno di notte che di giorno: 52% di notte, 31% di giorno; Venchi Unica: sempre intorno al 55%; Fermi non trasmette il riempimento. Pieni di giorno: 1 su 5.",
+    "Ogni mattina entrano a Torino circa 87.200 auto; oggi il 5,8% di chi arriva in auto prosegue con un mezzo pubblico.",
+    "Delle 274 fermate importanti fuori dal centro, 179 non hanno abbastanza posti adatti entro 400 m a piedi per le auto da fermare (68 non ne hanno nessuno).",
+    "I punti dove servirebbe di più un parcheggio (posti che mancano, ordine di grandezza): 1. Santa Rita (Santa Rita), 2. Metro Massaua (Parella), 3. Ponte Cavalieri Templari (Moncalieri)."
+  ],
+  "grafici": [
+    {
+      "tipo": "profilo",
+      "titolo": "Stura (589 posti): sempre quasi pieno: 80% di notte, 91% di giorno",
+      "unita": "",
+      "nota": "8 giorni validi; linea piena feriale, tratteggiata weekend.",
+      "serie": [
+        {
+          "label": "giorno feriale",
+          "valori": [
+            0.797,
+            0.797,
+            0.797,
+            0.797,
+            0.797,
+            0.799,
+            0.804,
+            0.829,
+            0.877,
+            0.903,
+            0.919,
+            0.921,
+            0.921,
+            0.916,
+            0.91,
+            0.904,
+            0.894,
+            0.877,
+            0.846,
+            0.813,
+            0.802,
+            0.801,
+            0.801,
+            0.8
+          ]
+        },
+        {
+          "label": "weekend",
+          "valori": [
+            0.795,
+            0.795,
+            0.795,
+            0.795,
+            0.795,
+            0.796,
+            0.796,
+            0.798,
+            0.799,
+            0.799,
+            0.799,
+            0.8,
+            0.798,
+            0.8,
+            0.801,
+            0.801,
+            0.8,
+            0.799,
+            0.799,
+            0.799,
+            0.797,
+            0.796,
+            0.795,
+            0.795
+          ],
+          "tratteggio": true
+        }
+      ]
+    },
+    {
+      "tipo": "profilo",
+      "titolo": "Venchi Unica (437 posti): sempre intorno al 55%",
+      "unita": "",
+      "nota": "8 giorni validi; linea piena feriale, tratteggiata weekend.",
+      "serie": [
+        {
+          "label": "giorno feriale",
+          "valori": [
+            0.537,
+            0.538,
+            0.538,
+            0.538,
+            0.537,
+            0.535,
+            0.537,
+            0.53,
+            0.535,
+            0.555,
+            0.556,
+            0.552,
+            0.553,
+            0.552,
+            0.551,
+            0.548,
+            0.542,
+            0.533,
+            0.52,
+            0.507,
+            0.515,
+            0.521,
+            0.525,
+            0.532
+          ]
+        },
+        {
+          "label": "weekend",
+          "valori": [
+            0.47,
+            0.478,
+            0.485,
+            0.488,
+            0.489,
+            0.489,
+            0.49,
+            0.489,
+            0.481,
+            0.469,
+            0.456,
+            0.449,
+            0.451,
+            0.452,
+            0.453,
+            0.45,
+            0.45,
+            0.447,
+            0.45,
+            0.45,
+            0.452,
+            0.453,
+            0.458,
+            0.48
+          ],
+          "tratteggio": true
+        }
+      ]
+    },
+    {
+      "tipo": "profilo",
+      "titolo": "Caio Mario (418 posti): il valore non cambia (1%): forse il contatore è fermo",
+      "unita": "",
+      "nota": "8 giorni validi; linea piena feriale, tratteggiata weekend.",
+      "serie": [
+        {
+          "label": "giorno feriale",
+          "valori": [
+            0.016,
+            0.011,
+            0.01,
+            0.011,
+            0.011,
+            0.01,
+            0.01,
+            0.009,
+            0.009,
+            0.009,
+            0.01,
+            0.01,
+            0.009,
+            0.009,
+            0.01,
+            0.011,
+            0.011,
+            0.011,
+            0.01,
+            0.012,
+            0.012,
+            0.012,
+            0.013,
+            0.013
+          ]
+        },
+        {
+          "label": "weekend",
+          "valori": [
+            0.025,
+            0.017,
+            0.017,
+            0.017,
+            0.017,
+            0.017,
+            0.017,
+            0.016,
+            0.018,
+            0.019,
+            0.019,
+            0.021,
+            0.021,
+            0.022,
+            0.021,
+            0.024,
+            0.024,
+            0.027,
+            0.029,
+            0.03,
+            0.034,
+            0.033,
+            0.033,
+            0.035
+          ],
+          "tratteggio": true
+        }
+      ]
+    },
+    {
+      "tipo": "profilo",
+      "titolo": "Sofia (272 posti): è più pieno di notte che di giorno: 52% di notte, 31% di giorno",
+      "unita": "",
+      "nota": "8 giorni validi; linea piena feriale, tratteggiata weekend.",
+      "serie": [
+        {
+          "label": "giorno feriale",
+          "valori": [
+            0.516,
+            0.517,
+            0.519,
+            0.519,
+            0.519,
+            0.51,
+            0.488,
+            0.44,
+            0.4,
+            0.36,
+            0.31,
+            0.292,
+            0.3,
+            0.308,
+            0.309,
+            0.31,
+            0.31,
+            0.338,
+            0.378,
+            0.42,
+            0.449,
+            0.465,
+            0.487,
+            0.5
+          ]
+        },
+        {
+          "label": "weekend",
+          "valori": [
+            0.507,
+            0.51,
+            0.512,
+            0.514,
+            0.516,
+            0.513,
+            0.504,
+            0.489,
+            0.471,
+            0.44,
+            0.403,
+            0.385,
+            0.394,
+            0.396,
+            0.396,
+            0.393,
+            0.394,
+            0.395,
+            0.407,
+            0.416,
+            0.43,
+            0.436,
+            0.446,
+            0.495
+          ],
+          "tratteggio": true
+        }
+      ]
+    },
+    {
+      "tipo": "pila",
+      "titolo": "Fermate importanti e posti adatti",
+      "unita": "fermate",
+      "nota": "Posti adatti entro 400 m a piedi confrontati con le auto da fermare (auto che passano × 5,8%).",
+      "voci": [
+        {
+          "label": "nessun parcheggio",
+          "valore": 68,
+          "tono": "rosso"
+        },
+        {
+          "label": "posti insufficienti",
+          "valore": 111,
+          "tono": "arancio"
+        },
+        {
+          "label": "posti sufficienti",
+          "valore": 95,
+          "tono": "verde"
+        },
+        {
+          "label": "poche auto da fermare",
+          "valore": 0
+        }
+      ]
+    },
+    {
+      "tipo": "barre",
+      "titolo": "I punti dove mancano più posti",
+      "unita": "posti",
+      "nota": "Posti che mancano = auto da fermare − posti adatti vicini.",
+      "voci": [
+        {
+          "label": "1. Santa Rita",
+          "valore": 450,
+          "tono": "rosso"
+        },
+        {
+          "label": "2. Metro Massaua",
+          "valore": 350,
+          "tono": "rosso"
+        },
+        {
+          "label": "3. Ponte Cavalieri Templari",
+          "valore": 350,
+          "tono": "rosso"
+        },
+        {
+          "label": "4. Regina Margherita",
+          "valore": 350,
+          "tono": "rosso"
+        },
+        {
+          "label": "5. Pasini",
+          "valore": 250,
+          "tono": "rosso"
+        },
+        {
+          "label": "6. Leonardo Da Vinci",
+          "valore": 200,
+          "tono": "rosso"
+        },
+        {
+          "label": "7. Drosso Cap",
+          "valore": 200,
+          "tono": "rosso"
+        },
+        {
+          "label": "8. Stura Lazio",
+          "valore": 200,
+          "tono": "rosso"
+        },
+        {
+          "label": "9. Marsè",
+          "valore": 150,
+          "tono": "rosso"
+        },
+        {
+          "label": "10. Derna Est",
+          "valore": 100,
+          "tono": "rosso"
+        }
+      ]
+    }
+  ],
+  "verifica": [
+    {
+      "nome": "Caio Mario",
+      "fatto": "il valore non cambia (1%): forse il contatore è fermo; auto in entrata sulla strada accanto: circa 3.900",
+      "esito": "non si può dire: il contatore sembra fermo"
+    },
+    {
+      "nome": "Fermi",
+      "fatto": "non trasmette il riempimento; auto in entrata sulla strada accanto: circa 1.000",
+      "esito": "non si può dire: non trasmette il riempimento"
+    },
+    {
+      "nome": "Sofia",
+      "fatto": "è più pieno di notte che di giorno: 52% di notte, 31% di giorno; auto in entrata sulla strada accanto: circa 3.100",
+      "esito": "da capire: accanto passano molte auto in entrata ma è poco usato (prezzo? posizione? collegamento?)"
+    },
+    {
+      "nome": "Stura",
+      "fatto": "sempre quasi pieno: 80% di notte, 91% di giorno; auto in entrata sulla strada accanto: circa 7.600",
+      "esito": "coerente: pieno, su una strada con molte auto in entrata"
+    },
+    {
+      "nome": "Venchi Unica",
+      "fatto": "sempre intorno al 55%; auto in entrata sulla strada accanto: circa 7.100",
+      "esito": "non si può dire: riempimento a metà"
+    }
+  ],
+  "affidabilita": [
+    {
+      "voce": "Parcheggi trovati nei dati aperti",
+      "valore": "5.205"
+    },
+    {
+      "voce": "Aperti → fuori dal centro → con almeno 20 posti → adatti (non di destinazione)",
+      "valore": "3.431 → 3.208 → 2.006 → 1.874"
+    },
+    {
+      "voce": "Posti nei parcheggi adatti (dichiarati o stimati a 25 m² a posto)",
+      "valore": "157.103"
+    },
+    {
+      "voce": "Auto che entrano a Torino al mattino (solo conducenti)",
+      "valore": "87.162"
+    },
+    {
+      "voce": "Quota di chi già oggi lascia l'auto per un mezzo pubblico",
+      "valore": "5,8% (64 interviste)"
+    },
+    {
+      "voce": "Auto che passano accanto alle fermate",
+      "valore": "modello del traffico (percorso più veloce, senza code): solo ordine di grandezza"
+    },
+    {
+      "voce": "Quota di posti in mappa con riempimento misurato",
+      "valore": "26,9%"
+    },
+    {
+      "voce": "Giorni feriali di riempimento",
+      "valore": "15/10, 16/10, 19/10, 20/10, 21/10, 22/10"
+    },
+    {
+      "voce": "Non sappiamo",
+      "valore": "se i parcheggi senza misura (es. Fermi e i gratuiti) sono pieni; i parcheggi che non sono in OpenStreetMap; i treni"
+    }
+  ],
+  "immagini": [],
+  "metodo": [
+    "Fermate importanti: fra i luoghi di fermata della Città metropolitana, quelle fuori dal centro, con metro, stazione o capolinea oppure almeno 10 corse all'ora nelle ore dei pendolari, e con almeno 1.000 auto in entrata che passano accanto (centro = i quartieri centrali). Regola fissa; il punteggio (importanza della strada, corse, auto, metro o stazione, pesi uguali) serve solo per l'ordine.",
+    "Auto in entrata che passano accanto: le auto che entrano a Torino al mattino (indagine sugli spostamenti 2022) fatte «guidare» sul percorso più veloce della rete stradale; si legge la strada più trafficata entro 100 m.",
+    "Auto da fermare = auto che passano × 5,8% (chi già oggi lascia l'auto per un mezzo pubblico).",
+    "Posti adatti: parcheggi aperti fuori dal centro, con almeno 20 posti, non di ospedali, università o centri commerciali, entro 400 m a piedi (linea d'aria × 1,3); posti dichiarati o stimati con 25 m² a posto.",
+    "Punti prioritari (fino a 20, almeno 50 posti mancanti, uno per asse d'ingresso, oltre 3 km dal centro): fermate senza posti bastanti raggruppate entro 1 km, in ordine di posti che mancano."
+  ],
+  "parametri": [
+    [
+      "Centro escluso",
+      "i quartieri centrali (fermate e parcheggi)"
+    ],
+    [
+      "Fermate importanti",
+      "metro, stazione o capolinea o almeno 10 corse all'ora, e almeno 1.000 auto che passano (274 su 3.898)"
+    ],
+    [
+      "Distanza",
+      "400 m a piedi (linea d'aria × 1,3)"
+    ],
+    [
+      "Auto da fermare",
+      "auto che passano × 5,8%"
+    ],
+    [
+      "Posti stimati",
+      "25 m² a posto (±30%)"
+    ],
+    [
+      "Giorni feriali di riempimento",
+      "15/10, 16/10, 19/10, 20/10, 21/10 e 22/10"
+    ]
+  ],
+  "limiti": [
+    "Auto che passano: modello del traffico (percorso più veloce, senza code), stima debole: solo ordine di grandezza. Le stesse auto passano davanti a più fermate dello stesso corso.",
+    "Riempimento misurato su soli 6 giorni feriali e solo dove il 5T lo trasmette Fermi e i parcheggi gratuiti non sono misurati.",
+    "Quota di chi lascia l'auto: indagine sugli spostamenti 2022, poche interviste.",
+    "Controllo con i sensori 5T del mattino: il modello mette le strade d'ingresso in un ordine simile solo in parte (ρ = 0,46 su 24 luoghi); sottostima gli ingressi da nord-ovest.",
+    "Parcheggi da OpenStreetMap incompleti; posti spesso stimati dalla superficie (±30%).",
+    "Distanza a piedi stimata (linea d'aria × 1,3). Treni non considerati."
+  ],
+  "criteri": [
+    {
+      "nome": "Fermate importanti",
+      "valore": "fuori dal centro, con metro, stazione o capolinea oppure almeno 10 corse all'ora nelle ore dei pendolari, e almeno 1.000 auto in entrata che passano accanto (274 fermate)",
+      "perche": "un parcheggio per lasciare l'auto serve dove passa un mezzo frequente e passano molte auto in entrata",
+      "effetto": "con N 10, M 500: 347 fermate; con N 10, M 2.000: 201 fermate; con N 15, M 1.000: 136 fermate"
+    },
+    {
+      "nome": "Centro escluso",
+      "valore": "quartieri Q001-Q009 (Centro, San Salvario, Crocetta, San Paolo, Cenisia, San Donato, Aurora, Vanchiglia, Nizza Millefonti)",
+      "perche": "un parcheggio per lasciare l'auto serve prima di entrare nella città densa, non a due passi dalla destinazione",
+      "effetto": "vale sia per le fermate sia per i parcheggi"
+    },
+    {
+      "nome": "Parcheggi contati",
+      "valore": "solo quelli adatti: aperti, fuori dal centro, almeno 20 posti, non di ospedali, università o centri commerciali (1.874)",
+      "perche": "i posti di chi arriva a destinazione non servono a chi vuole lasciare l'auto prima",
+      "effetto": "contando anche i parcheggi di destinazione: 174 fermate senza posti bastanti (invece di 179)"
+    },
+    {
+      "nome": "Distanza",
+      "valore": "400 m a piedi (linea d'aria × 1.3)",
+      "perche": "chi lascia l'auto accetta di solito una camminata di qualche minuto",
+      "effetto": "a 300 m: 209 fermate senza posti bastanti; a 500 m: 147 (a 400 m: 179)"
+    },
+    {
+      "nome": "Auto da fermare",
+      "valore": "auto in entrata che passano accanto × 5,8% (chi già oggi lascia l'auto per un mezzo pubblico)",
+      "perche": "i posti servono se ci sono auto da fermare: niente soglia fissa di posti",
+      "effetto": "con metà quota: 135 fermate senza posti bastanti; con quota doppia: 212"
+    },
+    {
+      "nome": "Poche auto da fermare",
+      "valore": "meno di 20 auto da fermare al mattino",
+      "perche": "lì un parcheggio per lasciare l'auto non serve",
+      "effetto": "0 fermate importanti in questa classe"
+    },
+    {
+      "nome": "Aree",
+      "valore": "celle di circa 2 km²; Critica ≥ 60%, Scarsa 30-59%, Buona < 30%; almeno 5 fermate, se no «Pochi dati»",
+      "perche": "con una o due fermate la percentuale è 0% o 100% per caso",
+      "effetto": "soglie 50/25: Critica 14, Scarsa 4, Buona 2, Pochi dati 42; soglie 66/33: Critica 10, Scarsa 7, Buona 3, Pochi dati 42"
+    },
+    {
+      "nome": "Punti prioritari",
+      "valore": "fino a 20: fermate senza posti bastanti raggruppate entro 1 km, in ordine di posti che mancano (almeno 50); uno per asse d'ingresso (niente punti a meno di 2 km, né sulla stessa strada a meno di 5 km); almeno 3 km da Piazza Castello",
+      "perche": "risponde a «dove metterne uno o ingrandirlo»; due punti sullo stesso asse contano le stesse auto; vicino al centro si risparmia poca strada",
+      "effetto": "candidati: parcheggi adatti con almeno 100 posti entro 600 m a piedi; scartati 38 gruppi su 53"
+    },
+    {
+      "nome": "Riempimento",
+      "valore": "misurato dal 5T dove c'è (6 giorni feriali, ore 10-16); pieno ≥ 85%",
+      "perche": "un parcheggio pieno non serve",
+      "effetto": "colora i parcheggi e mostra i profili; non cambia le classi delle fermate"
+    }
+  ],
+  "mappa": {
+    "id": "interscambio",
+    "tema": "Parcheggi per lasciare l'auto",
+    "nota": "Due domande nella mappa, nel menu «Cosa vedere»: dove ci sono parcheggi e dove servirebbe di più un parcheggio."
+  },
+  "fonti": [
+    "docs/en/METHODS.md",
+    "scripts/81_auto_di_passaggio.py",
+    "scripts/82_parcheggi_adatti.py",
+    "scripts/83_fermate_importanti.py",
+    "scripts/84_risultato6_parcheggi.py",
+    "data/processed/risultato6_v2/mappa_r6.json"
+  ],
+  "generato": "2026-10-26T13:20:20+00:00",
+  "avviso": [
+    "Riempimento dei parcheggi misurato dai sensori 5T su pochi giorni; auto e posti che mancano calcolati su dati veri, non misurati."
+  ],
+  "in_english": [
+    "Question: where are park-and-ride spaces missing for the cars that enter Turin every morning, next to an important public transport stop outside the city centre?",
+    "Existing park-and-ride car parks of the City: 4 of 5 report their occupancy; full during the day: 1 (measured, only a few days of data).",
+    "About 87,200 cars enter Turin every morning (2022 travel survey) and 5.8% of these drivers already continue by public transport. 179 of 274 important stops outside the centre lack enough suitable parking within 400 m on foot for the cars passing by.",
+    "Important stops: outside the centre, with a metro, train station or terminus or at least 10 departures per hour at commuting times, and at least 1,000 cars entering the city passing by.",
+    "Limits: car flows come from a simple traffic model (order of magnitude only); occupancy is measured on few days and only where the city's 5T system reports it; trains are not included.",
+    "Check against the 5T morning sensors: the model ranks the entry roads in a similar order only in part (rho = 0.46 over 24 places); it underestimates the entries from the north-west."
+  ],
+  "scenari": [
+    {
+      "nome": "Oggi",
+      "numeri": [
+        {
+          "label": "Fermate importanti fuori dal centro",
+          "prima": null,
+          "dopo": 274,
+          "unita": "fermate"
+        },
+        {
+          "label": "Senza posti bastanti",
+          "prima": null,
+          "dopo": 179,
+          "unita": "fermate"
+        },
+        {
+          "label": "Senza nessun parcheggio adatto",
+          "prima": null,
+          "dopo": 68,
+          "unita": "fermate"
+        }
+      ],
+      "nota": "Stime: auto dal modello del traffico, posti da OpenStreetMap, Comune e 5T; riempimento da 5T."
+    }
+  ],
+  "forma": {
+    "tipo_dato": "Tipo di dato: calcolato da dati veri e in parte misurato, su pochi giorni di dati.",
+    "titolo": "Circa 2 fermate importanti su 3 non hanno abbastanza posti per lasciare l'auto",
+    "domanda": "Chi arriva in auto da fuori trova dove lasciarla vicino a una fermata importante, per proseguire coi mezzi?",
+    "numero": {
+      "valore": 179,
+      "unita": "",
+      "testo": "fermate importanti su 274 non hanno posti bastanti a 400 metri a piedi",
+      "breve": "fermate importanti senza posti per l'auto"
+    },
+    "principale": {
+      "tipo": "barre",
+      "titolo": "I 12 punti d'ingresso, per bisogno di parcheggio",
+      "unita": "posti",
+      "nota": "Posti che mancano accanto a ogni barra: un ordine di grandezza. Il colore è il bisogno, a terzi.",
+      "legenda": [
+        {
+          "tono": "rosso",
+          "label": "bisogno alto"
+        },
+        {
+          "tono": "arancio",
+          "label": "bisogno medio"
+        },
+        {
+          "tono": "giallo",
+          "label": "bisogno basso"
+        }
+      ],
+      "voci": [
+        {
+          "label": "Santa Rita",
+          "valore": 450,
+          "tono": "rosso",
+          "testo": "~450"
+        },
+        {
+          "label": "Parella (Metro Massaua)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Moncalieri (Ponte Cavalieri Templari)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Parella (Regina Margherita)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Madonna del Pilone",
+          "valore": 250,
+          "tono": "arancio",
+          "testo": "~250"
+        },
+        {
+          "label": "Grugliasco",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Mirafiori Sud",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Regio Parco",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Moncalieri (Marsè)",
+          "valore": 150,
+          "tono": "giallo",
+          "testo": "~150"
+        },
+        {
+          "label": "Falchera",
+          "valore": 100,
+          "tono": "giallo",
+          "testo": "~100"
+        },
+        {
+          "label": "Beinasco",
+          "valore": 80,
+          "tono": "giallo",
+          "testo": "~80"
+        },
+        {
+          "label": "Borgo Po e Cavoretto",
+          "valore": 60,
+          "tono": "giallo",
+          "testo": "~60"
+        }
+      ]
+    },
+    "punti": [
+      "68 fermate importanti non hanno nessun parcheggio vicino, 111 troppo pochi.",
+      "Il primo dei 12 punti d'ingresso dove servono posti è Santa Rita: ne mancano ~450.",
+      "In 1–5 punti su 12, lasciata l'auto, il bus arriva in centro in al più 1,5 volte il tempo dell'auto."
+    ],
+    "altri": [
+      {
+        "tipo": "gara",
+        "titolo": "La gara: bus e auto verso Piazza Castello, alle 8 di un feriale",
+        "nota": "Bus e auto partono insieme da ogni parcheggio, uno dopo l'altro. L'auto ha un tempo con la forbice del controllo, parcheggio compreso.",
+        "luoghi": [
+          {
+            "nome": "Santa Rita",
+            "gruppo": "Punti prioritari",
+            "bus": 38.7,
+            "auto_min": 19.6,
+            "auto_max": 24.1,
+            "giudizio": "coi mezzi 1,6–2 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Parella (Metro Massaua)",
+            "gruppo": "Punti prioritari",
+            "bus": 27.3,
+            "auto_min": 20.3,
+            "auto_max": 25.0,
+            "giudizio": "coi mezzi 1,1–1,3 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Moncalieri (Ponte Cavalieri Templari)",
+            "gruppo": "Punti prioritari",
+            "bus": 54.2,
+            "auto_min": 23.1,
+            "auto_max": 28.7,
+            "giudizio": "coi mezzi 1,9–2,4 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Parella (Regina Margherita)",
+            "gruppo": "Punti prioritari",
+            "bus": 33.5,
+            "auto_min": 18.0,
+            "auto_max": 22.0,
+            "giudizio": "coi mezzi 1,5–1,9 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Madonna del Pilone",
+            "gruppo": "Punti prioritari",
+            "bus": 30.4,
+            "auto_min": 17.5,
+            "auto_max": 21.3,
+            "giudizio": "coi mezzi 1,4–1,7 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Grugliasco",
+            "gruppo": "Punti prioritari",
+            "bus": 62.5,
+            "auto_min": 29.7,
+            "auto_max": 37.3,
+            "giudizio": "coi mezzi 1,7–2,1 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Mirafiori Sud",
+            "gruppo": "Punti prioritari",
+            "bus": 45.9,
+            "auto_min": 25.4,
+            "auto_max": 31.7,
+            "giudizio": "coi mezzi 1,4–1,8 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Regio Parco",
+            "gruppo": "Punti prioritari",
+            "bus": 39.7,
+            "auto_min": 21.4,
+            "auto_max": 26.4,
+            "giudizio": "coi mezzi 1,5–1,9 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Moncalieri (Marsè)",
+            "gruppo": "Punti prioritari",
+            "bus": 64.5,
+            "auto_min": 29.5,
+            "auto_max": 37.0,
+            "giudizio": "coi mezzi 1,7–2,2 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Falchera",
+            "gruppo": "Punti prioritari",
+            "bus": 36.6,
+            "auto_min": 20.3,
+            "auto_max": 25.0,
+            "giudizio": "coi mezzi 1,5–1,8 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Beinasco",
+            "gruppo": "Punti prioritari",
+            "bus": 52.1,
+            "auto_min": 29.8,
+            "auto_max": 37.4,
+            "giudizio": "coi mezzi 1,4–1,8 volte il tempo dell'auto"
+          },
+          {
+            "nome": "Borgo Po e Cavoretto",
+            "gruppo": "Punti prioritari",
+            "bus": 35.6,
+            "auto_min": 16.7,
+            "auto_max": 20.3,
+            "giudizio": "coi mezzi 1,8–2,1 volte il tempo dell'auto"
+          }
+        ],
+        "scelto": 0
+      },
+      {
+        "tipo": "barre",
+        "titolo": "I parcheggi di scambio che ci sono già: quanto sono pieni e quanto ci mette il bus al centro",
+        "unita": "minuti",
+        "nota": "Barra = minuti coi mezzi pubblici fino a Piazza Castello alle 8. A destra il tempo in auto, parcheggio compreso (traffico tipico), e quanto è pieno il parcheggio di giorno.",
+        "voci": [
+          {
+            "label": "Stura",
+            "valore": 42,
+            "testo": "42 contro 27–34 in auto · pieno di giorno"
+          },
+          {
+            "label": "Venchi Unica",
+            "valore": 30,
+            "testo": "30 contro 22–28 in auto · a metà"
+          },
+          {
+            "label": "Caio Mario",
+            "valore": 41,
+            "testo": "41 contro 23–29 in auto · con posti liberi"
+          },
+          {
+            "label": "Fermi",
+            "valore": 34,
+            "testo": "34 contro 26–33 in auto · riempimento non noto"
+          },
+          {
+            "label": "Sofia",
+            "valore": 36,
+            "testo": "36 contro 20–25 in auto · con posti liberi"
+          }
+        ]
+      }
+    ],
+    "calcolo": [
+      "Fermate importanti: fuori dal centro, con metro, stazione o capolinea oppure 10 corse all'ora, e almeno 1.000 auto che passano.",
+      "Le auto in entrata vengono dall'indagine sugli spostamenti 2022, assegnate al percorso più veloce.",
+      "Auto da fermare: auto che passano per il 5,8% che già oggi lascia l'auto. Posti: parcheggi adatti entro 400 metri.",
+      "Punti prioritari: fermate senza posti bastanti raggruppate entro 1 km, uno per asse d'ingresso. Fermate di riferimento: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara.",
+      "Bus contro auto: minuti coi mezzi (corretti con le misure) verso Piazza Castello alle otto del mattino. Auto: stima aperta più 5 minuti, e la stessa corretta col fattore 1,3 del controllo con TomTom.",
+      "Pareggio: minuti di parcheggio che rendono l'auto lenta quanto il bus, da 20 a 24 (mediana dei 12 punti).",
+      "La classe si dà solo se è la stessa con la stima aperta e con quella corretta. Lo è in 8 punti su 12; negli altri dipende dal traffico."
+    ],
+    "criteri": [
+      [
+        "Fermate importanti",
+        "metro, stazione o capolinea oppure 10 corse all'ora, e almeno 1.000 auto che passano"
+      ],
+      [
+        "Distanza a piedi",
+        "400 metri"
+      ],
+      [
+        "Auto da fermare",
+        "auto che passano × 5,8%"
+      ],
+      [
+        "Periodo del riempimento dei parcheggi",
+        "dal 15/10/2026 al 22/10/2026"
+      ],
+      [
+        "Bus contro auto",
+        "verso Piazza Castello alle 8; auto: stima aperta (fattore mediano 2) + 5 minuti, e la stessa corretta col controllo (× 1,3 sulla guida)"
+      ]
+    ],
+    "limiti": [
+      "Le auto che passano vengono da un modello del traffico. I posti sono spesso stimati: quelli che mancano sono un ordine di grandezza. Con metà o doppio di chi lascia l'auto, le fermate senza posti bastanti vanno da 135 a 212 su 274.",
+      "I tempi coi mezzi sono solo GTT, senza treni.",
+      "Tempi in auto da un modello aperto, non misurati sul singolo viaggio. Il controllo con TomTom su 20 percorsi li trova ottimistici: per questo c'è una forbice.",
+      "Il costo del parcheggio non è nel calcolo: pesa come minuti in più. Si guarda un solo punto per luogo e una sola destinazione."
+    ],
+    "mappa": {
+      "id": "interscambio",
+      "nota": "Due domande nella mappa, nel menu «Cosa vedere»: dove ci sono parcheggi e dove servirebbe di più un parcheggio."
+    },
+    "fonti": [
+      "GTT (orari ufficiali e posizioni dei mezzi)",
+      "Comune di Torino (parcheggi)",
+      "5T (sensori del traffico)",
+      "Agenzia della mobilità piemontese (indagine sugli spostamenti 2022)",
+      "OpenStreetMap",
+      "TomTom (controllo dei tempi in auto su 20 percorsi)"
+    ],
+    "titolo_breve": "Dove lasciare l'auto",
+    "anima": {
+      "tipo": "fermate",
+      "contorno": {
+        "d": "M879 130l-33 35l-2 -35l22 -12l13 12zM452 11l123 41l18 -10l2 11l11 14l35 -6l42 -20l3 -17l6 -5l25 -3l34 9l-9 37l9 34l48 23l13 3l-8 28l46 93l43 29l-7 39l-27 21l-21 13l28 44l18 20l30 12l64 3l-8 11l3 8l10 6l12 -1l5 4l-90 145l-79 95l-39 49l-51 48l-40 17l-37 36l-129 15l-120 41l-18 59l-73 6l-70 -8l-19 1l-59 -16l-11 5l-87 -31l-14 -16l8 -25l8 -1l36 8l35 -80l-30 11l-67 -45l-44 -39l-10 -14l13 -18l32 -4l128 80l25 -39l45 -134l-1 -15l-33 5l-57 -11l9 -32l9 -4l6 -11l-20 -24l-25 -6l61 -129l13 -59l-19 -21l-12 -51l13 -8l30 2l12 -4l1 -39l122 13l40 -5l0 -15l-7 -11l-3 -50l9 -10l12 -31l-6 -29l2 -15l38 -36l7 -2l8 11z",
+        "vb": [
+          -40,
+          -40,
+          1080,
+          1043
+        ]
+      },
+      "punti": [
+        [
+          186,
+          477,
+          0,
+          365
+        ],
+        [
+          216,
+          475,
+          1,
+          335
+        ],
+        [
+          123,
+          481,
+          1,
+          427
+        ],
+        [
+          687,
+          138,
+          0,
+          387
+        ],
+        [
+          261,
+          473,
+          2,
+          290
+        ],
+        [
+          295,
+          471,
+          2,
+          257
+        ],
+        [
+          690,
+          150,
+          0,
+          377
+        ],
+        [
+          692,
+          135,
+          0,
+          392
+        ],
+        [
+          445,
+          255,
+          1,
+          267
+        ],
+        [
+          455,
+          252,
+          1,
+          266
+        ],
+        [
+          442,
+          258,
+          1,
+          265
+        ],
+        [
+          426,
+          895,
+          1,
+          414
+        ],
+        [
+          546,
+          301,
+          1,
+          199
+        ],
+        [
+          479,
+          1008,
+          0,
+          513
+        ],
+        [
+          369,
+          154,
+          0,
+          390
+        ],
+        [
+          342,
+          1065,
+          0,
+          602
+        ],
+        [
+          339,
+          1063,
+          0,
+          601
+        ],
+        [
+          393,
+          817,
+          0,
+          354
+        ],
+        [
+          574,
+          300,
+          1,
+          201
+        ],
+        [
+          576,
+          299,
+          1,
+          203
+        ],
+        [
+          476,
+          1024,
+          1,
+          529
+        ],
+        [
+          69,
+          465,
+          0,
+          482
+        ],
+        [
+          1237,
+          976,
+          0,
+          836
+        ],
+        [
+          401,
+          839,
+          0,
+          370
+        ],
+        [
+          241,
+          917,
+          1,
+          519
+        ],
+        [
+          346,
+          682,
+          2,
+          273
+        ],
+        [
+          257,
+          746,
+          2,
+          383
+        ],
+        [
+          680,
+          145,
+          0,
+          378
+        ],
+        [
+          356,
+          671,
+          2,
+          259
+        ],
+        [
+          268,
+          738,
+          1,
+          369
+        ],
+        [
+          175,
+          791,
+          1,
+          475
+        ],
+        [
+          221,
+          475,
+          1,
+          330
+        ],
+        [
+          290,
+          854,
+          1,
+          439
+        ],
+        [
+          136,
+          480,
+          1,
+          414
+        ],
+        [
+          185,
+          787,
+          2,
+          464
+        ],
+        [
+          259,
+          896,
+          1,
+          491
+        ],
+        [
+          245,
+          754,
+          1,
+          397
+        ],
+        [
+          264,
+          887,
+          2,
+          481
+        ],
+        [
+          279,
+          871,
+          2,
+          459
+        ],
+        [
+          248,
+          754,
+          1,
+          395
+        ],
+        [
+          592,
+          599,
+          2,
+          108
+        ],
+        [
+          270,
+          882,
+          2,
+          474
+        ],
+        [
+          204,
+          782,
+          2,
+          446
+        ],
+        [
+          253,
+          900,
+          1,
+          498
+        ],
+        [
+          200,
+          782,
+          2,
+          449
+        ],
+        [
+          236,
+          762,
+          1,
+          409
+        ],
+        [
+          240,
+          648,
+          1,
+          344
+        ],
+        [
+          727,
+          514,
+          1,
+          178
+        ],
+        [
+          299,
+          840,
+          1,
+          423
+        ],
+        [
+          233,
+          762,
+          1,
+          411
+        ],
+        [
+          743,
+          510,
+          1,
+          193
+        ],
+        [
+          325,
+          699,
+          1,
+          300
+        ],
+        [
+          311,
+          828,
+          1,
+          406
+        ],
+        [
+          269,
+          652,
+          1,
+          319
+        ],
+        [
+          375,
+          748,
+          0,
+          304
+        ],
+        [
+          337,
+          685,
+          2,
+          282
+        ],
+        [
+          10,
+          488,
+          1,
+          540
+        ],
+        [
+          784,
+          403,
+          1,
+          253
+        ],
+        [
+          390,
+          729,
+          0,
+          279
+        ],
+        [
+          345,
+          687,
+          2,
+          277
+        ],
+        [
+          334,
+          799,
+          0,
+          369
+        ],
+        [
+          313,
+          825,
+          0,
+          402
+        ],
+        [
+          353,
+          776,
+          1,
+          339
+        ],
+        [
+          331,
+          804,
+          0,
+          375
+        ],
+        [
+          293,
+          721,
+          1,
+          339
+        ],
+        [
+          706,
+          332,
+          0,
+          229
+        ],
+        [
+          1049,
+          -566,
+          0,
+          1177
+        ],
+        [
+          349,
+          780,
+          1,
+          345
+        ],
+        [
+          207,
+          476,
+          0,
+          344
+        ],
+        [
+          47,
+          638,
+          2,
+          522
+        ],
+        [
+          414,
+          698,
+          1,
+          240
+        ],
+        [
+          320,
+          816,
+          0,
+          391
+        ],
+        [
+          779,
+          426,
+          1,
+          241
+        ],
+        [
+          273,
+          876,
+          2,
+          467
+        ],
+        [
+          794,
+          390,
+          1,
+          268
+        ],
+        [
+          159,
+          480,
+          1,
+          392
+        ],
+        [
+          156,
+          478,
+          1,
+          395
+        ],
+        [
+          -57,
+          492,
+          2,
+          607
+        ],
+        [
+          260,
+          901,
+          1,
+          495
+        ],
+        [
+          647,
+          229,
+          2,
+          288
+        ],
+        [
+          672,
+          177,
+          1,
+          345
+        ],
+        [
+          632,
+          261,
+          0,
+          253
+        ],
+        [
+          663,
+          197,
+          0,
+          323
+        ],
+        [
+          223,
+          647,
+          1,
+          359
+        ],
+        [
+          256,
+          650,
+          1,
+          330
+        ],
+        [
+          268,
+          650,
+          1,
+          319
+        ],
+        [
+          399,
+          717,
+          2,
+          264
+        ],
+        [
+          856,
+          357,
+          1,
+          338
+        ],
+        [
+          507,
+          999,
+          1,
+          501
+        ],
+        [
+          722,
+          316,
+          0,
+          252
+        ],
+        [
+          674,
+          534,
+          2,
+          129
+        ],
+        [
+          95,
+          482,
+          1,
+          455
+        ],
+        [
+          553,
+          300,
+          1,
+          200
+        ],
+        [
+          432,
+          675,
+          2,
+          211
+        ],
+        [
+          607,
+          268,
+          0,
+          239
+        ],
+        [
+          324,
+          812,
+          0,
+          385
+        ],
+        [
+          393,
+          348,
+          2,
+          219
+        ],
+        [
+          380,
+          377,
+          2,
+          210
+        ],
+        [
+          936,
+          265,
+          0,
+          452
+        ],
+        [
+          429,
+          679,
+          2,
+          216
+        ],
+        [
+          778,
+          469,
+          2,
+          230
+        ],
+        [
+          532,
+          729,
+          1,
+          230
+        ],
+        [
+          315,
+          828,
+          1,
+          403
+        ],
+        [
+          927,
+          309,
+          1,
+          423
+        ],
+        [
+          516,
+          367,
+          1,
+          137
+        ],
+        [
+          -23,
+          490,
+          1,
+          573
+        ],
+        [
+          367,
+          758,
+          0,
+          316
+        ],
+        [
+          -19,
+          489,
+          1,
+          569
+        ],
+        [
+          620,
+          561,
+          1,
+          93
+        ],
+        [
+          404,
+          716,
+          2,
+          261
+        ],
+        [
+          510,
+          359,
+          1,
+          147
+        ],
+        [
+          294,
+          841,
+          1,
+          426
+        ],
+        [
+          365,
+          760,
+          0,
+          319
+        ],
+        [
+          287,
+          718,
+          1,
+          342
+        ],
+        [
+          750,
+          286,
+          2,
+          293
+        ],
+        [
+          292,
+          602,
+          2,
+          277
+        ],
+        [
+          284,
+          660,
+          1,
+          310
+        ],
+        [
+          333,
+          473,
+          1,
+          219
+        ],
+        [
+          307,
+          515,
+          1,
+          243
+        ],
+        [
+          337,
+          464,
+          1,
+          216
+        ],
+        [
+          281,
+          656,
+          1,
+          311
+        ],
+        [
+          402,
+          713,
+          2,
+          259
+        ],
+        [
+          -175,
+          500,
+          0,
+          725
+        ],
+        [
+          296,
+          666,
+          1,
+          303
+        ],
+        [
+          766,
+          244,
+          0,
+          335
+        ],
+        [
+          711,
+          333,
+          0,
+          232
+        ],
+        [
+          623,
+          282,
+          0,
+          230
+        ],
+        [
+          303,
+          824,
+          1,
+          407
+        ],
+        [
+          621,
+          286,
+          0,
+          225
+        ],
+        [
+          630,
+          276,
+          1,
+          238
+        ],
+        [
+          700,
+          342,
+          0,
+          218
+        ],
+        [
+          600,
+          330,
+          1,
+          177
+        ],
+        [
+          324,
+          679,
+          2,
+          288
+        ],
+        [
+          -178,
+          498,
+          0,
+          728
+        ],
+        [
+          -150,
+          496,
+          0,
+          700
+        ],
+        [
+          289,
+          679,
+          2,
+          316
+        ],
+        [
+          283,
+          501,
+          2,
+          267
+        ],
+        [
+          513,
+          356,
+          0,
+          149
+        ],
+        [
+          99,
+          818,
+          0,
+          552
+        ],
+        [
+          111,
+          814,
+          0,
+          540
+        ],
+        [
+          288,
+          700,
+          1,
+          330
+        ],
+        [
+          482,
+          999,
+          0,
+          504
+        ],
+        [
+          591,
+          352,
+          1,
+          154
+        ],
+        [
+          -257,
+          504,
+          0,
+          807
+        ],
+        [
+          103,
+          818,
+          0,
+          549
+        ],
+        [
+          122,
+          811,
+          2,
+          529
+        ],
+        [
+          444,
+          252,
+          1,
+          270
+        ],
+        [
+          555,
+          262,
+          2,
+          238
+        ],
+        [
+          -95,
+          495,
+          1,
+          645
+        ],
+        [
+          725,
+          1084,
+          2,
+          610
+        ],
+        [
+          588,
+          358,
+          2,
+          147
+        ],
+        [
+          533,
+          260,
+          2,
+          241
+        ],
+        [
+          428,
+          266,
+          1,
+          264
+        ],
+        [
+          688,
+          357,
+          0,
+          199
+        ],
+        [
+          422,
+          290,
+          2,
+          246
+        ],
+        [
+          284,
+          56,
+          0,
+          518
+        ],
+        [
+          312,
+          806,
+          0,
+          388
+        ],
+        [
+          411,
+          310,
+          2,
+          235
+        ],
+        [
+          539,
+          366,
+          0,
+          134
+        ],
+        [
+          -99,
+          493,
+          1,
+          649
+        ],
+        [
+          421,
+          287,
+          2,
+          249
+        ],
+        [
+          718,
+          322,
+          0,
+          245
+        ],
+        [
+          431,
+          264,
+          1,
+          264
+        ],
+        [
+          381,
+          668,
+          0,
+          238
+        ],
+        [
+          691,
+          355,
+          0,
+          202
+        ],
+        [
+          493,
+          994,
+          0,
+          497
+        ],
+        [
+          315,
+          803,
+          0,
+          383
+        ],
+        [
+          530,
+          262,
+          2,
+          239
+        ],
+        [
+          371,
+          396,
+          2,
+          207
+        ],
+        [
+          313,
+          674,
+          2,
+          294
+        ],
+        [
+          434,
+          249,
+          1,
+          277
+        ],
+        [
+          51,
+          460,
+          0,
+          501
+        ],
+        [
+          311,
+          671,
+          2,
+          294
+        ],
+        [
+          299,
+          665,
+          1,
+          300
+        ],
+        [
+          -221,
+          501,
+          0,
+          771
+        ],
+        [
+          302,
+          546,
+          2,
+          252
+        ],
+        [
+          -196,
+          499,
+          0,
+          746
+        ],
+        [
+          609,
+          312,
+          1,
+          197
+        ],
+        [
+          984,
+          257,
+          0,
+          497
+        ],
+        [
+          290,
+          632,
+          1,
+          292
+        ],
+        [
+          709,
+          325,
+          0,
+          236
+        ],
+        [
+          748,
+          294,
+          2,
+          286
+        ],
+        [
+          -224,
+          503,
+          0,
+          774
+        ],
+        [
+          788,
+          288,
+          2,
+          319
+        ],
+        [
+          813,
+          284,
+          2,
+          340
+        ],
+        [
+          360,
+          719,
+          0,
+          290
+        ],
+        [
+          575,
+          378,
+          1,
+          125
+        ],
+        [
+          619,
+          304,
+          0,
+          208
+        ],
+        [
+          598,
+          335,
+          1,
+          172
+        ],
+        [
+          611,
+          307,
+          1,
+          202
+        ],
+        [
+          1029,
+          199,
+          0,
+          566
+        ],
+        [
+          593,
+          391,
+          1,
+          117
+        ],
+        [
+          436,
+          261,
+          1,
+          265
+        ],
+        [
+          310,
+          510,
+          1,
+          240
+        ],
+        [
+          580,
+          375,
+          1,
+          129
+        ],
+        [
+          345,
+          249,
+          0,
+          324
+        ],
+        [
+          -151,
+          501,
+          0,
+          701
+        ],
+        [
+          576,
+          384,
+          2,
+          119
+        ],
+        [
+          265,
+          645,
+          1,
+          320
+        ],
+        [
+          287,
+          774,
+          0,
+          380
+        ],
+        [
+          766,
+          291,
+          2,
+          301
+        ],
+        [
+          600,
+          270,
+          2,
+          235
+        ],
+        [
+          293,
+          571,
+          2,
+          267
+        ],
+        [
+          614,
+          410,
+          0,
+          110
+        ],
+        [
+          651,
+          387,
+          0,
+          152
+        ],
+        [
+          428,
+          675,
+          1,
+          213
+        ],
+        [
+          296,
+          566,
+          2,
+          262
+        ],
+        [
+          677,
+          370,
+          1,
+          182
+        ],
+        [
+          247,
+          761,
+          1,
+          400
+        ],
+        [
+          667,
+          377,
+          1,
+          170
+        ],
+        [
+          266,
+          628,
+          2,
+          312
+        ],
+        [
+          626,
+          435,
+          1,
+          100
+        ],
+        [
+          423,
+          214,
+          1,
+          313
+        ],
+        [
+          442,
+          891,
+          1,
+          406
+        ],
+        [
+          412,
+          205,
+          0,
+          326
+        ],
+        [
+          522,
+          365,
+          0,
+          138
+        ],
+        [
+          391,
+          714,
+          1,
+          267
+        ],
+        [
+          411,
+          953,
+          0,
+          474
+        ],
+        [
+          562,
+          371,
+          0,
+          130
+        ],
+        [
+          442,
+          692,
+          0,
+          220
+        ],
+        [
+          -41,
+          324,
+          0,
+          617
+        ],
+        [
+          -16,
+          321,
+          1,
+          594
+        ],
+        [
+          387,
+          177,
+          2,
+          362
+        ],
+        [
+          374,
+          946,
+          0,
+          479
+        ],
+        [
+          423,
+          230,
+          2,
+          298
+        ],
+        [
+          234,
+          551,
+          2,
+          320
+        ],
+        [
+          403,
+          980,
+          1,
+          502
+        ],
+        [
+          419,
+          201,
+          0,
+          326
+        ],
+        [
+          353,
+          1052,
+          0,
+          586
+        ],
+        [
+          263,
+          687,
+          1,
+          343
+        ],
+        [
+          425,
+          901,
+          1,
+          420
+        ],
+        [
+          423,
+          903,
+          1,
+          423
+        ],
+        [
+          -93,
+          327,
+          0,
+          666
+        ],
+        [
+          -124,
+          288,
+          0,
+          707
+        ],
+        [
+          422,
+          661,
+          1,
+          206
+        ],
+        [
+          434,
+          209,
+          1,
+          313
+        ],
+        [
+          303,
+          789,
+          0,
+          380
+        ],
+        [
+          193,
+          653,
+          1,
+          388
+        ],
+        [
+          231,
+          549,
+          2,
+          323
+        ],
+        [
+          293,
+          784,
+          0,
+          383
+        ],
+        [
+          410,
+          200,
+          0,
+          331
+        ],
+        [
+          297,
+          784,
+          0,
+          380
+        ],
+        [
+          308,
+          789,
+          0,
+          377
+        ],
+        [
+          320,
+          696,
+          1,
+          302
+        ],
+        [
+          -160,
+          269,
+          0,
+          747
+        ],
+        [
+          507,
+          348,
+          0,
+          158
+        ],
+        [
+          379,
+          833,
+          2,
+          374
+        ],
+        [
+          373,
+          852,
+          2,
+          394
+        ],
+        [
+          381,
+          837,
+          2,
+          377
+        ],
+        [
+          486,
+          262,
+          1,
+          246
+        ],
+        [
+          518,
+          255,
+          2,
+          247
+        ],
+        [
+          362,
+          908,
+          1,
+          449
+        ],
+        [
+          153,
+          527,
+          0,
+          398
+        ],
+        [
+          69,
+          552,
+          0,
+          484
+        ],
+        [
+          92,
+          552,
+          1,
+          461
+        ],
+        [
+          50,
+          547,
+          0,
+          502
+        ],
+        [
+          338,
+          167,
+          1,
+          395
+        ],
+        [
+          1245,
+          953,
+          0,
+          830
+        ],
+        [
+          124,
+          549,
+          1,
+          429
+        ],
+        [
+          89,
+          470,
+          0,
+          462
+        ],
+        [
+          527,
+          286,
+          2,
+          215
+        ],
+        [
+          15,
+          539,
+          0,
+          536
+        ],
+        [
+          296,
+          93,
+          1,
+          480
+        ],
+        [
+          890,
+          96,
+          0,
+          528
+        ],
+        [
+          295,
+          548,
+          2,
+          259
+        ],
+        [
+          288,
+          548,
+          2,
+          266
+        ],
+        [
+          274,
+          549,
+          2,
+          280
+        ],
+        [
+          279,
+          549,
+          2,
+          275
+        ],
+        [
+          251,
+          550,
+          1,
+          303
+        ],
+        [
+          485,
+          321,
+          0,
+          190
+        ],
+        [
+          258,
+          551,
+          1,
+          296
+        ],
+        [
+          225,
+          548,
+          2,
+          329
+        ],
+        [
+          454,
+          1043,
+          0,
+          551
+        ],
+        [
+          64,
+          463,
+          0,
+          487
+        ]
+      ],
+      "prioritari": [
+        [
+          331,
+          683
+        ],
+        [
+          219,
+          475
+        ],
+        [
+          492,
+          1012
+        ],
+        [
+          381,
+          374
+        ],
+        [
+          778,
+          469
+        ],
+        [
+          47,
+          638
+        ],
+        [
+          262,
+          891
+        ],
+        [
+          755,
+          291
+        ],
+        [
+          725,
+          1084
+        ],
+        [
+          615,
+          273
+        ],
+        [
+          122,
+          811
+        ],
+        [
+          532,
+          729
+        ]
+      ],
+      "legenda": [
+        {
+          "label": "posti bastanti",
+          "n": 95,
+          "tono": "verde"
+        },
+        {
+          "label": "pochi posti",
+          "n": 111,
+          "tono": "giallo"
+        },
+        {
+          "label": "nessun parcheggio",
+          "n": 68,
+          "tono": "rosso"
+        }
+      ],
+      "didascalia": "Ogni punto è una fermata importante, in Torino e in cintura; la linea è il confine di Torino. I cerchi neri sono i 12 punti dove servirebbero di più nuovi posti."
+    },
+    "pareggio": {
+      "a": 24,
+      "b": 20
+    }
+  },
+  "forma_en": {
+    "tipo_dato": "Type of data: calculated from real data and partly measured, over few days of data.",
+    "titolo": "About 2 in 3 important stops lack enough spaces to leave the car",
+    "domanda": "Can people driving in from outside find a place to leave the car near an important stop, and continue by public transport?",
+    "numero": {
+      "valore": 179,
+      "unita": "",
+      "testo": "important stops out of 274 lack enough parking within 400 metres on foot",
+      "breve": "important stops without parking spaces"
+    },
+    "principale": {
+      "tipo": "barre",
+      "titolo": "The 12 entry points, by need for parking",
+      "unita": "spaces",
+      "nota": "Missing spaces next to each bar: an order of magnitude. The colour is the need, in thirds.",
+      "legenda": [
+        {
+          "tono": "rosso",
+          "label": "high need"
+        },
+        {
+          "tono": "arancio",
+          "label": "medium need"
+        },
+        {
+          "tono": "giallo",
+          "label": "low need"
+        }
+      ],
+      "voci": [
+        {
+          "label": "Santa Rita",
+          "valore": 450,
+          "tono": "rosso",
+          "testo": "~450"
+        },
+        {
+          "label": "Parella (Metro Massaua)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Moncalieri (Ponte Cavalieri Templari)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Parella (Regina Margherita)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Madonna del Pilone",
+          "valore": 250,
+          "tono": "arancio",
+          "testo": "~250"
+        },
+        {
+          "label": "Grugliasco",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Mirafiori Sud",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Regio Parco",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Moncalieri (Marsè)",
+          "valore": 150,
+          "tono": "giallo",
+          "testo": "~150"
+        },
+        {
+          "label": "Falchera",
+          "valore": 100,
+          "tono": "giallo",
+          "testo": "~100"
+        },
+        {
+          "label": "Beinasco",
+          "valore": 80,
+          "tono": "giallo",
+          "testo": "~80"
+        },
+        {
+          "label": "Borgo Po e Cavoretto",
+          "valore": 60,
+          "tono": "giallo",
+          "testo": "~60"
+        }
+      ]
+    },
+    "punti": [
+      "68 important stops have no car park nearby, 111 have too few.",
+      "The first of the 12 entry points where spaces are needed is Santa Rita: ~450 are missing.",
+      "In 1–5 points out of 12, once the car is left, the bus reaches the centre in at most 1.5 times the car's time."
+    ],
+    "altri": [
+      {
+        "tipo": "gara",
+        "titolo": "The race: bus and car to Piazza Castello, at 8 a.m. on a weekday",
+        "nota": "Bus and car leave together from each car park, one after the other. The car has a time with the range from the check, parking included.",
+        "luoghi": [
+          {
+            "nome": "Santa Rita",
+            "gruppo": "Priority points",
+            "bus": 38.7,
+            "auto_min": 19.6,
+            "auto_max": 24.1,
+            "giudizio": "by public transport 1.6–2 times the car's time"
+          },
+          {
+            "nome": "Parella (Metro Massaua)",
+            "gruppo": "Priority points",
+            "bus": 27.3,
+            "auto_min": 20.3,
+            "auto_max": 25.0,
+            "giudizio": "by public transport 1.1–1.3 times the car's time"
+          },
+          {
+            "nome": "Moncalieri (Ponte Cavalieri Templari)",
+            "gruppo": "Priority points",
+            "bus": 54.2,
+            "auto_min": 23.1,
+            "auto_max": 28.7,
+            "giudizio": "by public transport 1.9–2.4 times the car's time"
+          },
+          {
+            "nome": "Parella (Regina Margherita)",
+            "gruppo": "Priority points",
+            "bus": 33.5,
+            "auto_min": 18.0,
+            "auto_max": 22.0,
+            "giudizio": "by public transport 1.5–1.9 times the car's time"
+          },
+          {
+            "nome": "Madonna del Pilone",
+            "gruppo": "Priority points",
+            "bus": 30.4,
+            "auto_min": 17.5,
+            "auto_max": 21.3,
+            "giudizio": "by public transport 1.4–1.7 times the car's time"
+          },
+          {
+            "nome": "Grugliasco",
+            "gruppo": "Priority points",
+            "bus": 62.5,
+            "auto_min": 29.7,
+            "auto_max": 37.3,
+            "giudizio": "by public transport 1.7–2.1 times the car's time"
+          },
+          {
+            "nome": "Mirafiori Sud",
+            "gruppo": "Priority points",
+            "bus": 45.9,
+            "auto_min": 25.4,
+            "auto_max": 31.7,
+            "giudizio": "by public transport 1.4–1.8 times the car's time"
+          },
+          {
+            "nome": "Regio Parco",
+            "gruppo": "Priority points",
+            "bus": 39.7,
+            "auto_min": 21.4,
+            "auto_max": 26.4,
+            "giudizio": "by public transport 1.5–1.9 times the car's time"
+          },
+          {
+            "nome": "Moncalieri (Marsè)",
+            "gruppo": "Priority points",
+            "bus": 64.5,
+            "auto_min": 29.5,
+            "auto_max": 37.0,
+            "giudizio": "by public transport 1.7–2.2 times the car's time"
+          },
+          {
+            "nome": "Falchera",
+            "gruppo": "Priority points",
+            "bus": 36.6,
+            "auto_min": 20.3,
+            "auto_max": 25.0,
+            "giudizio": "by public transport 1.5–1.8 times the car's time"
+          },
+          {
+            "nome": "Beinasco",
+            "gruppo": "Priority points",
+            "bus": 52.1,
+            "auto_min": 29.8,
+            "auto_max": 37.4,
+            "giudizio": "by public transport 1.4–1.8 times the car's time"
+          },
+          {
+            "nome": "Borgo Po e Cavoretto",
+            "gruppo": "Priority points",
+            "bus": 35.6,
+            "auto_min": 16.7,
+            "auto_max": 20.3,
+            "giudizio": "by public transport 1.8–2.1 times the car's time"
+          }
+        ],
+        "scelto": 0
+      },
+      {
+        "tipo": "barre",
+        "titolo": "Existing park-and-ride sites: how full they are and how long the bus takes to the centre",
+        "unita": "minutes",
+        "nota": "Bar = minutes by public transport to Piazza Castello at 8 a.m. On the right, the car time with parking included (typical traffic), and how full the car park is during the day.",
+        "voci": [
+          {
+            "label": "Stura",
+            "valore": 42,
+            "testo": "42 against 27–34 by car · full during the day"
+          },
+          {
+            "label": "Venchi Unica",
+            "valore": 30,
+            "testo": "30 against 22–28 by car · half full"
+          },
+          {
+            "label": "Caio Mario",
+            "valore": 41,
+            "testo": "41 against 23–29 by car · with free spaces"
+          },
+          {
+            "label": "Fermi",
+            "valore": 34,
+            "testo": "34 against 26–33 by car · occupancy unknown"
+          },
+          {
+            "label": "Sofia",
+            "valore": 36,
+            "testo": "36 against 20–25 by car · with free spaces"
+          }
+        ]
+      }
+    ],
+    "calcolo": [
+      "Important stops: outside the centre, with a metro, station or terminus or 10 trips an hour, and at least 1,000 passing cars.",
+      "Cars entering come from the 2022 travel survey, assigned to the fastest route.",
+      "Cars to stop: passing cars times the 5.8% who already leave the car today. Spaces: suitable car parks within 400 metres.",
+      "Priority points: stops without enough spaces grouped within 1 km, one per entry axis. Reference stops: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara.",
+      "Bus against car: minutes by public transport (corrected with the measurements) to Piazza Castello at eight in the morning. Car: open estimate plus 5 minutes, and the same corrected with the factor 1.3 from the TomTom check.",
+      "Break-even: minutes of parking that make the car as slow as the bus, from 20 to 24 (median of the 12 points).",
+      "The class is given only if it is the same with the open estimate and the corrected one. It is the same in 8 points out of 12; in the others it depends on traffic."
+    ],
+    "criteri": [
+      [
+        "Important stops",
+        "metro, station or terminus or 10 trips an hour, and at least 1,000 passing cars"
+      ],
+      [
+        "Walking distance",
+        "400 metres"
+      ],
+      [
+        "Cars to stop",
+        "passing cars × 5.8%"
+      ],
+      [
+        "Car park occupancy period",
+        "from 15/10/2,026 to 22/10/2,026"
+      ],
+      [
+        "Bus against car",
+        "to Piazza Castello at 8; car: open estimate (median factor 2) + 5 minutes, and the same corrected with the check (× 1.3 on driving)"
+      ]
+    ],
+    "limiti": [
+      "Passing cars come from a traffic model. Spaces are often estimated: the missing ones are an order of magnitude. With half or double the drivers who leave the car, stops without enough spaces go from 135 to 212 out of 274.",
+      "Public transport times are GTT only, without trains.",
+      "Car times come from an open model, not measured on the single trip. The TomTom check on 20 routes finds them optimistic: that is why there is a range.",
+      "The cost of parking is not in the calculation: it weighs as extra minutes. One point per place and one destination only."
+    ],
+    "mappa": {
+      "id": "interscambio",
+      "nota": "Due domande nella mappa, nel menu «Cosa vedere»: dove ci sono parcheggi e dove servirebbe di più un parcheggio."
+    },
+    "fonti": [
+      "GTT (official timetables and vehicle positions)",
+      "City of Turin (car parks)",
+      "5T (traffic sensors)",
+      "Piedmont Mobility Agency (2022 travel survey)",
+      "OpenStreetMap",
+      "TomTom (check of car times on 20 routes)"
+    ],
+    "titolo_breve": "Where to leave cars",
+    "anima": {
+      "tipo": "fermate",
+      "contorno": {
+        "d": "M879 130l-33 35l-2 -35l22 -12l13 12zM452 11l123 41l18 -10l2 11l11 14l35 -6l42 -20l3 -17l6 -5l25 -3l34 9l-9 37l9 34l48 23l13 3l-8 28l46 93l43 29l-7 39l-27 21l-21 13l28 44l18 20l30 12l64 3l-8 11l3 8l10 6l12 -1l5 4l-90 145l-79 95l-39 49l-51 48l-40 17l-37 36l-129 15l-120 41l-18 59l-73 6l-70 -8l-19 1l-59 -16l-11 5l-87 -31l-14 -16l8 -25l8 -1l36 8l35 -80l-30 11l-67 -45l-44 -39l-10 -14l13 -18l32 -4l128 80l25 -39l45 -134l-1 -15l-33 5l-57 -11l9 -32l9 -4l6 -11l-20 -24l-25 -6l61 -129l13 -59l-19 -21l-12 -51l13 -8l30 2l12 -4l1 -39l122 13l40 -5l0 -15l-7 -11l-3 -50l9 -10l12 -31l-6 -29l2 -15l38 -36l7 -2l8 11z",
+        "vb": [
+          -40,
+          -40,
+          1080,
+          1043
+        ]
+      },
+      "punti": [
+        [
+          186,
+          477,
+          0,
+          365
+        ],
+        [
+          216,
+          475,
+          1,
+          335
+        ],
+        [
+          123,
+          481,
+          1,
+          427
+        ],
+        [
+          687,
+          138,
+          0,
+          387
+        ],
+        [
+          261,
+          473,
+          2,
+          290
+        ],
+        [
+          295,
+          471,
+          2,
+          257
+        ],
+        [
+          690,
+          150,
+          0,
+          377
+        ],
+        [
+          692,
+          135,
+          0,
+          392
+        ],
+        [
+          445,
+          255,
+          1,
+          267
+        ],
+        [
+          455,
+          252,
+          1,
+          266
+        ],
+        [
+          442,
+          258,
+          1,
+          265
+        ],
+        [
+          426,
+          895,
+          1,
+          414
+        ],
+        [
+          546,
+          301,
+          1,
+          199
+        ],
+        [
+          479,
+          1008,
+          0,
+          513
+        ],
+        [
+          369,
+          154,
+          0,
+          390
+        ],
+        [
+          342,
+          1065,
+          0,
+          602
+        ],
+        [
+          339,
+          1063,
+          0,
+          601
+        ],
+        [
+          393,
+          817,
+          0,
+          354
+        ],
+        [
+          574,
+          300,
+          1,
+          201
+        ],
+        [
+          576,
+          299,
+          1,
+          203
+        ],
+        [
+          476,
+          1024,
+          1,
+          529
+        ],
+        [
+          69,
+          465,
+          0,
+          482
+        ],
+        [
+          1237,
+          976,
+          0,
+          836
+        ],
+        [
+          401,
+          839,
+          0,
+          370
+        ],
+        [
+          241,
+          917,
+          1,
+          519
+        ],
+        [
+          346,
+          682,
+          2,
+          273
+        ],
+        [
+          257,
+          746,
+          2,
+          383
+        ],
+        [
+          680,
+          145,
+          0,
+          378
+        ],
+        [
+          356,
+          671,
+          2,
+          259
+        ],
+        [
+          268,
+          738,
+          1,
+          369
+        ],
+        [
+          175,
+          791,
+          1,
+          475
+        ],
+        [
+          221,
+          475,
+          1,
+          330
+        ],
+        [
+          290,
+          854,
+          1,
+          439
+        ],
+        [
+          136,
+          480,
+          1,
+          414
+        ],
+        [
+          185,
+          787,
+          2,
+          464
+        ],
+        [
+          259,
+          896,
+          1,
+          491
+        ],
+        [
+          245,
+          754,
+          1,
+          397
+        ],
+        [
+          264,
+          887,
+          2,
+          481
+        ],
+        [
+          279,
+          871,
+          2,
+          459
+        ],
+        [
+          248,
+          754,
+          1,
+          395
+        ],
+        [
+          592,
+          599,
+          2,
+          108
+        ],
+        [
+          270,
+          882,
+          2,
+          474
+        ],
+        [
+          204,
+          782,
+          2,
+          446
+        ],
+        [
+          253,
+          900,
+          1,
+          498
+        ],
+        [
+          200,
+          782,
+          2,
+          449
+        ],
+        [
+          236,
+          762,
+          1,
+          409
+        ],
+        [
+          240,
+          648,
+          1,
+          344
+        ],
+        [
+          727,
+          514,
+          1,
+          178
+        ],
+        [
+          299,
+          840,
+          1,
+          423
+        ],
+        [
+          233,
+          762,
+          1,
+          411
+        ],
+        [
+          743,
+          510,
+          1,
+          193
+        ],
+        [
+          325,
+          699,
+          1,
+          300
+        ],
+        [
+          311,
+          828,
+          1,
+          406
+        ],
+        [
+          269,
+          652,
+          1,
+          319
+        ],
+        [
+          375,
+          748,
+          0,
+          304
+        ],
+        [
+          337,
+          685,
+          2,
+          282
+        ],
+        [
+          10,
+          488,
+          1,
+          540
+        ],
+        [
+          784,
+          403,
+          1,
+          253
+        ],
+        [
+          390,
+          729,
+          0,
+          279
+        ],
+        [
+          345,
+          687,
+          2,
+          277
+        ],
+        [
+          334,
+          799,
+          0,
+          369
+        ],
+        [
+          313,
+          825,
+          0,
+          402
+        ],
+        [
+          353,
+          776,
+          1,
+          339
+        ],
+        [
+          331,
+          804,
+          0,
+          375
+        ],
+        [
+          293,
+          721,
+          1,
+          339
+        ],
+        [
+          706,
+          332,
+          0,
+          229
+        ],
+        [
+          1049,
+          -566,
+          0,
+          1177
+        ],
+        [
+          349,
+          780,
+          1,
+          345
+        ],
+        [
+          207,
+          476,
+          0,
+          344
+        ],
+        [
+          47,
+          638,
+          2,
+          522
+        ],
+        [
+          414,
+          698,
+          1,
+          240
+        ],
+        [
+          320,
+          816,
+          0,
+          391
+        ],
+        [
+          779,
+          426,
+          1,
+          241
+        ],
+        [
+          273,
+          876,
+          2,
+          467
+        ],
+        [
+          794,
+          390,
+          1,
+          268
+        ],
+        [
+          159,
+          480,
+          1,
+          392
+        ],
+        [
+          156,
+          478,
+          1,
+          395
+        ],
+        [
+          -57,
+          492,
+          2,
+          607
+        ],
+        [
+          260,
+          901,
+          1,
+          495
+        ],
+        [
+          647,
+          229,
+          2,
+          288
+        ],
+        [
+          672,
+          177,
+          1,
+          345
+        ],
+        [
+          632,
+          261,
+          0,
+          253
+        ],
+        [
+          663,
+          197,
+          0,
+          323
+        ],
+        [
+          223,
+          647,
+          1,
+          359
+        ],
+        [
+          256,
+          650,
+          1,
+          330
+        ],
+        [
+          268,
+          650,
+          1,
+          319
+        ],
+        [
+          399,
+          717,
+          2,
+          264
+        ],
+        [
+          856,
+          357,
+          1,
+          338
+        ],
+        [
+          507,
+          999,
+          1,
+          501
+        ],
+        [
+          722,
+          316,
+          0,
+          252
+        ],
+        [
+          674,
+          534,
+          2,
+          129
+        ],
+        [
+          95,
+          482,
+          1,
+          455
+        ],
+        [
+          553,
+          300,
+          1,
+          200
+        ],
+        [
+          432,
+          675,
+          2,
+          211
+        ],
+        [
+          607,
+          268,
+          0,
+          239
+        ],
+        [
+          324,
+          812,
+          0,
+          385
+        ],
+        [
+          393,
+          348,
+          2,
+          219
+        ],
+        [
+          380,
+          377,
+          2,
+          210
+        ],
+        [
+          936,
+          265,
+          0,
+          452
+        ],
+        [
+          429,
+          679,
+          2,
+          216
+        ],
+        [
+          778,
+          469,
+          2,
+          230
+        ],
+        [
+          532,
+          729,
+          1,
+          230
+        ],
+        [
+          315,
+          828,
+          1,
+          403
+        ],
+        [
+          927,
+          309,
+          1,
+          423
+        ],
+        [
+          516,
+          367,
+          1,
+          137
+        ],
+        [
+          -23,
+          490,
+          1,
+          573
+        ],
+        [
+          367,
+          758,
+          0,
+          316
+        ],
+        [
+          -19,
+          489,
+          1,
+          569
+        ],
+        [
+          620,
+          561,
+          1,
+          93
+        ],
+        [
+          404,
+          716,
+          2,
+          261
+        ],
+        [
+          510,
+          359,
+          1,
+          147
+        ],
+        [
+          294,
+          841,
+          1,
+          426
+        ],
+        [
+          365,
+          760,
+          0,
+          319
+        ],
+        [
+          287,
+          718,
+          1,
+          342
+        ],
+        [
+          750,
+          286,
+          2,
+          293
+        ],
+        [
+          292,
+          602,
+          2,
+          277
+        ],
+        [
+          284,
+          660,
+          1,
+          310
+        ],
+        [
+          333,
+          473,
+          1,
+          219
+        ],
+        [
+          307,
+          515,
+          1,
+          243
+        ],
+        [
+          337,
+          464,
+          1,
+          216
+        ],
+        [
+          281,
+          656,
+          1,
+          311
+        ],
+        [
+          402,
+          713,
+          2,
+          259
+        ],
+        [
+          -175,
+          500,
+          0,
+          725
+        ],
+        [
+          296,
+          666,
+          1,
+          303
+        ],
+        [
+          766,
+          244,
+          0,
+          335
+        ],
+        [
+          711,
+          333,
+          0,
+          232
+        ],
+        [
+          623,
+          282,
+          0,
+          230
+        ],
+        [
+          303,
+          824,
+          1,
+          407
+        ],
+        [
+          621,
+          286,
+          0,
+          225
+        ],
+        [
+          630,
+          276,
+          1,
+          238
+        ],
+        [
+          700,
+          342,
+          0,
+          218
+        ],
+        [
+          600,
+          330,
+          1,
+          177
+        ],
+        [
+          324,
+          679,
+          2,
+          288
+        ],
+        [
+          -178,
+          498,
+          0,
+          728
+        ],
+        [
+          -150,
+          496,
+          0,
+          700
+        ],
+        [
+          289,
+          679,
+          2,
+          316
+        ],
+        [
+          283,
+          501,
+          2,
+          267
+        ],
+        [
+          513,
+          356,
+          0,
+          149
+        ],
+        [
+          99,
+          818,
+          0,
+          552
+        ],
+        [
+          111,
+          814,
+          0,
+          540
+        ],
+        [
+          288,
+          700,
+          1,
+          330
+        ],
+        [
+          482,
+          999,
+          0,
+          504
+        ],
+        [
+          591,
+          352,
+          1,
+          154
+        ],
+        [
+          -257,
+          504,
+          0,
+          807
+        ],
+        [
+          103,
+          818,
+          0,
+          549
+        ],
+        [
+          122,
+          811,
+          2,
+          529
+        ],
+        [
+          444,
+          252,
+          1,
+          270
+        ],
+        [
+          555,
+          262,
+          2,
+          238
+        ],
+        [
+          -95,
+          495,
+          1,
+          645
+        ],
+        [
+          725,
+          1084,
+          2,
+          610
+        ],
+        [
+          588,
+          358,
+          2,
+          147
+        ],
+        [
+          533,
+          260,
+          2,
+          241
+        ],
+        [
+          428,
+          266,
+          1,
+          264
+        ],
+        [
+          688,
+          357,
+          0,
+          199
+        ],
+        [
+          422,
+          290,
+          2,
+          246
+        ],
+        [
+          284,
+          56,
+          0,
+          518
+        ],
+        [
+          312,
+          806,
+          0,
+          388
+        ],
+        [
+          411,
+          310,
+          2,
+          235
+        ],
+        [
+          539,
+          366,
+          0,
+          134
+        ],
+        [
+          -99,
+          493,
+          1,
+          649
+        ],
+        [
+          421,
+          287,
+          2,
+          249
+        ],
+        [
+          718,
+          322,
+          0,
+          245
+        ],
+        [
+          431,
+          264,
+          1,
+          264
+        ],
+        [
+          381,
+          668,
+          0,
+          238
+        ],
+        [
+          691,
+          355,
+          0,
+          202
+        ],
+        [
+          493,
+          994,
+          0,
+          497
+        ],
+        [
+          315,
+          803,
+          0,
+          383
+        ],
+        [
+          530,
+          262,
+          2,
+          239
+        ],
+        [
+          371,
+          396,
+          2,
+          207
+        ],
+        [
+          313,
+          674,
+          2,
+          294
+        ],
+        [
+          434,
+          249,
+          1,
+          277
+        ],
+        [
+          51,
+          460,
+          0,
+          501
+        ],
+        [
+          311,
+          671,
+          2,
+          294
+        ],
+        [
+          299,
+          665,
+          1,
+          300
+        ],
+        [
+          -221,
+          501,
+          0,
+          771
+        ],
+        [
+          302,
+          546,
+          2,
+          252
+        ],
+        [
+          -196,
+          499,
+          0,
+          746
+        ],
+        [
+          609,
+          312,
+          1,
+          197
+        ],
+        [
+          984,
+          257,
+          0,
+          497
+        ],
+        [
+          290,
+          632,
+          1,
+          292
+        ],
+        [
+          709,
+          325,
+          0,
+          236
+        ],
+        [
+          748,
+          294,
+          2,
+          286
+        ],
+        [
+          -224,
+          503,
+          0,
+          774
+        ],
+        [
+          788,
+          288,
+          2,
+          319
+        ],
+        [
+          813,
+          284,
+          2,
+          340
+        ],
+        [
+          360,
+          719,
+          0,
+          290
+        ],
+        [
+          575,
+          378,
+          1,
+          125
+        ],
+        [
+          619,
+          304,
+          0,
+          208
+        ],
+        [
+          598,
+          335,
+          1,
+          172
+        ],
+        [
+          611,
+          307,
+          1,
+          202
+        ],
+        [
+          1029,
+          199,
+          0,
+          566
+        ],
+        [
+          593,
+          391,
+          1,
+          117
+        ],
+        [
+          436,
+          261,
+          1,
+          265
+        ],
+        [
+          310,
+          510,
+          1,
+          240
+        ],
+        [
+          580,
+          375,
+          1,
+          129
+        ],
+        [
+          345,
+          249,
+          0,
+          324
+        ],
+        [
+          -151,
+          501,
+          0,
+          701
+        ],
+        [
+          576,
+          384,
+          2,
+          119
+        ],
+        [
+          265,
+          645,
+          1,
+          320
+        ],
+        [
+          287,
+          774,
+          0,
+          380
+        ],
+        [
+          766,
+          291,
+          2,
+          301
+        ],
+        [
+          600,
+          270,
+          2,
+          235
+        ],
+        [
+          293,
+          571,
+          2,
+          267
+        ],
+        [
+          614,
+          410,
+          0,
+          110
+        ],
+        [
+          651,
+          387,
+          0,
+          152
+        ],
+        [
+          428,
+          675,
+          1,
+          213
+        ],
+        [
+          296,
+          566,
+          2,
+          262
+        ],
+        [
+          677,
+          370,
+          1,
+          182
+        ],
+        [
+          247,
+          761,
+          1,
+          400
+        ],
+        [
+          667,
+          377,
+          1,
+          170
+        ],
+        [
+          266,
+          628,
+          2,
+          312
+        ],
+        [
+          626,
+          435,
+          1,
+          100
+        ],
+        [
+          423,
+          214,
+          1,
+          313
+        ],
+        [
+          442,
+          891,
+          1,
+          406
+        ],
+        [
+          412,
+          205,
+          0,
+          326
+        ],
+        [
+          522,
+          365,
+          0,
+          138
+        ],
+        [
+          391,
+          714,
+          1,
+          267
+        ],
+        [
+          411,
+          953,
+          0,
+          474
+        ],
+        [
+          562,
+          371,
+          0,
+          130
+        ],
+        [
+          442,
+          692,
+          0,
+          220
+        ],
+        [
+          -41,
+          324,
+          0,
+          617
+        ],
+        [
+          -16,
+          321,
+          1,
+          594
+        ],
+        [
+          387,
+          177,
+          2,
+          362
+        ],
+        [
+          374,
+          946,
+          0,
+          479
+        ],
+        [
+          423,
+          230,
+          2,
+          298
+        ],
+        [
+          234,
+          551,
+          2,
+          320
+        ],
+        [
+          403,
+          980,
+          1,
+          502
+        ],
+        [
+          419,
+          201,
+          0,
+          326
+        ],
+        [
+          353,
+          1052,
+          0,
+          586
+        ],
+        [
+          263,
+          687,
+          1,
+          343
+        ],
+        [
+          425,
+          901,
+          1,
+          420
+        ],
+        [
+          423,
+          903,
+          1,
+          423
+        ],
+        [
+          -93,
+          327,
+          0,
+          666
+        ],
+        [
+          -124,
+          288,
+          0,
+          707
+        ],
+        [
+          422,
+          661,
+          1,
+          206
+        ],
+        [
+          434,
+          209,
+          1,
+          313
+        ],
+        [
+          303,
+          789,
+          0,
+          380
+        ],
+        [
+          193,
+          653,
+          1,
+          388
+        ],
+        [
+          231,
+          549,
+          2,
+          323
+        ],
+        [
+          293,
+          784,
+          0,
+          383
+        ],
+        [
+          410,
+          200,
+          0,
+          331
+        ],
+        [
+          297,
+          784,
+          0,
+          380
+        ],
+        [
+          308,
+          789,
+          0,
+          377
+        ],
+        [
+          320,
+          696,
+          1,
+          302
+        ],
+        [
+          -160,
+          269,
+          0,
+          747
+        ],
+        [
+          507,
+          348,
+          0,
+          158
+        ],
+        [
+          379,
+          833,
+          2,
+          374
+        ],
+        [
+          373,
+          852,
+          2,
+          394
+        ],
+        [
+          381,
+          837,
+          2,
+          377
+        ],
+        [
+          486,
+          262,
+          1,
+          246
+        ],
+        [
+          518,
+          255,
+          2,
+          247
+        ],
+        [
+          362,
+          908,
+          1,
+          449
+        ],
+        [
+          153,
+          527,
+          0,
+          398
+        ],
+        [
+          69,
+          552,
+          0,
+          484
+        ],
+        [
+          92,
+          552,
+          1,
+          461
+        ],
+        [
+          50,
+          547,
+          0,
+          502
+        ],
+        [
+          338,
+          167,
+          1,
+          395
+        ],
+        [
+          1245,
+          953,
+          0,
+          830
+        ],
+        [
+          124,
+          549,
+          1,
+          429
+        ],
+        [
+          89,
+          470,
+          0,
+          462
+        ],
+        [
+          527,
+          286,
+          2,
+          215
+        ],
+        [
+          15,
+          539,
+          0,
+          536
+        ],
+        [
+          296,
+          93,
+          1,
+          480
+        ],
+        [
+          890,
+          96,
+          0,
+          528
+        ],
+        [
+          295,
+          548,
+          2,
+          259
+        ],
+        [
+          288,
+          548,
+          2,
+          266
+        ],
+        [
+          274,
+          549,
+          2,
+          280
+        ],
+        [
+          279,
+          549,
+          2,
+          275
+        ],
+        [
+          251,
+          550,
+          1,
+          303
+        ],
+        [
+          485,
+          321,
+          0,
+          190
+        ],
+        [
+          258,
+          551,
+          1,
+          296
+        ],
+        [
+          225,
+          548,
+          2,
+          329
+        ],
+        [
+          454,
+          1043,
+          0,
+          551
+        ],
+        [
+          64,
+          463,
+          0,
+          487
+        ]
+      ],
+      "prioritari": [
+        [
+          331,
+          683
+        ],
+        [
+          219,
+          475
+        ],
+        [
+          492,
+          1012
+        ],
+        [
+          381,
+          374
+        ],
+        [
+          778,
+          469
+        ],
+        [
+          47,
+          638
+        ],
+        [
+          262,
+          891
+        ],
+        [
+          755,
+          291
+        ],
+        [
+          725,
+          1084
+        ],
+        [
+          615,
+          273
+        ],
+        [
+          122,
+          811
+        ],
+        [
+          532,
+          729
+        ]
+      ],
+      "legenda": [
+        {
+          "label": "enough spaces",
+          "n": 95,
+          "tono": "verde"
+        },
+        {
+          "label": "few spaces",
+          "n": 111,
+          "tono": "giallo"
+        },
+        {
+          "label": "no car park",
+          "n": 68,
+          "tono": "rosso"
+        }
+      ],
+      "didascalia": "Each dot is an important stop, in Turin and the surrounding towns; the line is the city boundary. The black circles are the 12 points where new spaces are most needed."
+    },
+    "pareggio": {
+      "a": 24,
+      "b": 20
+    }
+  },
+  "forma_de": {
+    "tipo_dato": "Datenart: berechnet aus echten Daten und zum Teil gemessen, über wenige Tage.",
+    "titolo": "Etwa 2 von 3 wichtigen Haltestellen haben nicht genug Stellplätze, um das Auto stehen zu lassen",
+    "domanda": "Finden Autofahrer von außerhalb einen Platz für ihr Auto nahe einer wichtigen Haltestelle, um mit öffentlichen Verkehrsmitteln weiterzufahren?",
+    "numero": {
+      "valore": 179,
+      "unita": "",
+      "testo": "wichtige Haltestellen von 274 haben nicht genug Stellplätze im Umkreis von 400 Metern zu Fuß",
+      "breve": "wichtige Haltestellen ohne Stellplätze fürs Auto"
+    },
+    "principale": {
+      "tipo": "barre",
+      "titolo": "Die 12 Einfahrtspunkte, nach Bedarf an Parkplätzen",
+      "unita": "Stellplätze",
+      "nota": "Fehlende Stellplätze neben jedem Balken: eine Größenordnung. Die Farbe ist der Bedarf, in Dritteln.",
+      "legenda": [
+        {
+          "tono": "rosso",
+          "label": "hoher Bedarf"
+        },
+        {
+          "tono": "arancio",
+          "label": "mittlerer Bedarf"
+        },
+        {
+          "tono": "giallo",
+          "label": "geringer Bedarf"
+        }
+      ],
+      "voci": [
+        {
+          "label": "Santa Rita",
+          "valore": 450,
+          "tono": "rosso",
+          "testo": "~450"
+        },
+        {
+          "label": "Parella (Metro Massaua)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Moncalieri (Ponte Cavalieri Templari)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Parella (Regina Margherita)",
+          "valore": 350,
+          "tono": "rosso",
+          "testo": "~350"
+        },
+        {
+          "label": "Madonna del Pilone",
+          "valore": 250,
+          "tono": "arancio",
+          "testo": "~250"
+        },
+        {
+          "label": "Grugliasco",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Mirafiori Sud",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Regio Parco",
+          "valore": 200,
+          "tono": "arancio",
+          "testo": "~200"
+        },
+        {
+          "label": "Moncalieri (Marsè)",
+          "valore": 150,
+          "tono": "giallo",
+          "testo": "~150"
+        },
+        {
+          "label": "Falchera",
+          "valore": 100,
+          "tono": "giallo",
+          "testo": "~100"
+        },
+        {
+          "label": "Beinasco",
+          "valore": 80,
+          "tono": "giallo",
+          "testo": "~80"
+        },
+        {
+          "label": "Borgo Po e Cavoretto",
+          "valore": 60,
+          "tono": "giallo",
+          "testo": "~60"
+        }
+      ]
+    },
+    "punti": [
+      "68 wichtige Haltestellen haben keinen Parkplatz in der Nähe, 111 zu wenige.",
+      "Der erste der 12 Einfahrtspunkte, an denen Stellplätze gebraucht werden, ist Santa Rita: Es fehlen ~450.",
+      "An 1–5 von 12 Punkten erreicht man das Zentrum nach dem Abstellen des Autos mit dem Bus in höchstens dem 1,5-Fachen der Autozeit."
+    ],
+    "altri": [
+      {
+        "tipo": "gara",
+        "titolo": "Das Rennen: Bus und Auto zur Piazza Castello, um 8 Uhr an einem Werktag",
+        "nota": "Bus und Auto fahren zusammen von jedem Parkplatz los, nacheinander. Für das Auto gibt es eine Zeit mit der Spanne aus der Kontrolle, Parken inklusive.",
+        "luoghi": [
+          {
+            "nome": "Santa Rita",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 38.7,
+            "auto_min": 19.6,
+            "auto_max": 24.1,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,6- bis 2-Fache der Autozeit"
+          },
+          {
+            "nome": "Parella (Metro Massaua)",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 27.3,
+            "auto_min": 20.3,
+            "auto_max": 25.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,1- bis 1,3-Fache der Autozeit"
+          },
+          {
+            "nome": "Moncalieri (Ponte Cavalieri Templari)",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 54.2,
+            "auto_min": 23.1,
+            "auto_max": 28.7,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,9- bis 2,4-Fache der Autozeit"
+          },
+          {
+            "nome": "Parella (Regina Margherita)",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 33.5,
+            "auto_min": 18.0,
+            "auto_max": 22.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5- bis 1,9-Fache der Autozeit"
+          },
+          {
+            "nome": "Madonna del Pilone",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 30.4,
+            "auto_min": 17.5,
+            "auto_max": 21.3,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4- bis 1,7-Fache der Autozeit"
+          },
+          {
+            "nome": "Grugliasco",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 62.5,
+            "auto_min": 29.7,
+            "auto_max": 37.3,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,7- bis 2,1-Fache der Autozeit"
+          },
+          {
+            "nome": "Mirafiori Sud",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 45.9,
+            "auto_min": 25.4,
+            "auto_max": 31.7,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4- bis 1,8-Fache der Autozeit"
+          },
+          {
+            "nome": "Regio Parco",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 39.7,
+            "auto_min": 21.4,
+            "auto_max": 26.4,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5- bis 1,9-Fache der Autozeit"
+          },
+          {
+            "nome": "Moncalieri (Marsè)",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 64.5,
+            "auto_min": 29.5,
+            "auto_max": 37.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,7- bis 2,2-Fache der Autozeit"
+          },
+          {
+            "nome": "Falchera",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 36.6,
+            "auto_min": 20.3,
+            "auto_max": 25.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5- bis 1,8-Fache der Autozeit"
+          },
+          {
+            "nome": "Beinasco",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 52.1,
+            "auto_min": 29.8,
+            "auto_max": 37.4,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4- bis 1,8-Fache der Autozeit"
+          },
+          {
+            "nome": "Borgo Po e Cavoretto",
+            "gruppo": "Vorrangige Punkte",
+            "bus": 35.6,
+            "auto_min": 16.7,
+            "auto_max": 20.3,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,8- bis 2,1-Fache der Autozeit"
+          }
+        ],
+        "scelto": 0
+      },
+      {
+        "tipo": "barre",
+        "titolo": "Die vorhandenen Park-and-Ride-Anlagen: wie voll sie sind und wie lange der Bus ins Zentrum braucht",
+        "unita": "Minuten",
+        "nota": "Balken = Minuten mit öffentlichen Verkehrsmitteln bis zur Piazza Castello um 8 Uhr. Rechts die Zeit mit dem Auto, Parken inklusive (typischer Verkehr), und wie voll der Parkplatz tagsüber ist.",
+        "voci": [
+          {
+            "label": "Stura",
+            "valore": 42,
+            "testo": "42 gegen 27–34 mit dem Auto · tagsüber voll"
+          },
+          {
+            "label": "Venchi Unica",
+            "valore": 30,
+            "testo": "30 gegen 22–28 mit dem Auto · halb voll"
+          },
+          {
+            "label": "Caio Mario",
+            "valore": 41,
+            "testo": "41 gegen 23–29 mit dem Auto · mit freien Plätzen"
+          },
+          {
+            "label": "Fermi",
+            "valore": 34,
+            "testo": "34 gegen 26–33 mit dem Auto · Belegung unbekannt"
+          },
+          {
+            "label": "Sofia",
+            "valore": 36,
+            "testo": "36 gegen 20–25 mit dem Auto · mit freien Plätzen"
+          }
+        ]
+      }
+    ],
+    "calcolo": [
+      "Wichtige Haltestellen: außerhalb des Zentrums, mit Metro, Bahnhof oder Endhaltestelle oder 10 Fahrten pro Stunde, und mindestens 1.000 vorbeifahrenden Autos.",
+      "Die einfahrenden Autos stammen aus der Mobilitätserhebung 2022 und sind der schnellsten Strecke zugeordnet.",
+      "Zu stoppende Autos: vorbeifahrende Autos mal 5,8% derer, die das Auto heute schon stehen lassen. Plätze: geeignete Parkplätze im Umkreis von 400 Metern.",
+      "Vorrangige Punkte: Haltestellen ohne genug Stellplätze, innerhalb von 1 km zusammengefasst, einer pro Einfallstraße. Bezugshaltestellen: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara.",
+      "Bus gegen Auto: Minuten mit öffentlichen Verkehrsmitteln (mit den Messungen korrigiert) zur Piazza Castello um acht Uhr morgens. Auto: offene Schätzung plus 5 Minuten, und dieselbe Schätzung mit dem Faktor 1,3 aus der TomTom-Kontrolle korrigiert.",
+      "Break-even: Parkminuten, bei denen das Auto so langsam ist wie der Bus, von 20 bis 24 (Median der 12 Punkte).",
+      "Die Klasse wird nur angegeben, wenn sie mit der offenen und mit der korrigierten Schätzung gleich ist. Das ist an 8 von 12 Punkten der Fall; an den anderen hängt es vom Verkehr ab."
+    ],
+    "criteri": [
+      [
+        "Wichtige Haltestellen",
+        "Metro, Bahnhof oder Endhaltestelle oder 10 Fahrten pro Stunde, und mindestens 1.000 vorbeifahrende Autos"
+      ],
+      [
+        "Entfernung zu Fuß",
+        "400 Meter"
+      ],
+      [
+        "Zu stoppende Autos",
+        "vorbeifahrende Autos × 5,8%"
+      ],
+      [
+        "Zeitraum der Parkplatzbelegung",
+        "vom 15.10.2026 bis zum 22.10.2026"
+      ],
+      [
+        "Bus gegen Auto",
+        "zur Piazza Castello um 8 Uhr; Auto: offene Schätzung (mittlerer Faktor 2) + 5 Minuten, und dieselbe mit der Kontrolle korrigiert (× 1,3 auf die Fahrt)"
+      ]
+    ],
+    "limiti": [
+      "Die vorbeifahrenden Autos stammen aus einem Verkehrsmodell. Die Stellplätze sind oft geschätzt: Die fehlenden sind eine Größenordnung. Bei halb so vielen oder doppelt so vielen Autofahrern, die das Auto stehen lassen, liegen die Haltestellen ohne genug Stellplätze zwischen 135 und 212 von 274.",
+      "Die Zeiten mit öffentlichen Verkehrsmitteln sind nur GTT, ohne Züge.",
+      "Die Autozeiten stammen aus einem offenen Modell und sind nicht auf der einzelnen Fahrt gemessen. Die TomTom-Kontrolle auf 20 Strecken findet sie optimistisch: Deshalb gibt es eine Spanne.",
+      "Die Parkkosten sind nicht in der Rechnung: Sie zählen als zusätzliche Minuten. Betrachtet wird ein Punkt pro Ort und nur ein Ziel."
+    ],
+    "mappa": {
+      "id": "interscambio",
+      "nota": "Due domande nella mappa, nel menu «Cosa vedere»: dove ci sono parcheggi e dove servirebbe di più un parcheggio."
+    },
+    "fonti": [
+      "GTT (offizielle Fahrpläne und Fahrzeugpositionen)",
+      "Stadt Turin (Parkplätze)",
+      "5T (Verkehrssensoren)",
+      "Mobilitätsagentur des Piemont (Mobilitätserhebung 2022)",
+      "OpenStreetMap",
+      "TomTom (Kontrolle der Autozeiten auf 20 Strecken)"
+    ],
+    "titolo_breve": "Wo das Auto stehen lassen",
+    "anima": {
+      "tipo": "fermate",
+      "contorno": {
+        "d": "M879 130l-33 35l-2 -35l22 -12l13 12zM452 11l123 41l18 -10l2 11l11 14l35 -6l42 -20l3 -17l6 -5l25 -3l34 9l-9 37l9 34l48 23l13 3l-8 28l46 93l43 29l-7 39l-27 21l-21 13l28 44l18 20l30 12l64 3l-8 11l3 8l10 6l12 -1l5 4l-90 145l-79 95l-39 49l-51 48l-40 17l-37 36l-129 15l-120 41l-18 59l-73 6l-70 -8l-19 1l-59 -16l-11 5l-87 -31l-14 -16l8 -25l8 -1l36 8l35 -80l-30 11l-67 -45l-44 -39l-10 -14l13 -18l32 -4l128 80l25 -39l45 -134l-1 -15l-33 5l-57 -11l9 -32l9 -4l6 -11l-20 -24l-25 -6l61 -129l13 -59l-19 -21l-12 -51l13 -8l30 2l12 -4l1 -39l122 13l40 -5l0 -15l-7 -11l-3 -50l9 -10l12 -31l-6 -29l2 -15l38 -36l7 -2l8 11z",
+        "vb": [
+          -40,
+          -40,
+          1080,
+          1043
+        ]
+      },
+      "punti": [
+        [
+          186,
+          477,
+          0,
+          365
+        ],
+        [
+          216,
+          475,
+          1,
+          335
+        ],
+        [
+          123,
+          481,
+          1,
+          427
+        ],
+        [
+          687,
+          138,
+          0,
+          387
+        ],
+        [
+          261,
+          473,
+          2,
+          290
+        ],
+        [
+          295,
+          471,
+          2,
+          257
+        ],
+        [
+          690,
+          150,
+          0,
+          377
+        ],
+        [
+          692,
+          135,
+          0,
+          392
+        ],
+        [
+          445,
+          255,
+          1,
+          267
+        ],
+        [
+          455,
+          252,
+          1,
+          266
+        ],
+        [
+          442,
+          258,
+          1,
+          265
+        ],
+        [
+          426,
+          895,
+          1,
+          414
+        ],
+        [
+          546,
+          301,
+          1,
+          199
+        ],
+        [
+          479,
+          1008,
+          0,
+          513
+        ],
+        [
+          369,
+          154,
+          0,
+          390
+        ],
+        [
+          342,
+          1065,
+          0,
+          602
+        ],
+        [
+          339,
+          1063,
+          0,
+          601
+        ],
+        [
+          393,
+          817,
+          0,
+          354
+        ],
+        [
+          574,
+          300,
+          1,
+          201
+        ],
+        [
+          576,
+          299,
+          1,
+          203
+        ],
+        [
+          476,
+          1024,
+          1,
+          529
+        ],
+        [
+          69,
+          465,
+          0,
+          482
+        ],
+        [
+          1237,
+          976,
+          0,
+          836
+        ],
+        [
+          401,
+          839,
+          0,
+          370
+        ],
+        [
+          241,
+          917,
+          1,
+          519
+        ],
+        [
+          346,
+          682,
+          2,
+          273
+        ],
+        [
+          257,
+          746,
+          2,
+          383
+        ],
+        [
+          680,
+          145,
+          0,
+          378
+        ],
+        [
+          356,
+          671,
+          2,
+          259
+        ],
+        [
+          268,
+          738,
+          1,
+          369
+        ],
+        [
+          175,
+          791,
+          1,
+          475
+        ],
+        [
+          221,
+          475,
+          1,
+          330
+        ],
+        [
+          290,
+          854,
+          1,
+          439
+        ],
+        [
+          136,
+          480,
+          1,
+          414
+        ],
+        [
+          185,
+          787,
+          2,
+          464
+        ],
+        [
+          259,
+          896,
+          1,
+          491
+        ],
+        [
+          245,
+          754,
+          1,
+          397
+        ],
+        [
+          264,
+          887,
+          2,
+          481
+        ],
+        [
+          279,
+          871,
+          2,
+          459
+        ],
+        [
+          248,
+          754,
+          1,
+          395
+        ],
+        [
+          592,
+          599,
+          2,
+          108
+        ],
+        [
+          270,
+          882,
+          2,
+          474
+        ],
+        [
+          204,
+          782,
+          2,
+          446
+        ],
+        [
+          253,
+          900,
+          1,
+          498
+        ],
+        [
+          200,
+          782,
+          2,
+          449
+        ],
+        [
+          236,
+          762,
+          1,
+          409
+        ],
+        [
+          240,
+          648,
+          1,
+          344
+        ],
+        [
+          727,
+          514,
+          1,
+          178
+        ],
+        [
+          299,
+          840,
+          1,
+          423
+        ],
+        [
+          233,
+          762,
+          1,
+          411
+        ],
+        [
+          743,
+          510,
+          1,
+          193
+        ],
+        [
+          325,
+          699,
+          1,
+          300
+        ],
+        [
+          311,
+          828,
+          1,
+          406
+        ],
+        [
+          269,
+          652,
+          1,
+          319
+        ],
+        [
+          375,
+          748,
+          0,
+          304
+        ],
+        [
+          337,
+          685,
+          2,
+          282
+        ],
+        [
+          10,
+          488,
+          1,
+          540
+        ],
+        [
+          784,
+          403,
+          1,
+          253
+        ],
+        [
+          390,
+          729,
+          0,
+          279
+        ],
+        [
+          345,
+          687,
+          2,
+          277
+        ],
+        [
+          334,
+          799,
+          0,
+          369
+        ],
+        [
+          313,
+          825,
+          0,
+          402
+        ],
+        [
+          353,
+          776,
+          1,
+          339
+        ],
+        [
+          331,
+          804,
+          0,
+          375
+        ],
+        [
+          293,
+          721,
+          1,
+          339
+        ],
+        [
+          706,
+          332,
+          0,
+          229
+        ],
+        [
+          1049,
+          -566,
+          0,
+          1177
+        ],
+        [
+          349,
+          780,
+          1,
+          345
+        ],
+        [
+          207,
+          476,
+          0,
+          344
+        ],
+        [
+          47,
+          638,
+          2,
+          522
+        ],
+        [
+          414,
+          698,
+          1,
+          240
+        ],
+        [
+          320,
+          816,
+          0,
+          391
+        ],
+        [
+          779,
+          426,
+          1,
+          241
+        ],
+        [
+          273,
+          876,
+          2,
+          467
+        ],
+        [
+          794,
+          390,
+          1,
+          268
+        ],
+        [
+          159,
+          480,
+          1,
+          392
+        ],
+        [
+          156,
+          478,
+          1,
+          395
+        ],
+        [
+          -57,
+          492,
+          2,
+          607
+        ],
+        [
+          260,
+          901,
+          1,
+          495
+        ],
+        [
+          647,
+          229,
+          2,
+          288
+        ],
+        [
+          672,
+          177,
+          1,
+          345
+        ],
+        [
+          632,
+          261,
+          0,
+          253
+        ],
+        [
+          663,
+          197,
+          0,
+          323
+        ],
+        [
+          223,
+          647,
+          1,
+          359
+        ],
+        [
+          256,
+          650,
+          1,
+          330
+        ],
+        [
+          268,
+          650,
+          1,
+          319
+        ],
+        [
+          399,
+          717,
+          2,
+          264
+        ],
+        [
+          856,
+          357,
+          1,
+          338
+        ],
+        [
+          507,
+          999,
+          1,
+          501
+        ],
+        [
+          722,
+          316,
+          0,
+          252
+        ],
+        [
+          674,
+          534,
+          2,
+          129
+        ],
+        [
+          95,
+          482,
+          1,
+          455
+        ],
+        [
+          553,
+          300,
+          1,
+          200
+        ],
+        [
+          432,
+          675,
+          2,
+          211
+        ],
+        [
+          607,
+          268,
+          0,
+          239
+        ],
+        [
+          324,
+          812,
+          0,
+          385
+        ],
+        [
+          393,
+          348,
+          2,
+          219
+        ],
+        [
+          380,
+          377,
+          2,
+          210
+        ],
+        [
+          936,
+          265,
+          0,
+          452
+        ],
+        [
+          429,
+          679,
+          2,
+          216
+        ],
+        [
+          778,
+          469,
+          2,
+          230
+        ],
+        [
+          532,
+          729,
+          1,
+          230
+        ],
+        [
+          315,
+          828,
+          1,
+          403
+        ],
+        [
+          927,
+          309,
+          1,
+          423
+        ],
+        [
+          516,
+          367,
+          1,
+          137
+        ],
+        [
+          -23,
+          490,
+          1,
+          573
+        ],
+        [
+          367,
+          758,
+          0,
+          316
+        ],
+        [
+          -19,
+          489,
+          1,
+          569
+        ],
+        [
+          620,
+          561,
+          1,
+          93
+        ],
+        [
+          404,
+          716,
+          2,
+          261
+        ],
+        [
+          510,
+          359,
+          1,
+          147
+        ],
+        [
+          294,
+          841,
+          1,
+          426
+        ],
+        [
+          365,
+          760,
+          0,
+          319
+        ],
+        [
+          287,
+          718,
+          1,
+          342
+        ],
+        [
+          750,
+          286,
+          2,
+          293
+        ],
+        [
+          292,
+          602,
+          2,
+          277
+        ],
+        [
+          284,
+          660,
+          1,
+          310
+        ],
+        [
+          333,
+          473,
+          1,
+          219
+        ],
+        [
+          307,
+          515,
+          1,
+          243
+        ],
+        [
+          337,
+          464,
+          1,
+          216
+        ],
+        [
+          281,
+          656,
+          1,
+          311
+        ],
+        [
+          402,
+          713,
+          2,
+          259
+        ],
+        [
+          -175,
+          500,
+          0,
+          725
+        ],
+        [
+          296,
+          666,
+          1,
+          303
+        ],
+        [
+          766,
+          244,
+          0,
+          335
+        ],
+        [
+          711,
+          333,
+          0,
+          232
+        ],
+        [
+          623,
+          282,
+          0,
+          230
+        ],
+        [
+          303,
+          824,
+          1,
+          407
+        ],
+        [
+          621,
+          286,
+          0,
+          225
+        ],
+        [
+          630,
+          276,
+          1,
+          238
+        ],
+        [
+          700,
+          342,
+          0,
+          218
+        ],
+        [
+          600,
+          330,
+          1,
+          177
+        ],
+        [
+          324,
+          679,
+          2,
+          288
+        ],
+        [
+          -178,
+          498,
+          0,
+          728
+        ],
+        [
+          -150,
+          496,
+          0,
+          700
+        ],
+        [
+          289,
+          679,
+          2,
+          316
+        ],
+        [
+          283,
+          501,
+          2,
+          267
+        ],
+        [
+          513,
+          356,
+          0,
+          149
+        ],
+        [
+          99,
+          818,
+          0,
+          552
+        ],
+        [
+          111,
+          814,
+          0,
+          540
+        ],
+        [
+          288,
+          700,
+          1,
+          330
+        ],
+        [
+          482,
+          999,
+          0,
+          504
+        ],
+        [
+          591,
+          352,
+          1,
+          154
+        ],
+        [
+          -257,
+          504,
+          0,
+          807
+        ],
+        [
+          103,
+          818,
+          0,
+          549
+        ],
+        [
+          122,
+          811,
+          2,
+          529
+        ],
+        [
+          444,
+          252,
+          1,
+          270
+        ],
+        [
+          555,
+          262,
+          2,
+          238
+        ],
+        [
+          -95,
+          495,
+          1,
+          645
+        ],
+        [
+          725,
+          1084,
+          2,
+          610
+        ],
+        [
+          588,
+          358,
+          2,
+          147
+        ],
+        [
+          533,
+          260,
+          2,
+          241
+        ],
+        [
+          428,
+          266,
+          1,
+          264
+        ],
+        [
+          688,
+          357,
+          0,
+          199
+        ],
+        [
+          422,
+          290,
+          2,
+          246
+        ],
+        [
+          284,
+          56,
+          0,
+          518
+        ],
+        [
+          312,
+          806,
+          0,
+          388
+        ],
+        [
+          411,
+          310,
+          2,
+          235
+        ],
+        [
+          539,
+          366,
+          0,
+          134
+        ],
+        [
+          -99,
+          493,
+          1,
+          649
+        ],
+        [
+          421,
+          287,
+          2,
+          249
+        ],
+        [
+          718,
+          322,
+          0,
+          245
+        ],
+        [
+          431,
+          264,
+          1,
+          264
+        ],
+        [
+          381,
+          668,
+          0,
+          238
+        ],
+        [
+          691,
+          355,
+          0,
+          202
+        ],
+        [
+          493,
+          994,
+          0,
+          497
+        ],
+        [
+          315,
+          803,
+          0,
+          383
+        ],
+        [
+          530,
+          262,
+          2,
+          239
+        ],
+        [
+          371,
+          396,
+          2,
+          207
+        ],
+        [
+          313,
+          674,
+          2,
+          294
+        ],
+        [
+          434,
+          249,
+          1,
+          277
+        ],
+        [
+          51,
+          460,
+          0,
+          501
+        ],
+        [
+          311,
+          671,
+          2,
+          294
+        ],
+        [
+          299,
+          665,
+          1,
+          300
+        ],
+        [
+          -221,
+          501,
+          0,
+          771
+        ],
+        [
+          302,
+          546,
+          2,
+          252
+        ],
+        [
+          -196,
+          499,
+          0,
+          746
+        ],
+        [
+          609,
+          312,
+          1,
+          197
+        ],
+        [
+          984,
+          257,
+          0,
+          497
+        ],
+        [
+          290,
+          632,
+          1,
+          292
+        ],
+        [
+          709,
+          325,
+          0,
+          236
+        ],
+        [
+          748,
+          294,
+          2,
+          286
+        ],
+        [
+          -224,
+          503,
+          0,
+          774
+        ],
+        [
+          788,
+          288,
+          2,
+          319
+        ],
+        [
+          813,
+          284,
+          2,
+          340
+        ],
+        [
+          360,
+          719,
+          0,
+          290
+        ],
+        [
+          575,
+          378,
+          1,
+          125
+        ],
+        [
+          619,
+          304,
+          0,
+          208
+        ],
+        [
+          598,
+          335,
+          1,
+          172
+        ],
+        [
+          611,
+          307,
+          1,
+          202
+        ],
+        [
+          1029,
+          199,
+          0,
+          566
+        ],
+        [
+          593,
+          391,
+          1,
+          117
+        ],
+        [
+          436,
+          261,
+          1,
+          265
+        ],
+        [
+          310,
+          510,
+          1,
+          240
+        ],
+        [
+          580,
+          375,
+          1,
+          129
+        ],
+        [
+          345,
+          249,
+          0,
+          324
+        ],
+        [
+          -151,
+          501,
+          0,
+          701
+        ],
+        [
+          576,
+          384,
+          2,
+          119
+        ],
+        [
+          265,
+          645,
+          1,
+          320
+        ],
+        [
+          287,
+          774,
+          0,
+          380
+        ],
+        [
+          766,
+          291,
+          2,
+          301
+        ],
+        [
+          600,
+          270,
+          2,
+          235
+        ],
+        [
+          293,
+          571,
+          2,
+          267
+        ],
+        [
+          614,
+          410,
+          0,
+          110
+        ],
+        [
+          651,
+          387,
+          0,
+          152
+        ],
+        [
+          428,
+          675,
+          1,
+          213
+        ],
+        [
+          296,
+          566,
+          2,
+          262
+        ],
+        [
+          677,
+          370,
+          1,
+          182
+        ],
+        [
+          247,
+          761,
+          1,
+          400
+        ],
+        [
+          667,
+          377,
+          1,
+          170
+        ],
+        [
+          266,
+          628,
+          2,
+          312
+        ],
+        [
+          626,
+          435,
+          1,
+          100
+        ],
+        [
+          423,
+          214,
+          1,
+          313
+        ],
+        [
+          442,
+          891,
+          1,
+          406
+        ],
+        [
+          412,
+          205,
+          0,
+          326
+        ],
+        [
+          522,
+          365,
+          0,
+          138
+        ],
+        [
+          391,
+          714,
+          1,
+          267
+        ],
+        [
+          411,
+          953,
+          0,
+          474
+        ],
+        [
+          562,
+          371,
+          0,
+          130
+        ],
+        [
+          442,
+          692,
+          0,
+          220
+        ],
+        [
+          -41,
+          324,
+          0,
+          617
+        ],
+        [
+          -16,
+          321,
+          1,
+          594
+        ],
+        [
+          387,
+          177,
+          2,
+          362
+        ],
+        [
+          374,
+          946,
+          0,
+          479
+        ],
+        [
+          423,
+          230,
+          2,
+          298
+        ],
+        [
+          234,
+          551,
+          2,
+          320
+        ],
+        [
+          403,
+          980,
+          1,
+          502
+        ],
+        [
+          419,
+          201,
+          0,
+          326
+        ],
+        [
+          353,
+          1052,
+          0,
+          586
+        ],
+        [
+          263,
+          687,
+          1,
+          343
+        ],
+        [
+          425,
+          901,
+          1,
+          420
+        ],
+        [
+          423,
+          903,
+          1,
+          423
+        ],
+        [
+          -93,
+          327,
+          0,
+          666
+        ],
+        [
+          -124,
+          288,
+          0,
+          707
+        ],
+        [
+          422,
+          661,
+          1,
+          206
+        ],
+        [
+          434,
+          209,
+          1,
+          313
+        ],
+        [
+          303,
+          789,
+          0,
+          380
+        ],
+        [
+          193,
+          653,
+          1,
+          388
+        ],
+        [
+          231,
+          549,
+          2,
+          323
+        ],
+        [
+          293,
+          784,
+          0,
+          383
+        ],
+        [
+          410,
+          200,
+          0,
+          331
+        ],
+        [
+          297,
+          784,
+          0,
+          380
+        ],
+        [
+          308,
+          789,
+          0,
+          377
+        ],
+        [
+          320,
+          696,
+          1,
+          302
+        ],
+        [
+          -160,
+          269,
+          0,
+          747
+        ],
+        [
+          507,
+          348,
+          0,
+          158
+        ],
+        [
+          379,
+          833,
+          2,
+          374
+        ],
+        [
+          373,
+          852,
+          2,
+          394
+        ],
+        [
+          381,
+          837,
+          2,
+          377
+        ],
+        [
+          486,
+          262,
+          1,
+          246
+        ],
+        [
+          518,
+          255,
+          2,
+          247
+        ],
+        [
+          362,
+          908,
+          1,
+          449
+        ],
+        [
+          153,
+          527,
+          0,
+          398
+        ],
+        [
+          69,
+          552,
+          0,
+          484
+        ],
+        [
+          92,
+          552,
+          1,
+          461
+        ],
+        [
+          50,
+          547,
+          0,
+          502
+        ],
+        [
+          338,
+          167,
+          1,
+          395
+        ],
+        [
+          1245,
+          953,
+          0,
+          830
+        ],
+        [
+          124,
+          549,
+          1,
+          429
+        ],
+        [
+          89,
+          470,
+          0,
+          462
+        ],
+        [
+          527,
+          286,
+          2,
+          215
+        ],
+        [
+          15,
+          539,
+          0,
+          536
+        ],
+        [
+          296,
+          93,
+          1,
+          480
+        ],
+        [
+          890,
+          96,
+          0,
+          528
+        ],
+        [
+          295,
+          548,
+          2,
+          259
+        ],
+        [
+          288,
+          548,
+          2,
+          266
+        ],
+        [
+          274,
+          549,
+          2,
+          280
+        ],
+        [
+          279,
+          549,
+          2,
+          275
+        ],
+        [
+          251,
+          550,
+          1,
+          303
+        ],
+        [
+          485,
+          321,
+          0,
+          190
+        ],
+        [
+          258,
+          551,
+          1,
+          296
+        ],
+        [
+          225,
+          548,
+          2,
+          329
+        ],
+        [
+          454,
+          1043,
+          0,
+          551
+        ],
+        [
+          64,
+          463,
+          0,
+          487
+        ]
+      ],
+      "prioritari": [
+        [
+          331,
+          683
+        ],
+        [
+          219,
+          475
+        ],
+        [
+          492,
+          1012
+        ],
+        [
+          381,
+          374
+        ],
+        [
+          778,
+          469
+        ],
+        [
+          47,
+          638
+        ],
+        [
+          262,
+          891
+        ],
+        [
+          755,
+          291
+        ],
+        [
+          725,
+          1084
+        ],
+        [
+          615,
+          273
+        ],
+        [
+          122,
+          811
+        ],
+        [
+          532,
+          729
+        ]
+      ],
+      "legenda": [
+        {
+          "label": "genug Stellplätze",
+          "n": 95,
+          "tono": "verde"
+        },
+        {
+          "label": "wenige Stellplätze",
+          "n": 111,
+          "tono": "giallo"
+        },
+        {
+          "label": "kein Parkplatz",
+          "n": 68,
+          "tono": "rosso"
+        }
+      ],
+      "didascalia": "Jeder Punkt ist eine wichtige Haltestelle, in Turin und im Umland; die Linie ist die Stadtgrenze. Die schwarzen Kreise sind die 12 Punkte, an denen neue Stellplätze am dringendsten gebraucht würden."
+    },
+    "pareggio": {
+      "a": 24,
+      "b": 20
+    }
+  },
+  "numero_pubblico": 4,
+  "gruppo": "approfondimento"
+}

@@ -1,0 +1,267 @@
+{
+ "fonte": "posizioni GPS dei mezzi GTT (storico della raccolta), stesso calcolo del livello Velocita' della mappa",
+ "periodo": {
+  "da": "2026-10-10",
+  "a": "2026-10-22"
+ },
+ "giorni_feriali": 9,
+ "pesi": "campioni (intervalli fra posizioni consecutive)",
+ "ore": [
+  5,
+  24
+ ],
+ "controlli_regole": {
+  "vel_min": 5.0,
+  "vel_max": 40.0,
+  "campioni_min": 1000
+ },
+ "velocita": {
+  "bus": {
+   "5": {
+    "kmh": 18.8,
+    "campioni": 51795
+   },
+   "6": {
+    "kmh": 17.4,
+    "campioni": 93693
+   },
+   "7": {
+    "kmh": 13.8,
+    "campioni": 122562
+   },
+   "8": {
+    "kmh": 13.0,
+    "campioni": 133887
+   },
+   "9": {
+    "kmh": 14.2,
+    "campioni": 139595
+   },
+   "10": {
+    "kmh": 14.6,
+    "campioni": 126155
+   },
+   "11": {
+    "kmh": 14.3,
+    "campioni": 114464
+   },
+   "12": {
+    "kmh": 14.5,
+    "campioni": 118104
+   },
+   "13": {
+    "kmh": 14.3,
+    "campioni": 111877
+   },
+   "14": {
+    "kmh": 14.1,
+    "campioni": 117707
+   },
+   "15": {
+    "kmh": 14.3,
+    "campioni": 118782
+   },
+   "16": {
+    "kmh": 13.4,
+    "campioni": 129524
+   },
+   "17": {
+    "kmh": 12.8,
+    "campioni": 139422
+   },
+   "18": {
+    "kmh": 13.0,
+    "campioni": 137948
+   },
+   "19": {
+    "kmh": 14.3,
+    "campioni": 132103
+   },
+   "20": {
+    "kmh": 16.3,
+    "campioni": 105427
+   },
+   "21": {
+    "kmh": 17.8,
+    "campioni": 74608
+   },
+   "22": {
+    "kmh": 17.3,
+    "campioni": 48461
+   },
+   "23": {
+    "kmh": 18.0,
+    "campioni": 33440
+   }
+  },
+  "tram": {
+   "5": {
+    "kmh": 13.9,
+    "campioni": 13446
+   },
+   "6": {
+    "kmh": 13.1,
+    "campioni": 27006
+   },
+   "7": {
+    "kmh": 11.3,
+    "campioni": 33078
+   },
+   "8": {
+    "kmh": 11.1,
+    "campioni": 34389
+   },
+   "9": {
+    "kmh": 11.4,
+    "campioni": 38451
+   },
+   "10": {
+    "kmh": 11.7,
+    "campioni": 35144
+   },
+   "11": {
+    "kmh": 11.5,
+    "campioni": 31086
+   },
+   "12": {
+    "kmh": 11.6,
+    "campioni": 29518
+   },
+   "13": {
+    "kmh": 11.3,
+    "campioni": 26672
+   },
+   "14": {
+    "kmh": 11.3,
+    "campioni": 27286
+   },
+   "15": {
+    "kmh": 11.4,
+    "campioni": 27840
+   },
+   "16": {
+    "kmh": 11.2,
+    "campioni": 30443
+   },
+   "17": {
+    "kmh": 10.9,
+    "campioni": 34114
+   },
+   "18": {
+    "kmh": 11.0,
+    "campioni": 34118
+   },
+   "19": {
+    "kmh": 11.5,
+    "campioni": 33888
+   },
+   "20": {
+    "kmh": 12.9,
+    "campioni": 27882
+   },
+   "21": {
+    "kmh": 13.5,
+    "campioni": 17131
+   },
+   "22": {
+    "kmh": 13.8,
+    "campioni": 10783
+   },
+   "23": {
+    "kmh": 14.0,
+    "campioni": 7457
+   }
+  },
+  "tutti": {
+   "5": {
+    "kmh": 17.8,
+    "campioni": 65241
+   },
+   "6": {
+    "kmh": 16.4,
+    "campioni": 120699
+   },
+   "7": {
+    "kmh": 13.3,
+    "campioni": 155640
+   },
+   "8": {
+    "kmh": 12.6,
+    "campioni": 168276
+   },
+   "9": {
+    "kmh": 13.6,
+    "campioni": 178046
+   },
+   "10": {
+    "kmh": 13.9,
+    "campioni": 161299
+   },
+   "11": {
+    "kmh": 13.7,
+    "campioni": 145550
+   },
+   "12": {
+    "kmh": 13.9,
+    "campioni": 147622
+   },
+   "13": {
+    "kmh": 13.8,
+    "campioni": 138549
+   },
+   "14": {
+    "kmh": 13.6,
+    "campioni": 144993
+   },
+   "15": {
+    "kmh": 13.7,
+    "campioni": 146622
+   },
+   "16": {
+    "kmh": 13.0,
+    "campioni": 159967
+   },
+   "17": {
+    "kmh": 12.4,
+    "campioni": 173536
+   },
+   "18": {
+    "kmh": 12.6,
+    "campioni": 172066
+   },
+   "19": {
+    "kmh": 13.7,
+    "campioni": 165991
+   },
+   "20": {
+    "kmh": 15.6,
+    "campioni": 133309
+   },
+   "21": {
+    "kmh": 17.0,
+    "campioni": 91739
+   },
+   "22": {
+    "kmh": 16.7,
+    "campioni": 59244
+   },
+   "23": {
+    "kmh": 17.3,
+    "campioni": 40897
+   }
+  }
+ },
+ "controlli": [
+  "OK     storico dei mezzi letto",
+  "OK     linee dei mezzi presenti nel GTFS — 3 senza tipo (contate come bus): 9BU, FLEU, NPVU",
+  "OK     bus: almeno 10 ore con dati — 19 ore",
+  "OK     bus: velocita' fra 5 e 40 km/h",
+  "OK     bus: ogni ora con almeno 1000 campioni — ore con meno: ",
+  "OK     tram: almeno 10 ore con dati — 19 ore",
+  "OK     tram: velocita' fra 5 e 40 km/h",
+  "OK     tram: ogni ora con almeno 1000 campioni — ore con meno: ",
+  "OK     tutti: almeno 10 ore con dati — 19 ore",
+  "OK     tutti: velocita' fra 5 e 40 km/h",
+  "OK     tutti: ogni ora con almeno 1000 campioni — ore con meno: "
+ ]
+}

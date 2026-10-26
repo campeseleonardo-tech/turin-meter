@@ -1,0 +1,839 @@
+{
+ "generato_utc": "2026-10-25T18:32:03+00:00",
+ "unita": "zona OMI di Torino; media pesata per abitanti delle sezioni (centro della sezione dentro la zona)",
+ "fonti": "OMI 2025/2 (abitazioni civili, centro della forbice di acquisto), censimento ISTAT 2021, indice di vulnerabilita' (script 19), servizi a piedi 15' (script 18), GTFS GTT",
+ "avvertenze": [
+  "OMI = quotazioni, non compravendite; zone grandi; un solo semestre",
+  "correlazione, non causa",
+  "l'indice di vulnerabilita' non e' una misura di reddito"
+ ],
+ "regole_fissate_prima": {
+  "abitanti_minimi_zona": 500,
+  "quantili": [
+   0.2,
+   0.8
+  ],
+  "metro_m": 600,
+  "fascia_m": 2000
+ },
+ "conteggi": {
+  "sezioni_torino": 4044,
+  "abitanti_torino": 848748,
+  "zone_omi": 47,
+  "zone_usate": 46,
+  "abitanti_zone_usate": 848410,
+  "zone_sotto_500": [
+   "B9 STATI UNITI"
+  ],
+  "zone_senza_prezzo": [],
+  "sezioni_senza_zona": 1,
+  "fermate_metro": 23
+ },
+ "e1_si_paga_per_i_servizi": {
+  "n_zone": 46,
+  "spearman": 0.614,
+  "spearman_ic95": [
+   0.387,
+   0.786
+  ],
+  "retta": {
+   "intercetta_eur_m2": 1369.9,
+   "pendenza_eur_m2_per_punto_servizi": 12.88
+  },
+  "piu_care_dei_servizi": [
+   {
+    "zona": "B1 ROMA",
+    "abitanti": 1093,
+    "prezzo": 3650,
+    "servizi": 82.2,
+    "prezzo_atteso": 2429,
+    "residuo": 1221
+   },
+   {
+    "zona": "C12 CRIMEA",
+    "abitanti": 7445,
+    "prezzo": 2925,
+    "servizi": 35.0,
+    "prezzo_atteso": 1821,
+    "residuo": 1104
+   },
+   {
+    "zona": "B2 CARLO EMANUELE II",
+    "abitanti": 10989,
+    "prezzo": 3425,
+    "servizi": 79.2,
+    "prezzo_atteso": 2390,
+    "residuo": 1035
+   },
+   {
+    "zona": "E1 COLLINARE VILLA DELLA REGINA",
+    "abitanti": 9568,
+    "prezzo": 2175,
+    "servizi": 5.7,
+    "prezzo_atteso": 1443,
+    "residuo": 732
+   },
+   {
+    "zona": "C1 VALENTINO",
+    "abitanti": 5486,
+    "prezzo": 2700,
+    "servizi": 59.9,
+    "prezzo_atteso": 2142,
+    "residuo": 558
+   }
+  ],
+  "piu_convenienti_dei_servizi": [
+   {
+    "zona": "D20 BARRIERA DI MILANO",
+    "abitanti": 48588,
+    "prezzo": 1050,
+    "servizi": 57.6,
+    "prezzo_atteso": 2112,
+    "residuo": -1062
+   },
+   {
+    "zona": "D21 REBAUDENGO - REGIO PARCO",
+    "abitanti": 28202,
+    "prezzo": 1045,
+    "servizi": 33.4,
+    "prezzo_atteso": 1800,
+    "residuo": -755
+   },
+   {
+    "zona": "C17 PORTA PALAZZO - MARIA AUSILIATRICE",
+    "abitanti": 13406,
+    "prezzo": 1500,
+    "servizi": 61.5,
+    "prezzo_atteso": 2162,
+    "residuo": -662
+   },
+   {
+    "zona": "C21 CAMPIDOGLIO - MARTINETTO",
+    "abitanti": 10462,
+    "prezzo": 1700,
+    "servizi": 70.5,
+    "prezzo_atteso": 2279,
+    "residuo": -579
+   },
+   {
+    "zona": "D11 SPINA 4 - DOCKS DORA",
+    "abitanti": 4322,
+    "prezzo": 1375,
+    "servizi": 44.5,
+    "prezzo_atteso": 1943,
+    "residuo": -568
+   }
+  ]
+ },
+ "e2_doppio_svantaggio": {
+  "soglie_fissate": {
+   "fragilita_sopra": 49.78,
+   "servizi_fino_a": 33.42,
+   "regola": "fragilita' nel 20% piu' alto e servizi nel 20% piu' basso (sulle zone usate); per sezione: quintili delle sezioni di Torino con almeno 1.000 ab/km2"
+  },
+  "zone": [
+   {
+    "zona": "D6 MIRAFIORI SUD",
+    "abitanti": 33481,
+    "fragilita": 63.0,
+    "servizi": 25.6,
+    "prezzo": 1300
+   },
+   {
+    "zona": "D23 LUCENTO - VALLETTE",
+    "abitanti": 31262,
+    "fragilita": 65.9,
+    "servizi": 21.3,
+    "prezzo": 1300
+   },
+   {
+    "zona": "D21 REBAUDENGO - REGIO PARCO",
+    "abitanti": 28202,
+    "fragilita": 64.9,
+    "servizi": 33.4,
+    "prezzo": 1045
+   },
+   {
+    "zona": "D22 CORONA NORD",
+    "abitanti": 25756,
+    "fragilita": 63.1,
+    "servizi": 15.4,
+    "prezzo": 1250
+   },
+   {
+    "zona": "D15 BARCA - BERTOLLA",
+    "abitanti": 10584,
+    "fragilita": 58.5,
+    "servizi": 9.5,
+    "prezzo": 1600
+   }
+  ],
+  "residenti_zone_doppio_svantaggio": 129285,
+  "quota_residenti_zone_usate": 0.1524,
+  "sezioni": {
+   "soglia_fragilita_sopra": 57.7,
+   "soglia_servizi_fino_a": 34.37,
+   "sezioni_di_riferimento": 3520,
+   "residenti_di_riferimento": 839657,
+   "classi": {
+    "tutte_e_due": {
+     "sezioni": 216,
+     "residenti": 79598
+    },
+    "solo_fragilita": {
+     "sezioni": 483,
+     "residenti": 142406
+    },
+    "solo_servizi": {
+     "sezioni": 489,
+     "residenti": 100600
+    },
+    "nessuna": {
+     "sezioni": 2332,
+     "residenti": 517053
+    }
+   },
+   "residenti_doppio_svantaggio": 79598,
+   "quota_residenti_di_riferimento": 0.0948,
+   "confronto_col_caso": {
+    "regola": "quota attesa per caso = (quota di residenti con fragilita' alta) x (quota con servizi bassi), se le due condizioni fossero indipendenti",
+    "quota_fragilita_alta": 0.2644,
+    "quota_servizi_bassi": 0.2146,
+    "quota_attesa_per_caso": 0.0567,
+    "quota_osservata": 0.0948,
+    "volte_il_caso": 1.67
+   }
+  }
+ },
+ "e3_valore_metro": {
+  "regola": "zone con una fermata M1 a meno di 600 m dal centro della zona (centroide dell'anello piu' grande), confronto a pari distanza da Piazza Castello, fasce di 2 km; prezzo medio = media semplice fra zone",
+  "zone_con_metro": [
+   "B2 CARLO EMANUELE II",
+   "B3 SOLFERINO",
+   "B4 VINZAGLIO",
+   "B8 SAN SALVARIO",
+   "C15 DUCA D AOSTA",
+   "C2 DANTE",
+   "C22 ADRIANO - BERNINI - RIVOLI",
+   "C3 SAN SECONDO",
+   "C7 DUCHESSA JOLANDA",
+   "D16 NIZZA MILLEFONTI",
+   "D25 AERONAUTICA - LESNA"
+  ],
+  "fasce": [
+   {
+    "fascia_km": "0-2",
+    "con_metro": {
+     "zone": 6,
+     "prezzo_medio": 2542
+    },
+    "senza_metro": {
+     "zone": 8,
+     "prezzo_medio": 2469
+    },
+    "differenza": 73
+   },
+   {
+    "fascia_km": "2-4",
+    "con_metro": {
+     "zone": 3,
+     "prezzo_medio": 2192
+    },
+    "senza_metro": {
+     "zone": 16,
+     "prezzo_medio": 1973
+    },
+    "differenza": 219
+   },
+   {
+    "fascia_km": "4-6",
+    "con_metro": {
+     "zone": 2,
+     "prezzo_medio": 1712
+    },
+    "senza_metro": {
+     "zone": 10,
+     "prezzo_medio": 1660
+    },
+    "differenza": 52
+   },
+   {
+    "fascia_km": "6-8",
+    "con_metro": {
+     "zone": 0,
+     "prezzo_medio": null
+    },
+    "senza_metro": {
+     "zone": 1,
+     "prezzo_medio": 1300
+    },
+    "differenza": null
+   }
+  ],
+  "avvertenza": "differenza fra zone, non effetto causale (un solo semestre OMI, zone grandi, quotazioni e non compravendite)"
+ },
+ "e4_a_parita_di_distanza": {
+  "controllo": "distanza dal centro di zona a Piazza Castello (m)",
+  "n_zone": 46,
+  "regola": "correlazione parziale sui ranghi (Spearman) a parita' di distanza da Piazza Castello; intervallo al 95% per ricampionamento delle zone (2.000 volte, seme 95); regge solo se l'intervallo non contiene lo 0",
+  "legami": [
+   {
+    "legame": "prezzo-servizi",
+    "spearman": 0.614,
+    "spearman_ic95": [
+     0.387,
+     0.786
+    ],
+    "regge_semplice": true,
+    "parziale": 0.212,
+    "parziale_ic95": [
+     -0.123,
+     0.515
+    ],
+    "regge": false
+   },
+   {
+    "legame": "fragilita-servizi",
+    "spearman": -0.737,
+    "spearman_ic95": [
+     -0.826,
+     -0.591
+    ],
+    "regge_semplice": true,
+    "parziale": -0.481,
+    "parziale_ic95": [
+     -0.664,
+     -0.23
+    ],
+    "regge": true
+   },
+   {
+    "legame": "prezzo-fragilita",
+    "spearman": -0.831,
+    "spearman_ic95": [
+     -0.913,
+     -0.682
+    ],
+    "regge_semplice": true,
+    "parziale": -0.686,
+    "parziale_ic95": [
+     -0.85,
+     -0.372
+    ],
+    "regge": true
+   }
+  ],
+  "retta_fragilita_servizi": {
+   "intercetta_servizi": 107.82,
+   "pendenza_servizi_per_punto_fragilita": -1.323
+  }
+ },
+ "zone": [
+  {
+   "zona": "B1 ROMA",
+   "abitanti": 1093,
+   "prezzo": 3650,
+   "servizi": 82.2,
+   "fragilita": 31.7,
+   "residuo": 1221,
+   "distanza_castello_m": 438,
+   "distanza_metro_m": 628,
+   "metro_600m": false
+  },
+  {
+   "zona": "B2 CARLO EMANUELE II",
+   "abitanti": 10989,
+   "prezzo": 3425,
+   "servizi": 79.2,
+   "fragilita": 24.6,
+   "residuo": 1035,
+   "distanza_castello_m": 712,
+   "distanza_metro_m": 487,
+   "metro_600m": true
+  },
+  {
+   "zona": "B3 SOLFERINO",
+   "abitanti": 2584,
+   "prezzo": 2500,
+   "servizi": 77.4,
+   "fragilita": 31.5,
+   "residuo": 133,
+   "distanza_castello_m": 978,
+   "distanza_metro_m": 364,
+   "metro_600m": true
+  },
+  {
+   "zona": "B4 VINZAGLIO",
+   "abitanti": 4598,
+   "prezzo": 2600,
+   "servizi": 73.9,
+   "fragilita": 29.0,
+   "residuo": 278,
+   "distanza_castello_m": 1458,
+   "distanza_metro_m": 194,
+   "metro_600m": true
+  },
+  {
+   "zona": "B5 GARIBALDI",
+   "abitanti": 11934,
+   "prezzo": 2600,
+   "servizi": 80.9,
+   "fragilita": 27.6,
+   "residuo": 187,
+   "distanza_castello_m": 800,
+   "distanza_metro_m": 687,
+   "metro_600m": false
+  },
+  {
+   "zona": "B6 CASTELLO",
+   "abitanti": 2369,
+   "prezzo": 2850,
+   "servizi": 87.3,
+   "fragilita": 36.9,
+   "residuo": 355,
+   "distanza_castello_m": 178,
+   "distanza_metro_m": 1194,
+   "metro_600m": false
+  },
+  {
+   "zona": "B7 ROCCA",
+   "abitanti": 4397,
+   "prezzo": 2375,
+   "servizi": 79.0,
+   "fragilita": 32.0,
+   "residuo": -13,
+   "distanza_castello_m": 1087,
+   "distanza_metro_m": 1151,
+   "metro_600m": false
+  },
+  {
+   "zona": "B8 SAN SALVARIO",
+   "abitanti": 7157,
+   "prezzo": 1950,
+   "servizi": 67.7,
+   "fragilita": 33.3,
+   "residuo": -292,
+   "distanza_castello_m": 1436,
+   "distanza_metro_m": 363,
+   "metro_600m": true
+  },
+  {
+   "zona": "C1 VALENTINO",
+   "abitanti": 5486,
+   "prezzo": 2700,
+   "servizi": 59.9,
+   "fragilita": 31.7,
+   "residuo": 558,
+   "distanza_castello_m": 2313,
+   "distanza_metro_m": 722,
+   "metro_600m": false
+  },
+  {
+   "zona": "C11 MICHELOTTI",
+   "abitanti": 7729,
+   "prezzo": 2175,
+   "servizi": 23.5,
+   "fragilita": 34.2,
+   "residuo": 502,
+   "distanza_castello_m": 2673,
+   "distanza_metro_m": 3279,
+   "metro_600m": false
+  },
+  {
+   "zona": "C12 CRIMEA",
+   "abitanti": 7445,
+   "prezzo": 2925,
+   "servizi": 35.0,
+   "fragilita": 35.5,
+   "residuo": 1104,
+   "distanza_castello_m": 1991,
+   "distanza_metro_m": 1403,
+   "metro_600m": false
+  },
+  {
+   "zona": "C15 DUCA D AOSTA",
+   "abitanti": 894,
+   "prezzo": 2675,
+   "servizi": 69.0,
+   "fragilita": 39.1,
+   "residuo": 416,
+   "distanza_castello_m": 1891,
+   "distanza_metro_m": 582,
+   "metro_600m": true
+  },
+  {
+   "zona": "C17 PORTA PALAZZO - MARIA AUSILIATRICE",
+   "abitanti": 13406,
+   "prezzo": 1500,
+   "servizi": 61.5,
+   "fragilita": 44.3,
+   "residuo": -662,
+   "distanza_castello_m": 1135,
+   "distanza_metro_m": 1215,
+   "metro_600m": false
+  },
+  {
+   "zona": "C18 VANCHIGLIA - BORGO ROSSINI",
+   "abitanti": 18276,
+   "prezzo": 2225,
+   "servizi": 73.7,
+   "fragilita": 34.0,
+   "residuo": -94,
+   "distanza_castello_m": 1034,
+   "distanza_metro_m": 1938,
+   "metro_600m": false
+  },
+  {
+   "zona": "C19 AURORA",
+   "abitanti": 20157,
+   "prezzo": 1625,
+   "servizi": 51.8,
+   "fragilita": 54.3,
+   "residuo": -413,
+   "distanza_castello_m": 1559,
+   "distanza_metro_m": 1962,
+   "metro_600m": false
+  },
+  {
+   "zona": "C2 DANTE",
+   "abitanti": 22925,
+   "prezzo": 2175,
+   "servizi": 62.3,
+   "fragilita": 31.7,
+   "residuo": 2,
+   "distanza_castello_m": 2557,
+   "distanza_metro_m": 202,
+   "metro_600m": true
+  },
+  {
+   "zona": "C20 VANCHIGLIETTA",
+   "abitanti": 16461,
+   "prezzo": 2000,
+   "servizi": 29.8,
+   "fragilita": 42.8,
+   "residuo": 246,
+   "distanza_castello_m": 2512,
+   "distanza_metro_m": 3232,
+   "metro_600m": false
+  },
+  {
+   "zona": "C21 CAMPIDOGLIO - MARTINETTO",
+   "abitanti": 10462,
+   "prezzo": 1700,
+   "servizi": 70.5,
+   "fragilita": 37.3,
+   "residuo": -579,
+   "distanza_castello_m": 2909,
+   "distanza_metro_m": 715,
+   "metro_600m": false
+  },
+  {
+   "zona": "C22 ADRIANO - BERNINI - RIVOLI",
+   "abitanti": 11167,
+   "prezzo": 2050,
+   "servizi": 73.3,
+   "fragilita": 27.4,
+   "residuo": -265,
+   "distanza_castello_m": 2868,
+   "distanza_metro_m": 133,
+   "metro_600m": true
+  },
+  {
+   "zona": "C23 CENISIA",
+   "abitanti": 18643,
+   "prezzo": 2000,
+   "servizi": 72.5,
+   "fragilita": 36.1,
+   "residuo": -303,
+   "distanza_castello_m": 2969,
+   "distanza_metro_m": 803,
+   "metro_600m": false
+  },
+  {
+   "zona": "C24 SAN PAOLO",
+   "abitanti": 29291,
+   "prezzo": 2250,
+   "servizi": 64.1,
+   "fragilita": 38.7,
+   "residuo": 54,
+   "distanza_castello_m": 3478,
+   "distanza_metro_m": 1756,
+   "metro_600m": false
+  },
+  {
+   "zona": "C3 SAN SECONDO",
+   "abitanti": 5190,
+   "prezzo": 2100,
+   "servizi": 66.5,
+   "fragilita": 28.9,
+   "residuo": -126,
+   "distanza_castello_m": 1628,
+   "distanza_metro_m": 294,
+   "metro_600m": true
+  },
+  {
+   "zona": "C4 GALILEO FERRARIS",
+   "abitanti": 7970,
+   "prezzo": 2275,
+   "servizi": 59.6,
+   "fragilita": 35.3,
+   "residuo": 137,
+   "distanza_castello_m": 2113,
+   "distanza_metro_m": 789,
+   "metro_600m": false
+  },
+  {
+   "zona": "C5 DE GASPERI",
+   "abitanti": 15343,
+   "prezzo": 2600,
+   "servizi": 63.8,
+   "fragilita": 28.9,
+   "residuo": 408,
+   "distanza_castello_m": 2661,
+   "distanza_metro_m": 1320,
+   "metro_600m": false
+  },
+  {
+   "zona": "C6 POLITECNICO",
+   "abitanti": 1405,
+   "prezzo": 2600,
+   "servizi": 72.8,
+   "fragilita": 34.1,
+   "residuo": 292,
+   "distanza_castello_m": 2260,
+   "distanza_metro_m": 674,
+   "metro_600m": false
+  },
+  {
+   "zona": "C7 DUCHESSA JOLANDA",
+   "abitanti": 14491,
+   "prezzo": 2350,
+   "servizi": 81.0,
+   "fragilita": 30.2,
+   "residuo": -64,
+   "distanza_castello_m": 2005,
+   "distanza_metro_m": 276,
+   "metro_600m": true
+  },
+  {
+   "zona": "C8 SAN DONATO",
+   "abitanti": 22334,
+   "prezzo": 2050,
+   "servizi": 64.6,
+   "fragilita": 41.3,
+   "residuo": -152,
+   "distanza_castello_m": 2139,
+   "distanza_metro_m": 706,
+   "metro_600m": false
+  },
+  {
+   "zona": "D10 MADONNA DI CAMPAGNA",
+   "abitanti": 71762,
+   "prezzo": 1550,
+   "servizi": 46.7,
+   "fragilita": 56.5,
+   "residuo": -422,
+   "distanza_castello_m": 3535,
+   "distanza_metro_m": 2636,
+   "metro_600m": false
+  },
+  {
+   "zona": "D11 SPINA 4 - DOCKS DORA",
+   "abitanti": 4322,
+   "prezzo": 1375,
+   "servizi": 44.5,
+   "fragilita": 47.8,
+   "residuo": -568,
+   "distanza_castello_m": 2822,
+   "distanza_metro_m": 2797,
+   "metro_600m": false
+  },
+  {
+   "zona": "D15 BARCA - BERTOLLA",
+   "abitanti": 10584,
+   "prezzo": 1600,
+   "servizi": 9.5,
+   "fragilita": 58.5,
+   "residuo": 108,
+   "distanza_castello_m": 4575,
+   "distanza_metro_m": 5574,
+   "metro_600m": false
+  },
+  {
+   "zona": "D16 NIZZA MILLEFONTI",
+   "abitanti": 26802,
+   "prezzo": 1750,
+   "servizi": 37.8,
+   "fragilita": 44.3,
+   "residuo": -107,
+   "distanza_castello_m": 4838,
+   "distanza_metro_m": 146,
+   "metro_600m": true
+  },
+  {
+   "zona": "D17 FILADELFIA - TRAIANO",
+   "abitanti": 46558,
+   "prezzo": 1500,
+   "servizi": 52.8,
+   "fragilita": 49.8,
+   "residuo": -551,
+   "distanza_castello_m": 5350,
+   "distanza_metro_m": 1190,
+   "metro_600m": false
+  },
+  {
+   "zona": "D18 SANTA RITA",
+   "abitanti": 56890,
+   "prezzo": 1800,
+   "servizi": 62.4,
+   "fragilita": 40.9,
+   "residuo": -374,
+   "distanza_castello_m": 4212,
+   "distanza_metro_m": 1968,
+   "metro_600m": false
+  },
+  {
+   "zona": "D19 MIRAFIORI NORD",
+   "abitanti": 40047,
+   "prezzo": 1425,
+   "servizi": 43.9,
+   "fragilita": 54.5,
+   "residuo": -511,
+   "distanza_castello_m": 5455,
+   "distanza_metro_m": 3289,
+   "metro_600m": false
+  },
+  {
+   "zona": "D20 BARRIERA DI MILANO",
+   "abitanti": 48588,
+   "prezzo": 1050,
+   "servizi": 57.6,
+   "fragilita": 62.1,
+   "residuo": -1062,
+   "distanza_castello_m": 2355,
+   "distanza_metro_m": 3056,
+   "metro_600m": false
+  },
+  {
+   "zona": "D21 REBAUDENGO - REGIO PARCO",
+   "abitanti": 28202,
+   "prezzo": 1045,
+   "servizi": 33.4,
+   "fragilita": 64.9,
+   "residuo": -755,
+   "distanza_castello_m": 3119,
+   "distanza_metro_m": 3929,
+   "metro_600m": false
+  },
+  {
+   "zona": "D22 CORONA NORD",
+   "abitanti": 25756,
+   "prezzo": 1250,
+   "servizi": 15.4,
+   "fragilita": 63.1,
+   "residuo": -318,
+   "distanza_castello_m": 5483,
+   "distanza_metro_m": 5396,
+   "metro_600m": false
+  },
+  {
+   "zona": "D23 LUCENTO - VALLETTE",
+   "abitanti": 31262,
+   "prezzo": 1300,
+   "servizi": 21.3,
+   "fragilita": 65.9,
+   "residuo": -344,
+   "distanza_castello_m": 5123,
+   "distanza_metro_m": 2761,
+   "metro_600m": false
+  },
+  {
+   "zona": "D24 PARELLA",
+   "abitanti": 31541,
+   "prezzo": 1925,
+   "servizi": 55.5,
+   "fragilita": 40.2,
+   "residuo": -160,
+   "distanza_castello_m": 4222,
+   "distanza_metro_m": 655,
+   "metro_600m": false
+  },
+  {
+   "zona": "D25 AERONAUTICA - LESNA",
+   "abitanti": 32025,
+   "prezzo": 1675,
+   "servizi": 39.5,
+   "fragilita": 47.6,
+   "residuo": -204,
+   "distanza_castello_m": 5411,
+   "distanza_metro_m": 228,
+   "metro_600m": true
+  },
+  {
+   "zona": "D26 POZZO STRADA",
+   "abitanti": 36080,
+   "prezzo": 1925,
+   "servizi": 55.8,
+   "fragilita": 40.3,
+   "residuo": -164,
+   "distanza_castello_m": 4189,
+   "distanza_metro_m": 694,
+   "metro_600m": false
+  },
+  {
+   "zona": "D6 MIRAFIORI SUD",
+   "abitanti": 33481,
+   "prezzo": 1300,
+   "servizi": 25.6,
+   "fragilita": 63.0,
+   "residuo": -399,
+   "distanza_castello_m": 7484,
+   "distanza_metro_m": 3394,
+   "metro_600m": false
+  },
+  {
+   "zona": "D9 SPINA 3 - EUROTORINO",
+   "abitanti": 11318,
+   "prezzo": 2025,
+   "servizi": 40.2,
+   "fragilita": 36.9,
+   "residuo": 137,
+   "distanza_castello_m": 2759,
+   "distanza_metro_m": 1524,
+   "metro_600m": false
+  },
+  {
+   "zona": "E1 COLLINARE VILLA DELLA REGINA",
+   "abitanti": 9568,
+   "prezzo": 2175,
+   "servizi": 5.7,
+   "fragilita": 48.1,
+   "residuo": 732,
+   "distanza_castello_m": 3491,
+   "distanza_metro_m": 3532,
+   "metro_600m": false
+  },
+  {
+   "zona": "E2 COLLINARE SUPERGA",
+   "abitanti": 3563,
+   "prezzo": 1875,
+   "servizi": 4.6,
+   "fragilita": 45.3,
+   "residuo": 445,
+   "distanza_castello_m": 5121,
+   "distanza_metro_m": 5791,
+   "metro_600m": false
+  },
+  {
+   "zona": "E3 COLLINARE CAVORETTO",
+   "abitanti": 5865,
+   "prezzo": 2000,
+   "servizi": 6.0,
+   "fragilita": 40.7,
+   "residuo": 552,
+   "distanza_castello_m": 4513,
+   "distanza_metro_m": 2155,
+   "metro_600m": false
+  }
+ ]
+}

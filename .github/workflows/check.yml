@@ -1,0 +1,60 @@
+# Controllo automatico del repository pubblico, a ogni push e a ogni richiesta di unione: gli script si compilano, nessuna segnalazione di pyflakes, le prove su dati finti, i pesi dei file,
+# i file e i link delle pagine, la prova delle pagine in un browser (0 errori JavaScript). Non ricalcola i risultati: non ci sono i dati grezzi.
+name: Controllo
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Librerie
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy scipy pandas pyflakes pillow playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Gli script si compilano
+        run: python -m compileall -q scripts
+
+      - name: pyflakes (nessuna segnalazione)
+        run: python -m pyflakes scripts
+
+      - name: Prove su dati finti
+        run: |
+          python scripts/prove/prova_traduzione.py
+          python scripts/prove/prova_contenuto.py
+          python scripts/prove/prova_funzioni_comuni.py
+          python scripts/comuni.py
+          python scripts/prove/prova_riassunti.py
+          python scripts/prove/prova_gtfs_archivio.py
+          python scripts/prove/prova_gtfs_per_giorno.py
+          python scripts/prove/prova_capolinea.py
+          python scripts/backup_da_leopi.py --prova
+          python scripts/99_area_tempi.py --finto
+          python scripts/rifai_tutto.py --prova-secca
+          python scripts/schede_risultati.py
+
+      - name: Le schede in git sono quelle che escono dai dati (L9)
+        run: git diff --exit-code -I'generato' -I'Aggiornato al' -- data/schede_risultati.js r README.md
+
+      - name: Pesi dei file in git
+        run: python scripts/controlla_pesi_git.py
+
+      - name: File e link delle pagine
+        run: python scripts/86_controlla_file_pagine.py --ci
+
+      - name: Prova delle pagine nel browser
+        run: python scripts/prova_pagine.py --senza-screenshot

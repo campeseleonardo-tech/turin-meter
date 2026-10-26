@@ -1,0 +1,7 @@
+{
+  "pi_utente": "utente_del_pi",
+  "pi_indirizzo": "192.0.2.10",
+  "chiave_ssh": "~/.ssh/nome_della_chiave",
+  "carto_chiave": "",
+  "arcgis_chiave": ""
+}

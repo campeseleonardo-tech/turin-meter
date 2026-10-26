@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--SITO:TESTA-->
+<title data-en="Page not found — Turin Meter" data-de="Seite nicht gefunden — Turin Meter">Pagina non trovata — Turin Meter</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b2559">
+<script>
+(function(){
+  var b = "/";
+  if(/\.github\.io$/.test(location.hostname)){ var p = location.pathname.split("/")[1]; if(p) b = "/" + p + "/"; }
+  document.write('<base href="' + b + '">');
+})();
+</script>
+<link rel="icon" href="assets/icona-32.png" sizes="32x32" type="image/png">
+<!--/SITO:TESTA-->
+<link rel="stylesheet" href="assets/stile.css">
+<style>
+.nontrovata{max-width:680px;margin:0 auto;padding:36px 0 20px}
+.nontrovata .codice{font:700 clamp(90px,22vw,170px)/0.95 var(--font-titoli);color:var(--oro);margin:0}
+.nontrovata h1{font-size:clamp(30px,5vw,42px);margin:6px 0 10px}
+.nontrovata p{font-size:18px;color:var(--muted);margin:0 0 18px}
+</style>
+</head>
+<body>
+<!--SITO:BARRA-->
+<header class="barra-alta"><div class="dentro">
+  <a class="marchio" href="index.html"><img src="assets/logo.svg" alt="" width="34" height="34">Turin Meter</a>
+  <nav aria-label="Pagine del sito" data-en-label="Site pages" data-de-label="Seiten der Website"><a href="index.html" data-en="Home" data-de="Start">Home</a><a href="mappa_torino.html" data-en="Map" data-de="Karte">Mappa</a><a href="progetto.html" data-en="Case study" data-de="Fallstudie">Il progetto</a></nav>
+  <div class="lingua" role="group" aria-label="Lingua" data-en-label="Language" data-de-label="Sprache"><button type="button" data-l="it" aria-pressed="true" title="Italiano">IT</button><button type="button" data-l="en" aria-pressed="false" title="English">EN</button><button type="button" data-l="de" aria-pressed="false" title="Deutsch">DE</button></div>
+</div></header>
+<!--/SITO:BARRA-->
+<main>
+<div class="nontrovata">
+  <p class="codice" aria-hidden="true">404</p>
+  <h1 data-en="This page does not exist" data-de="Diese Seite gibt es nicht">Questa pagina non esiste</h1>
+  <p data-en="The address may be wrong, or the page may have moved. From here you can get back to the site." data-de="Die Adresse ist vielleicht falsch, oder die Seite wurde verschoben. Von hier kommst du zurück zur Website.">L'indirizzo potrebbe essere sbagliato, o la pagina spostata. Da qui puoi tornare al sito.</p>
+  <div class="bottoni"><a class="btn primario" href="index.html" data-en="Home" data-de="Start">Home</a><a class="btn" href="mappa_torino.html" data-en="Map" data-de="Karte">Mappa</a><a class="btn" href="progetto.html" data-en="Case study" data-de="Fallstudie">Il progetto</a></div>
+</div>
+</main>
+<!--SITO:PIEDE-->
+<footer class="piede"><div class="dentro">
+  <div>
+    <h2 data-en="About me" data-de="Über mich">Chi sono</h2>
+    <p>Leonardo Campese</p>
+    <p><a href="https://www.linkedin.com/in/leocampese/">LinkedIn</a> · <a href="mailto:campese.leonardo@gmail.com">campese.leonardo@gmail.com</a> · <a href="https://github.com/campeseleonardo-tech/turin-meter">GitHub</a></p>
+    <p class="piccolo"><a href="https://github.com/campeseleonardo-tech/turin-meter/blob/main/DATA_LICENSES.md" data-en="Sources and licences" data-de="Quellen und Lizenzen">Fonti e licenze</a></p>
+  </div>
+  <div>
+    <p class="piccolo avvertenza" data-en="Independent personal project: not affiliated with or endorsed by GTT, 5T, the City of Turin or any other organisation mentioned." data-de="Unabhängiges privates Projekt: nicht verbunden mit oder unterstützt von GTT, 5T, der Stadt Turin oder anderen genannten Organisationen.">Progetto personale e indipendente: non è affiliato né approvato da GTT, 5T, Città di Torino o dagli altri enti citati.</p>
+    <p class="piccolo" id="datiAggiornati">Dati dal … al …</p>
+    <p class="piccolo" data-en="Code under the MIT licence; data keep the licence of their source." data-de="Code unter MIT-Lizenz; die Daten behalten die Lizenz ihrer Quelle.">Codice con licenza MIT; i dati hanno la licenza della loro fonte.</p>
+  </div>
+</div></footer>
+<!--/SITO:PIEDE-->
+<script src="data/schede_risultati.js" onerror="window.SCHEDE_PERIODO=null"></script>
+<script src="assets/sito.js"></script>
+<script>Sito.avvia();Sito.dataAggiornamento();</script>
+</body>
+</html>
