@@ -20,6 +20,7 @@ AQUI = Path(__file__).resolve().parent
 RADICE = AQUI.parent
 sys.path.insert(0, str(AQUI))
 import config_locale  # noqa: E402
+from schede.r6 import fattori_auto_mappa  # noqa: E402
 
 INIZIO = "const DATI = "
 
@@ -34,6 +35,8 @@ def leggi_dati(percorso):
 
 def rifai(da, a, modello):
     dati = leggi_dati(da)
+    if dati.get("r6"):
+        dati["r6"].update(fattori_auto_mappa())      # tempi in auto: una sola stima, la corretta col controllo (decisione 16 di §2)
     testo = json.dumps(dati, separators=(",", ":"), ensure_ascii=False).replace("</", "<\\/")
     html = modello.read_text(encoding="utf-8").replace('"__DATI__"', testo)
     html = config_locale.metti_chiavi_mappa(html)

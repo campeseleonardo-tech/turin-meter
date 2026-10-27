@@ -42,9 +42,9 @@ Used by findings 2 and 4.
 - **Reading:** `scripts/108_controllo_navigatori.py --tomtom` asks the TomTom Routing API for the predicted travel time with traffic for the following Tuesday at 7:45, 8:00 and 8:15 (minimum and maximum kept).
   This is the **only** place where a proprietary service is read by a program, and only to check the estimate; no TomTom value enters an estimate.
   The script saves only the summary (`data/processed/controllo_navigatori_riepilogo.json`): median signed and absolute error, routes inside the TomTom range.
-- **Result handling:** the check found the open estimate systematically faster than TomTom. Rather than hide this, the car side of findings 2 and 4 is published as a **range A–B**:
-  A = the open estimate; B = (A − 5 min) × f + 5 min, with f = 1 / (1 + median signed error), read from the summary file, never typed by hand.
-  Classes (public transport faster / similar / slower than the car) are shown only if they are the same at A and at B; otherwise «similar / depends on traffic».
+- **Result handling:** the check found the open estimate systematically faster than TomTom (on 20 routes out of 20). Rather than hide this, car times in findings 2 and 4 are the open estimate **corrected with a single factor**:
+  time = (open estimate − 5 min) × f + 5 min, with f = 1 / (1 + median signed error), read from the summary file, never typed by hand.
+  Only this corrected time is shown; classes (public transport worth it or not) are decided on it alone.
 - **Terms of use:** the project has no special permission from TomTom. The TomTom terms of use limit storing results and building databases from them (clauses on saving results and derived databases),
   which is why results are not saved, only the summary, and why TomTom is named only as the source of the check. This remains a risk to be weighed again before wider use.
   Google Maps is never read by a program; it can be used by hand only.
@@ -63,10 +63,10 @@ Used by findings 2 and 4.
 - **Redo:** `python scripts/rifai_tutto.py --solo r4`.
 
 ## Finding 2 — Car or public transport: time and money (estimated)
-- **Question:** in the morning, which pays off, counting time and money?
+- **Question:** how much longer does public transport take than the car, and what does the car cost?
 - **Data:** travel-survey zones with calculation points (up to 5 per zone); R5 routing; open car estimate; measured waiting and delay; prices.
-- **Method:** public transport time = R5 median over departures 7:45–8:15 with measured extra waiting and delay on board. Car = open estimate plus 5 minutes (range A–B, see above).
-  The ratio is public transport time / car time over the morning car trips of the survey (6–10 a.m. weekdays, weighted by the cars of each pair).
+- **Method:** public transport time = R5 median over departures 7:45–8:15 with measured extra waiting and delay on board. Car = open estimate plus 5 minutes, corrected with the single factor (see above).
+  The ratio is public transport time / car time over the car trips of the survey between different zones (weighted by the cars of each pair); the headline number is the simple mean of the median ratio at 4 times of the day (8:00, 13:00, 17:30, 21:00), computed in one function, `rapporto_medio_giorno`, and read from the data files.
 - **Costs:** prices of one day (fuel self-service within 5 km of Piazza Castello, ACI 2026 running costs for a reference compact car, GTT fares, on-street parking at the ordinary rate for 8 hours × 20 days).
   *Out-of-pocket cost* = fuel + parking; *full cost* = ACI per-km cost + parking.
 - **Value of time:** v = (extra monthly cost with paid parking) / (extra minutes per trip × 2 trips × 20 days / 60), rounded to 5 €; also computed with the full cost.
@@ -88,7 +88,7 @@ Used by findings 2 and 4.
 - **Important stops:** outside the centre, with a metro, train station or terminus, or at least a fixed number of departures per hour in commuting hours, and at least a fixed number of cars passing (parameters in the finding card).
 - **Cars:** inbound car trips from the 2022 travel survey assigned to the fastest route; the share that already leaves the car is applied. **Spaces:** suitable car parks within 400 m on foot (City, 5T, OpenStreetMap).
 - **Priority points:** stops without enough spaces grouped within 1 km, one per entry axis. **Missing spaces** are an order of magnitude, with a sensitivity for half and double the people leaving the car.
-- **Bus against car:** public transport minutes to Piazza Castello at 8 a.m. against the car (range A–B) plus parking; the class is published only if equal at A and at B.
+- **Bus against car:** public transport minutes to Piazza Castello at 8 a.m. against the car (corrected as above) plus parking; the bus is «worth it» if it takes at most 1.5 times the car.
 - **Limits:** car flows come from a simple traffic model; occupancy is measured on few days and only where 5T reports it; trains are not included.
 - **Redo:** `python scripts/rifai_tutto.py --solo r6`.
 

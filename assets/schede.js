@@ -98,7 +98,7 @@ function graficoBarreGruppi(g){
   const tuttiValori = larghezzaValori(g, tutte);
   // L24 (G1): senza g.max la scala e' una sola per tutti i gruppi (il massimo di tutte le barre), cosi' lo stesso valore ha la stessa lunghezza ovunque
   const max = g.max || Math.max(1, ...tutte.flatMap(v => [Math.abs(v.valore || 0), Math.abs(v.prima || 0)]));
-  return (g.gruppi || []).map(gr => `<div class="etichetta-gruppo">${esc(gr.label)}</div>` + graficoBarre({voci: gr.voci, unita: g.unita, max: max, larghezza: tuttiValori})).join("");
+  return (g.gruppi || []).map(gr => `<div class="etichetta-gruppo">${esc(gr.label)}${gr.nota ? ` <small>${esc(gr.nota)}</small>` : ""}</div>` + graficoBarre({voci: gr.voci, unita: g.unita, max: max, larghezza: tuttiValori})).join("");
 }
 
 function graficoPila(g){
@@ -201,12 +201,14 @@ function graficoDispersione(g){
     return `<line x1="${X(0)}" y1="${Y(0)}" x2="${X(xf).toFixed(1)}" y2="${Y(l.k * xf).toFixed(1)}" style="stroke:var(--vr-rosso)" stroke-width="2" stroke-dasharray="6 4"/>`
       + `<text x="${(X(xf) - 6).toFixed(1)}" y="${(Y(l.k * xf) + 14).toFixed(1)}" text-anchor="end" font-size="${fv}" font-weight="700" style="fill:var(--vr-rosso)">${esc(l.label)}</text>`;
   }).join("");
-  const punti = pts.map(p => `<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="${(2 + 6 * Math.sqrt(p[2] / maxAuto)).toFixed(1)}" style="fill:var(--neu-blu);fill-opacity:.45;stroke:var(--neu-blu)" stroke-width=".6"><title>${p.length > 3 ? esc(p[3]) + ": " + formattaNumero(Math.round(p[2])) + " " + esc(g.dnome || "abitanti") + ", " + esc(g.xnome || "x") + " " + formattaNumero(Math.round(p[0])) + ", " + esc(g.ynome || "y") + " " + formattaNumero(Math.round(p[1])) : formattaNumero(Math.round(p[2])) + T(" auto: ", " cars: ", " Autos: ") + formattaNumero(Math.round(p[0])) + T(" min in auto, ", " min by car, ", " Min. mit dem Auto, ") + formattaNumero(Math.round(p[1])) + T(" min coi mezzi", " min by public transport", " Min. mit öffentlichen Verkehrsmitteln")}</title></circle>`).join("");
+  // quinto campo del punto = tono (es. «rosso»: zone in doppio svantaggio); i punti col tono si disegnano per ultimi, sopra gli altri
+  const punti = [...pts].sort((a, b) => (a[4] ? 1 : 0) - (b[4] ? 1 : 0)).map(p => `<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="${(2 + 6 * Math.sqrt(p[2] / maxAuto)).toFixed(1)}" style="fill:${p[4] ? TONO_COL[p[4]] : "var(--neu-blu)"};fill-opacity:${p[4] ? .8 : .45};stroke:${p[4] ? TONO_COL[p[4]] : "var(--neu-blu)"}" stroke-width=".6"><title>${p.length > 3 ? esc(p[3]) + ": " + formattaNumero(Math.round(p[2])) + " " + esc(g.dnome || "abitanti") + ", " + esc(g.xnome || "x") + " " + formattaNumero(Math.round(p[0])) + ", " + esc(g.ynome || "y") + " " + formattaNumero(Math.round(p[1])) : formattaNumero(Math.round(p[2])) + T(" auto: ", " cars: ", " Autos: ") + formattaNumero(Math.round(p[0])) + T(" min in auto, ", " min by car, ", " Min. mit dem Auto, ") + formattaNumero(Math.round(p[1])) + T(" min coi mezzi", " min by public transport", " Min. mit öffentlichen Verkehrsmitteln")}</title></circle>`).join("");
   const maxX = st ? Math.floor(AW / (fs * 0.56)) : 999, maxY = st ? Math.floor(AH / (fs * 0.56)) : 999;
   const rx = spezza(g.xlabel || "", maxX), ry = spezza(g.ylabel || "", maxY).slice(0, st ? 2 : 3);
   const assi = `<text x="${PL + AW / 2}" y="${PT + AH + 14 + fs + 10}" text-anchor="middle" font-size="${fv}" style="fill:var(--muted)">${righeSvg(PL + AW / 2, rx, fv)}</text>`
     + `<text transform="translate(${fv} ${PT + AH / 2}) rotate(-90)" text-anchor="middle" font-size="${fv}" style="fill:var(--muted)">${righeSvg(0, ry, fv)}</text>`;
-  return `<svg viewBox="0 0 ${LW} ${LH}" role="img" aria-label="${esc(g.titolo)}">${griglia}${linea}${retta}${punti}${assi}</svg>`;
+  const legenda = Array.isArray(g.legenda) && g.legenda.length ? `<div class="legenda">${g.legenda.map(l => `<span><i style="background:${TONO_COL[l.tono] || "var(--neu-blu)"}"></i>${esc(l.label)}</span>`).join("")}</div>` : "";
+  return `<svg viewBox="0 0 ${LW} ${LH}" role="img" aria-label="${esc(g.titolo)}">${griglia}${linea}${retta}${punti}${assi}</svg>${legenda}`;
 }
 function ymaxGrezzo(pts){ return Math.max(10, ...pts.map(p => p[1])); }
 

@@ -2,7 +2,7 @@
   "risultato": "6",
   "titolo": "Parcheggi per lasciare l'auto",
   "tag": "STIMATO / MISURATO (dati scarsi)",
-  "stato": "Aggiornato al 26/10/2026",
+  "stato": "Aggiornato al 27/10/2026",
   "in_breve": "Dove lasciare l'auto prima di entrare in città e proseguire con i mezzi pubblici: come funzionano gli interscambi che ci sono, e dove mancano posti per le auto che entrano ogni mattina.",
   "domanda": "Dove mancano posti per lasciare l'auto prima di entrare in città, vicino a una fermata importante, per le auto che ogni mattina entrano a Torino?",
   "numero_chiave": {
@@ -547,7 +547,7 @@
     "scripts/84_risultato6_parcheggi.py",
     "data/processed/risultato6_v2/mappa_r6.json"
   ],
-  "generato": "2026-10-26T15:37:33+00:00",
+  "generato": "2026-10-27T00:09:16+00:00",
   "avviso": [
     "Riempimento dei parcheggi misurato dai sensori 5T su pochi giorni; auto e posti che mancano calcolati su dati veri, non misurati."
   ],
@@ -692,143 +692,219 @@
     "punti": [
       "68 fermate importanti non hanno nessun parcheggio vicino, 111 troppo pochi.",
       "Il primo dei 12 punti d'ingresso dove servono posti è Santa Rita: ne mancano ~450.",
-      "In 1–5 punti su 12, lasciata l'auto, il bus arriva in centro in al più 1,5 volte il tempo dell'auto."
+      "In 5 punti su 12, lasciata l'auto, il bus arriva in centro in al più 1,5 volte il tempo dell'auto."
     ],
     "altri": [
       {
         "tipo": "gara",
         "titolo": "La gara: bus e auto verso Piazza Castello, alle 8 di un feriale",
-        "nota": "Bus e auto partono insieme da ogni parcheggio, uno dopo l'altro. L'auto ha un tempo con la forbice del controllo, parcheggio compreso.",
+        "nota": "Bus e auto partono insieme da ogni parcheggio, uno dopo l'altro. Il tempo in auto comprende il parcheggio.",
         "luoghi": [
           {
             "nome": "Santa Rita",
             "gruppo": "Punti prioritari",
             "bus": 38.7,
-            "auto_min": 19.6,
-            "auto_max": 24.1,
-            "giudizio": "coi mezzi 1,6–2 volte il tempo dell'auto"
+            "auto_min": 24.1,
+            "giudizio": "coi mezzi 1,6 volte il tempo dell'auto"
           },
           {
             "nome": "Parella (Metro Massaua)",
             "gruppo": "Punti prioritari",
             "bus": 27.3,
-            "auto_min": 20.3,
-            "auto_max": 25.0,
-            "giudizio": "coi mezzi 1,1–1,3 volte il tempo dell'auto"
+            "auto_min": 25.0,
+            "giudizio": "coi mezzi 1,1 volte il tempo dell'auto"
           },
           {
             "nome": "Moncalieri (Ponte Cavalieri Templari)",
             "gruppo": "Punti prioritari",
             "bus": 54.2,
-            "auto_min": 23.1,
-            "auto_max": 28.7,
-            "giudizio": "coi mezzi 1,9–2,4 volte il tempo dell'auto"
+            "auto_min": 28.7,
+            "giudizio": "coi mezzi 1,9 volte il tempo dell'auto"
           },
           {
             "nome": "Parella (Regina Margherita)",
             "gruppo": "Punti prioritari",
             "bus": 33.5,
-            "auto_min": 18.0,
-            "auto_max": 22.0,
-            "giudizio": "coi mezzi 1,5–1,9 volte il tempo dell'auto"
+            "auto_min": 22.0,
+            "giudizio": "coi mezzi 1,5 volte il tempo dell'auto"
           },
           {
             "nome": "Madonna del Pilone",
             "gruppo": "Punti prioritari",
             "bus": 30.4,
-            "auto_min": 17.5,
-            "auto_max": 21.3,
-            "giudizio": "coi mezzi 1,4–1,7 volte il tempo dell'auto"
+            "auto_min": 21.3,
+            "giudizio": "coi mezzi 1,4 volte il tempo dell'auto"
           },
           {
             "nome": "Grugliasco",
             "gruppo": "Punti prioritari",
             "bus": 62.5,
-            "auto_min": 29.7,
-            "auto_max": 37.3,
-            "giudizio": "coi mezzi 1,7–2,1 volte il tempo dell'auto"
+            "auto_min": 37.3,
+            "giudizio": "coi mezzi 1,7 volte il tempo dell'auto"
           },
           {
             "nome": "Mirafiori Sud",
             "gruppo": "Punti prioritari",
             "bus": 45.9,
-            "auto_min": 25.4,
-            "auto_max": 31.7,
-            "giudizio": "coi mezzi 1,4–1,8 volte il tempo dell'auto"
+            "auto_min": 31.7,
+            "giudizio": "coi mezzi 1,4 volte il tempo dell'auto"
           },
           {
             "nome": "Regio Parco",
             "gruppo": "Punti prioritari",
             "bus": 39.7,
-            "auto_min": 21.4,
-            "auto_max": 26.4,
-            "giudizio": "coi mezzi 1,5–1,9 volte il tempo dell'auto"
+            "auto_min": 26.4,
+            "giudizio": "coi mezzi 1,5 volte il tempo dell'auto"
           },
           {
             "nome": "Moncalieri (Marsè)",
             "gruppo": "Punti prioritari",
             "bus": 64.5,
-            "auto_min": 29.5,
-            "auto_max": 37.0,
-            "giudizio": "coi mezzi 1,7–2,2 volte il tempo dell'auto"
+            "auto_min": 37.0,
+            "giudizio": "coi mezzi 1,7 volte il tempo dell'auto"
           },
           {
             "nome": "Falchera",
             "gruppo": "Punti prioritari",
             "bus": 36.6,
-            "auto_min": 20.3,
-            "auto_max": 25.0,
-            "giudizio": "coi mezzi 1,5–1,8 volte il tempo dell'auto"
+            "auto_min": 25.0,
+            "giudizio": "coi mezzi 1,5 volte il tempo dell'auto"
           },
           {
             "nome": "Beinasco",
             "gruppo": "Punti prioritari",
             "bus": 52.1,
-            "auto_min": 29.8,
-            "auto_max": 37.4,
-            "giudizio": "coi mezzi 1,4–1,8 volte il tempo dell'auto"
+            "auto_min": 37.4,
+            "giudizio": "coi mezzi 1,4 volte il tempo dell'auto"
           },
           {
             "nome": "Borgo Po e Cavoretto",
             "gruppo": "Punti prioritari",
             "bus": 35.6,
-            "auto_min": 16.7,
-            "auto_max": 20.3,
-            "giudizio": "coi mezzi 1,8–2,1 volte il tempo dell'auto"
+            "auto_min": 20.3,
+            "giudizio": "coi mezzi 1,8 volte il tempo dell'auto"
           }
         ],
         "scelto": 0
       },
       {
-        "tipo": "barre",
+        "tipo": "barre_gruppi",
         "titolo": "I parcheggi di scambio che ci sono già: quanto sono pieni e quanto ci mette il bus al centro",
-        "unita": "minuti",
-        "nota": "Barra = minuti coi mezzi pubblici fino a Piazza Castello alle 8. A destra il tempo in auto, parcheggio compreso (traffico tipico), e quanto è pieno il parcheggio di giorno.",
-        "voci": [
+        "unita": "posti",
+        "nota": "In posti, per ogni parcheggio: offerti, richiesti (auto in entrata che passano accanto × 5,8%) e occupati di giorno. Accanto al nome, i minuti a Piazza Castello alle 8.",
+        "gruppi": [
           {
             "label": "Stura",
-            "valore": 42,
-            "testo": "42 contro 27–34 in auto · pieno di giorno"
+            "nota": "bus 42 min · auto 34 min",
+            "voci": [
+              {
+                "label": "Posti offerti",
+                "valore": 589,
+                "testo": "589"
+              },
+              {
+                "label": "Richiesta calcolata",
+                "valore": 442,
+                "tono": "arancio",
+                "testo": "~440"
+              },
+              {
+                "label": "Occupati di giorno",
+                "valore": 539,
+                "tono": "rosso",
+                "testo": "539 (92%)"
+              }
+            ]
           },
           {
             "label": "Venchi Unica",
-            "valore": 30,
-            "testo": "30 contro 22–28 in auto · a metà"
+            "nota": "bus 30 min · auto 28 min",
+            "voci": [
+              {
+                "label": "Posti offerti",
+                "valore": 437,
+                "testo": "437"
+              },
+              {
+                "label": "Richiesta calcolata",
+                "valore": 413,
+                "tono": "arancio",
+                "testo": "~410"
+              },
+              {
+                "label": "Occupati di giorno",
+                "valore": 241,
+                "tono": "rosso",
+                "testo": "241 (55%)"
+              }
+            ]
           },
           {
             "label": "Caio Mario",
-            "valore": 41,
-            "testo": "41 contro 23–29 in auto · con posti liberi"
+            "nota": "bus 41 min · auto 29 min",
+            "voci": [
+              {
+                "label": "Posti offerti",
+                "valore": 418,
+                "testo": "418"
+              },
+              {
+                "label": "Richiesta calcolata",
+                "valore": 227,
+                "tono": "arancio",
+                "testo": "~230"
+              },
+              {
+                "label": "Occupati di giorno",
+                "valore": 0,
+                "testo": "contatore forse fermo"
+              }
+            ]
           },
           {
             "label": "Fermi",
-            "valore": 34,
-            "testo": "34 contro 26–33 in auto · riempimento non noto"
+            "nota": "bus 34 min · auto 33 min",
+            "voci": [
+              {
+                "label": "Posti offerti",
+                "valore": 300,
+                "testo": "300"
+              },
+              {
+                "label": "Richiesta calcolata",
+                "valore": 58,
+                "tono": "arancio",
+                "testo": "~60"
+              },
+              {
+                "label": "Occupati di giorno",
+                "valore": 0,
+                "testo": "riempimento non misurato"
+              }
+            ]
           },
           {
             "label": "Sofia",
-            "valore": 36,
-            "testo": "36 contro 20–25 in auto · con posti liberi"
+            "nota": "bus 36 min · auto 25 min",
+            "voci": [
+              {
+                "label": "Posti offerti",
+                "valore": 272,
+                "testo": "272"
+              },
+              {
+                "label": "Richiesta calcolata",
+                "valore": 180,
+                "tono": "arancio",
+                "testo": "~180"
+              },
+              {
+                "label": "Occupati di giorno",
+                "valore": 83,
+                "tono": "rosso",
+                "testo": "83 (30%)"
+              }
+            ]
           }
         ]
       }
@@ -838,9 +914,8 @@
       "Le auto in entrata vengono dall'indagine sugli spostamenti 2022, assegnate al percorso più veloce.",
       "Auto da fermare: auto che passano per il 5,8% che già oggi lascia l'auto. Posti: parcheggi adatti entro 400 metri.",
       "Punti prioritari: fermate senza posti bastanti raggruppate entro 1 km, uno per asse d'ingresso. Fermate di riferimento: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara.",
-      "Bus contro auto: minuti coi mezzi (corretti con le misure) verso Piazza Castello alle otto del mattino. Auto: stima aperta più 5 minuti, e la stessa corretta col fattore 1,3 del controllo con TomTom.",
-      "Pareggio: minuti di parcheggio che rendono l'auto lenta quanto il bus, da 20 a 24 (mediana dei 12 punti).",
-      "La classe si dà solo se è la stessa con la stima aperta e con quella corretta. Lo è in 8 punti su 12; negli altri dipende dal traffico."
+      "Bus contro auto: minuti coi mezzi (corretti con le misure) verso Piazza Castello alle otto del mattino. Auto: tempo di guida × 1,3 (fattore unico del controllo con TomTom), più 5 minuti.",
+      "Pareggio: minuti di parcheggio che rendono l'auto lenta quanto il bus: 20 (mediana dei 12 punti)."
     ],
     "criteri": [
       [
@@ -861,13 +936,13 @@
       ],
       [
         "Bus contro auto",
-        "verso Piazza Castello alle 8; auto: stima aperta (fattore mediano 2) + 5 minuti, e la stessa corretta col controllo (× 1,3 sulla guida)"
+        "verso Piazza Castello alle 8; auto: guida × 1,3 + 5 minuti, con il fattore unico del controllo con TomTom"
       ]
     ],
     "limiti": [
       "Le auto che passano vengono da un modello del traffico. I posti sono spesso stimati: quelli che mancano sono un ordine di grandezza. Con metà o doppio di chi lascia l'auto, le fermate senza posti bastanti vanno da 135 a 212 su 274.",
       "I tempi coi mezzi sono solo GTT, senza treni.",
-      "Tempi in auto da un modello aperto, non misurati sul singolo viaggio. Il controllo con TomTom su 20 percorsi li trova ottimistici: per questo c'è una forbice.",
+      "Tempi in auto da un modello aperto, non misurati sul singolo viaggio. Il controllo con TomTom su 20 percorsi li trova ottimistici: per questo sono corretti con un fattore unico.",
       "Il costo del parcheggio non è nel calcolo: pesa come minuti in più. Si guarda un solo punto per luogo e una sola destinazione."
     ],
     "mappa": {
@@ -2610,8 +2685,7 @@
       "didascalia": "Ogni punto è una fermata importante, in Torino e in cintura; la linea è il confine di Torino. I cerchi neri sono i 12 punti dove servirebbero di più nuovi posti."
     },
     "pareggio": {
-      "a": 24,
-      "b": 20
+      "min": 20
     }
   },
   "forma_en": {
@@ -2721,143 +2795,219 @@
     "punti": [
       "68 important stops have no car park nearby, 111 have too few.",
       "The first of the 12 entry points where spaces are needed is Santa Rita: ~450 are missing.",
-      "In 1–5 points out of 12, once the car is left, the bus reaches the centre in at most 1.5 times the car's time."
+      "In 5 points out of 12, once the car is left, the bus reaches the centre in at most 1.5 times the car's time."
     ],
     "altri": [
       {
         "tipo": "gara",
         "titolo": "The race: bus and car to Piazza Castello, at 8 a.m. on a weekday",
-        "nota": "Bus and car leave together from each car park, one after the other. The car has a time with the range from the check, parking included.",
+        "nota": "Bus and car leave together from each car park, one after the other. The car time includes parking.",
         "luoghi": [
           {
             "nome": "Santa Rita",
             "gruppo": "Priority points",
             "bus": 38.7,
-            "auto_min": 19.6,
-            "auto_max": 24.1,
-            "giudizio": "by public transport 1.6–2 times the car's time"
+            "auto_min": 24.1,
+            "giudizio": "by public transport 1.6 times the car's time"
           },
           {
             "nome": "Parella (Metro Massaua)",
             "gruppo": "Priority points",
             "bus": 27.3,
-            "auto_min": 20.3,
-            "auto_max": 25.0,
-            "giudizio": "by public transport 1.1–1.3 times the car's time"
+            "auto_min": 25.0,
+            "giudizio": "by public transport 1.1 times the car's time"
           },
           {
             "nome": "Moncalieri (Ponte Cavalieri Templari)",
             "gruppo": "Priority points",
             "bus": 54.2,
-            "auto_min": 23.1,
-            "auto_max": 28.7,
-            "giudizio": "by public transport 1.9–2.4 times the car's time"
+            "auto_min": 28.7,
+            "giudizio": "by public transport 1.9 times the car's time"
           },
           {
             "nome": "Parella (Regina Margherita)",
             "gruppo": "Priority points",
             "bus": 33.5,
-            "auto_min": 18.0,
-            "auto_max": 22.0,
-            "giudizio": "by public transport 1.5–1.9 times the car's time"
+            "auto_min": 22.0,
+            "giudizio": "by public transport 1.5 times the car's time"
           },
           {
             "nome": "Madonna del Pilone",
             "gruppo": "Priority points",
             "bus": 30.4,
-            "auto_min": 17.5,
-            "auto_max": 21.3,
-            "giudizio": "by public transport 1.4–1.7 times the car's time"
+            "auto_min": 21.3,
+            "giudizio": "by public transport 1.4 times the car's time"
           },
           {
             "nome": "Grugliasco",
             "gruppo": "Priority points",
             "bus": 62.5,
-            "auto_min": 29.7,
-            "auto_max": 37.3,
-            "giudizio": "by public transport 1.7–2.1 times the car's time"
+            "auto_min": 37.3,
+            "giudizio": "by public transport 1.7 times the car's time"
           },
           {
             "nome": "Mirafiori Sud",
             "gruppo": "Priority points",
             "bus": 45.9,
-            "auto_min": 25.4,
-            "auto_max": 31.7,
-            "giudizio": "by public transport 1.4–1.8 times the car's time"
+            "auto_min": 31.7,
+            "giudizio": "by public transport 1.4 times the car's time"
           },
           {
             "nome": "Regio Parco",
             "gruppo": "Priority points",
             "bus": 39.7,
-            "auto_min": 21.4,
-            "auto_max": 26.4,
-            "giudizio": "by public transport 1.5–1.9 times the car's time"
+            "auto_min": 26.4,
+            "giudizio": "by public transport 1.5 times the car's time"
           },
           {
             "nome": "Moncalieri (Marsè)",
             "gruppo": "Priority points",
             "bus": 64.5,
-            "auto_min": 29.5,
-            "auto_max": 37.0,
-            "giudizio": "by public transport 1.7–2.2 times the car's time"
+            "auto_min": 37.0,
+            "giudizio": "by public transport 1.7 times the car's time"
           },
           {
             "nome": "Falchera",
             "gruppo": "Priority points",
             "bus": 36.6,
-            "auto_min": 20.3,
-            "auto_max": 25.0,
-            "giudizio": "by public transport 1.5–1.8 times the car's time"
+            "auto_min": 25.0,
+            "giudizio": "by public transport 1.5 times the car's time"
           },
           {
             "nome": "Beinasco",
             "gruppo": "Priority points",
             "bus": 52.1,
-            "auto_min": 29.8,
-            "auto_max": 37.4,
-            "giudizio": "by public transport 1.4–1.8 times the car's time"
+            "auto_min": 37.4,
+            "giudizio": "by public transport 1.4 times the car's time"
           },
           {
             "nome": "Borgo Po e Cavoretto",
             "gruppo": "Priority points",
             "bus": 35.6,
-            "auto_min": 16.7,
-            "auto_max": 20.3,
-            "giudizio": "by public transport 1.8–2.1 times the car's time"
+            "auto_min": 20.3,
+            "giudizio": "by public transport 1.8 times the car's time"
           }
         ],
         "scelto": 0
       },
       {
-        "tipo": "barre",
+        "tipo": "barre_gruppi",
         "titolo": "Existing park-and-ride sites: how full they are and how long the bus takes to the centre",
-        "unita": "minutes",
-        "nota": "Bar = minutes by public transport to Piazza Castello at 8 a.m. On the right, the car time with parking included (typical traffic), and how full the car park is during the day.",
-        "voci": [
+        "unita": "spaces",
+        "nota": "In spaces, for each car park: offered, needed (cars entering the city that pass by × 5.8%) and occupied by day. Next to the name, the minutes to Piazza Castello at 8.",
+        "gruppi": [
           {
             "label": "Stura",
-            "valore": 42,
-            "testo": "42 against 27–34 by car · full during the day"
+            "nota": "bus 42 min · car 34 min",
+            "voci": [
+              {
+                "label": "Spaces offered",
+                "valore": 589,
+                "testo": "589"
+              },
+              {
+                "label": "Estimated demand",
+                "valore": 442,
+                "tono": "arancio",
+                "testo": "~440"
+              },
+              {
+                "label": "Occupied by day",
+                "valore": 539,
+                "tono": "rosso",
+                "testo": "539 (92%)"
+              }
+            ]
           },
           {
             "label": "Venchi Unica",
-            "valore": 30,
-            "testo": "30 against 22–28 by car · half full"
+            "nota": "bus 30 min · car 28 min",
+            "voci": [
+              {
+                "label": "Spaces offered",
+                "valore": 437,
+                "testo": "437"
+              },
+              {
+                "label": "Estimated demand",
+                "valore": 413,
+                "tono": "arancio",
+                "testo": "~410"
+              },
+              {
+                "label": "Occupied by day",
+                "valore": 241,
+                "tono": "rosso",
+                "testo": "241 (55%)"
+              }
+            ]
           },
           {
             "label": "Caio Mario",
-            "valore": 41,
-            "testo": "41 against 23–29 by car · with free spaces"
+            "nota": "bus 41 min · car 29 min",
+            "voci": [
+              {
+                "label": "Spaces offered",
+                "valore": 418,
+                "testo": "418"
+              },
+              {
+                "label": "Estimated demand",
+                "valore": 227,
+                "tono": "arancio",
+                "testo": "~230"
+              },
+              {
+                "label": "Occupied by day",
+                "valore": 0,
+                "testo": "counter probably stuck"
+              }
+            ]
           },
           {
             "label": "Fermi",
-            "valore": 34,
-            "testo": "34 against 26–33 by car · occupancy unknown"
+            "nota": "bus 34 min · car 33 min",
+            "voci": [
+              {
+                "label": "Spaces offered",
+                "valore": 300,
+                "testo": "300"
+              },
+              {
+                "label": "Estimated demand",
+                "valore": 58,
+                "tono": "arancio",
+                "testo": "~60"
+              },
+              {
+                "label": "Occupied by day",
+                "valore": 0,
+                "testo": "occupancy not measured"
+              }
+            ]
           },
           {
             "label": "Sofia",
-            "valore": 36,
-            "testo": "36 against 20–25 by car · with free spaces"
+            "nota": "bus 36 min · car 25 min",
+            "voci": [
+              {
+                "label": "Spaces offered",
+                "valore": 272,
+                "testo": "272"
+              },
+              {
+                "label": "Estimated demand",
+                "valore": 180,
+                "tono": "arancio",
+                "testo": "~180"
+              },
+              {
+                "label": "Occupied by day",
+                "valore": 83,
+                "tono": "rosso",
+                "testo": "83 (30%)"
+              }
+            ]
           }
         ]
       }
@@ -2867,9 +3017,8 @@
       "Cars entering come from the 2022 travel survey, assigned to the fastest route.",
       "Cars to stop: passing cars times the 5.8% who already leave the car today. Spaces: suitable car parks within 400 metres.",
       "Priority points: stops without enough spaces grouped within 1 km, one per entry axis. Reference stops: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara.",
-      "Bus against car: minutes by public transport (corrected with the measurements) to Piazza Castello at eight in the morning. Car: open estimate plus 5 minutes, and the same corrected with the factor 1.3 from the TomTom check.",
-      "Break-even: minutes of parking that make the car as slow as the bus, from 20 to 24 (median of the 12 points).",
-      "The class is given only if it is the same with the open estimate and the corrected one. It is the same in 8 points out of 12; in the others it depends on traffic."
+      "Bus against car: minutes by public transport (corrected with the measurements) to Piazza Castello at eight in the morning. Car: driving time × 1.3 (single factor from the TomTom check), plus 5 minutes.",
+      "Break-even: minutes of parking that make the car as slow as the bus: 20 (median of the 12 points)."
     ],
     "criteri": [
       [
@@ -2890,13 +3039,13 @@
       ],
       [
         "Bus against car",
-        "to Piazza Castello at 8; car: open estimate (median factor 2) + 5 minutes, and the same corrected with the check (× 1.3 on driving)"
+        "to Piazza Castello at 8; car: driving × 1.3 + 5 minutes, with the single factor from the TomTom check"
       ]
     ],
     "limiti": [
       "Passing cars come from a traffic model. Spaces are often estimated: the missing ones are an order of magnitude. With half or double the drivers who leave the car, stops without enough spaces go from 135 to 212 out of 274.",
       "Public transport times are GTT only, without trains.",
-      "Car times come from an open model, not measured on the single trip. The TomTom check on 20 routes finds them optimistic: that is why there is a range.",
+      "Car times come from an open model, not measured on the single trip. The TomTom check on 20 routes finds them optimistic: that is why they are corrected with a single factor.",
       "The cost of parking is not in the calculation: it weighs as extra minutes. One point per place and one destination only."
     ],
     "mappa": {
@@ -4639,8 +4788,7 @@
       "didascalia": "Each dot is an important stop, in Turin and the surrounding towns; the line is the city boundary. The black circles are the 12 points where new spaces are most needed."
     },
     "pareggio": {
-      "a": 24,
-      "b": 20
+      "min": 20
     }
   },
   "forma_de": {
@@ -4750,143 +4898,219 @@
     "punti": [
       "68 wichtige Haltestellen haben keinen Parkplatz in der Nähe, 111 zu wenige.",
       "Der erste der 12 Einfahrtspunkte, an denen Stellplätze gebraucht werden, ist Santa Rita: Es fehlen ~450.",
-      "An 1–5 von 12 Punkten erreicht man das Zentrum nach dem Abstellen des Autos mit dem Bus in höchstens dem 1,5-Fachen der Autozeit."
+      "An 5 von 12 Punkten erreicht man das Zentrum nach dem Abstellen des Autos mit dem Bus in höchstens dem 1,5-Fachen der Autozeit."
     ],
     "altri": [
       {
         "tipo": "gara",
         "titolo": "Das Rennen: Bus und Auto zur Piazza Castello, um 8 Uhr an einem Werktag",
-        "nota": "Bus und Auto fahren zusammen von jedem Parkplatz los, nacheinander. Für das Auto gibt es eine Zeit mit der Spanne aus der Kontrolle, Parken inklusive.",
+        "nota": "Bus und Auto fahren zusammen von jedem Parkplatz los, nacheinander. Die Autozeit enthält das Parken.",
         "luoghi": [
           {
             "nome": "Santa Rita",
             "gruppo": "Vorrangige Punkte",
             "bus": 38.7,
-            "auto_min": 19.6,
-            "auto_max": 24.1,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,6- bis 2-Fache der Autozeit"
+            "auto_min": 24.1,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,6-Fache der Autozeit"
           },
           {
             "nome": "Parella (Metro Massaua)",
             "gruppo": "Vorrangige Punkte",
             "bus": 27.3,
-            "auto_min": 20.3,
-            "auto_max": 25.0,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,1- bis 1,3-Fache der Autozeit"
+            "auto_min": 25.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,1-Fache der Autozeit"
           },
           {
             "nome": "Moncalieri (Ponte Cavalieri Templari)",
             "gruppo": "Vorrangige Punkte",
             "bus": 54.2,
-            "auto_min": 23.1,
-            "auto_max": 28.7,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,9- bis 2,4-Fache der Autozeit"
+            "auto_min": 28.7,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,9-Fache der Autozeit"
           },
           {
             "nome": "Parella (Regina Margherita)",
             "gruppo": "Vorrangige Punkte",
             "bus": 33.5,
-            "auto_min": 18.0,
-            "auto_max": 22.0,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5- bis 1,9-Fache der Autozeit"
+            "auto_min": 22.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5-Fache der Autozeit"
           },
           {
             "nome": "Madonna del Pilone",
             "gruppo": "Vorrangige Punkte",
             "bus": 30.4,
-            "auto_min": 17.5,
-            "auto_max": 21.3,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4- bis 1,7-Fache der Autozeit"
+            "auto_min": 21.3,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4-Fache der Autozeit"
           },
           {
             "nome": "Grugliasco",
             "gruppo": "Vorrangige Punkte",
             "bus": 62.5,
-            "auto_min": 29.7,
-            "auto_max": 37.3,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,7- bis 2,1-Fache der Autozeit"
+            "auto_min": 37.3,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,7-Fache der Autozeit"
           },
           {
             "nome": "Mirafiori Sud",
             "gruppo": "Vorrangige Punkte",
             "bus": 45.9,
-            "auto_min": 25.4,
-            "auto_max": 31.7,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4- bis 1,8-Fache der Autozeit"
+            "auto_min": 31.7,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4-Fache der Autozeit"
           },
           {
             "nome": "Regio Parco",
             "gruppo": "Vorrangige Punkte",
             "bus": 39.7,
-            "auto_min": 21.4,
-            "auto_max": 26.4,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5- bis 1,9-Fache der Autozeit"
+            "auto_min": 26.4,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5-Fache der Autozeit"
           },
           {
             "nome": "Moncalieri (Marsè)",
             "gruppo": "Vorrangige Punkte",
             "bus": 64.5,
-            "auto_min": 29.5,
-            "auto_max": 37.0,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,7- bis 2,2-Fache der Autozeit"
+            "auto_min": 37.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,7-Fache der Autozeit"
           },
           {
             "nome": "Falchera",
             "gruppo": "Vorrangige Punkte",
             "bus": 36.6,
-            "auto_min": 20.3,
-            "auto_max": 25.0,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5- bis 1,8-Fache der Autozeit"
+            "auto_min": 25.0,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,5-Fache der Autozeit"
           },
           {
             "nome": "Beinasco",
             "gruppo": "Vorrangige Punkte",
             "bus": 52.1,
-            "auto_min": 29.8,
-            "auto_max": 37.4,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4- bis 1,8-Fache der Autozeit"
+            "auto_min": 37.4,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,4-Fache der Autozeit"
           },
           {
             "nome": "Borgo Po e Cavoretto",
             "gruppo": "Vorrangige Punkte",
             "bus": 35.6,
-            "auto_min": 16.7,
-            "auto_max": 20.3,
-            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,8- bis 2,1-Fache der Autozeit"
+            "auto_min": 20.3,
+            "giudizio": "mit öffentlichen Verkehrsmitteln das 1,8-Fache der Autozeit"
           }
         ],
         "scelto": 0
       },
       {
-        "tipo": "barre",
+        "tipo": "barre_gruppi",
         "titolo": "Die vorhandenen Park-and-Ride-Anlagen: wie voll sie sind und wie lange der Bus ins Zentrum braucht",
-        "unita": "Minuten",
-        "nota": "Balken = Minuten mit öffentlichen Verkehrsmitteln bis zur Piazza Castello um 8 Uhr. Rechts die Zeit mit dem Auto, Parken inklusive (typischer Verkehr), und wie voll der Parkplatz tagsüber ist.",
-        "voci": [
+        "unita": "Stellplätze",
+        "nota": "In Stellplätzen, für jeden Parkplatz: angeboten, benötigt (einfahrende Autos, die vorbeikommen × 5,8%) und tagsüber belegt. Neben dem Namen die Minuten bis zur Piazza Castello um 8 Uhr.",
+        "gruppi": [
           {
             "label": "Stura",
-            "valore": 42,
-            "testo": "42 gegen 27–34 mit dem Auto · tagsüber voll"
+            "nota": "Bus 42 Min. · Auto 34 Min.",
+            "voci": [
+              {
+                "label": "Angebotene Stellplätze",
+                "valore": 589,
+                "testo": "589"
+              },
+              {
+                "label": "Berechnete Nachfrage",
+                "valore": 442,
+                "tono": "arancio",
+                "testo": "~440"
+              },
+              {
+                "label": "Tagsüber belegt",
+                "valore": 539,
+                "tono": "rosso",
+                "testo": "539 (92%)"
+              }
+            ]
           },
           {
             "label": "Venchi Unica",
-            "valore": 30,
-            "testo": "30 gegen 22–28 mit dem Auto · halb voll"
+            "nota": "Bus 30 Min. · Auto 28 Min.",
+            "voci": [
+              {
+                "label": "Angebotene Stellplätze",
+                "valore": 437,
+                "testo": "437"
+              },
+              {
+                "label": "Berechnete Nachfrage",
+                "valore": 413,
+                "tono": "arancio",
+                "testo": "~410"
+              },
+              {
+                "label": "Tagsüber belegt",
+                "valore": 241,
+                "tono": "rosso",
+                "testo": "241 (55%)"
+              }
+            ]
           },
           {
             "label": "Caio Mario",
-            "valore": 41,
-            "testo": "41 gegen 23–29 mit dem Auto · mit freien Plätzen"
+            "nota": "Bus 41 Min. · Auto 29 Min.",
+            "voci": [
+              {
+                "label": "Angebotene Stellplätze",
+                "valore": 418,
+                "testo": "418"
+              },
+              {
+                "label": "Berechnete Nachfrage",
+                "valore": 227,
+                "tono": "arancio",
+                "testo": "~230"
+              },
+              {
+                "label": "Tagsüber belegt",
+                "valore": 0,
+                "testo": "Zähler vermutlich defekt"
+              }
+            ]
           },
           {
             "label": "Fermi",
-            "valore": 34,
-            "testo": "34 gegen 26–33 mit dem Auto · Belegung unbekannt"
+            "nota": "Bus 34 Min. · Auto 33 Min.",
+            "voci": [
+              {
+                "label": "Angebotene Stellplätze",
+                "valore": 300,
+                "testo": "300"
+              },
+              {
+                "label": "Berechnete Nachfrage",
+                "valore": 58,
+                "tono": "arancio",
+                "testo": "~60"
+              },
+              {
+                "label": "Tagsüber belegt",
+                "valore": 0,
+                "testo": "Belegung nicht gemessen"
+              }
+            ]
           },
           {
             "label": "Sofia",
-            "valore": 36,
-            "testo": "36 gegen 20–25 mit dem Auto · mit freien Plätzen"
+            "nota": "Bus 36 Min. · Auto 25 Min.",
+            "voci": [
+              {
+                "label": "Angebotene Stellplätze",
+                "valore": 272,
+                "testo": "272"
+              },
+              {
+                "label": "Berechnete Nachfrage",
+                "valore": 180,
+                "tono": "arancio",
+                "testo": "~180"
+              },
+              {
+                "label": "Tagsüber belegt",
+                "valore": 83,
+                "tono": "rosso",
+                "testo": "83 (30%)"
+              }
+            ]
           }
         ]
       }
@@ -4896,9 +5120,8 @@
       "Die einfahrenden Autos stammen aus der Mobilitätserhebung 2022 und sind der schnellsten Strecke zugeordnet.",
       "Zu stoppende Autos: vorbeifahrende Autos mal 5,8% derer, die das Auto heute schon stehen lassen. Plätze: geeignete Parkplätze im Umkreis von 400 Metern.",
       "Vorrangige Punkte: Haltestellen ohne genug Stellplätze, innerhalb von 1 km zusammengefasst, einer pro Einfallstraße. Bezugshaltestellen: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara.",
-      "Bus gegen Auto: Minuten mit öffentlichen Verkehrsmitteln (mit den Messungen korrigiert) zur Piazza Castello um acht Uhr morgens. Auto: offene Schätzung plus 5 Minuten, und dieselbe Schätzung mit dem Faktor 1,3 aus der TomTom-Kontrolle korrigiert.",
-      "Break-even: Parkminuten, bei denen das Auto so langsam ist wie der Bus, von 20 bis 24 (Median der 12 Punkte).",
-      "Die Klasse wird nur angegeben, wenn sie mit der offenen und mit der korrigierten Schätzung gleich ist. Das ist an 8 von 12 Punkten der Fall; an den anderen hängt es vom Verkehr ab."
+      "Bus gegen Auto: Minuten mit öffentlichen Verkehrsmitteln (mit den Messungen korrigiert) zur Piazza Castello um acht Uhr morgens. Auto: Fahrzeit × 1,3 (einheitlicher Faktor aus der TomTom-Kontrolle), plus 5 Minuten.",
+      "Break-even: Parkminuten, bei denen das Auto so langsam ist wie der Bus: 20 (Median der 12 Punkte)."
     ],
     "criteri": [
       [
@@ -4919,13 +5142,13 @@
       ],
       [
         "Bus gegen Auto",
-        "zur Piazza Castello um 8 Uhr; Auto: offene Schätzung (mittlerer Faktor 2) + 5 Minuten, und dieselbe mit der Kontrolle korrigiert (× 1,3 auf die Fahrt)"
+        "zur Piazza Castello um 8 Uhr; Auto: Fahrt × 1,3 + 5 Minuten, mit dem einheitlichen Faktor aus der TomTom-Kontrolle"
       ]
     ],
     "limiti": [
       "Die vorbeifahrenden Autos stammen aus einem Verkehrsmodell. Die Stellplätze sind oft geschätzt: Die fehlenden sind eine Größenordnung. Bei halb so vielen oder doppelt so vielen Autofahrern, die das Auto stehen lassen, liegen die Haltestellen ohne genug Stellplätze zwischen 135 und 212 von 274.",
       "Die Zeiten mit öffentlichen Verkehrsmitteln sind nur GTT, ohne Züge.",
-      "Die Autozeiten stammen aus einem offenen Modell und sind nicht auf der einzelnen Fahrt gemessen. Die TomTom-Kontrolle auf 20 Strecken findet sie optimistisch: Deshalb gibt es eine Spanne.",
+      "Die Autozeiten stammen aus einem offenen Modell und sind nicht auf der einzelnen Fahrt gemessen. Die TomTom-Kontrolle auf 20 Strecken findet sie optimistisch: Deshalb werden sie mit einem einheitlichen Faktor korrigiert.",
       "Die Parkkosten sind nicht in der Rechnung: Sie zählen als zusätzliche Minuten. Betrachtet wird ein Punkt pro Ort und nur ein Ziel."
     ],
     "mappa": {
@@ -6668,8 +6891,7 @@
       "didascalia": "Jeder Punkt ist eine wichtige Haltestelle, in Turin und im Umland; die Linie ist die Stadtgrenze. Die schwarzen Kreise sind die 12 Punkte, an denen neue Stellplätze am dringendsten gebraucht würden."
     },
     "pareggio": {
-      "a": 24,
-      "b": 20
+      "min": 20
     }
   },
   "numero_pubblico": 4,

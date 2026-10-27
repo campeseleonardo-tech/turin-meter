@@ -194,7 +194,7 @@ def scheda_r8():
 
 def area_tempi_js():
     """Scrive data/area_tempi.js (dati dell'«area che si espande», letti da assets/area.js) dal file dello script 99 e ritorna il grafico della scheda;
-    None se il file dello script 99 non c'e' ancora (la scheda esce senza il grafico)."""
+    None se il file dello script 99 non c'e' ancora (la scheda esce senza il grafico). L'auto e' solo la stima corretta col controllo (decisione 16 di §2)."""
     f = comune.PROC / "area_tempi.json"
     if not f.is_file():
         print("AVVISO: data/processed/area_tempi.json non c'e' (script 99): la scheda 4 esce senza l'area che si espande")
@@ -205,25 +205,26 @@ def area_tempi_js():
         return None
     p, s, z = a["parametri"], a["sezioni"], a["zone"]
     la0, lo0 = p["origine"]
-    dati = {"f": [p["fattore_alto"], p["fattore_basso"]], "soglie": p["soglie"],
+    dati = {"soglie": p["soglie"],
             "ox": round((p["punto_coord"][1] - lo0) * p["scala_coordinate"]), "oy": round((p["punto_coord"][0] - la0) * p["scala_coordinate"]),
             "x": s["x"], "y": s["y"], "r": s["res"], "z": s["zona"],
-            "c": {"m": a["castello"]["mezzi"], "a": a["castello"]["auto_favorevole_min"], "b": a["castello"]["auto_stima_min"], "k": a["castello"]["auto_corretta_min"]},
-            "zn": [n.replace("Torino, ", "") for n in z["nomi"]], "zm": z["mezzi"], "za": z["auto_favorevole_min"], "zb": z["auto_stima_min"]}
+            "c": {"m": a["castello"]["mezzi"], "k": a["castello"]["auto_corretta_min"]},
+            "zn": [n.replace("Torino, ", "") for n in z["nomi"]], "zm": z["mezzi"], "zk": z["auto_corretta_min"]}
     (comune.RADICE / "data" / "area_tempi.js").write_text(
         "// generato da scripts/schede_risultati.py (dati: scripts/99_area_tempi.py) - non modificare a mano\nwindow.AREA_TEMPI = "
         + json.dumps(dati, separators=(",", ":")) + ";\n", encoding="utf-8")
     q = a["quote_residenti"]
     return {"tipo": "area", "titolo": "L'area che si espande: dove si arriva in 10, 20, 30 e 45 minuti",
             "nota": f"Da Piazza Castello, alle 7:45 di un feriale. In 30 minuti si raggiungono {circa(q['mezzi']['30'], '%')} dei torinesi coi mezzi pubblici "
-                    f"e {min(round(q['auto_stima_min']['30']), round(q['auto_corretta_min']['30']))}-{max(round(q['auto_stima_min']['30']), round(q['auto_corretta_min']['30']))}% in auto (traffico tipico, parcheggio compreso)."}
+                    f"e {round(q['auto_corretta_min']['30'])}% in auto (traffico tipico, parcheggio compreso)."}
 
 
 SOGLIA_INTERVISTE = 30   # L9: una coppia si nomina in pagina solo con almeno 30 interviste (SOGLIA_N dello script 14; l'elenco filtrato lo scrive lo script 93)
 
 
 def forma_r8(s):
-    """Scheda R8: tempo coi mezzi pubblici contro tempo in auto (script 93), come forbice fra due fattori di punta; in coda la copertura delle strade."""
+    """Scheda R8: tempo coi mezzi pubblici contro tempo in auto (script 93). L'auto e' solo la stima corretta col controllo con TomTom (decisione 16 di §2);
+    il numero grande e' la media delle 4 ore del giorno (comune.rapporto_medio_giorno); in coda la copertura delle strade."""
     t = json.loads((comune.PROC / "tp_contro_auto.json").read_text(encoding="utf-8"))
     sens5t = leggi("velocita_5t.json")
     par, ti = t["parametri"], t["titolo"]
@@ -241,39 +242,27 @@ def forma_r8(s):
                             f"Il ritardo a bordo misurato ({virgola(round(100 * fz['ritardo_per_minuto'], 1))} minuti ogni 100) vale per il {round(100 * cz['quota_a_bordo']['mediana'])}% del tempo, quello passato a bordo.",
                             f"I cambi non si contano: stima prudente. Da orario il rapporto mediano è {virgola(round(ti['da_orario']['mediano_basso'], 1))}."]
     ab = t["gruppi"]["ab"]
-    lo = ab["limite_basso"]   # stima aperta (A)
-    # forbice del controllo con TomTom (§6.2): A = stima aperta, B = stima aperta corretta col fattore unico del controllo (la stima aperta e' piu' veloce in 20 percorsi su 20)
+    # tempo in auto = stima aperta corretta col fattore unico del controllo con TomTom (la stima aperta e' piu' veloce in tutti i percorsi controllati)
     fc = comune.fattore_controllo()
     cor = ab["limite_corretto"]
-    errore = round(abs(leggi("controllo_navigatori_riepilogo.json")["mediana_errore_con_segno_pct"]), 1)
-    x_a, x_b = round(ti["mediano_basso"], 1), round(ti["mediano_corretto"], 1)
-    x = virgola(x_a)
-    xs = f"{virgola(x_b)}–{virgola(x_a)}"       # numero grande: da B ad A
-    f_lo = virgola(lo["fattore"])
+    ctr = leggi("controllo_navigatori_riepilogo.json")
+    medio = comune.rapporto_medio_giorno()          # media delle 4 ore del giorno; None se manca ore_del_giorno.json: allora vale il valore delle 8
+    x = medio if medio is not None else round(ti["mediano_corretto"], 1)
+    f1, f2, f3 = par["fasce"]
     coppie_ab = [p for p in t["coppie"] if p["gruppo"] in ("a", "b")]
     ordinate = sorted(coppie_ab, key=lambda p: -p["auto"])[:600]
-    f1, f2, f3 = par["fasce"]
     nomi_fasce = [f"meno di {virgola(f1)} volte", f"da {virgola(f1)} a {virgola(f2)} volte", f"da {virgola(f2)} a {virgola(f3)} volte", f"oltre {virgola(f3)} volte"]
     toni = ["verde", "giallo", "arancio", "rosso"]
-    def testo_fascia(a, b):
-        """Quota e auto della fascia, dalla stima piu' bassa alla piu' alta (A e B possono stare in qualunque ordine)."""
-        p1, p2 = sorted((round(a["pct"]), round(b["pct"])))
-        n1, n2 = sorted((a["auto"], b["auto"]))
-        if p1 == p2:
-            return f"{p1}% ({migliaia(a['auto'])} auto)"
-        return f"{p1}–{p2}% ({migliaia(n1)}–{migliaia(n2)} auto)"
 
     principale = {"tipo": "barre", "titolo": "Auto del mattino, per quante volte i mezzi pubblici impiegano più dell'auto", "unita": "%", "max": 100,
-                  "nota": "Ogni barra è una fascia: coi mezzi pubblici si impiega quel multiplo del tempo in auto. Barra scura: stima aperta; barra chiara: la stessa stima corretta col controllo. Coppie Torino-Torino e Torino-cintura.",
-                  "voci": [{"label": n, "valore": round(a["pct"]), "prima": round(b["pct"]), "tono": tn, "testo": testo_fascia(a, b)}
-                           for n, a, b, tn in zip(nomi_fasce, lo["fasce"], cor["fasce"], toni)]}
+                  "nota": "Ogni barra è una fascia: coi mezzi pubblici si impiega quel multiplo del tempo in auto. Coppie Torino-Torino e Torino-cintura.",
+                  "voci": [{"label": n, "valore": round(b["pct"]), "tono": tn, "testo": f"{round(b['pct'])}%"}
+                           for n, b, tn in zip(nomi_fasce, cor["fasce"], toni)]}
     disp = {"tipo": "dispersione", "titolo": "Tempo in auto e tempo coi mezzi pubblici, una coppia di zone per punto",
-            "xlabel": "minuti in auto (mattino, stima aperta)", "ylabel": "minuti coi mezzi pubblici",
-            "punti": [[p["auto_stima_min"], p["tp_min"], p["auto"]] for p in ordinate],
+            "xlabel": "minuti in auto (mattino)", "ylabel": "minuti coi mezzi pubblici",
+            "punti": [[round(comune.auto_corretta(p["auto_stima_min"], fc), 1), p["tp_min"], p["auto"]] for p in ordinate],
             "linee": [{"k": f1, "label": f"{virgola(f1)} volte"}, {"k": f2, "label": "il doppio"}],
             "nota": "Ogni punto è una coppia di zone, grande quanto le auto del mattino; sopra una linea i mezzi pubblici impiegano più di quel multiplo del tempo in auto."}
-    peggiori = t["peggiori"]
-    p1 = peggiori[0]
     # gara (Leo, 23/10; 24/10: sempre alle 8, cambia solo il luogo): viaggi tipici del mattino fra zone, le coppie con più auto, una partenza diversa per corsa
     od = comune.ore_del_giorno()
     nomi_z = {z["zona"]: z["nome"] for z in t["per_zona"]}
@@ -286,48 +275,39 @@ def forma_r8(s):
             continue
         viste.add(p["da"])
         a_b = comune.auto_corretta(p["auto_stima_min"], fc)
-        v = {"nome": corto(p["da"]), "arrivo": corto(p["a"]), "bus": p["tp_min"],
-             "auto_min": p["auto_stima_min"], "auto_max": round(a_b, 1),            # forbice: stima aperta (A) - corretta col controllo (B)
-             "giudizio": f"coi mezzi {virgola(round(p['tp_min'] / a_b, 1))}–{virgola(round(p['rapporto_basso'], 1))} volte il tempo dell'auto"}
+        v = {"nome": corto(p["da"]), "arrivo": corto(p["a"]), "bus": p["tp_min"], "auto_min": round(a_b, 1),
+             "giudizio": f"coi mezzi {virgola(round(p['tp_min'] / a_b, 1))} volte il tempo dell'auto"}
         viaggi.append(v)
         if len(viaggi) == 6:
             break
     gara = {"tipo": "gara", "titolo": "I viaggi in auto più frequenti del mattino: bus contro auto", "luoghi": viaggi, "scelto": 0,
-            "nota": f"Bus e auto partono insieme, uno dopo l'altro, per i {len(viaggi)} viaggi in auto più frequenti del mattino. L'auto ha un tempo con la forbice del controllo, parcheggio compreso."}
-    # regola del titolo (fissata prima dei numeri, blocco L3): se a tutte le ore il rapporto mediano resta entro ±0,3 da quello delle 8, con tutti e due i fattori,
-    # il titolo dice «a ogni ora del giorno»; altrimenti resta «al mattino» e un punto chiave dice come cambia durante il giorno
-    ore_linea, tutto_il_giorno = None, False
+            "nota": f"Bus e auto partono insieme, uno dopo l'altro, per i {len(viaggi)} viaggi in auto più frequenti del mattino. Il tempo in auto comprende il parcheggio."}
+    ore_linea = None
     if od:
-        o8 = od["ore"][0]["ab"]
-        scarto = max(abs(o["ab"]["limite_basso"]["mediano"] - o8["limite_basso"]["mediano"]) for o in od["ore"])      # regola ±0,3 sulla stima aperta
-        tutto_il_giorno = scarto <= 0.3 + 1e-9
-        bassi = [o["ab"]["limite_basso"]["mediano"] for o in od["ore"]]
-        corretti = [o["ab"]["limite_corretto"]["mediano"] for o in od["ore"]]
         ore_linea = {"tipo": "linea", "titolo": "Quante volte il tempo dell'auto, ora per ora", "unita": "volte",
-                     "nota": "Rapporto fra il tempo coi mezzi e il tempo in auto, pesato per le auto del mattino, alle 4 ore del giorno: stima aperta e stessa stima corretta col controllo.",
+                     "nota": f"Rapporto fra il tempo coi mezzi e il tempo in auto, pesato per le auto del mattino, alle {len(od['ore'])} ore del giorno.",
                      "categorie": [o["label"] for o in od["ore"]],
-                     "serie": [{"label": "stima aperta", "valori": [round(v, 1) for v in bassi]}, {"label": "corretta col controllo", "valori": [round(v, 1) for v in corretti]}]}
-    # costi (script 103) e valore del tempo (§6.6): v = costo in piu' al mese con la sosta pagata / (minuti in piu' a viaggio x 2 x 20 / 60), ai 5 euro; forbice A-B
+                     "serie": [{"label": "rapporto", "valori": [round(o["ab"]["limite_corretto"]["mediano"], 1) for o in od["ore"]]}]}
+    # costi (script 103) e valore del tempo (§6.6): v = costo in piu' al mese con la sosta pagata / (minuti in piu' a viaggio x 2 x 20 / 60), ai 5 euro
     cj = leggi("costo_del_viaggio.json")
     rj, reg_c, pr_c = cj["riepilogo"], cj["regole"], cj["prezzi"]
     ba = leggi("r6_bus_contro_auto.json")
     punti_tp = [l for l in ba["luoghi"] if l["tipo"] == "punto_prioritario" and l.get("tp_min") is not None]
-    m_a = rj["minuti_in_piu_mediana"]
     m_b = round(statistics.median(l["tp_min"] - comune.auto_corretta(l["auto_stima_min"], fc) for l in punti_tp), 1)
     e_mese = rj["differenza_mese_sente_mediana"]
     ore_mese = reg_c["giorni_mese"] * 2 / 60.0
-    v_a, v_b = (5 * round(e_mese / (m * ore_mese) / 5) for m in (m_a, m_b))
-    v_pieno = 5 * round(rj["differenza_mese_pieno_mediana"] / (m_a * ore_mese) / 5)
+    v_b = 5 * round(e_mese / (m_b * ore_mese) / 5)
+    v_pieno = 5 * round(rj["differenza_mese_pieno_mediana"] / (m_b * ore_mese) / 5)
     mz = rj["mese"]["mezzi"]
     sp, pg = rj["mese"]["sosta_pagata"], rj["mese"]["parcheggio_gratis"]
 
     def voce_auto(label, sente, pieno):
-        return {"label": label, "valore": round(sente), "prima": round(pieno), "tono": "rosso", "testo": f"{round(sente)} ({round(pieno)} col costo pieno)"}
+        return {"label": label, "valore": round(sente), "prima": round(pieno), "tono": "rosso", "testo": f"{round(sente)} € ({round(pieno)} € col costo pieno)"}
 
     def voce_mezzi(label, euro_mese):
-        return {"label": label, "valore": round(euro_mese), "tono": "verde", "testo": str(round(euro_mese))}
+        return {"label": label, "valore": round(euro_mese), "tono": "verde", "testo": f"{round(euro_mese)} €"}
     graf_mese = {"tipo": "barre_gruppi", "titolo": "Un mese di lavoro vicino al centro: quanto costa", "unita": "euro",
-                 "nota": "La barra chiara è il costo pieno dell'auto (ACI). Le tariffe agevolate sono quelle GTT per giovani e anziani, con certificato ISEE.",
+                 "nota": "La barra chiara è il costo pieno dell'auto (ACI).",
                  "gruppi": [{"label": "Auto, sosta pagata in strada", "voci": [voce_auto("Carburante e sosta", sp["sente"], sp["pieno"])]},
                             {"label": "Auto, parcheggio gratis al lavoro", "voci": [voce_auto("Solo carburante", pg["sente"], pg["pieno"])]},
                             {"label": "Mezzi pubblici", "voci": [voce_mezzi(f"Biglietti ({reg_c['viaggi_abbonamento']} viaggi)", mz["biglietti"]),
@@ -338,33 +318,34 @@ def forma_r8(s):
     senza_ab = ab["senza_collegamento"]
     par_crit = [["Zone", f"{par['n_zone']} zone dell'indagine sugli spostamenti ({par['n_zone_torino']} di Torino), fino a {par['punti_per_zona']} punti ciascuna"],
                 ["Mezzi pubblici", f"partenza {par['partenza']}-8:15 di un feriale, mediana, cammino a {virgola(par['velocita_piedi_kmh'])} km/h, al massimo {par['tempo_max_min']} minuti"],
-                ["Auto, stima aperta (A)", f"percorso più veloce sulla rete stradale, con velocità di sensori e bus e 20 secondi per semaforo (fattore mediano {f_lo}) + {virgola(par['minuti_parcheggio'])} minuti"],
-                ["Auto, corretta col controllo (B)", f"guida × {virgola(round(fc, 2))} + {virgola(par['minuti_parcheggio'])} minuti: fattore unico dal controllo su 20 percorsi con TomTom"],
+                ["Auto", f"guida × {virgola(round(fc, 2))} + {virgola(par['minuti_parcheggio'])} minuti: fattore unico dal controllo su {ctr['percorsi']} percorsi con TomTom"],
                 ["Periodo dei sensori", periodo_it(sens5t["periodo"]["da"], sens5t["periodo"]["a"])],
                 ["Fasce del rapporto", f"sotto {virgola(f1)}, {virgola(f1)}-{virgola(f2)}, {virgola(f2)}-{virgola(f3)}, oltre {virgola(f3)}"]]
     return forma_base(
         s,
-        (f"A ogni ora del giorno, coi mezzi pubblici si impiega da {virgola(x_b)} a {x} volte il tempo dell'auto" if tutto_il_giorno
-         else f"Al mattino, coi mezzi pubblici si impiega da {virgola(x_b)} a {x} volte il tempo dell'auto"),
-        "Al mattino, quanto ci si mette in più coi mezzi pubblici che in auto?",
-        {"valore": xs, "unita": "volte", "testo": "il tempo dell'auto, per i viaggi in auto del mattino fra zone diverse", "breve": "il tempo dell'auto, coi mezzi pubblici"},
+        (f"Coi mezzi pubblici si impiega in media {virgola(x)} volte il tempo dell'auto" if medio is not None
+         else f"Al mattino, coi mezzi pubblici si impiega {virgola(x)} volte il tempo dell'auto"),
+        ("Quanto ci si mette in più coi mezzi pubblici che in auto?" if medio is not None
+         else "Al mattino, quanto ci si mette in più coi mezzi pubblici che in auto?"),
+        {"valore": x, "unita": "volte",
+         "testo": ("il tempo dell'auto, per i viaggi in auto fra zone diverse" if medio is not None
+                   else "il tempo dell'auto, per i viaggi in auto del mattino fra zone diverse"),
+         "breve": "il tempo dell'auto, coi mezzi pubblici"},
         principale,
-        [f"Si risparmiano {round(m_b)}-{round(m_a)} minuti a viaggio, ma la sosta costa {circa(round(e_mese, -1))} euro al mese. È come pagare il tempo {v_a}-{v_b} euro l'ora.",
-         f"Senza sosta da pagare, l'auto costa meno dell'abbonamento fino a {circa(rj['soglia_km_senza_sosta'], ' km')}.",
-         f"Un tragitto frequente tipico: {p1['da_nome'].replace('Torino, ', '')} → {p1['a_nome'].replace('Torino, ', '')}, "
-         f"{circa(p1['tp_min'], ' minuti')} coi mezzi contro {round(p1['auto_stima_min'])}–{round(comune.auto_corretta(p1['auto_stima_min'], fc))} in auto."],
+        [f"Si risparmiano {circa(m_b)} minuti a viaggio, ma la sosta costa {circa(round(e_mese, -1))} € al mese. È come pagare il tempo {v_b} € l'ora.",
+         f"Senza sosta da pagare, l'auto costa meno dell'abbonamento fino a {circa(rj['soglia_km_senza_sosta'], ' km')}."],
         ([ore_linea] if ore_linea else []) + [gara, graf_mese, disp],
         ["Le zone sono quelle dell'indagine sugli spostamenti 2022 con punti di calcolo; ognuna ha fino a 5 punti.",
          " ".join(["Mezzi pubblici: a piedi, bus, tram e metro, con partenza fra le 7:45 e le 8:15. Si prende la mediana."] + testi_correzione),
-         "Auto, stima aperta: percorso più veloce sulla rete stradale. Velocità da sensori e bus, 20 secondi per semaforo, più 5 minuti per parcheggiare.",
-         f"Controllo: in 20 percorsi su 20 la stima aperta è più veloce di TomTom (errore mediano {virgola(errore)}%). I numeri sono una forbice: la stima aperta e la stessa stima corretta di un fattore {virgola(round(fc, 2))}.",
+         "Auto: percorso più veloce sulla rete stradale. Velocità da sensori e bus, 20 secondi per semaforo, più 5 minuti per parcheggiare.",
+         f"Tempi in auto da un modello aperto, corretti con un fattore unico ({virgola(round(fc, 2))}). Il fattore è misurato su {ctr['percorsi']} percorsi con TomTom: la stima aperta era più veloce in {ctr['percorsi']} su {ctr['percorsi']}.",
          f"Rapporto = tempo coi mezzi diviso tempo in auto, in fasce fisse. Le auto di una coppia sono i viaggi in auto dell'indagine, dalle 6 alle 10 di un feriale. "
-         f"Il numero grande vale per il {round(100 * ti['auto_collegate'] / t['totale_auto_zone'])}% delle auto del mattino ({migliaia(ti['auto_collegate'])}). Il grafico a punti mostra le {len(ordinate)} coppie con più auto.",
+         f"Il grafico per fasce vale per il {round(100 * ti['auto_collegate'] / t['totale_auto_zone'])}% delle auto del mattino ({migliaia(ti['auto_collegate'])}). Il grafico a punti mostra le {len(ordinate)} coppie con più auto.",
          f"Costi: prezzi del {cj['consultato'][8:10]}/{cj['consultato'][5:7]}/{cj['consultato'][:4]} (carburante self entro 5 km da Piazza Castello, costo ACI 2026, tariffe GTT). Sosta: {virgola(pr_c['sosta_ordinaria_ora'])} euro l'ora per {reg_c['ore_sosta_lavoro']} ore e {reg_c['giorni_mese']} giorni al mese.",
          f"Valore del tempo: costo in più al mese con la sosta pagata, diviso i minuti in più a viaggio. Si contano 2 viaggi al giorno e {reg_c['giorni_mese']} giorni, ai 5 euro; col costo pieno ACI circa {v_pieno} euro l'ora."],
         par_crit,
         ["Fuori Torino mancano treni e altre aziende: le coppie fra comuni della cintura non sono nel numero. Senza i treni metropolitani, dove ci sono, i mezzi pubblici risultano più lenti del vero. L'orario è quello programmato, corretto con le attese e i ritardi misurati.",
-         "Tempi in auto da un modello aperto, non misurati sul singolo viaggio. Il controllo con TomTom su 20 percorsi li trova ottimistici: per questo c'è una forbice.",
+         f"Tempi in auto da un modello aperto, non misurati sul singolo viaggio. Il controllo con TomTom su {ctr['percorsi']} percorsi li trova ottimistici: per questo sono corretti con un fattore unico.",
          f"L'indagine è un campione. I viaggi dentro una zona e {migliaia(senza_ab['coppie'])} coppie senza collegamento ({migliaia(senza_ab['auto'])} auto) non sono nel confronto.",
          "Una Golf come auto di riferimento. La zona a traffico limitato e gli abbonamenti alla sosta non sono nel conto. I prezzi sono quelli di un giorno."]
         + ([scelta_testo] if scelta_testo else []),

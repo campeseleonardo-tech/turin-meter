@@ -114,7 +114,7 @@ def barra(chiave):
     bottoni = "".join(
         f'<button type="button" data-l="{l}" aria-pressed="{"true" if l == "it" else "false"}" title="{t}">{s}</button>' for l, s, t in LINGUE)
     return (f'<header class="barra-alta"><div class="dentro">\n'
-            f'  <a class="marchio" href="index.html"><img src="assets/logo.svg" alt="" width="34" height="34">{a(NOME_SITO)}</a>\n'
+            f'  <a class="marchio" href="index.html"><img src="assets/logo.svg" alt="" width="54" height="54">{a(NOME_SITO)}</a>\n'
             f'  <nav {etichetta(("Pagine del sito", "Site pages", "Seiten der Website"))}>{voci}</nav>\n'
             f'  <div class="lingua" role="group" {etichetta(("Lingua", "Language", "Sprache"))}>{bottoni}</div>\n'
             f'</div></header>')

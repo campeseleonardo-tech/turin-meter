@@ -19,15 +19,15 @@ Solo dati aperti; sito, mappa e risultati sono in italiano, inglese e tedesco.
 <!-- RISULTATI-IT:INIZIO -->
 1. **Circa 1 passaggio su 15 arriva con più di 10 minuti di ritardo**  
    Quanto spesso i mezzi GTT arrivano in ritardo? → **6,7%** dei passaggi feriali arriva con oltre 10 minuti di ritardo. [Apri](https://campeseleonardo-tech.github.io/turin-meter/index.html#p1)
-2. **Al mattino, coi mezzi pubblici si impiega da 1,9 a 2,4 volte il tempo dell'auto**  
-   Al mattino, quanto ci si mette in più coi mezzi pubblici che in auto? → **1,9–2,4 volte** il tempo dell'auto, per i viaggi in auto del mattino fra zone diverse. [Apri](https://campeseleonardo-tech.github.io/turin-meter/index.html#p2)
+2. **Coi mezzi pubblici si impiega in media 2,1 volte il tempo dell'auto**  
+   Quanto ci si mette in più coi mezzi pubblici che in auto? → **2,1 volte** il tempo dell'auto, per i viaggi in auto fra zone diverse. [Apri](https://campeseleonardo-tech.github.io/turin-meter/index.html#p2)
 3. **Circa 1 torinese su 10 vive in una zona con più difficoltà sociali e pochi servizi**  
-   Chi vive dove i servizi sono pochi e le difficoltà sociali sono alte? → **79.598** residenti in zone con più difficoltà sociali e servizi bassi: il 9,5% dei residenti delle zone abitate. È 1,7 volte quanto ci si aspetterebbe per caso. [Apri](https://campeseleonardo-tech.github.io/turin-meter/index.html#p3)
+   Chi vive dove i servizi sono pochi e le difficoltà sociali sono alte? → **79.598** residenti in zone con più difficoltà sociali e servizi bassi: il 9,5% dei residenti delle zone abitate. [Apri](https://campeseleonardo-tech.github.io/turin-meter/index.html#p3)
 4. **Circa 2 fermate importanti su 3 non hanno abbastanza posti per lasciare l'auto**  
    Chi arriva in auto da fuori trova dove lasciarla vicino a una fermata importante, per proseguire coi mezzi? → **179** fermate importanti su 274 non hanno posti bastanti a 400 metri a piedi. [Apri](https://campeseleonardo-tech.github.io/turin-meter/index.html#p4)
 <!-- RISULTATI-IT:FINE -->
 
-Ogni scheda spiega come è calcolato il numero e quali sono i limiti. I tempi in auto si danno come forbice.
+Ogni scheda spiega come è calcolato il numero e quali sono i limiti. I tempi in auto sono un modello aperto, corretto con un fattore unico misurato con TomTom.
 
 ## Come funziona
 
@@ -44,7 +44,7 @@ Un Raspberry Pi a casa legge ogni minuto i dati aperti di GTT e 5T e li salva in
 
 ## Il mio ruolo e il lavoro con l'AI
 
-Ho scelto le domande, le fonti, le regole e le soglie, e deciso cosa pubblicare. La raccolta dei dati e parte delle analisi in Python le ho scritte io; per il resto l'AI ha fatto da acceleratore, con più modelli e un controllo automatico a ogni consegna. La storia è nella [pagina del progetto](https://campeseleonardo-tech.github.io/turin-meter/progetto.html).
+Con l'AI un lavoro da piccolo team è stato fatto in fretta: prototipi in ore, controlli sui dati mentre si lavorava. Le domande, i criteri e le soglie, e il controllo dei numeri sono l'apporto principale del creatore; il resto è stato ampiamente ingegnerizzato dall'AI, con un controllo automatico a ogni consegna. La storia è nella [pagina del progetto](https://campeseleonardo-tech.github.io/turin-meter/progetto.html).
 
 ## Il metodo
 
@@ -52,8 +52,8 @@ I documenti di metodo sono solo in inglese: [`docs/en/METHODS.md`](docs/en/METHO
 
 - **Ritardi:** dal GPS dei mezzi, non dal feed ufficiale (che li sottostima); un passaggio è l'ultimo istante a meno di 60 m dalla fermata. Una lettura al minuto dà una forbice.
 - **Dove nascono i ritardi:** tempo in più fra due fermate consecutive, minuti persi per giorno feriale, solo tratti con almeno 50 corse.
-- **Tempi in auto:** una stima aperta (rete OpenStreetMap, velocità dei sensori 5T e dei bus, 20 secondi per semaforo, 5 minuti per parcheggiare), non servizi a pagamento.
-- **Controllo con TomTom** su 20 percorsi: la stima aperta risulta troppo ottimista, quindi i numeri sono una forbice (stima aperta – stima corretta col fattore del controllo) e le classi si danno solo se uguali ai due estremi.
+- **Tempi in auto:** un modello aperto (rete OpenStreetMap, velocità dei sensori 5T e dei bus, 20 secondi per semaforo, 5 minuti per parcheggiare), non servizi a pagamento.
+- **Controllo con TomTom** su 20 percorsi: la stima aperta risulta troppo ottimista (più veloce in 20 su 20), quindi si corregge con un fattore unico.
 - **Fragilità:** indice costruito dal progetto con quattro indicatori del censimento 2021; non è un indice ISTAT né il reddito.
 - **Parcheggi di scambio:** auto in entrata dall'indagine IMQ 2022 su un modello del traffico, posti da OpenStreetMap, Comune e 5T; i posti mancanti sono un ordine di grandezza.
 

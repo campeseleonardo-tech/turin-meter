@@ -61,14 +61,14 @@
     return D._g;
   }
 
-  /* tempi di ogni sezione da Piazza Castello: mezzi (D.c.m) e auto con la stima del tempo in auto (D.c.b); null = non raggiunta */
+  /* tempi di ogni sezione da Piazza Castello: mezzi (D.c.m) e auto con il tempo in auto corretto col controllo (D.c.k); null = non raggiunta */
   function quota(D, t, minuto){
     var g = geom(D), s = 0;
     for(var i = 0; i < g.N; i++) if(t[i] !== null && t[i] <= minuto) s += D.r[i];
     return 100 * s / g.tot;
   }
 
-  function disegna(cv, D, t, minuto, colore, t2){
+  function disegna(cv, D, t, minuto, colore){
     var g = geom(D), w = cv.width, h = cv.height, ctx = cv.getContext("2d");
     var pad = 6, sc = Math.min((w - 2 * pad) / g.W, (h - 2 * pad) / g.H);
     var lato = Math.max(2, 0.95 * Math.sqrt((g.W * sc) * (g.H * sc) / g.N));
@@ -80,14 +80,6 @@
       if(t[i] !== null && t[i] <= minuto) continue;
       px = ox + D.x[i] * g.k * sc; py = oy + (g.my - D.y[i]) * sc;
       ctx.fillRect(px - lato / 2, py - lato / 2, lato, lato);
-    }
-    if(t2){      /* forbice (§6.2): le sezioni raggiunte solo dalla stima aperta, piu' chiare */
-      ctx.globalAlpha = .42; ctx.fillStyle = colore;
-      for(i = 0; i < g.N; i++){
-        if(t2[i] === null || t2[i] > minuto || (t[i] !== null && t[i] <= minuto)) continue;
-        px = ox + D.x[i] * g.k * sc; py = oy + (g.my - D.y[i]) * sc;
-        ctx.fillRect(px - lato / 2, py - lato / 2, lato, lato);
-      }
     }
     ctx.globalAlpha = .95; ctx.fillStyle = colore;
     for(i = 0; i < g.N; i++){
@@ -109,7 +101,7 @@
 
   function costruisci(el, D){
     var t = T(), mini = el.classList.contains("area-mini"), cMezzi = css("--neu-blu", "#6f8fc7"), cAuto = css("--neu-arancio", "#c9a227");
-    var tm = D.c.m, ta = D.c.b, tk = D.c.k || ta, stato = {minuto: ridotto ? MIN_FERMO : 0};
+    var tm = D.c.m, ta = D.c.k || D.c.b, stato = {minuto: ridotto ? MIN_FERMO : 0};
     el.innerHTML = '<span class="area-minuti" aria-hidden="true"></span>'
       + '<div class="area-mappe"><div class="area-mappa"><h6>' + esc(t.mezzi) + '</h6><canvas data-k="m" aria-hidden="true"></canvas><div class="area-quota" data-q="m"></div></div>'
       + '<div class="area-mappa"><h6>' + esc(t.auto) + '</h6><canvas data-k="a" aria-hidden="true"></canvas><div class="area-quota" data-q="a"></div></div></div>';
@@ -117,16 +109,16 @@
     var larg = (el.clientWidth || (mini ? 240 : 600)) / 2 - (mini ? 6 : 10);
     cvs.forEach(function(cv){ dimensiona(cv, D, larg); });
     function ridisegna(){
-      var m = stato.minuto, pm = quota(D, tm, m), pa = quota(D, ta, m), pk = quota(D, tk, m);
-      var testoAuto = Math.round(pk) < Math.round(pa) ? n(Math.round(pk)) + '–' + n(Math.round(pa)) : n(Math.round(pa));
-      cvs.forEach(function(cv){ var mezzi = cv.getAttribute("data-k") === "m"; disegna(cv, D, mezzi ? tm : tk, m, mezzi ? cMezzi : cAuto, mezzi ? null : ta); });
+      var m = stato.minuto, pm = quota(D, tm, m), pa = quota(D, ta, m);
+      var testoAuto = n(Math.round(pa));
+      cvs.forEach(function(cv){ var mezzi = cv.getAttribute("data-k") === "m"; disegna(cv, D, mezzi ? tm : ta, m, mezzi ? cMezzi : cAuto); });
       el.querySelector("[data-q=m]").innerHTML = n(Math.round(pm)) + '%<small>' + esc(t.ab) + '</small>';
       el.querySelector("[data-q=a]").innerHTML = testoAuto + '%<small>' + esc(t.ab) + '</small>';
       el.querySelector(".area-minuti").textContent = n(m) + " " + (m === 1 ? t.minuto : t.minuti);
     }
     ridisegna();
     el.setAttribute("role", "img");
-    el.setAttribute("aria-label", t.parlato(MIN_FERMO, n(Math.round(quota(D, tm, MIN_FERMO))), (Math.round(quota(D, tk, MIN_FERMO)) < Math.round(quota(D, ta, MIN_FERMO)) ? n(Math.round(quota(D, tk, MIN_FERMO))) + '–' : '') + n(Math.round(quota(D, ta, MIN_FERMO)))));
+    el.setAttribute("aria-label", t.parlato(MIN_FERMO, n(Math.round(quota(D, tm, MIN_FERMO))), n(Math.round(quota(D, ta, MIN_FERMO)))));
     if(ridotto) return;
 
     /* da sola: 0 -> 45 minuti, pausa, di nuovo; si ferma quando non si vede */

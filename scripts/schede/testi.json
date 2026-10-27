@@ -543,7 +543,8 @@
    "en": "Ratio between public transport time and car time (typical traffic), weighted by morning cars, at 4 times of the day."
   },
   "rapporto": {
-   "en": "ratio"
+   "en": "ratio",
+   "de": "Verhältnis"
   },
   "Bus e auto partono insieme, uno dopo l'altro, per i 6 viaggi in auto più frequenti del mattino. L'auto ha il tempo previsto con il traffico tipico, parcheggio compreso.": {
    "en": "Bus and car leave together, one trip after the other, for the 6 most frequent morning car trips. The car has the time forecast with typical traffic, parking included."
@@ -716,9 +717,6 @@
   "Servizi a piedi": {
    "en": "Services on foot"
   },
-  "La barra chiara è il costo pieno dell'auto. Le tariffe agevolate sono quelle GTT per giovani e anziani, con certificato ISEE.": {
-   "en": "The light bar is the full cost of the car. Concession fares are GTT's for young people and older people, with an ISEE certificate."
-  },
   "Auto, sosta pagata in strada": {
    "en": "Car, street parking paid",
    "de": "Auto, bezahltes Parken auf der Straße"
@@ -743,9 +741,6 @@
    "en": "Annual pass, per month",
    "de": "Jahreskarte, pro Monat"
   },
-  "Mezzi pubblici, tariffe agevolate": {
-   "en": "Public transport, concession fares"
-  },
   "Under 26, abbonamento mensile": {
    "en": "Under 26, monthly pass"
   },
@@ -757,9 +752,6 @@
   },
   "La zona a traffico limitato e gli abbonamenti alla sosta non contano; vale la tariffa ordinaria. Solo Torino: le tariffe a zone della cintura non sono assegnate alle zone dell'indagine.": {
    "en": "The limited traffic zone and parking passes are not counted; the ordinary rate applies. Turin only: the zone-based fares of the surrounding area are not assigned to the survey zones."
-  },
-  "Le tariffe agevolate valgono solo con i requisiti (età, ISEE, residenza a Torino); la data delle tariffe non è pubblicata.": {
-   "en": "Concession fares apply only to those who qualify (age, ISEE, residence in Turin); the date of the fares is not published."
   },
   "Quanto costa andare al lavoro vicino al centro in auto e quanto coi mezzi pubblici?": {
    "en": "How much does it cost to go to work near the centre by car, and how much by public transport?"
@@ -807,18 +799,6 @@
    "en": "Priority points: stops without enough spaces grouped within 1 km, one per entry axis. Reference stops: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara.",
    "de": "Vorrangige Punkte: Haltestellen ohne genug Stellplätze, innerhalb von 1 km zusammengefasst, einer pro Einfallstraße. Bezugshaltestellen: Santa Rita, Metro Massaua, Ponte Cavalieri Templari, Regina Margherita, Pasini, Leonardo Da Vinci. Drosso Cap, Stura Lazio, Marsè, Derna Est, Ferrara, Zara."
   },
-  "Auto, corretta col controllo (B)": {
-   "en": "Car, corrected with the check (B)",
-   "de": "Auto, mit der Kontrolle korrigiert (B)"
-  },
-  "Auto, stima aperta (A)": {
-   "en": "Car, open estimate (A)",
-   "de": "Auto, offene Schätzung (A)"
-  },
-  "Bus e auto partono insieme da ogni parcheggio, uno dopo l'altro. L'auto ha un tempo con la forbice del controllo, parcheggio compreso.": {
-   "en": "Bus and car leave together from each car park, one after the other. The car has a time with the range from the check, parking included.",
-   "de": "Bus und Auto fahren zusammen von jedem Parkplatz los, nacheinander. Für das Auto gibt es eine Zeit mit der Spanne aus der Kontrolle, Parken inklusive."
-  },
   "I tempi coi mezzi sono solo GTT, senza treni.": {
    "en": "Public transport times are GTT only, without trains.",
    "de": "Die Zeiten mit öffentlichen Verkehrsmitteln sind nur GTT, ohne Züge."
@@ -827,17 +807,9 @@
    "en": "The fragility index is not income and not an official ISTAT index: it measures work, education, crowding and older people.",
    "de": "Der Index der Benachteiligung ist weder das Einkommen noch ein offizieller ISTAT-Index: Er misst Arbeit, Bildung, Wohnungsbelegung und ältere Menschen."
   },
-  "La barra chiara è il costo pieno dell'auto (ACI). Le tariffe agevolate sono quelle GTT per giovani e anziani, con certificato ISEE.": {
-   "en": "The light bar is the full cost of the car (ACI). Concession fares are GTT's for young people and older people, with an ISEE certificate.",
-   "de": "Der helle Balken sind die Vollkosten des Autos (ACI). Die ermäßigten Tarife sind die von GTT für Jugendliche und ältere Menschen, mit ISEE-Bescheinigung."
-  },
   "Le zone OMI sono grandi: dentro una zona i servizi e la fragilità cambiano molto.": {
    "en": "OMI zones are large: within a zone, services and fragility vary a lot.",
    "de": "Die OMI-Zonen sind groß: Innerhalb einer Zone ändern sich Einrichtungen und Benachteiligung stark."
-  },
-  "Ogni barra è una fascia: coi mezzi pubblici si impiega quel multiplo del tempo in auto. Barra scura: stima aperta; barra chiara: la stessa stima corretta col controllo. Coppie Torino-Torino e Torino-cintura.": {
-   "en": "Each bar is a band: by public transport it takes that multiple of the car time. Dark bar: open estimate; light bar: the same estimate corrected with the check. Turin-Turin and Turin-suburb pairs.",
-   "de": "Jeder Balken ist ein Bereich: Mit öffentlichen Verkehrsmitteln braucht man dieses Vielfache der Autozeit. Dunkler Balken: offene Schätzung; heller Balken: dieselbe Schätzung, mit der Kontrolle korrigiert. Paare Turin-Turin und Turin-Umland."
   },
   "Si conta se un servizio c'è, non quanto è grande.": {
    "en": "The count shows whether a service exists, not how big it is.",
@@ -855,18 +827,6 @@
    "en": "A Golf as the reference car. The limited traffic zone and parking subscriptions are not counted. The prices are those of one day.",
    "de": "Ein Golf als Referenzauto. Die Zone mit Verkehrsbeschränkung (ZTL) und Park-Abonnements sind nicht eingerechnet. Die Preise sind die eines einzelnen Tages."
   },
-  "corretta col controllo": {
-   "en": "corrected with the check",
-   "de": "mit der Kontrolle korrigiert"
-  },
-  "minuti in auto (mattino, stima aperta)": {
-   "en": "minutes by car (morning, open estimate)",
-   "de": "Minuten mit dem Auto (morgens, offene Schätzung)"
-  },
-  "stima aperta": {
-   "en": "open estimate",
-   "de": "offene Schätzung"
-  },
   "domeniche": {
    "en": "Sundays",
    "de": "Sonntage"
@@ -878,6 +838,62 @@
   "Il progetto registra ogni minuto la posizione GPS dei mezzi GTT.": {
    "en": "The project records the GPS position of GTT vehicles every minute.",
    "de": "Das Projekt zeichnet jede Minute die GPS-Position der GTT-Fahrzeuge auf."
+  },
+  "Quanto ci si mette in più coi mezzi pubblici che in auto?": {
+   "en": "How much longer does public transport take than the car?",
+   "de": "Wie viel länger braucht man mit Bus und Bahn als mit dem Auto?"
+  },
+  "il tempo dell'auto, per i viaggi in auto fra zone diverse": {
+   "en": "the car's travel time, for car trips between different zones",
+   "de": "die Autozeit, für die Autofahrten zwischen verschiedenen Zonen"
+  },
+  "Ogni barra è una fascia: coi mezzi pubblici si impiega quel multiplo del tempo in auto. Coppie Torino-Torino e Torino-cintura.": {
+   "en": "Each bar is a band: by public transport it takes that multiple of the car time. Turin-Turin and Turin-suburb pairs.",
+   "de": "Jeder Balken ist ein Bereich: Mit öffentlichen Verkehrsmitteln braucht man dieses Vielfache der Autozeit. Paare Turin-Turin und Turin-Umland."
+  },
+  "La barra chiara è il costo pieno dell'auto (ACI).": {
+   "en": "The light bar is the full cost of the car (ACI).",
+   "de": "Der helle Balken sind die Vollkosten des Autos (ACI)."
+  },
+  "minuti in auto (mattino)": {
+   "en": "minutes by car (morning)",
+   "de": "Minuten mit dem Auto (morgens)"
+  },
+  "Auto": {
+   "en": "Car",
+   "de": "Auto"
+  },
+  "zone in doppio svantaggio": {
+   "en": "zones of double disadvantage",
+   "de": "Zonen mit doppelter Benachteiligung"
+  },
+  "altre zone": {
+   "en": "other zones",
+   "de": "andere Zonen"
+  },
+  "Bus e auto partono insieme da ogni parcheggio, uno dopo l'altro. Il tempo in auto comprende il parcheggio.": {
+   "en": "Bus and car leave together from each car park, one after the other. The car time includes parking.",
+   "de": "Bus und Auto fahren zusammen von jedem Parkplatz los, nacheinander. Die Autozeit enthält das Parken."
+  },
+  "Posti offerti": {
+   "en": "Spaces offered",
+   "de": "Angebotene Stellplätze"
+  },
+  "Richiesta calcolata": {
+   "en": "Estimated demand",
+   "de": "Berechnete Nachfrage"
+  },
+  "Occupati di giorno": {
+   "en": "Occupied by day",
+   "de": "Tagsüber belegt"
+  },
+  "contatore forse fermo": {
+   "en": "counter probably stuck",
+   "de": "Zähler vermutlich defekt"
+  },
+  "riempimento non misurato": {
+   "en": "occupancy not measured",
+   "de": "Belegung nicht gemessen"
   }
  },
  "modelli": [
@@ -1152,11 +1168,6 @@
    "de": "Die vorbeifahrenden Autos stammen aus einem Verkehrsmodell. Die Stellplätze sind oft geschätzt: Die fehlenden sind eine Größenordnung. Bei halb so vielen oder doppelt so vielen Autofahrern, die das Auto stehen lassen, liegen die Haltestellen ohne genug Stellplätze zwischen {n0} und {n1} von {n2}."
   },
   {
-   "it": "residenti in zone con più difficoltà sociali e servizi bassi: il {n0}% dei residenti delle zone abitate. È {n1} volte quanto ci si aspetterebbe per caso.",
-   "en": "residents in zones with more social difficulty and few services: {n0}% of residents of inhabited zones. That is {n1} times what you would expect by chance.",
-   "de": "Einwohner in Zonen mit mehr sozialen Schwierigkeiten und wenigen Einrichtungen: {n0}% der Einwohner der bewohnten Gebiete. Das ist {n1}-mal so viel, wie man zufällig erwarten würde."
-  },
-  {
    "it": "dal {n0}/{n1}/{n2} al {n3}/{n4}/{n5}",
    "en": "from {n0}/{n1}/{n2} to {n3}/{n4}/{n5}",
    "de": "vom {n0}.{n1}.{n2} bis zum {n3}.{n4}.{n5}"
@@ -1255,11 +1266,6 @@
    "it": "Nelle 4 ore del giorno il tempo coi mezzi va da {n0} a {n1} volte quello dell'auto.",
    "en": "Across the 4 times of the day, public transport time goes from {n0} to {n1} times the car's.",
    "de": "Über die 4 Tageszeiten liegt die Zeit mit öffentlichen Verkehrsmitteln beim {n0}- bis {n1}-Fachen der Autozeit."
-  },
-  {
-   "it": "Un tragitto frequente tipico: {s0}, ~{n1} minuti coi mezzi contro ~{n2} in auto.",
-   "en": "A typical frequent trip: {s0}, ~{n1} minutes by public transport against ~{n2} by car.",
-   "de": "Eine typische häufige Strecke: {s0}, ~{n1} Minuten mit öffentlichen Verkehrsmitteln gegenüber ~{n2} mit dem Auto."
   },
   {
    "it": "coi mezzi {n0} volte il tempo dell'auto",
@@ -1537,29 +1543,9 @@
    "de": "Morgens braucht man mit öffentlichen Verkehrsmitteln das {n0}- bis {n1}-Fache der Zeit des Autos"
   },
   {
-   "it": "Auto, stima aperta: percorso più veloce sulla rete stradale. Velocità da sensori e bus, {n0} secondi per semaforo, più {n1} minuti per parcheggiare.",
-   "en": "Car, open estimate: fastest route on the road network. Speeds from sensors and buses, {n0} seconds per traffic light, plus {n1} minutes to park.",
-   "de": "Auto, offene Schätzung: schnellste Strecke im Straßennetz. Geschwindigkeiten von Sensoren und Bussen, {n0} Sekunden pro Ampel, plus {n1} Minuten zum Parken."
-  },
-  {
-   "it": "Bus contro auto: minuti coi mezzi (corretti con le misure) verso Piazza Castello alle otto del mattino. Auto: stima aperta più {n0} minuti, e la stessa corretta col fattore {n1} del controllo con TomTom.",
-   "en": "Bus against car: minutes by public transport (corrected with the measurements) to Piazza Castello at eight in the morning. Car: open estimate plus {n0} minutes, and the same corrected with the factor {n1} from the TomTom check.",
-   "de": "Bus gegen Auto: Minuten mit öffentlichen Verkehrsmitteln (mit den Messungen korrigiert) zur Piazza Castello um acht Uhr morgens. Auto: offene Schätzung plus {n0} Minuten, und dieselbe Schätzung mit dem Faktor {n1} aus der TomTom-Kontrolle korrigiert."
-  },
-  {
-   "it": "Bus e auto partono insieme, uno dopo l'altro, per i {n0} viaggi in auto più frequenti del mattino. L'auto ha un tempo con la forbice del controllo, parcheggio compreso.",
-   "en": "Bus and car leave together, one after the other, for the {n0} most frequent morning car trips. The car has a time with the range from the check, parking included.",
-   "de": "Bus und Auto fahren zusammen los, nacheinander, für die {n0} häufigsten Autofahrten am Morgen. Für das Auto gibt es eine Zeit mit der Spanne aus der Kontrolle, Parken inklusive."
-  },
-  {
    "it": "Circa {n0} passaggio su {n1} arriva con più di {n2} minuti di ritardo",
    "en": "About {n0} arrival in {n1} is more than {n2} minutes late",
    "de": "Etwa {n0} von {n1} Abfahrten hat mehr als {n2} Minuten Verspätung"
-  },
-  {
-   "it": "Controllo: in {n0} percorsi su {n1} la stima aperta è più veloce di TomTom (errore mediano {n2}%). I numeri sono una forbice: la stima aperta e la stessa stima corretta di un fattore {n3}.",
-   "en": "Check: on {n0} routes out of {n1} the open estimate is faster than TomTom (median error {n2}%). The numbers are a range: the open estimate and the same estimate corrected by a factor of {n3}.",
-   "de": "Kontrolle: auf {n0} von {n1} Strecken ist die offene Schätzung schneller als TomTom (mittlerer Fehler {n2}%). Die Zahlen sind eine Spanne: die offene Schätzung und dieselbe Schätzung, um den Faktor {n3} korrigiert."
   },
   {
    "it": "Costi: prezzi del {n0}/{n1}/{n2} (carburante self entro 5 km da Piazza Castello, costo ACI {n3}, tariffe GTT). Sosta: {n4} euro l'ora per {n5} ore e {n6} giorni al mese.",
@@ -1582,11 +1568,6 @@
    "de": "An {n0}–{n1} von {n2} Punkten erreicht man das Zentrum nach dem Abstellen des Autos mit dem Bus in höchstens dem {n3}-Fachen der Autozeit."
   },
   {
-   "it": "La classe si dà solo se è la stessa con la stima aperta e con quella corretta. Lo è in {n0} punti su {n1}; negli altri dipende dal traffico.",
-   "en": "The class is given only if it is the same with the open estimate and the corrected one. It is the same in {n0} points out of {n1}; in the others it depends on traffic.",
-   "de": "Die Klasse wird nur angegeben, wenn sie mit der offenen und mit der korrigierten Schätzung gleich ist. Das ist an {n0} von {n1} Punkten der Fall; an den anderen hängt es vom Verkehr ab."
-  },
-  {
    "it": "Le zone più colpite: {s0}. Ci abitano ~{n1} mila persone.",
    "en": "The most affected zones: {s0}. About {n1} thousand people live there.",
    "de": "Die am stärksten betroffenen Zonen: {s0}. Dort wohnen ~{n1} Tausend Menschen."
@@ -1602,14 +1583,9 @@
    "de": "Break-even: Parkminuten, bei denen das Auto so langsam ist wie der Bus, von {n0} bis {n1} (Median der {n2} Punkte)."
   },
   {
-   "it": "Rapporto = tempo coi mezzi diviso tempo in auto, in fasce fisse. Le auto di una coppia sono i viaggi in auto dell'indagine, dalle {n0} alle {n1} di un feriale. Il numero grande vale per il {n2}% delle auto del mattino ({n3}). Il grafico a punti mostra le {n4} coppie con più auto.",
-   "en": "Ratio = public transport time divided by car time, in fixed bands. The cars of a pair are the car trips of the survey, from {n0} to {n1} on a weekday. The big number holds for {n2}% of morning cars ({n3}). The scatter chart shows the {n4} pairs with the most cars.",
-   "de": "Verhältnis = Zeit mit öffentlichen Verkehrsmitteln geteilt durch die Autozeit, in festen Bereichen. Die Autos eines Paares sind die Autofahrten der Erhebung, von {n0} bis {n1} Uhr an einem Werktag. Die große Zahl gilt für {n2}% der Autos am Morgen ({n3}). Das Punktdiagramm zeigt die {n4} Zonenpaare mit den meisten Autos."
-  },
-  {
-   "it": "Rapporto fra il tempo coi mezzi e il tempo in auto, pesato per le auto del mattino, alle {n0} ore del giorno: stima aperta e stessa stima corretta col controllo.",
-   "en": "Ratio between public transport time and car time, weighted by the morning cars, at {n0} times of the day: open estimate and the same estimate corrected with the check.",
-   "de": "Verhältnis zwischen der Zeit mit öffentlichen Verkehrsmitteln und der Autozeit, gewichtet nach den Autos am Morgen, zu {n0} Tageszeiten: offene Schätzung und dieselbe Schätzung, mit der Kontrolle korrigiert."
+   "it": "Rapporto = tempo coi mezzi diviso tempo in auto, in fasce fisse. Le auto di una coppia sono i viaggi in auto dell'indagine, dalle {n0} alle {n1} di un feriale. Il grafico per fasce vale per il {n2}% delle auto del mattino ({n3}). Il grafico a punti mostra le {n4} coppie con più auto.",
+   "en": "Ratio = public transport time divided by car time, in fixed bands. The cars of a pair are the car trips of the survey, from {n0} to {n1} on a weekday. The band chart holds for {n2}% of morning cars ({n3}). The scatter chart shows the {n4} pairs with the most cars.",
+   "de": "Verhältnis = Zeit mit öffentlichen Verkehrsmitteln geteilt durch die Autozeit, in festen Bereichen. Die Autos eines Paares sind die Autofahrten der Erhebung, von {n0} bis {n1} Uhr an einem Werktag. Das Diagramm nach Bereichen gilt für {n2}% der Autos am Morgen ({n3}). Das Punktdiagramm zeigt die {n4} Zonenpaare mit den meisten Autos."
   },
   {
    "it": "Servizi a {n0}, {n1} e {n2} minuti a piedi",
@@ -1622,16 +1598,6 @@
    "de": "Man spart {n0}-{n1} Minuten pro Fahrt, aber das Parken kostet ~{n2} Euro im Monat. Die Zeit kostet so {n3}-{n4} Euro pro Stunde."
   },
   {
-   "it": "Succede {n0} volte più spesso di quanto ci si aspetterebbe per caso.",
-   "en": "It happens {n0} times more often than you would expect by chance.",
-   "de": "Das kommt {n0}-mal so oft vor, wie man zufällig erwarten würde."
-  },
-  {
-   "it": "Tempi in auto da un modello aperto, non misurati sul singolo viaggio. Il controllo con TomTom su {n0} percorsi li trova ottimistici: per questo c'è una forbice.",
-   "en": "Car times come from an open model, not measured on the single trip. The TomTom check on {n0} routes finds them optimistic: that is why there is a range.",
-   "de": "Die Autozeiten stammen aus einem offenen Modell und sind nicht auf der einzelnen Fahrt gemessen. Die TomTom-Kontrolle auf {n0} Strecken findet sie optimistisch: Deshalb gibt es eine Spanne."
-  },
-  {
    "it": "TomTom (controllo dei tempi in auto su {n0} percorsi)",
    "en": "TomTom (check of car times on {n0} routes)",
    "de": "TomTom (Kontrolle der Autozeiten auf {n0} Strecken)"
@@ -1640,11 +1606,6 @@
    "it": "Tratto: due fermate consecutive di una corsa. Minuti persi: somma dei tempi in più sul tratto, diviso i giorni feriali. Solo tratti con almeno {n0} corse osservate.",
    "en": "Segment: two consecutive stops of a trip. Minutes lost: sum of the extra times on the segment, divided by the weekdays. Only segments with at least {n0} trips observed.",
    "de": "Abschnitt: zwei aufeinanderfolgende Haltestellen einer Fahrt. Verlorene Minuten: Summe der Zusatzzeiten auf dem Abschnitt, geteilt durch die Werktage. Nur Abschnitte mit mindestens {n0} beobachteten Fahrten."
-  },
-  {
-   "it": "Un tragitto frequente tipico: {s0}, ~{n1} minuti coi mezzi contro {n2}–{n3} in auto.",
-   "en": "A typical frequent trip: {s0}, ~{n1} minutes by public transport against {n2}–{n3} by car.",
-   "de": "Eine typische häufige Strecke: {s0}, ~{n1} Minuten mit öffentlichen Verkehrsmitteln gegenüber {n2}–{n3} mit dem Auto."
   },
   {
    "it": "Una lettura al minuto: il ritardo vero è fino a un minuto più grande. Oltre 5 minuti {n0}-{n1}%, oltre 10 minuti {n2}-{n3}%, in anticipo {n4}-{n5}% dei passaggi feriali.",
@@ -1672,14 +1633,99 @@
    "de": "schnellste Strecke im Straßennetz, mit Geschwindigkeiten von Sensoren und Bussen und {n0} Sekunden pro Ampel (mittlerer Faktor {n1}) + {n2} Minuten"
   },
   {
-   "it": "verso Piazza Castello alle {n0}; auto: stima aperta (fattore mediano {n1}) + {n2} minuti, e la stessa corretta col controllo (× {n3} sulla guida)",
-   "en": "to Piazza Castello at {n0}; car: open estimate (median factor {n1}) + {n2} minutes, and the same corrected with the check (× {n3} on driving)",
-   "de": "zur Piazza Castello um {n0} Uhr; Auto: offene Schätzung (mittlerer Faktor {n1}) + {n2} Minuten, und dieselbe mit der Kontrolle korrigiert (× {n3} auf die Fahrt)"
-  },
-  {
    "it": "Da Piazza Castello, alle 7:45 di un feriale. In 30 minuti si raggiungono ~{n0}% dei torinesi coi mezzi pubblici e {n1}-{n2}% in auto (traffico tipico, parcheggio compreso).",
    "en": "From Piazza Castello, at 7:45 a.m. on a weekday. In 30 minutes you reach ~{n0}% of Turin residents by public transport and {n1}-{n2}% by car (typical traffic, parking included).",
    "de": "Ab Piazza Castello, um 7:45 Uhr an einem Werktag. In 30 Minuten erreicht man mit öffentlichen Verkehrsmitteln ~{n0}% der Einwohner Turins und mit dem Auto {n1}-{n2}% (typischer Verkehr, Parken inklusive)."
+  },
+  {
+   "it": "Coi mezzi pubblici si impiega in media {n0} volte il tempo dell'auto",
+   "en": "On average, public transport takes {n0} times as long as the car",
+   "de": "Mit öffentlichen Verkehrsmitteln braucht man im Schnitt das {n0}-Fache der Zeit des Autos"
+  },
+  {
+   "it": "Si risparmiano ~{n0} minuti a viaggio, ma la sosta costa ~{n1} € al mese. È come pagare il tempo {n2} € l'ora.",
+   "en": "You save ~{n0} minutes per trip, but parking costs ~€{n1} a month. It is like paying €{n2} an hour for the time.",
+   "de": "Man spart ~{n0} Minuten pro Fahrt, aber das Parken kostet ~{n1} € im Monat. Die Zeit kostet so {n2} € pro Stunde."
+  },
+  {
+   "it": "Rapporto fra il tempo coi mezzi e il tempo in auto, pesato per le auto del mattino, alle {n0} ore del giorno.",
+   "en": "Ratio between public transport time and car time, weighted by the morning cars, at {n0} times of the day.",
+   "de": "Verhältnis zwischen der Zeit mit öffentlichen Verkehrsmitteln und der Autozeit, gewichtet nach den Autos am Morgen, zu {n0} Tageszeiten."
+  },
+  {
+   "it": "Bus e auto partono insieme, uno dopo l'altro, per i {n0} viaggi in auto più frequenti del mattino. Il tempo in auto comprende il parcheggio.",
+   "en": "Bus and car leave together, one after the other, for the {n0} most frequent morning car trips. The car time includes parking.",
+   "de": "Bus und Auto fahren zusammen los, nacheinander, für die {n0} häufigsten Autofahrten am Morgen. Die Autozeit enthält das Parken."
+  },
+  {
+   "it": "{n0} € ({n1} € col costo pieno)",
+   "en": "€{n0} (€{n1} at full cost)",
+   "de": "{n0} € ({n1} € bei Vollkosten)"
+  },
+  {
+   "it": "{n0} €",
+   "en": "€{n0}",
+   "de": "{n0} €"
+  },
+  {
+   "it": "Auto: percorso più veloce sulla rete stradale. Velocità da sensori e bus, {n0} secondi per semaforo, più {n1} minuti per parcheggiare.",
+   "en": "Car: fastest route on the road network. Speeds from sensors and buses, {n0} seconds per traffic light, plus {n1} minutes to park.",
+   "de": "Auto: schnellste Strecke im Straßennetz. Geschwindigkeiten von Sensoren und Bussen, {n0} Sekunden pro Ampel, plus {n1} Minuten zum Parken."
+  },
+  {
+   "it": "Tempi in auto da un modello aperto, corretti con un fattore unico ({n0}). Il fattore è misurato su {n1} percorsi con TomTom: la stima aperta era più veloce in {n2} su {n3}.",
+   "en": "Car times from an open model, corrected with a single factor ({n0}). The factor was measured on {n1} routes with TomTom: the open estimate was faster on {n2} out of {n3}.",
+   "de": "Autozeiten aus einem offenen Modell, mit einem einheitlichen Faktor ({n0}) korrigiert. Der Faktor wurde auf {n1} Strecken mit TomTom gemessen: Die offene Schätzung war auf {n2} von {n3} schneller."
+  },
+  {
+   "it": "Tempi in auto da un modello aperto, non misurati sul singolo viaggio. Il controllo con TomTom su {n0} percorsi li trova ottimistici: per questo sono corretti con un fattore unico.",
+   "en": "Car times come from an open model, not measured on the single trip. The TomTom check on {n0} routes finds them optimistic: that is why they are corrected with a single factor.",
+   "de": "Die Autozeiten stammen aus einem offenen Modell und sind nicht auf der einzelnen Fahrt gemessen. Die TomTom-Kontrolle auf {n0} Strecken findet sie optimistisch: Deshalb werden sie mit einem einheitlichen Faktor korrigiert."
+  },
+  {
+   "it": "Da Piazza Castello, alle 7:45 di un feriale. In 30 minuti si raggiungono ~{n0}% dei torinesi coi mezzi pubblici e {n1}% in auto (traffico tipico, parcheggio compreso).",
+   "en": "From Piazza Castello, at 7:45 a.m. on a weekday. In 30 minutes you reach ~{n0}% of Turin residents by public transport and {n1}% by car (typical traffic, parking included).",
+   "de": "Ab Piazza Castello, um 7:45 Uhr an einem Werktag. In 30 Minuten erreicht man mit öffentlichen Verkehrsmitteln ~{n0}% der Einwohner Turins und mit dem Auto {n1}% (typischer Verkehr, Parken inklusive)."
+  },
+  {
+   "it": "residenti in zone con più difficoltà sociali e servizi bassi: il {n0}% dei residenti delle zone abitate.",
+   "en": "residents in zones with more social difficulty and few services: {n0}% of residents of inhabited zones.",
+   "de": "Einwohner in Zonen mit mehr sozialen Schwierigkeiten und wenigen Einrichtungen: {n0}% der Einwohner der bewohnten Gebiete."
+  },
+  {
+   "it": "Fragilità alta e pochi servizi capitano insieme {n0} volte più spesso che se fossero distribuiti a caso in città.",
+   "en": "High fragility and few services occur together {n0} times more often than if they were spread at random across the city.",
+   "de": "Hohe Fragilität und wenige Einrichtungen treten {n0}-mal so oft zusammen auf, wie es bei zufälliger Verteilung in der Stadt der Fall wäre."
+  },
+  {
+   "it": "bus {n0} min · auto {n1} min",
+   "en": "bus {n0} min · car {n1} min",
+   "de": "Bus {n0} Min. · Auto {n1} Min."
+  },
+  {
+   "it": "In {n0} punti su {n1}, lasciata l'auto, il bus arriva in centro in al più {n2} volte il tempo dell'auto.",
+   "en": "In {n0} points out of {n1}, once the car is left, the bus reaches the centre in at most {n2} times the car's time.",
+   "de": "An {n0} von {n1} Punkten erreicht man das Zentrum nach dem Abstellen des Autos mit dem Bus in höchstens dem {n2}-Fachen der Autozeit."
+  },
+  {
+   "it": "Bus contro auto: minuti coi mezzi (corretti con le misure) verso Piazza Castello alle otto del mattino. Auto: tempo di guida × {n0} (fattore unico del controllo con TomTom), più 5 minuti.",
+   "en": "Bus against car: minutes by public transport (corrected with the measurements) to Piazza Castello at eight in the morning. Car: driving time × {n0} (single factor from the TomTom check), plus 5 minutes.",
+   "de": "Bus gegen Auto: Minuten mit öffentlichen Verkehrsmitteln (mit den Messungen korrigiert) zur Piazza Castello um acht Uhr morgens. Auto: Fahrzeit × {n0} (einheitlicher Faktor aus der TomTom-Kontrolle), plus 5 Minuten."
+  },
+  {
+   "it": "Pareggio: minuti di parcheggio che rendono l'auto lenta quanto il bus: {n0} (mediana dei {n1} punti).",
+   "en": "Break-even: minutes of parking that make the car as slow as the bus: {n0} (median of the {n1} points).",
+   "de": "Break-even: Parkminuten, bei denen das Auto so langsam ist wie der Bus: {n0} (Median der {n1} Punkte)."
+  },
+  {
+   "it": "verso Piazza Castello alle 8; auto: guida × {n0} + 5 minuti, con il fattore unico del controllo con TomTom",
+   "en": "to Piazza Castello at 8; car: driving × {n0} + 5 minutes, with the single factor from the TomTom check",
+   "de": "zur Piazza Castello um 8 Uhr; Auto: Fahrt × {n0} + 5 Minuten, mit dem einheitlichen Faktor aus der TomTom-Kontrolle"
+  },
+  {
+   "it": "In posti, per ogni parcheggio: offerti, richiesti (auto in entrata che passano accanto × {n0}%) e occupati di giorno. Accanto al nome, i minuti a Piazza Castello alle 8.",
+   "en": "In spaces, for each car park: offered, needed (cars entering the city that pass by × {n0}%) and occupied by day. Next to the name, the minutes to Piazza Castello at 8.",
+   "de": "In Stellplätzen, für jeden Parkplatz: angeboten, benötigt (einfahrende Autos, die vorbeikommen × {n0}%) und tagsüber belegt. Neben dem Namen die Minuten bis zur Piazza Castello um 8 Uhr."
   }
  ]
 }

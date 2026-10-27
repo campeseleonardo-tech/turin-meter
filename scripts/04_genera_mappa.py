@@ -54,6 +54,7 @@ for _c in (AQUI, RADICE / "scripts"):
         sys.path.insert(0, str(_c))
         break
 import comuni  # noqa: E402  (PERIODO fisso dei dati)
+from schede.r6 import fattori_auto_mappa  # noqa: E402  (fattore del controllo per i tempi in auto della mappa)
 TIPI_GIORNO = ["fer", "sab", "dom"]
 csv.field_size_limit(10**8)
 
@@ -1111,6 +1112,7 @@ def main():
     f_r6 = RADICE / "data" / "processed" / "risultato6_v2" / "mappa_r6.json"
     if f_r6.is_file():
         r6 = json.loads(f_r6.read_text(encoding="utf-8"))
+        r6.update(fattori_auto_mappa())          # tempi in auto: una sola stima, la corretta col controllo (decisione 16 di §2)
         print(f"  risultato6: {len(r6['aree'])} aree, {len(r6['punti_prioritari'])} punti prioritari, "
               f"{len(r6['fermate'])} fermate importanti, {len(r6['parcheggi'])} parcheggi")
 

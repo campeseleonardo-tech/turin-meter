@@ -3,9 +3,8 @@
 Tutto viene da file gia' prodotti: data/storico_riassunti (contatore, come la home), data/processed/velocita_5t.json (numero di sensori),
 case_fragilita_servizi.json (script 95) e omi_zone.json (poligoni delle zone OMI; se manca, come nel cloud, si riusano quelli gia' scritti in data/progetto.js),
 risultato4_regolarita.json (script 27), accessibilita.json (sezioni di censimento analizzate; se manca si riusa il numero gia' in data/progetto.js), data/ref/numeri_progetto.json (fonti, settimane), assets/torino_contorno.json.
-I numeri dei risultati (forbice mezzi/auto, minuti di pareggio, ...) la pagina li legge dalle schede (data/schede_risultati.js): qui non si copiano.
-Le raccomandazioni («Cosa farei») hanno i loro numeri in schede/raccomandazioni.py; il controllo dei tempi in auto viene da controllo_navigatori_riepilogo.json;
-costi dell'AI e del Raspberry Pi da data/ref/lavoro_ai.json.
+I numeri dei risultati (rapporto mezzi/auto, minuti di pareggio, ...) la pagina li legge dalle schede (data/schede_risultati.js): qui non si copiano.
+Le raccomandazioni («Cosa farei») hanno i loro numeri in schede/raccomandazioni.py; il controllo dei tempi in auto viene da controllo_navigatori_riepilogo.json.
 Nessun numero e' scritto a mano."""
 import json
 
@@ -16,7 +15,6 @@ from schede.r10 import nome_zona
 
 OUT = RADICE / "data" / "progetto.js"
 NUMERI_PROGETTO = RADICE / "data" / "ref" / "numeri_progetto.json"
-LAVORO_AI = RADICE / "data" / "ref" / "lavoro_ai.json"   # testi personali di Leo (25/10/2026): abbonamenti AI e Raspberry Pi
 
 
 def _rdp(pts, tol):
@@ -93,7 +91,8 @@ def domande(r4, e2):
                    "primo_tratto": [nome_pulito(primo["da"]), nome_pulito(primo["a"])]},
             "d3": {"volte_il_caso": round(e2["sezioni"]["confronto_col_caso"]["volte_il_caso"], 1)},
             "d4": {"senza_posti": r6["fermate_senza_posti_bastanti"], "fermate": r6["fermate_importanti"], "nessun_parcheggio": r6["fermate_nessun_parcheggio"],
-                   "raggio_m": int(mr6.get("parametri", {}).get("raggio_piedi_m", 400))}}
+                   "raggio_m": int(mr6.get("parametri", {}).get("raggio_piedi_m", 400)),
+                   "n_corse": r6["regola_fermate"]["n_corse"], "m_auto": r6["regola_fermate"]["m_auto"]}}   # soglie della «fermata importante» (script 83)
 
 
 def scrivi_progetto():
@@ -131,7 +130,6 @@ def scrivi_progetto():
         "raccomandazioni": raccomandazioni(),
         "domande": domande(r4, e2),
         "controllo_auto": {"percorsi": ctr["percorsi"], "errore_pct": abs(ctr["mediana_errore_con_segno_pct"])},
-        "lavoro_ai": json.loads(LAVORO_AI.read_text(encoding="utf-8")),
         "ritardi": {"gps_pct": gps, "feed_pct": feed, "rapporto": round(gps / feed, 1) if feed else None,
                     "copertura_gps_pct": r4["copertura_gps"]["totale"]["copertura_pct"], "soglia_min": r4["parametri"]["soglia_ritardo_min"]},
     }

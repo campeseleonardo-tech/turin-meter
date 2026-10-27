@@ -42,12 +42,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .barra-alta{background:var(--barra);color:var(--su-barra);border-bottom:3px solid var(--oro)}
 .barra-alta .dentro{max-width:1040px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:6px 22px;flex-wrap:wrap}
 .marchio{display:flex;align-items:center;gap:9px;color:var(--su-barra);text-decoration:none;font:700 22px/1 var(--font-titoli);text-transform:uppercase;letter-spacing:.03em}
-.marchio img{width:auto;height:38px;display:block}
+.marchio img{width:auto;height:54px;display:block}
 .barra-alta nav{display:flex;flex-wrap:wrap;gap:2px 4px;margin-left:auto}
 .barra-alta nav a{color:var(--su-barra);text-decoration:none;font:600 15px/1 var(--font-testi);padding:9px 11px;border-radius:6px;border-bottom:2px solid transparent}
 .barra-alta nav a:hover{background:rgba(255,255,255,.1)}
 .barra-alta nav a[aria-current="page"]{border-bottom-color:var(--oro-su-barra);color:var(--oro-su-barra)}
-@media (max-width:560px){ .barra-alta nav{margin-left:0;width:100%} .marchio{font-size:20px} }
+@media (max-width:560px){ .barra-alta nav{margin-left:0;width:100%} .marchio{font-size:20px} .marchio img{height:44px} }
 
 /* piè di pagina */
 .piede{background:var(--piede);color:var(--su-piede);border-top:3px solid var(--oro);margin-top:24px}
@@ -157,6 +157,7 @@ details.parte p{margin:6px 0}
 .legenda i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
 .legenda b{color:var(--ink);font-variant-numeric:tabular-nums}
 .grafico .etichetta-gruppo{margin:8px 0 2px;font-size:14px;font-weight:600}
+.grafico .etichetta-gruppo small{font-size:12px;font-weight:400;color:var(--muted)}
 table.param{border-collapse:collapse;font-size:14px;margin-top:6px;width:100%}
 table.param td{padding:5px 12px 5px 0;border-bottom:1px solid var(--line);vertical-align:top}
 table.param td:first-child{color:var(--muted);width:40%}

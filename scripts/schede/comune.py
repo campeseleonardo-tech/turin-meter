@@ -206,7 +206,7 @@ def controlla_forma(nome, f):
         for frase in re.split(r"(?<=[a-zA-ZàèéìòùÀ%)\]»])[.;:] +(?=[A-ZÈÀ])", t):
             if len(frase.split()) > 20:
                 print(f"  ATTENZIONE {nome}: frase di {len(frase.split())} parole: «{frase[:70]}…»")
-    if len(f["punti"]) != 3 or len(f["limiti"]) > 5 or len(f["altri"]) > 4 or len(f["calcolo"]) > 8:
+    if not 2 <= len(f["punti"]) <= 3 or len(f["limiti"]) > 5 or len(f["altri"]) > 4 or len(f["calcolo"]) > 8:
         print(f"  ATTENZIONE {nome}: numero di righe fuori misura")
 
 
@@ -271,18 +271,9 @@ def numero_di(s, label_inizio, scenario=0):
 
 
 
-def forbice_estremi(x, y):
-    """Estremi della forbice per il titolo: interi se differiscono di almeno 0,5, altrimenti con un decimale."""
-    if abs(y - x) >= 0.5:
-        return str(round(x)), str(round(y))
-    return virgola(round(x, 1)), virgola(round(y, 1))
-
-
-
-
-# ---------------------------------------------------------------- Forbice dal controllo con TomTom (§6.2 del piano)
-# La stima aperta dell'auto e' piu' veloce di TomTom in tutti i 20 percorsi controllati: i numeri si danno come forbice fra la stima aperta (A) e la stima aperta
-# corretta con il fattore unico del controllo (B). Il fattore si legge da controllo_navigatori_riepilogo.json, mai scritto a mano.
+# ---------------------------------------------------------------- Tempi in auto corretti col controllo con TomTom (§6.2 del piano, decisione 16 di §2)
+# La stima aperta dell'auto e' piu' veloce di TomTom in tutti i 20 percorsi controllati: in pagina si usa solo la stima aperta corretta col fattore unico
+# del controllo (estremo B). Il fattore si legge da controllo_navigatori_riepilogo.json, mai scritto a mano.
 
 MINUTI_PARCHEGGIO = 5.0   # gli stessi di scripts/93_tp_contro_auto.py (MIN_PARCHEGGIO): il fattore corregge solo il tempo di guida
 
@@ -314,7 +305,11 @@ def classe_rapporto(r, soglia=1.5):
     return "conviene" if r <= soglia else "non_conviene"
 
 
-def classe_forbice(r_a, r_b, soglia=1.5):
-    """Classe pubblicata solo se uguale ai due estremi (A e B); altrimenti «simili» (dipende dal traffico)."""
-    ca, cb = classe_rapporto(r_a, soglia), classe_rapporto(r_b, soglia)
-    return ca if ca == cb else "simili"
+def rapporto_medio_giorno():
+    """Numero grande della scheda 2 (decisione 16 di §2): media semplice, sulle 4 ore del giorno, del rapporto mediano coi mezzi pubblici / auto
+    (tempo in auto corretto col controllo), con un decimale. None se ore_del_giorno.json manca o e' una prova: allora vale il valore delle 8."""
+    od = ore_del_giorno()
+    if not od:
+        return None
+    v = [o["ab"]["limite_corretto"]["mediano"] for o in od["ore"]]
+    return round(sum(v) / len(v), 1)

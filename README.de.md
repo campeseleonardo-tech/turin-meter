@@ -19,15 +19,15 @@ Nur offene Daten; Website, Karte und Ergebnisse gibt es auf Italienisch, Englisc
 <!-- RISULTATI-DE:INIZIO -->
 1. **Etwa 1 von 15 Abfahrten hat mehr als 10 Minuten Verspätung**  
    Wie oft sind die GTT-Fahrzeuge verspätet? → **6,7%** der Abfahrten an Werktagen haben mehr als 10 Minuten Verspätung. [Öffnen](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=de#p1)
-2. **Morgens braucht man mit öffentlichen Verkehrsmitteln das 1,9- bis 2,4-Fache der Zeit des Autos**  
-   Wie viel länger braucht man morgens mit öffentlichen Verkehrsmitteln als mit dem Auto? → **1,9–2,4 Mal** die Autozeit, für die Autofahrten am Morgen zwischen verschiedenen Zonen. [Öffnen](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=de#p2)
+2. **Mit öffentlichen Verkehrsmitteln braucht man im Schnitt das 2,1-Fache der Zeit des Autos**  
+   Wie viel länger braucht man mit Bus und Bahn als mit dem Auto? → **2,1 Mal** die Autozeit, für die Autofahrten zwischen verschiedenen Zonen. [Öffnen](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=de#p2)
 3. **Etwa 1 von 10 Einwohnern Turins lebt in einer Zone mit mehr sozialen Schwierigkeiten und wenigen Einrichtungen**  
-   Wer lebt dort, wo es wenige Einrichtungen und große soziale Schwierigkeiten gibt? → **79.598** Einwohner in Zonen mit mehr sozialen Schwierigkeiten und wenigen Einrichtungen: 9,5% der Einwohner der bewohnten Gebiete. Das ist 1,7-mal so viel, wie man zufällig erwarten würde. [Öffnen](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=de#p3)
+   Wer lebt dort, wo es wenige Einrichtungen und große soziale Schwierigkeiten gibt? → **79.598** Einwohner in Zonen mit mehr sozialen Schwierigkeiten und wenigen Einrichtungen: 9,5% der Einwohner der bewohnten Gebiete. [Öffnen](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=de#p3)
 4. **Etwa 2 von 3 wichtigen Haltestellen haben nicht genug Stellplätze, um das Auto stehen zu lassen**  
    Finden Autofahrer von außerhalb einen Platz für ihr Auto nahe einer wichtigen Haltestelle, um mit öffentlichen Verkehrsmitteln weiterzufahren? → **179** wichtige Haltestellen von 274 haben nicht genug Stellplätze im Umkreis von 400 Metern zu Fuß. [Öffnen](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=de#p4)
 <!-- RISULTATI-DE:FINE -->
 
-Jede Karte erklärt, wie die Zahl berechnet wird und wo ihre Grenzen liegen. Autozeiten werden als Spanne angegeben.
+Jede Karte erklärt, wie die Zahl berechnet wird und wo ihre Grenzen liegen. Die Autozeiten sind ein offenes Modell, mit einem Faktor aus dem TomTom-Vergleich korrigiert.
 
 ## Wie es funktioniert
 
@@ -44,7 +44,7 @@ Ein Raspberry Pi zu Hause liest jede Minute die offenen Daten von GTT und 5T aus
 
 ## Meine Rolle und die Arbeit mit KI
 
-Ich habe die Fragen, die Quellen, die Regeln und Schwellenwerte gewählt und entschieden, was veröffentlicht wird. Die Datenerfassung und einen Teil der Python-Analysen habe ich selbst geschrieben; im Übrigen war die KI ein Beschleuniger, mit mehreren Modellen und einer automatischen Kontrolle bei jeder Lieferung. Die Geschichte steht in der [Fallstudie](https://campeseleonardo-tech.github.io/turin-meter/progetto.html?lang=de).
+Mit KI wurde eine Arbeit, für die man sonst ein kleines Team braucht, schnell erledigt: Prototypen in Stunden, Prüfungen an den Daten während der Arbeit. Die Fragen, die Kriterien und Schwellenwerte sowie die Kontrolle der Zahlen sind der Hauptbeitrag des Urhebers; der Rest wurde weitgehend von der KI entwickelt, mit einer automatischen Kontrolle bei jeder Lieferung. Die Geschichte steht in der [Fallstudie](https://campeseleonardo-tech.github.io/turin-meter/progetto.html?lang=de).
 
 ## Methode
 
@@ -52,8 +52,8 @@ Die Methodendokumente gibt es nur auf Englisch: [`docs/en/METHODS.md`](docs/en/M
 
 - **Verspätungen:** aus dem GPS der Fahrzeuge, nicht aus dem offiziellen Feed (der sie unterschätzt); eine Abfahrt ist der letzte Zeitpunkt innerhalb von 60 m der Haltestelle. Eine Messung pro Minute ergibt eine Spanne.
 - **Wo Verspätungen entstehen:** Zusatzzeit zwischen zwei aufeinanderfolgenden Haltestellen, verlorene Minuten pro Werktag, nur Abschnitte mit mindestens 50 Fahrten.
-- **Autozeiten:** eine offene Schätzung (OpenStreetMap-Netz, Geschwindigkeiten der 5T-Sensoren und der Busse, 20 Sekunden je Ampel, 5 Minuten fürs Parken), keine kostenpflichtigen Dienste.
-- **Kontrolle mit TomTom** auf 20 Strecken: Die offene Schätzung erweist sich als zu optimistisch, daher sind die Zahlen eine Spanne (offene Schätzung – mit dem Faktor der Kontrolle korrigierte Schätzung); Klassen werden nur angegeben, wenn sie an beiden Enden gleich sind.
+- **Autozeiten:** ein offenes Modell (OpenStreetMap-Netz, Geschwindigkeiten der 5T-Sensoren und der Busse, 20 Sekunden je Ampel, 5 Minuten fürs Parken), keine kostenpflichtigen Dienste.
+- **Kontrolle mit TomTom** auf 20 Strecken: Die offene Schätzung erweist sich als zu optimistisch (auf 20 von 20 Strecken schneller), daher wird sie mit einem einheitlichen Faktor korrigiert.
 - **Benachteiligung:** vom Projekt aus vier Indikatoren der Volkszählung 2021 gebauter Index; kein ISTAT-Index und kein Einkommen.
 - **Park-and-Ride:** einfahrende Autos aus der Erhebung IMQ 2022 über ein Verkehrsmodell, Stellplätze aus OpenStreetMap, Stadt und 5T; fehlende Plätze sind eine Größenordnung.
 

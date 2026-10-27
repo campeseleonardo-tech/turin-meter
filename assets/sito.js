@@ -141,22 +141,24 @@
     traduciStatico();
   }
   /* «Tre decisioni per Torino»: le stesse tre righe nella home e nella pagina del progetto (§5.0 del piano). I numeri vengono da R = window.PROGETTO.raccomandazioni
-     (scritto da scripts/schede/raccomandazioni.py); dove dipendono dalla stima dei tempi in auto sono una forbice. Ritorna tre frasi nella lingua scelta. */
+     (scritto da scripts/schede/raccomandazioni.py). Ritorna tre frasi nella lingua scelta. */
   function intervallo(a, b, pre){
     pre = pre || "";
     return a === b ? pre + formattaNumero(a) : pre + formattaNumero(Math.min(a, b)) + "–" + formattaNumero(Math.max(a, b));
   }
   function raccomandazioni(R){
     var tratti = R ? "~" + formattaNumero(R.tratti_min) : "…", p = R && R.punti, z = R && R.zone;
-    var punti = p ? intervallo(p.da, p.a) : "…", su = p ? formattaNumero(p.su) : "…", posti = p ? intervallo(p.posti_da, p.posti_a, "~") : "…";
+    var da = R && R.tratti_fascia ? R.tratti_fascia : ["…", "…"];
+    var punti = p ? formattaNumero(p.n) : "…", su = p ? formattaNumero(p.su) : "…";
+    var pmin = p ? "~" + formattaNumero(p.posti_min) : "…", pmax = p ? "~" + formattaNumero(p.posti_max) : "…", uno = p && p.posti_min === p.posti_max;
     var nz = z ? formattaNumero(z.n) : "…", ab = z ? "~" + formattaNumero(z.abitanti) : "…";
     return [
-      T("Priorità ai bus nei 10 tratti dove perdono più tempo: " + tratti + " minuti al giorno feriale.",
-        "Priority for buses on the 10 segments where they lose the most time: " + tratti + " minutes per weekday.",
-        "Vorrang für Busse auf den 10 Abschnitten, auf denen sie am meisten Zeit verlieren: " + tratti + " Minuten pro Werktag."),
-      T("Parcheggi di scambio dove il mezzo è veloce (" + punti + " punti d'ingresso su " + su + "): lì mancano " + posti + " posti.",
-        "Park-and-ride where public transport is fast (" + punti + " of " + su + " entry points): " + posti + " spaces are missing there.",
-        "Park-and-Ride dort, wo der öffentliche Verkehr schnell ist (" + punti + " von " + su + " Einfahrtspunkten): Dort fehlen " + posti + " Stellplätze."),
+      T("Priorità ai bus nei 10 tratti dove perdono più tempo: " + tratti + " minuti persi in media ogni giorno feriale, fra le " + da[0] + " e le " + da[1] + ".",
+        "Priority for buses on the 10 segments where they lose the most time: " + tratti + " minutes lost on average every weekday, between " + da[0] + " and " + da[1] + " a.m.",
+        "Vorrang für Busse auf den 10 Abschnitten, auf denen sie am meisten Zeit verlieren: " + tratti + " Minuten gehen im Schnitt an jedem Werktag zwischen " + da[0] + " und " + da[1] + " Uhr verloren."),
+      T("Parcheggi di scambio dove il mezzo è veloce (" + punti + " punti d'ingresso su " + su + "): lì mancano " + (uno ? pmin : "da " + pmin + " a " + pmax) + " posti per parcheggio.",
+        "Park-and-ride where public transport is fast (" + punti + " of " + su + " entry points): there, " + (uno ? pmin : pmin + " to " + pmax) + " spaces per car park are missing.",
+        "Park-and-Ride dort, wo der öffentliche Verkehr schnell ist (" + punti + " von " + su + " Einfahrtspunkten): Dort fehlen " + (uno ? pmin : pmin + " bis " + pmax) + " Stellplätze pro Parkplatz."),
       T("Servizi di prossimità nelle " + nz + " zone a doppio svantaggio, dove vivono " + ab + " persone.",
         "Local services in the " + nz + " zones of double disadvantage, home to " + ab + " people.",
         "Wohnortnahe Angebote in den " + nz + " Zonen mit doppelter Benachteiligung, in denen " + ab + " Menschen leben.")

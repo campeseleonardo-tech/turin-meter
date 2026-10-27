@@ -91,10 +91,12 @@ def forma_r10(s):
     zone = j["zone"]
     rfs = j["e4_a_parita_di_distanza"]["retta_fragilita_servizi"]
     ic_f = f"da {meno(gf['parziale_ic95'][0])} a {meno(gf['parziale_ic95'][1])}"
+    doppio = {z["zona"] for z in e2["zone"]}      # le zone in doppio svantaggio (script 95): bolle rosse nel grafico, stesse sigle di `zone`
     principale = {"tipo": "dispersione", "titolo": f"Fragilità sociale e servizi a piedi, una zona OMI per punto ({len(zone)} zone)",
                   "xlabel": "indice di fragilità sociale, 0-100", "ylabel": "punteggio «Tutti i servizi» a piedi, 0-100",
                   "passo_x": 10, "passo_y": 20, "xnome": "fragilità", "ynome": "servizi",
-                  "punti": [[z["fragilita"], z["servizi"], z["abitanti"], nome_zona(z["zona"])] for z in zone],
+                  "punti": [[z["fragilita"], z["servizi"], z["abitanti"], nome_zona(z["zona"]), "rosso" if z["zona"] in doppio else None] for z in zone],
+                  "legenda": [{"tono": "rosso", "label": "zone in doppio svantaggio"}, {"label": "altre zone"}],
                   "retta": {"a": rfs["intercetta_servizi"], "b": rfs["pendenza_servizi_per_punto_fragilita"], "label": "tendenza"},
                   "nota": ("Ogni punto è una zona, grande quanto i suoi abitanti. La linea è la tendenza: più la fragilità è alta, meno servizi. "
                            + (f"Il legame regge anche a parità di distanza dal centro: correlazione {meno(gf['parziale'])} ({ic_f})." if gf["regge"]
@@ -116,10 +118,10 @@ def forma_r10(s):
         f"Circa 1 torinese su {n_su} vive in una zona con più difficoltà sociali e pochi servizi",
         "Chi vive dove i servizi sono pochi e le difficoltà sociali sono alte?",
         {"valore": se["residenti_doppio_svantaggio"], "unita": "",
-         "testo": f"residenti in zone con più difficoltà sociali e servizi bassi: il {virgola(100 * se['quota_residenti_di_riferimento'])}% dei residenti delle zone abitate. È {volte_caso} volte quanto ci si aspetterebbe per caso.",
+         "testo": f"residenti in zone con più difficoltà sociali e servizi bassi: il {virgola(100 * se['quota_residenti_di_riferimento'])}% dei residenti delle zone abitate.",
          "breve": "residenti con pochi servizi e più difficoltà"},
         principale,
-        [f"Succede {volte_caso} volte più spesso di quanto ci si aspetterebbe per caso.",
+        [f"Fragilità alta e pochi servizi capitano insieme {volte_caso} volte più spesso che se fossero distribuiti a caso in città.",
          f"A 15 minuti a piedi quasi tutti hanno i 5 servizi di base ({circa(c15, '%')}); a 5 minuti solo {circa(c5, '%')}.",
          f"Le zone più colpite: {nomi_zd}. Ci abitano {circa_mila(e2['residenti_zone_doppio_svantaggio'])} persone."],
         [graf_classi, graf_servizi],

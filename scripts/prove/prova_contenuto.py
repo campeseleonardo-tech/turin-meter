@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Prova del contenuto delle schede (passo 4.9 del piano), in italiano, inglese e tedesco, senza browser:
-  - il numero grande e' quello dei file dei dati (schede 1, 3, 4) o una forbice ordinata (scheda 2), e uguale nelle tre lingue;
-  - 3 punti di al massimo 25 parole;
+  - il numero grande e' quello dei file dei dati (schede 1, 3, 4) o la media delle 4 ore del giorno (scheda 2, decisione 16), e uguale nelle tre lingue;
+  - 2 o 3 punti di al massimo 25 parole;
+  - nessuna stima aperta o forbice dei tempi in auto, nessuna tariffa agevolata, fuori da calcolo, criteri e limiti (decisione 16);
   - una sola parte chiusa nella finestra delle schede, con le fonti come ultima riga;
   - nessuna etichetta del tipo di dato (§5.0 del piano: via badge, MISURATO/STIMATO/CALCOLATO e simili come etichette);
   - 4 schede in 2 gruppi (3 in vetrina + 1 approfondimento);
@@ -20,6 +21,7 @@ RADICE = Path(__file__).resolve().parent.parent.parent
 PROC = RADICE / "data" / "processed"
 ITALIANO = re.compile(r"\b(sono|ogni|più|anche|quanto|mezzi|dati|risultati|fermate|ritardo|torinesi|persone|giorni|dalla|alla|tutti|perché|nella|delle|degli|coi|dove|che|non)\b", re.I)
 LINGUE = {"it": "forma", "en": "forma_en", "de": "forma_de"}
+VIETATE_AUTO = re.compile(r"stima aperta|stima corretta|forbice|open estimate|corrected estimate|offene Schätzung|korrigierte Schätzung|Spanne|tariffe agevolate|concession fare|ermäßigte Tarife", re.I)
 
 
 def frasi(o, chiave=""):
@@ -63,9 +65,10 @@ def main():
             if v != attesi[r]:
                 err.append(f"scheda {r}: numero grande {v} diverso dai dati {attesi[r]}")
         else:
-            m = re.fullmatch(r"(\d+(?:,\d+)?)–(\d+(?:,\d+)?)", str(v))
-            if not m or float(m.group(1).replace(",", ".")) > float(m.group(2).replace(",", ".")):
-                err.append(f"scheda {r}: la forbice «{v}» non e' «minimo–massimo»")
+            ore = json.loads((PROC / "ore_del_giorno.json").read_text(encoding="utf-8"))["ore"]
+            medio = round(sum(o["ab"]["limite_corretto"]["mediano"] for o in ore) / len(ore), 1)
+            if v != medio:
+                err.append(f"scheda {r}: numero grande {v} diverso dalla media delle {len(ore)} ore del giorno {medio}")
         for lg, k in LINGUE.items():
             f = s.get(k)
             if not f:
@@ -73,13 +76,16 @@ def main():
                 continue
             if cifre(f["numero"]["valore"]) != cifre(v):
                 err.append(f"scheda {r} {lg}: numero grande diverso dall'italiano ({f['numero']['valore']} contro {v})")
-            if len(f["punti"]) != 3:
-                err.append(f"scheda {r} {lg}: {len(f['punti'])} punti, non 3")
+            if not 2 <= len(f["punti"]) <= 3:
+                err.append(f"scheda {r} {lg}: {len(f['punti'])} punti, non 2 o 3")
             for p in f["punti"]:
                 if len(p.split()) > 25:
                     err.append(f"scheda {r} {lg}: punto di {len(p.split())} parole: {p[:60]}…")
             if "tipo_badge" in f:
                 err.append(f"scheda {r} {lg}: c'è ancora un'etichetta del tipo di dato (tipo_badge)")
+            visibili = " . ".join(frasi({k: x for k, x in f.items() if k not in ("calcolo", "criteri", "limiti", "fonti")}))
+            for t in VIETATE_AUTO.findall(visibili):
+                err.append(f"scheda {r} {lg}: «{t}» fuori da calcolo e limiti (decisione 16)")
             tutto_testo = " . ".join(frasi(f))
             for t in frasi_vietate.trova(tutto_testo, lg):
                 err.append(f"scheda {r} {lg}: formula vietata o etichetta del tipo di dato: «{t}»")

@@ -42,7 +42,7 @@
     figura("fP", "0 0 400 300", "2020: un'idea sulla carta. Oggi: dati che arrivano ogni minuto.", "2020: an idea on paper. Today: data that arrive every minute.", "2020: eine Idee auf dem Papier. Heute: Daten, die jede Minute eintreffen.") +
     figura("fS", "0 0 400 420", "Dalle fonti aperte alle pagine che si leggono.", "From the open sources to the pages you read.", "Von den offenen Quellen zu den Seiten, die man liest.") +
     figura("fG", "0 0 400 300", "Quota di passaggi di bus e tram con oltre 5 minuti di ritardo, per fonte.", "Share of bus and tram departures more than 5 minutes late, by source.", "Anteil der Bus- und Tramabfahrten mit mehr als 5 Minuten Verspätung, nach Quelle.") +
-    figura("fR", "0 0 400 300", "Spostamenti del mattino: mezzi pubblici contro auto (l'auto è 1).", "Morning trips: public transport compared with the car (the car is 1).", "Fahrten am Morgen: öffentlicher Verkehr im Vergleich zum Auto (das Auto ist 1).") +
+    figura("fR", "0 0 400 300", "Spostamenti: mezzi pubblici contro auto (l'auto è 1).", "Trips: public transport compared with the car (the car is 1).", "Fahrten: öffentlicher Verkehr im Vergleich zum Auto (das Auto ist 1).") +
     figura("fD", "0 0 1000 963", "In rosso: le zone dove fragilità alta e pochi servizi coincidono.", "In red: the zones where high vulnerability and few services go together.", "In Rot: die Gebiete, in denen hohe Benachteiligung und wenige Einrichtungen zusammentreffen.") +
     figura("fQ", "0 0 400 300", "Fermate importanti, per posti vicini dove lasciare l'auto.", "Major stops, by nearby spaces to leave the car.", "Wichtige Haltestellen nach Stellplätzen in der Nähe.") +
     figura("fF", "0 0 400 300", "Tre decisioni, coi numeri dei dati.", "Three decisions, with the numbers from the data.", "Drei Entscheidungen, mit den Zahlen aus den Daten.") +
@@ -51,15 +51,15 @@
 
   parte(1, "fN", "inbreve", ["Il progetto", "The project", "Das Projekt"],
     ["Come si muove Torino", "How Turin moves", "Wie sich Turin bewegt"],
-    p("Turin Meter misura come si muove Torino. Dal {sistema.inizio} raccoglie ogni minuto la posizione di bus e tram e i dati dei sensori del traffico, e li incrocia con censimento, indagine sugli spostamenti e mappe aperte: quattro risposte a domande concrete sulla mobilità.",
-      "Turin Meter measures how Turin moves. Since {sistema.inizio} it collects, every minute, the position of buses and trams and the traffic sensor data, and combines them with census, travel survey and open maps: four answers to concrete questions about mobility.",
-      "Turin Meter misst, wie sich Turin bewegt. Seit dem {sistema.inizio} erfasst es jede Minute die Position von Bussen und Straßenbahnen und die Daten der Verkehrssensoren und verknüpft sie mit Volkszählung, Mobilitätserhebung und offenen Karten: vier Antworten auf konkrete Fragen zur Mobilität.")) +
+    p("Turin Meter misura come si muove Torino. Ogni giorno raccoglie, minuto per minuto, la posizione di bus e tram e i dati dei sensori del traffico, e li incrocia con censimento, indagine sugli spostamenti e mappe aperte: quattro risposte a domande concrete sulla mobilità.",
+      "Turin Meter measures how Turin moves. Every day, minute by minute, it collects the position of buses and trams and the traffic sensor data, and combines them with census, travel survey and open maps: four answers to concrete questions about mobility.",
+      "Turin Meter misst, wie sich Turin bewegt. Jeden Tag erfasst es Minute für Minute die Position von Bussen und Straßenbahnen und die Daten der Verkehrssensoren und verknüpft sie mit Volkszählung, Mobilitätserhebung und offenen Karten: vier Antworten auf konkrete Fragen zur Mobilität.")) +
 
   parte(2, "fP", "domanda", ["La domanda", "The question", "Die Frage"],
     ["Cosa dicono i dati veri?", "What do real data say?", "Was sagen die echten Daten?"],
-    p("La tesi del 2020 su Industry 4.0 e smart city prometteva che sensori e dati avrebbero cambiato le città. Qui la promessa è messa alla prova sui dati di Torino.",
-      "A 2020 thesis on Industry 4.0 and smart cities promised that sensors and data would change cities. Here the promise is put to the test on data from Turin.",
-      "Eine Abschlussarbeit von 2020 über Industrie 4.0 und Smart Cities versprach, dass Sensoren und Daten die Städte verändern würden. Hier wird das Versprechen an Daten aus Turin geprüft.")) +
+    p("All'inizio di questo decennio le smart city, coi loro sensori connessi (IoT), promettevano di cambiare il modo in cui funzionano le città. Qui la promessa è messa alla prova sui dati di Torino.",
+      "At the start of this decade, smart cities, with their connected sensors (IoT), promised to change how cities work. Here the promise is put to the test on data from Turin.",
+      "Zu Beginn dieses Jahrzehnts versprachen Smart Cities mit ihren vernetzten Sensoren (IoT), die Funktionsweise der Städte zu verändern. Hier wird das Versprechen an Daten aus Turin geprüft.")) +
 
   '<section id="dati" aria-labelledby="h3p">' +
     '<p class="num-parte" ' + x("3 · Quattro domande, quattro risposte", "3 · Four questions, four answers", "3 · Vier Fragen, vier Antworten") + '>3 · Quattro domande, quattro risposte</p>' +
@@ -70,9 +70,9 @@
       ["Ritardo oltre 10 minuti, in forbice per la lettura al minuto; tratti con almeno {d1.corse} corse, capolinea esclusi.", "Delay of more than 10 minutes, as a range because of the one-minute reading; segments with at least {d1.corse} trips, terminals excluded.", "Verspätung über 10 Minuten, als Spanne wegen der Messung im Minutentakt; Abschnitte mit mindestens {d1.corse} Fahrten, ohne Endhaltestellen."],
       ["{d1.forbice}% dei passaggi; il tratto peggiore è {d1.primo}.", "{d1.forbice}% of departures; the worst segment is {d1.primo}.", "{d1.forbice}% der Abfahrten; der schlechteste Abschnitt ist {d1.primo}."]]) +
     dq(8, "fR", [
-      ["Al mattino, quanto tempo in più chiede il mezzo pubblico rispetto all'auto?", "In the morning, how much more time does public transport take than the car?", "Wie viel mehr Zeit braucht der öffentliche Verkehr morgens im Vergleich zum Auto?"],
+      ["Quanto tempo in più chiede il mezzo pubblico rispetto all'auto?", "How much more time does public transport take than the car?", "Wie viel mehr Zeit braucht der öffentliche Verkehr im Vergleich zum Auto?"],
       ["Orari e ritardi misurati; auto da un modello aperto, controllato con TomTom su {controllo.percorsi} percorsi.", "Timetables and measured delays; car times from an open model, checked with TomTom on {controllo.percorsi} routes.", "Fahrpläne und gemessene Verspätungen; Auto aus einem offenen Modell, mit TomTom auf {controllo.percorsi} Strecken geprüft."],
-      ["Viaggi del mattino fra zone diverse (indagine IMQ); forbice fra stima aperta e corretta.", "Morning trips between different zones (IMQ survey); a range between open and corrected estimate.", "Fahrten am Morgen zwischen verschiedenen Zonen (Erhebung IMQ); Spanne zwischen offener und korrigierter Schätzung."],
+      ["Viaggi in auto fra zone diverse (indagine IMQ), media di 4 ore del giorno; auto dalla stima corretta col controllo.", "Car trips between different zones (IMQ survey), average of 4 times of the day; car times from the estimate corrected by the check.", "Autofahrten zwischen verschiedenen Zonen (Erhebung IMQ), Mittel aus 4 Tageszeiten; Autozeiten aus der mit der Kontrolle korrigierten Schätzung."],
       ["{muoversi.volte} volte il tempo dell'auto.", "{muoversi.volte} times the car's time.", "Das {muoversi.volte}-Fache der Autozeit."]]) +
     dq(10, "fD", [
       ["Chi vive dove fragilità sociale e pochi servizi si sommano?", "Who lives where social vulnerability and few services add up?", "Wer lebt dort, wo soziale Benachteiligung und wenige Einrichtungen zusammenkommen?"],
@@ -88,9 +88,9 @@
 
   parte(4, "fS", "sistema", ["Come funziona", "How it works", "Wie es funktioniert"],
     ["Dalla raccolta alle pagine", "From collection to pages", "Von der Erfassung zu den Seiten"],
-    p("Un Raspberry Pi a casa raccoglie ogni minuto i dati aperti di GTT e 5T e li salva in un archivio. Script Python li uniscono a censimento, indagine IMQ 2022 e OpenStreetMap; un motore di percorsi calcola i tempi coi mezzi. Pagine leggere, senza server.",
-      "A Raspberry Pi at home collects the open data of GTT and 5T every minute and saves them in an archive. Python scripts combine them with the census, the IMQ 2022 survey and OpenStreetMap; a routing engine computes the public transport times. Light pages, no server.",
-      "Ein Raspberry Pi zu Hause erfasst jede Minute die offenen Daten von GTT und 5T und speichert sie in einem Archiv. Python-Skripte verknüpfen sie mit Volkszählung, Erhebung IMQ 2022 und OpenStreetMap; eine Routing-Engine berechnet die Fahrzeiten im öffentlichen Verkehr. Leichte Seiten, ohne Server.")) +
+    p("Un Raspberry Pi a casa raccoglie ogni minuto i dati aperti di GTT e 5T e li salva in un archivio. Script Python li uniscono a censimento, indagine IMQ 2022 e OpenStreetMap; un motore di percorsi calcola i tempi coi mezzi. In mezzo ci sono calcoli e decisioni: quali dati incrociare, come definire una fermata importante o un tratto critico, quali soglie usare. Pagine leggere, senza server.",
+      "A Raspberry Pi at home collects the open data of GTT and 5T every minute and saves them in an archive. Python scripts combine them with the census, the IMQ 2022 survey and OpenStreetMap; a routing engine computes the public transport times. In between come calculations and decisions: which data to combine, how to define an important stop or a critical segment, which thresholds to use. Light pages, no server.",
+      "Ein Raspberry Pi zu Hause erfasst jede Minute die offenen Daten von GTT und 5T und speichert sie in einem Archiv. Python-Skripte verknüpfen sie mit Volkszählung, Erhebung IMQ 2022 und OpenStreetMap; eine Routing-Engine berechnet die Fahrzeiten im öffentlichen Verkehr. Dazwischen liegen Berechnungen und Entscheidungen: welche Daten verknüpft werden, wie man eine wichtige Haltestelle oder einen kritischen Abschnitt definiert, welche Schwellenwerte gelten. Leichte Seiten, ohne Server.")) +
 
   parte(5, "fG", "metodo", ["Scelte di metodo", "Choices of method", "Methodische Entscheidungen"],
     ["Cinque scelte", "Five choices", "Fünf Entscheidungen"],
@@ -100,13 +100,13 @@
         "The official feed understated them by about {ritardi.rapporto} times, so delays are measured from vehicle GPS.",
         "Der offizielle Feed unterschätzte sie etwa um das {ritardi.rapporto}-Fache, deshalb wird per Fahrzeug-GPS gemessen."]],
       [["Regole scritte prima", "Rules written first", "Regeln vorab festgelegt"],
-       ["Regole scritte prima di calcolare; per i tempi in auto la forma dei numeri è cambiata dopo il controllo.",
-        "Rules written before calculating; for car times, the form of the numbers changed after the check.",
-        "Regeln vor der Berechnung festgelegt; bei den Autozeiten änderte sich die Form der Zahlen nach der Kontrolle."]],
+       ["Regole scritte prima di calcolare; i tempi in auto sono stati corretti dopo il controllo con TomTom.",
+        "Rules written before calculating; car times were corrected after the TomTom check.",
+        "Regeln vor der Berechnung festgelegt; die Autozeiten wurden nach der TomTom-Kontrolle korrigiert."]],
       [["Tempi in auto aperti", "Open car times", "Offene Autozeiten"],
-       ["Modello aperto, controllato con TomTom su {controllo.percorsi} percorsi: risulta ottimista, quindi i numeri sono una forbice.",
-        "Open model, checked with TomTom on {controllo.percorsi} routes: it comes out optimistic, so the numbers are a range.",
-        "Offenes Modell, mit TomTom auf {controllo.percorsi} Strecken geprüft: zu optimistisch, daher sind die Zahlen eine Spanne."]],
+       ["Modello aperto, corretto con un fattore unico misurato con TomTom su {controllo.percorsi} percorsi (il modello era troppo ottimista).",
+        "Open model, corrected with a single factor measured with TomTom on {controllo.percorsi} routes (the model was too optimistic).",
+        "Offenes Modell, mit einem einheitlichen Faktor korrigiert, der mit TomTom auf {controllo.percorsi} Strecken gemessen wurde (das Modell war zu optimistisch)."]],
       [["Solo dati aperti", "Only open data", "Nur offene Daten"],
        ["Licenze controllate fonte per fonte; se incerte, solo valori riassunti.",
         "Licences checked source by source; if unclear, only summary values.",
@@ -117,11 +117,11 @@
         "Automatische Kontrollen bei jeder Lieferung: Stimmt eine Zahl nicht, wird nicht veröffentlicht."]]
     ])) +
 
-  parte(6, "fG", "fiducia", ["Quanto fidarsi", "How far to trust it", "Wie weit man vertrauen kann"],
+  parte(6, "fG", "fiducia", ["L'affidabilità dei dati", "How reliable the data are", "Wie verlässlich die Daten sind"],
     ["I dati vanno controllati", "The data must be checked", "Die Daten müssen geprüft werden"],
-    p("Un mezzo trasmette con l'orologio tre anni avanti, il 18 ottobre il feed si è fermato una mattina. Ogni scheda dice come nasce il numero e dove sono i limiti.",
-      "One vehicle transmits with its clock three years ahead, on 18 October the feed stopped for a morning. Every finding says how its number is calculated and where the limits are.",
-      "Ein Fahrzeug sendet mit einer um drei Jahre vorgehenden Uhr, am 18. Oktober blieb der Feed einen Morgen lang stehen. Jedes Ergebnis sagt, wie seine Zahl berechnet wird und wo die Grenzen liegen.")) +
+    p("I dati sono quelli ufficiali di GTT, 5T e della Città di Torino, ma anche questi hanno falle: un mezzo trasmette con l'orologio tre anni avanti, il 18 ottobre il feed si è fermato una mattina. Dove l'obiettivo lo chiede, dati aperti come OpenStreetMap e censimento sono incrociati con scelte del progetto, per esempio una «fermata importante» è fuori dal centro, con metro, stazione o capolinea oppure con almeno {d4.corse} corse all'ora nelle ore dei pendolari, e con almeno {d4.auto} auto in entrata che passano accanto. Ogni scheda dice come nasce il numero e dove sono i limiti.",
+      "The data are the official data of GTT, 5T and the City of Turin, but these too have flaws: one vehicle transmits with its clock three years ahead, on 18 October the feed stopped for a morning. Where the goal requires it, open data such as OpenStreetMap and the census are combined with choices made by the project, for example an «important stop» is outside the centre, with a metro, train station or terminus or at least {d4.corse} departures per hour at commuting times, and at least {d4.auto} cars entering the city passing by. Every finding says how its number is calculated and where the limits are.",
+      "Die Daten sind die offiziellen Daten von GTT, 5T und der Stadt Turin, aber auch sie haben Lücken: Ein Fahrzeug sendet mit einer um drei Jahre vorgehenden Uhr, am 18. Oktober blieb der Feed einen Morgen lang stehen. Wo das Ziel es verlangt, werden offene Daten wie OpenStreetMap und die Volkszählung mit Entscheidungen des Projekts verknüpft, zum Beispiel ist eine «wichtige Haltestelle» außerhalb des Zentrums, mit Metro, Bahnhof oder Endhaltestelle oder mit mindestens {d4.corse} Abfahrten pro Stunde zu Pendlerzeiten, und mit mindestens {d4.auto} einfahrenden Autos, die vorbeikommen. Jedes Ergebnis sagt, wie seine Zahl berechnet wird und wo die Grenzen liegen.")) +
 
   parte(7, "fF", "farei", ["Tre decisioni per Torino", "Three decisions for Turin", "Drei Entscheidungen für Turin"],
     ["Da dove cominciare", "Where to start", "Womit man anfängt"],
@@ -143,9 +143,9 @@
 
   parte(9, "fN", "ai", ["Lavoro con l'AI", "Working with AI", "Arbeit mit KI"],
     ["L'AI come acceleratore", "AI as an accelerator", "KI als Beschleuniger"],
-    p("Con l'AI un lavoro da piccolo team è stato fatto in {sistema.settimane} settimane: prototipi in ore, controlli sui dati mentre si lavorava. Le domande, i criteri e le soglie, il controllo dei numeri e le scelte su cosa pubblicare sono miei; la raccolta dei dati e parte delle analisi in Python le ho scritte io. Costi: Claude {lavoro.claude} € al mese, opencode {lavoro.opencode} € al mese, circa {lavoro.pi} € di hardware.",
-      "With AI, work that usually takes a small team was done in {sistema.settimane} weeks: prototypes in hours, checks on the data while working. The questions, the criteria and thresholds, the checking of the numbers and the choices on what to publish are mine; I wrote the data collection and part of the Python analyses myself. Costs: Claude €{lavoro.claude} a month, opencode €{lavoro.opencode} a month, about €{lavoro.pi} of hardware.",
-      "Mit KI wurde eine Arbeit, für die man sonst ein kleines Team braucht, in {sistema.settimane} Wochen erledigt: Prototypen in Stunden, Prüfungen an den Daten während der Arbeit. Die Fragen, die Kriterien und Schwellenwerte, die Kontrolle der Zahlen und die Entscheidung, was veröffentlicht wird, stammen von mir; die Datenerfassung und einen Teil der Python-Analysen habe ich selbst geschrieben. Kosten: Claude {lavoro.claude} € im Monat, opencode {lavoro.opencode} € im Monat, rund {lavoro.pi} € für Hardware.")) +
+    p("Con l'AI un lavoro da piccolo team è stato fatto in {sistema.settimane} settimane: prototipi in ore, controlli sui dati mentre si lavorava. Le domande, i criteri e le soglie, e il controllo dei numeri sono l'apporto principale del creatore; il resto è stato ampiamente ingegnerizzato dall'AI.",
+      "With AI, work that usually takes a small team was done in {sistema.settimane} weeks: prototypes in hours, checks on the data while working. The questions, the criteria and thresholds, and the checking of the numbers are the creator's main contribution; the rest was extensively engineered by the AI.",
+      "Mit KI wurde eine Arbeit, für die man sonst ein kleines Team braucht, in {sistema.settimane} Wochen erledigt: Prototypen in Stunden, Prüfungen an den Daten während der Arbeit. Die Fragen, die Kriterien und Schwellenwerte sowie die Kontrolle der Zahlen sind der Hauptbeitrag des Urhebers; der Rest wurde weitgehend von der KI entwickelt.")) +
 
   parte(10, "", "chisono", ["Chi sono", "About me", "Über mich"],
     ["Leonardo Campese", "Leonardo Campese", "Leonardo Campese"],
@@ -165,27 +165,27 @@
     function el(tag, att, testo){ var e = document.createElementNS(NS, tag); for(var k in att) e.setAttribute(k, att[k]); if(testo != null) e.textContent = testo; return e; }
     function scheda(id){ return S.filter(function(s){ return s && String(s.risultato) === String(id) && s.forma; })[0]; }   // id interno (campo «risultato»), mai il numero in pagina
     var forma = Sito.forma;
-    function valoreScheda(n){ var s = scheda(n); return s ? String(forma(s).numero.valore) : null; }
+    function valoreScheda(n){ var s = scheda(n), v = s && forma(s).numero.valore; return s ? (typeof v === "number" ? num(v) : String(v)) : null; }
+    function numeroScheda(n){ var s = scheda(n), v = s && forma(s).numero.valore; return typeof v === "number" ? v : null; }
     function elenco(v){ return v.length < 2 ? v.join("") : v.slice(0, -1).join(", ") + T(" e ", " and ", " und ") + v[v.length - 1]; }
 
     /* ---- numeri del testo: tutto arriva dai dati (data/progetto.js e le schede), niente scritto a mano ---- */
     function numeri(){
-      var c = P && P.contatore, r = P && P.ritardi, n = P && P.in_numeri, k = P && P.controllo_auto, l = P && P.lavoro_ai, dm = P && P.domande, d = P && P.doppio;
+      var c = P && P.contatore, r = P && P.ritardi, n = P && P.in_numeri, k = P && P.controllo_auto, dm = P && P.domande, d = P && P.doppio;
       var lg = Sito.lingua(), inizio = c && c.inizio_raccolta ? new Date(c.inizio_raccolta + "T12:00:00").toLocaleDateString(lg === "en" ? "en-GB" : lg === "de" ? "de-DE" : "it-IT", {day: "numeric", month: "long", year: "numeric"}) : null;
       var milioni = c && c.passaggi >= 1e6;
       var v = {
         "sistema.inizio": inizio,
         "d1.giorni": dm && num(dm.d1.giorni_feriali), "d1.corse": dm && num(dm.d1.min_corse), "d1.forbice": dm && Sito.intervallo(dm.d1.oltre10_pct[0], dm.d1.oltre10_pct[1]),
         "d1.primo": dm && (dm.d1.primo_tratto[0] + " → " + dm.d1.primo_tratto[1]), "d3.volte": dm && num(dm.d3.volte_il_caso),
-        "d4.senza": dm && num(dm.d4.senza_posti), "d4.fermate": dm && num(dm.d4.fermate), "d4.raggio": dm && num(dm.d4.raggio_m),
+        "d4.senza": dm && num(dm.d4.senza_posti), "d4.fermate": dm && num(dm.d4.fermate), "d4.raggio": dm && num(dm.d4.raggio_m), "d4.corse": dm && num(dm.d4.n_corse), "d4.auto": dm && num(dm.d4.m_auto),
         "doppio.residenti": d && num(d.residenti), "doppio.quota": d && num(d.quota), "muoversi.volte": valoreScheda(8),
         "sistema.settimane": n && num(n.settimane), "sistema.commit": n && num(n.commit),
         "sistema.giorni": c && num(Sito.giorniRaccolta(c)),
         "sistema.sensori": P && num(P.sensori_5t),
         "sistema.passaggi": c && (milioni ? "~" + num(Math.round(c.passaggi / 1e5) / 10) + T(" milioni", " million", " Mio.") : num(c.passaggi)),
         "ritardi.feed": r && num(r.feed_pct), "ritardi.gps": r && num(r.gps_pct), "ritardi.rapporto": r && num(r.rapporto),
-        "controllo.percorsi": k && num(k.percorsi), "controllo.errore": k && num(Math.round(k.errore_pct)),
-        "lavoro.claude": l && num(l.claude_eur_mese), "lavoro.opencode": l && num(l.opencode_eur_mese), "lavoro.pi": l && num(l.raspberry_eur)
+        "controllo.percorsi": k && num(k.percorsi), "controllo.errore": k && num(Math.round(k.errore_pct))
       };
       document.querySelectorAll("[data-ris]").forEach(function(e){   // «Scheda N»: il numero e l'indirizzo vengono dai dati
         var sc = scheda(e.getAttribute("data-ris")), nn = sc && sc.numero_pubblico != null ? sc.numero_pubblico : null;
@@ -314,19 +314,16 @@
 
     function fR(){
       var s = svg("fR"); s.innerHTML = "";
-      var v = valoreScheda(8), m = v && /^(\d+(?:[.,]\d+)?)(?:\s*[–-]\s*(\d+(?:[.,]\d+)?))?$/.exec(v);
-      if(!m){ s.appendChild(el("text", {x: 200, y: 150, "text-anchor": "middle", "class": "d-testo"}, v || "")); return; }
-      var a = parseFloat(m[1].replace(",", ".")), b = m[2] ? parseFloat(m[2].replace(",", ".")) : a;
-      var lo = Math.min(a, b), hi = Math.max(a, b), W = 300, u = W / Math.max(hi, 1) * 0.92;
+      var v = valoreScheda(8), a = numeroScheda(8);
+      if(a === null){ s.appendChild(el("text", {x: 200, y: 150, "text-anchor": "middle", "class": "d-testo"}, v || "")); return; }
+      var W = 300, u = W / Math.max(a, 1) * 0.92;
       s.appendChild(el("text", {x: 30, y: 36, "class": "d-titolo"}, T("In auto", "By car", "Mit dem Auto")));
       s.appendChild(el("rect", {x: 30, y: 46, width: u, height: 30, rx: 5, "class": "d-oro a-cresci d-barra"}));
       s.appendChild(el("text", {x: 30 + u + 8, y: 67, "class": "d-grande"}, "1"));
       s.appendChild(el("text", {x: 30, y: 134, "class": "d-titolo"}, T("Coi mezzi pubblici", "By public transport", "Mit öffentlichen Verkehrsmitteln")));
-      if(hi > lo) s.appendChild(el("rect", {x: 30, y: 144, width: u * hi, height: 30, rx: 5, "class": "d-blu a-cresci d-barra", opacity: .4}));
-      s.appendChild(el("rect", {x: 30, y: 144, width: u * lo, height: 30, rx: 5, "class": "d-blu a-cresci d-barra"}));
+      s.appendChild(el("rect", {x: 30, y: 144, width: u * a, height: 30, rx: 5, "class": "d-blu a-cresci d-barra"}));
       s.appendChild(el("text", {x: 30, y: 214, "class": "d-grande"}, v + " " + T("volte", "times", "Mal")));
-      s.appendChild(el("text", {x: 30, y: 236, "class": "d-piccolo"}, T("il tempo dell'auto (traffico tipico, mediana)", "the car's time (typical traffic, median)", "die Fahrzeit des Autos (typischer Verkehr, Median)")));
-      s.appendChild(el("text", {x: 30, y: 254, "class": "d-piccolo"}, T("da stima aperta a stima corretta col controllo", "from open estimate to estimate corrected by the check", "von offener Schätzung bis zur durch die Kontrolle korrigierten")));
+      s.appendChild(el("text", {x: 30, y: 236, "class": "d-piccolo"}, T("il tempo dell'auto (media delle 4 ore del giorno)", "the car's time (average of 4 times of the day)", "die Fahrzeit des Autos (Mittel aus 4 Tageszeiten)")));
     }
 
     function fG(){
@@ -350,7 +347,7 @@
       var R = P && P.raccomandazioni; if(!R) return;
       var righe = [
         ["bus", "~" + num(R.tratti_min), T("minuti persi dai bus ogni giorno feriale", "minutes lost by buses every weekday", "Minuten, die Busse pro Werktag verlieren")],
-        ["P", Sito.intervallo(R.punti.da, R.punti.a) + "/" + num(R.punti.su), T("punti d'ingresso dove il mezzo è veloce", "entry points where public transport is fast", "Einfahrtspunkte, an denen der ÖV schnell ist")],
+        ["P", num(R.punti.n) + "/" + num(R.punti.su), T("punti d'ingresso dove il mezzo è veloce", "entry points where public transport is fast", "Einfahrtspunkte, an denen der ÖV schnell ist")],
         ["casa", "~" + num(R.zone.abitanti), T("persone nelle zone a doppio svantaggio", "people in the double-disadvantage zones", "Menschen in den Zonen mit doppelter Benachteiligung")]
       ];
       righe.forEach(function(q, i){

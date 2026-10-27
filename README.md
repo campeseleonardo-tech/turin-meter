@@ -19,15 +19,15 @@ Only open data; the site, the map and the findings are in Italian, English and G
 <!-- RISULTATI-EN:INIZIO -->
 1. **About 1 arrival in 15 is more than 10 minutes late**  
    How often are GTT vehicles late? → **6.7%** of weekday arrivals are more than 10 minutes late. [Open](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=en#p1)
-2. **In the morning, public transport takes 1.9 to 2.4 times as long as the car**  
-   In the morning, how much longer does it take by public transport than by car? → **1.9–2.4 times** the car's travel time, for morning car trips between different zones. [Open](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=en#p2)
+2. **On average, public transport takes 2.1 times as long as the car**  
+   How much longer does public transport take than the car? → **2.1 times** the car's travel time, for car trips between different zones. [Open](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=en#p2)
 3. **About 1 Turin resident in 10 lives in an area with more social difficulties and few services**  
-   Who lives where services are few and social difficulties are high? → **79,598** residents in zones with more social difficulty and few services: 9.5% of residents of inhabited zones. That is 1.7 times what you would expect by chance. [Open](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=en#p3)
+   Who lives where services are few and social difficulties are high? → **79,598** residents in zones with more social difficulty and few services: 9.5% of residents of inhabited zones. [Open](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=en#p3)
 4. **About 2 in 3 important stops lack enough spaces to leave the car**  
    Can people driving in from outside find a place to leave the car near an important stop, and continue by public transport? → **179** important stops out of 274 lack enough parking within 400 metres on foot. [Open](https://campeseleonardo-tech.github.io/turin-meter/index.html?lang=en#p4)
 <!-- RISULTATI-EN:FINE -->
 
-Every finding explains on its card how the number is calculated, and its limits. Car times are shown as a range.
+Every finding explains on its card how the number is calculated, and its limits. Car times are an open model corrected with a single factor measured against TomTom.
 
 ## How it works
 
@@ -44,7 +44,7 @@ A Raspberry Pi at home reads the open data of GTT and 5T every minute and saves 
 
 ## My role and the work with AI
 
-I chose the questions, the sources, the rules and thresholds, and decided what to publish. The data collection and part of the Python analyses I wrote myself; for the rest AI worked as an accelerator, with several models and an automatic check on every delivery. The story is in the [case study](https://campeseleonardo-tech.github.io/turin-meter/progetto.html?lang=en).
+With AI, work that usually takes a small team was done fast: prototypes in hours, checks on the data while working. The questions, the criteria and thresholds, and the checking of the numbers are the creator's main contribution; the rest was extensively engineered by the AI, with an automatic check on every delivery. The story is in the [case study](https://campeseleonardo-tech.github.io/turin-meter/progetto.html?lang=en).
 
 ## Data, licences and disclaimer
 

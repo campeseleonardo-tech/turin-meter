@@ -576,7 +576,7 @@ def prova_mappa(br, cartella):
         page.on("pageerror", lambda e: js_err.append(str(e)))
         try:
             page.goto(f"{base}mappa_torino.html?lang={lingua}", wait_until="load", timeout=90000)
-            page.wait_for_timeout(1500)
+            page.wait_for_timeout(3500)
             st = page.evaluate("""() => ({tema: document.getElementById('temi').value, ora: document.getElementById('oraTxt').textContent,
                 feriale: document.querySelector('#giorno button[data-k="0"]').getAttribute('aria-pressed'), lang: document.documentElement.lang,
                 caricamento: !!document.getElementById('caricamento'), jsoff: getComputedStyle(document.getElementById('jsoff')).display,
@@ -591,8 +591,8 @@ def prova_mappa(br, cartella):
             gruppi = page.evaluate("() => [...document.querySelectorAll('#temi optgroup')].map(g => g.label)")
             if any(g in ("Consigliati", "Recommended", "Empfohlen") for g in gruppi):
                 errori.append(f"mappa ({lingua}): il menu ha ancora un gruppo a sé per i temi consigliati: {gruppi}")
-            if len(cons) not in (3, 4) or not all(c.endswith("★") for c in cons):
-                errori.append(f"mappa ({lingua}): i temi consigliati dovrebbero essere 3 o 4, con la stellina a destra: {cons}")
+            if len(cons) not in (3, 4) or not all(c.startswith("★") for c in cons):
+                errori.append(f"mappa ({lingua}): i temi consigliati dovrebbero essere 3 o 4, con la stellina all'inizio (scelta di Leo, 27/10): {cons}")
             guida = page.evaluate("() => { const d = document.getElementById('infoDati'); d.open = true; const c = d.cloneNode(true); c.querySelector('#stato').previousElementSibling.remove(); c.querySelector('#stato').remove(); return c.innerText; }")   # la guida senza l'elenco «Fonti e date» (date dei dati)
             if len(guida.split()) > 150:
                 errori.append(f"mappa ({lingua}): la guida ha {len(guida.split())} parole (massimo 150)")
@@ -601,7 +601,7 @@ def prova_mappa(br, cartella):
             if st["lang"] != lingua or f"{lingua}:true" not in st["lingue"]:
                 errori.append(f"mappa ({lingua}): lingua della pagina «{st['lang']}», pulsanti {st['lingue']}")
             if st["caricamento"]:
-                errori.append(f"mappa ({lingua}): la schermata di caricamento è ancora lì dopo 1,5 secondi")
+                errori.append(f"mappa ({lingua}): la schermata di caricamento è ancora lì dopo 3,5 secondi (il disegno del logo dura 2 s, F7d)")
             if st["jsoff"] != "none":
                 errori.append(f"mappa ({lingua}): il pannello di errore è visibile")
             atteso = "sat" if st["sat"] else "chiara" if st["chiara"] else None   # con la chiave Esri si apre sul satellite, con la sola chiave CARTO sulla mappa chiara
@@ -752,7 +752,7 @@ def prova_testi(br, cartella):
     """Testi e pagina del progetto (§5.0 del piano), in tre lingue, con Playwright:
       - home, schede aperte, mappa e progetto: nessun elemento .tipo-dato / .tag, nessuna etichetta del tipo di dato, nessuna formula vietata (prove/frasi_vietate.py);
       - «Raspberry» solo nella parte «Come funziona» del progetto (e nel suo disegno); mai in home, schede e mappa;
-      - progetto: al massimo 750 parole in italiano, inglese e tedesco non oltre il 30% in più; 10 parti;
+      - progetto: al massimo 850 parole in italiano (750 + aggiunte F7c), inglese e tedesco non oltre il 30% in più; 10 parti;
       - scorrendo in avanti e all'indietro il disegno visibile è quello della parte letta; accanto a «Chi sono» nessun disegno."""
     if not isinstance(br, BrowserPlaywright):
         print("  testi e pagina del progetto: non provati (serve Playwright)")
@@ -828,8 +828,8 @@ def prova_testi(br, cartella):
                 errori.append(f"[{lingua}]: errore JavaScript: {e}")
         finally:
             ctx.close()
-    if parole.get("it", 0) > 750:
-        errori.append(f"progetto: {parole['it']} parole in italiano (massimo 750)")
+    if parole.get("it", 0) > 850:
+        errori.append(f"progetto: {parole['it']} parole in italiano (massimo 850: 750 di §5.0 più le aggiunte di F7c, vedi Note)")
     for lingua in ("en", "de"):
         if parole.get(lingua, 0) > parole.get("it", 0) * 1.3:
             errori.append(f"progetto: {parole[lingua]} parole in {lingua}, troppe rispetto all'italiano ({parole['it']})")
